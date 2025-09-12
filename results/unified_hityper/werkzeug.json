@@ -1,0 +1,4638 @@
+{
+    "werkzeug": {
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug._internal": {
+        "_DictAccessorProperty": {
+            "__delete__": {
+                "instance": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__get__": {
+                "instance": [],
+                "owner": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "name": [],
+                "default": [
+                    "None"
+                ],
+                "load_func": [
+                    "None"
+                ],
+                "dump_func": [
+                    "None"
+                ],
+                "read_only": [
+                    "None"
+                ],
+                "doc": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__set__": {
+                "instance": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "lookup": {
+                "instance": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_ColorStreamHandler": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_Missing": {
+            "__reduce__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {
+            "_dt_as_utc": {
+                "dt": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_environ": {
+                "obj": [],
+                "return": []
+            },
+            "_has_level_handler": {
+                "logger": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_log": {
+                "type": [],
+                "message": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_plain_int": {
+                "value": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "_wsgi_decoding_dance": {
+                "s": [],
+                "return": []
+            },
+            "_wsgi_encoding_dance": {
+                "s": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures": {
+        "global": {
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.auth": {
+        "Authorization": {
+            "__contains__": {
+                "key": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__eq__": {
+                "other": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__getitem__": {
+                "name": [],
+                "return": []
+            },
+            "__init__": {
+                "auth_type": [],
+                "data": [
+                    "None"
+                ],
+                "token": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "from_header": {
+                "cls": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get": {
+                "key": [],
+                "default": [
+                    "None"
+                ],
+                "return": []
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "WWWAuthenticate": {
+            "__contains__": {
+                "key": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__delattr__": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__delitem__": {
+                "key": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__eq__": {
+                "other": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "__init__": {
+                "auth_type": [],
+                "values": [
+                    "None"
+                ],
+                "token": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__setattr__": {
+                "name": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__setitem__": {
+                "key": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "_trigger_on_update": {
+                "return": [
+                    "None"
+                ]
+            },
+            "from_header": {
+                "cls": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get": {
+                "key": [],
+                "default": [
+                    "None"
+                ],
+                "return": []
+            },
+            "parameters": {
+                "return": []
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "token": {
+                "return": []
+            },
+            "type": {
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.cache_control": {
+        "_CacheControl": {
+            "__init__": {
+                "values": [
+                    "tuple"
+                ],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "_del_cache_value": {
+                "key": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_cache_value": {
+                "key": [],
+                "empty": [],
+                "type": [],
+                "return": [
+                    "bool",
+                    "None",
+                    "typing.Type"
+                ]
+            },
+            "_set_cache_value": {
+                "key": [],
+                "value": [],
+                "type": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "to_header": {
+                "return": []
+            }
+        },
+        "global": {
+            "cache_control_property": {
+                "key": [],
+                "empty": [],
+                "type": [],
+                "doc": [
+                    "None"
+                ],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.csp": {
+        "ContentSecurityPolicy": {
+            "__init__": {
+                "values": [
+                    "tuple"
+                ],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "_del_value": {
+                "key": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_value": {
+                "key": [],
+                "return": []
+            },
+            "_set_value": {
+                "key": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "to_header": {
+                "return": []
+            }
+        },
+        "global": {
+            "csp_property": {
+                "key": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.etag": {
+        "ETags": {
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__call__": {
+                "etag": [
+                    "None"
+                ],
+                "data": [
+                    "None"
+                ],
+                "include_weak": [
+                    "bool"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__contains__": {
+                "etag": [],
+                "return": []
+            },
+            "__init__": {
+                "strong_etags": [],
+                "weak_etags": [
+                    "None"
+                ],
+                "star_tag": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "__len__": {
+                "return": [
+                    "int"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "as_set": {
+                "include_weak": [
+                    "bool"
+                ],
+                "return": [
+                    "set"
+                ]
+            },
+            "contains": {
+                "etag": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "contains_raw": {
+                "etag": [],
+                "return": []
+            },
+            "contains_weak": {
+                "etag": [],
+                "return": []
+            },
+            "is_strong": {
+                "etag": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_weak": {
+                "etag": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text",
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.file_storage": {
+        "FileStorage": {
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__init__": {
+                "stream": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "name": [
+                    "None"
+                ],
+                "content_type": [
+                    "None"
+                ],
+                "content_length": [
+                    "None"
+                ],
+                "headers": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_parse_content_type": {
+                "return": [
+                    "None"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "content_length": {
+                "return": [
+                    "int"
+                ]
+            },
+            "content_type": {
+                "return": []
+            },
+            "mimetype": {
+                "return": []
+            },
+            "mimetype_params": {
+                "return": []
+            },
+            "save": {
+                "dst": [],
+                "buffer_size": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "FileMultiDict": {
+            "add_file": {
+                "name": [],
+                "file": [],
+                "filename": [
+                    "None"
+                ],
+                "content_type": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.datastructures.range": {
+        "ContentRange": {
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "units": [],
+                "start": [],
+                "stop": [],
+                "length": [
+                    "None"
+                ],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "set": {
+                "start": [],
+                "stop": [],
+                "length": [
+                    "None"
+                ],
+                "units": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "unset": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_CallbackProperty": {
+            "__get__": {
+                "instance": [],
+                "owner": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__set__": {
+                "instance": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__set_name__": {
+                "owner": [],
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "IfRange": {
+            "__init__": {
+                "etag": [
+                    "None"
+                ],
+                "date": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "Range": {
+            "__init__": {
+                "units": [],
+                "ranges": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "make_content_range": {
+                "length": [],
+                "return": [
+                    "ContentRange",
+                    "None"
+                ]
+            },
+            "range_for_length": {
+                "length": [],
+                "return": [
+                    "None",
+                    "tuple"
+                ]
+            },
+            "to_content_range_header": {
+                "length": [],
+                "return": [
+                    "typing.Text",
+                    "None"
+                ]
+            },
+            "to_header": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.debug.console": {
+        "ThreadedStream": {
+            "__dir__": {
+                "return": [
+                    "list[str]"
+                ]
+            },
+            "__getattribute__": {
+                "name": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__setattr__": {
+                "name": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "displayhook": {
+                "obj": [],
+                "return": []
+            },
+            "fetch": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "push": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Console": {
+            "__init__": {
+                "globals": [
+                    "None"
+                ],
+                "locals": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "eval": {
+                "code": [],
+                "return": []
+            }
+        },
+        "HTMLStringO": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "_write": {
+                "x": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "flush": {
+                "return": [
+                    "None"
+                ]
+            },
+            "isatty": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "readline": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "reset": {
+                "return": [
+                    "str"
+                ]
+            },
+            "seek": {
+                "n": [],
+                "mode": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "x": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "writelines": {
+                "x": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_ConsoleLoader": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "get_source_by_code": {
+                "code": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "register": {
+                "code": [],
+                "source": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_InteractiveConsole": {
+            "__init__": {
+                "globals": [],
+                "locals": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "compile": {
+                "source": [],
+                "filename": [],
+                "symbol": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "runcode": {
+                "code": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "runsource": {
+                "source": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "showsyntaxerror": {
+                "filename": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "showtraceback": {
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "data": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.debug.tbtools": {
+        "DebugFrameSummary": {
+            "__init__": {
+                "locals": [],
+                "globals": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "console": {
+                "return": [
+                    "Console"
+                ]
+            },
+            "eval": {
+                "code": [],
+                "return": []
+            },
+            "info": {
+                "return": []
+            },
+            "is_library": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "render_html": {
+                "mark_library": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "render_line": {
+                "line": [],
+                "cls": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "DebugTraceback": {
+            "__init__": {
+                "exc": [],
+                "te": [
+                    "None"
+                ],
+                "skip": [
+                    "int"
+                ],
+                "hide": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "all_frames": {
+                "return": [
+                    "list"
+                ]
+            },
+            "all_tracebacks": {
+                "return": [
+                    "list[tuple[typing.Optional[typing.Text]]]"
+                ]
+            },
+            "render_debugger_html": {
+                "evalex": [],
+                "secret": [],
+                "evalex_trusted": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "render_traceback_html": {
+                "include_title": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "render_traceback_text": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "_process_traceback": {
+                "exc": [],
+                "te": [
+                    "None"
+                ],
+                "skip": [
+                    "int"
+                ],
+                "hide": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "global": {},
+            "render_console_html": {
+                "secret": [],
+                "evalex_trusted": [],
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        }
+    },
+    "werkzeug.exceptions": {
+        "Aborter": {
+            "__call__": {
+                "code": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "mapping": [
+                    "None"
+                ],
+                "extra": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "HTTPException": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": []
+            },
+            "__init__": {
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_body": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_description": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_headers": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": [
+                    "list[tuple[typing.Text]]"
+                ]
+            },
+            "get_response": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": []
+            },
+            "name": {
+                "return": []
+            }
+        },
+        "BadRequestKeyError": {
+            "__init__": {
+                "arg": [
+                    "None"
+                ],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "description": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "InternalServerError": {
+            "__init__": {
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "original_exception": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "MethodNotAllowed": {
+            "__init__": {
+                "valid_methods": [
+                    "None"
+                ],
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_headers": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "RequestedRangeNotSatisfiable": {
+            "__init__": {
+                "length": [
+                    "None"
+                ],
+                "units": [
+                    "typing.Text"
+                ],
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_headers": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Unauthorized": {
+            "__init__": {
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "www_authenticate": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_headers": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": [
+                    "list[tuple[typing.Text]]"
+                ]
+            }
+        },
+        "_RetryAfter": {
+            "__init__": {
+                "description": [
+                    "None"
+                ],
+                "response": [
+                    "None"
+                ],
+                "retry_after": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_headers": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "global": {
+            "_find_exceptions": {
+                "return": [
+                    "None"
+                ]
+            },
+            "abort": {
+                "status": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.formparser": {
+        "TStreamFactory": {
+            "__call__": {
+                "total_content_length": [],
+                "content_type": [],
+                "filename": [],
+                "content_length": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "FormDataParser": {
+            "__init__": {
+                "stream_factory": [
+                    "None"
+                ],
+                "max_form_memory_size": [
+                    "None"
+                ],
+                "max_content_length": [
+                    "None"
+                ],
+                "cls": [
+                    "None"
+                ],
+                "silent": [
+                    "bool"
+                ],
+                "max_form_parts": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_parse_multipart": {
+                "stream": [],
+                "mimetype": [],
+                "content_length": [],
+                "options": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "_parse_urlencoded": {
+                "stream": [],
+                "mimetype": [],
+                "content_length": [],
+                "options": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "parse": {
+                "stream": [],
+                "mimetype": [],
+                "content_length": [],
+                "options": [
+                    "None"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "parse_from_environ": {
+                "environ": [],
+                "return": []
+            }
+        },
+        "MultiPartParser": {
+            "__init__": {
+                "stream_factory": [
+                    "None"
+                ],
+                "max_form_memory_size": [
+                    "None"
+                ],
+                "cls": [
+                    "None"
+                ],
+                "buffer_size": [
+                    "int"
+                ],
+                "max_form_parts": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "fail": {
+                "message": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_part_charset": {
+                "headers": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "parse": {
+                "stream": [],
+                "boundary": [],
+                "content_length": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "start_file_streaming": {
+                "event": [],
+                "total_content_length": [],
+                "return": []
+            }
+        },
+        "global": {
+            "_chunk_iter": {
+                "read": [],
+                "size": [],
+                "return": [
+                    "typing.Generator",
+                    "typing.Generator[None]"
+                ]
+            },
+            "default_stream_factory": {
+                "total_content_length": [],
+                "content_type": [],
+                "filename": [],
+                "content_length": [
+                    "None"
+                ],
+                "return": [
+                    "BytesIO"
+                ]
+            },
+            "global": {},
+            "parse_form_data": {
+                "environ": [],
+                "stream_factory": [
+                    "None"
+                ],
+                "max_form_memory_size": [
+                    "None"
+                ],
+                "max_content_length": [
+                    "None"
+                ],
+                "cls": [
+                    "None"
+                ],
+                "silent": [
+                    "bool"
+                ],
+                "max_form_parts": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.http": {
+        "global": {
+            "dump_age": {
+                "age": [
+                    "None"
+                ],
+                "return": [
+                    "None",
+                    "str"
+                ]
+            },
+            "dump_cookie": {
+                "key": [],
+                "value": [
+                    "typing.Text"
+                ],
+                "max_age": [
+                    "None"
+                ],
+                "expires": [
+                    "None"
+                ],
+                "path": [
+                    "typing.Text"
+                ],
+                "domain": [
+                    "None"
+                ],
+                "secure": [
+                    "bool"
+                ],
+                "httponly": [
+                    "bool"
+                ],
+                "sync_expires": [
+                    "bool"
+                ],
+                "max_size": [
+                    "int"
+                ],
+                "samesite": [
+                    "None"
+                ],
+                "partitioned": [
+                    "bool"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "dump_csp_header": {
+                "header": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "dump_header": {
+                "iterable": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "dump_options_header": {
+                "header": [],
+                "options": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "generate_etag": {
+                "data": [],
+                "return": []
+            },
+            "global": {},
+            "http_date": {
+                "timestamp": [
+                    "None"
+                ],
+                "return": []
+            },
+            "is_byte_range_valid": {
+                "start": [],
+                "stop": [],
+                "length": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_entity_header": {
+                "header": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_hop_by_hop_header": {
+                "header": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_resource_modified": {
+                "environ": [],
+                "etag": [
+                    "None"
+                ],
+                "data": [
+                    "None"
+                ],
+                "last_modified": [
+                    "None"
+                ],
+                "ignore_if_range": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_accept_header": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_age": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_cache_control_header": {
+                "value": [],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_content_range_header": {
+                "value": [],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None",
+                    "ContentRange"
+                ]
+            },
+            "parse_cookie": {
+                "header": [],
+                "cls": [
+                    "None"
+                ],
+                "return": []
+            },
+            "parse_csp_header": {
+                "value": [],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_date": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_dict_header": {
+                "value": [],
+                "return": [
+                    "dict[, None]"
+                ]
+            },
+            "parse_etags": {
+                "value": [],
+                "return": [
+                    "ETags"
+                ]
+            },
+            "parse_if_range_header": {
+                "value": [],
+                "return": [
+                    "IfRange"
+                ]
+            },
+            "parse_list_header": {
+                "value": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "parse_options_header": {
+                "value": [],
+                "return": [
+                    "tuple[typing.Union[typing.Text,dict]]",
+                    "tuple[dict]"
+                ]
+            },
+            "parse_range_header": {
+                "value": [],
+                "make_inclusive": [
+                    "bool"
+                ],
+                "return": [
+                    "None",
+                    "Range"
+                ]
+            },
+            "parse_set_header": {
+                "value": [],
+                "on_update": [
+                    "None"
+                ],
+                "return": [
+                    "HeaderSet"
+                ]
+            },
+            "quote_etag": {
+                "etag": [],
+                "weak": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "quote_header_value": {
+                "value": [],
+                "allow_token": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Text",
+                    "str"
+                ]
+            },
+            "remove_entity_headers": {
+                "headers": [],
+                "allowed": [
+                    "tuple[typing.Text]"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "remove_hop_by_hop_headers": {
+                "headers": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "unquote_etag": {
+                "etag": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "unquote_header_value": {
+                "value": [],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.local": {
+        "Local": {
+            "__call__": {
+                "name": [],
+                "unbound_message": [
+                    "None"
+                ],
+                "return": [
+                    "LocalProxy"
+                ]
+            },
+            "__delattr__": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__init__": {
+                "context_var": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "__release_local__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__setattr__": {
+                "name": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "LocalStack": {
+            "__call__": {
+                "name": [
+                    "None"
+                ],
+                "unbound_message": [
+                    "None"
+                ],
+                "return": [
+                    "LocalProxy"
+                ]
+            },
+            "__init__": {
+                "context_var": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__release_local__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "pop": {
+                "return": [
+                    "None"
+                ]
+            },
+            "push": {
+                "obj": [],
+                "return": []
+            },
+            "top": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_ProxyLookup": {
+            "__call__": {
+                "instance": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "__get__": {
+                "instance": [],
+                "owner": [
+                    "None"
+                ],
+                "return": [
+                    "_ProxyLookup"
+                ]
+            },
+            "__init__": {
+                "f": [
+                    "None"
+                ],
+                "fallback": [
+                    "None"
+                ],
+                "class_value": [
+                    "None"
+                ],
+                "is_attr": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__set_name__": {
+                "owner": [],
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "bind_f": {
+                "instance": [],
+                "obj": [],
+                "return": []
+            }
+        },
+        "LocalManager": {
+            "__init__": {
+                "locals": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "application": {
+                "environ": [],
+                "start_response": [],
+                "return": [
+                    "ClosingIterator"
+                ]
+            },
+            "cleanup": {
+                "return": [
+                    "None"
+                ]
+            },
+            "make_middleware": {
+                "app": [],
+                "return": []
+            },
+            "middleware": {
+                "func": [],
+                "return": []
+            }
+        },
+        "LocalProxy": {
+            "__init__": {
+                "local": [],
+                "name": [
+                    "None"
+                ],
+                "unbound_message": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_current_object": {
+                "return": []
+            }
+        },
+        "_ProxyIOp": {
+            "__init__": {
+                "f": [
+                    "None"
+                ],
+                "fallback": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "bind_f": {
+                "instance": [],
+                "obj": [],
+                "return": []
+            },
+            "i_op": {
+                "other": [],
+                "return": []
+            }
+        },
+        "global": {
+            "_identity": {
+                "o": [],
+                "return": []
+            },
+            "_l_to_r_op": {
+                "op": [],
+                "return": []
+            },
+            "global": {},
+            "r_op": {
+                "obj": [],
+                "other": [],
+                "return": []
+            },
+            "release_local": {
+                "local": [],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "werkzeug.middleware": {
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.middleware.http_proxy": {
+        "ProxyMiddleware": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": []
+            },
+            "__init__": {
+                "app": [],
+                "targets": [],
+                "chunk_size": [
+                    "int"
+                ],
+                "timeout": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_set_defaults": {
+                "opts": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "application": {
+                "environ": [],
+                "start_response": [],
+                "return": []
+            },
+            "proxy_to": {
+                "opts": [],
+                "path": [],
+                "prefix": [],
+                "return": []
+            },
+            "read": {
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.middleware.lint": {
+        "GuardedWrite": {
+            "__call__": {
+                "s": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "write": [],
+                "chunks": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "LintMiddleware": {
+            "__call__": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "GuardedIterator"
+                ]
+            },
+            "__init__": {
+                "app": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_environ": {
+                "environ": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_headers": {
+                "headers": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_iterator": {
+                "app_iter": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_start_response": {
+                "status": [],
+                "headers": [],
+                "exc_info": [],
+                "return": [
+                    "tuple[typing.Union[int,Headers]]"
+                ]
+            },
+            "checking_start_response": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "GuardedWrite"
+                ]
+            }
+        },
+        "GuardedIterator": {
+            "__del__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "iterator": [],
+                "headers_set": [],
+                "chunks": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "GuardedIterator"
+                ]
+            },
+            "__next__": {
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "ErrorStream": {
+            "__init__": {
+                "stream": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "flush": {
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "s": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "writelines": {
+                "seq": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "InputStream": {
+            "__init__": {
+                "stream": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "read": {
+                "args": [],
+                "return": []
+            },
+            "readline": {
+                "args": [],
+                "return": []
+            }
+        },
+        "global": {
+            "check_type": {
+                "context": [],
+                "obj": [],
+                "need": [
+                    "str"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.middleware.profiler": {
+        "ProfilerMiddleware": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": [
+                    "list[bytes]"
+                ]
+            },
+            "__init__": {
+                "app": [],
+                "stream": [],
+                "sort_by": [
+                    "tuple[typing.Text]"
+                ],
+                "restrictions": [
+                    "tuple"
+                ],
+                "profile_dir": [
+                    "None"
+                ],
+                "filename_format": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "catching_start_response": {
+                "status": [],
+                "headers": [],
+                "exc_info": [
+                    "None"
+                ],
+                "return": []
+            },
+            "runapp": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.middleware.proxy_fix": {
+        "ProxyFix": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": []
+            },
+            "__init__": {
+                "app": [],
+                "x_for": [
+                    "int"
+                ],
+                "x_proto": [
+                    "int"
+                ],
+                "x_host": [
+                    "int"
+                ],
+                "x_port": [
+                    "int"
+                ],
+                "x_prefix": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_real_value": {
+                "trusted": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.middleware.shared_data": {
+        "SharedDataMiddleware": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "__init__": {
+                "app": [],
+                "exports": [],
+                "disallow": [
+                    "None"
+                ],
+                "cache": [
+                    "bool"
+                ],
+                "cache_timeout": [
+                    "int"
+                ],
+                "fallback_mimetype": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_opener": {
+                "filename": [],
+                "return": [
+                    "typing.Callable"
+                ]
+            },
+            "generate_etag": {
+                "mtime": [],
+                "file_size": [],
+                "real_filename": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_directory_loader": {
+                "directory": [],
+                "return": []
+            },
+            "get_file_loader": {
+                "filename": [],
+                "return": [
+                    "typing.Callable"
+                ]
+            },
+            "get_package_loader": {
+                "package": [],
+                "package_path": [],
+                "return": []
+            },
+            "is_allowed": {
+                "filename": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "loader": {
+                "path": [],
+                "return": [
+                    "tuple[None]",
+                    "tuple[typing.Callable]"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.routing": {
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.routing.converters": {
+        "AnyConverter": {
+            "__init__": {
+                "map": [],
+                "items": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "to_url": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "BaseConverter": {
+            "__init__": {
+                "map": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init_subclass__": {
+                "cls": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "to_python": {
+                "value": [],
+                "return": []
+            },
+            "to_url": {
+                "value": [],
+                "return": []
+            }
+        },
+        "FloatConverter": {
+            "__init__": {
+                "map": [],
+                "min": [
+                    "None"
+                ],
+                "max": [
+                    "None"
+                ],
+                "signed": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "NumberConverter": {
+            "__init__": {
+                "map": [],
+                "fixed_digits": [
+                    "int"
+                ],
+                "min": [
+                    "None"
+                ],
+                "max": [
+                    "None"
+                ],
+                "signed": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "signed_regex": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "to_python": {
+                "value": [],
+                "return": []
+            },
+            "to_url": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "UnicodeConverter": {
+            "__init__": {
+                "map": [],
+                "minlength": [],
+                "maxlength": [
+                    "None"
+                ],
+                "length": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        },
+        "UUIDConverter": {
+            "to_python": {
+                "value": [],
+                "return": []
+            },
+            "to_url": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "werkzeug.routing.exceptions": {
+        "BuildError": {
+            "__init__": {
+                "endpoint": [],
+                "values": [],
+                "method": [],
+                "adapter": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "_score_rule": {
+                "rule": [],
+                "return": [
+                    "float"
+                ]
+            },
+            "closest_rule": {
+                "adapter": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "suggested": {
+                "return": []
+            }
+        },
+        "NoMatch": {
+            "__init__": {
+                "have_match_for": [],
+                "websocket_mismatch": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "RequestAliasRedirect": {
+            "__init__": {
+                "matched_values": [],
+                "endpoint": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "RequestPath": {
+            "__init__": {
+                "path_info": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "RequestRedirect": {
+            "__init__": {
+                "new_url": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_response": {
+                "environ": [
+                    "None"
+                ],
+                "scope": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.routing.map": {
+        "Map": {
+            "__init__": {
+                "rules": [
+                    "None"
+                ],
+                "default_subdomain": [
+                    "typing.Text"
+                ],
+                "strict_slashes": [
+                    "bool"
+                ],
+                "merge_slashes": [
+                    "bool"
+                ],
+                "redirect_defaults": [
+                    "bool"
+                ],
+                "converters": [
+                    "None"
+                ],
+                "sort_parameters": [
+                    "bool"
+                ],
+                "sort_key": [
+                    "None"
+                ],
+                "host_matching": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_get_wsgi_string": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_rules": {
+                "return": [
+                    "list"
+                ]
+            },
+            "add": {
+                "rulefactory": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "bind": {
+                "server_name": [],
+                "script_name": [
+                    "None"
+                ],
+                "subdomain": [
+                    "None"
+                ],
+                "url_scheme": [
+                    "typing.Text"
+                ],
+                "default_method": [
+                    "typing.Text"
+                ],
+                "path_info": [
+                    "None"
+                ],
+                "query_args": [
+                    "None"
+                ],
+                "return": [
+                    "MapAdapter"
+                ]
+            },
+            "bind_to_environ": {
+                "environ": [],
+                "server_name": [
+                    "None"
+                ],
+                "subdomain": [
+                    "None"
+                ],
+                "return": []
+            },
+            "is_endpoint_expecting": {
+                "endpoint": [],
+                "arguments": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "iter_rules": {
+                "endpoint": [
+                    "None"
+                ],
+                "return": []
+            },
+            "merge_slashes": {
+                "return": []
+            },
+            "update": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "MapAdapter": {
+            "__init__": {
+                "map": [],
+                "server_name": [],
+                "script_name": [],
+                "subdomain": [],
+                "url_scheme": [],
+                "path_info": [],
+                "default_method": [],
+                "query_args": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_partial_build": {
+                "endpoint": [],
+                "values": [],
+                "method": [],
+                "append_unknown": [],
+                "return": [
+                    "tuple",
+                    "None"
+                ]
+            },
+            "allowed_methods": {
+                "path_info": [
+                    "None"
+                ],
+                "return": [
+                    "list"
+                ]
+            },
+            "build": {
+                "endpoint": [],
+                "values": [
+                    "None"
+                ],
+                "method": [
+                    "None"
+                ],
+                "force_external": [
+                    "bool"
+                ],
+                "append_unknown": [
+                    "bool"
+                ],
+                "url_scheme": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "dispatch": {
+                "view_func": [],
+                "path_info": [
+                    "None"
+                ],
+                "method": [
+                    "None"
+                ],
+                "catch_http_exceptions": [
+                    "bool"
+                ],
+                "return": [
+                    "Exception"
+                ]
+            },
+            "encode_query_args": {
+                "query_args": [],
+                "return": []
+            },
+            "get_default_redirect": {
+                "rule": [],
+                "method": [],
+                "values": [],
+                "query_args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_host": {
+                "domain_part": [],
+                "return": [
+                    "None",
+                    "typing.Text"
+                ]
+            },
+            "make_alias_redirect_url": {
+                "path": [],
+                "endpoint": [],
+                "values": [],
+                "method": [],
+                "query_args": [],
+                "return": []
+            },
+            "make_redirect_url": {
+                "path_info": [],
+                "query_args": [
+                    "None"
+                ],
+                "domain_part": [
+                    "None"
+                ],
+                "return": []
+            },
+            "match": {
+                "path_info": [
+                    "None"
+                ],
+                "method": [
+                    "None"
+                ],
+                "return_rule": [
+                    "bool"
+                ],
+                "query_args": [
+                    "None"
+                ],
+                "websocket": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "test": {
+                "path_info": [
+                    "None"
+                ],
+                "method": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.routing.rules": {
+        "RuleTemplate": {
+            "__call__": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "RuleTemplateFactory"
+                ]
+            },
+            "__init__": {
+                "rules": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Rule": {
+            "__eq__": {
+                "other": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "string": [],
+                "defaults": [
+                    "None"
+                ],
+                "subdomain": [
+                    "None"
+                ],
+                "methods": [
+                    "None"
+                ],
+                "build_only": [
+                    "bool"
+                ],
+                "endpoint": [
+                    "None"
+                ],
+                "strict_slashes": [
+                    "None"
+                ],
+                "merge_slashes": [
+                    "None"
+                ],
+                "redirect_to": [
+                    "None"
+                ],
+                "alias": [
+                    "bool"
+                ],
+                "host": [
+                    "None"
+                ],
+                "websocket": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "_compile_builder": {
+                "append_unknown": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "_convert": {
+                "elem": [],
+                "return": []
+            },
+            "_encode_query_vars": {
+                "query_vars": [],
+                "return": []
+            },
+            "_get_func_code": {
+                "code": [],
+                "name": [],
+                "return": []
+            },
+            "_join": {
+                "parts": [],
+                "return": []
+            },
+            "_parse_rule": {
+                "rule": [],
+                "return": []
+            },
+            "_parts": {
+                "ops": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "bind": {
+                "map": [],
+                "rebind": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "build": {
+                "values": [],
+                "append_unknown": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "build_compare_key": {
+                "return": [
+                    "tuple[int]"
+                ]
+            },
+            "compile": {
+                "return": [
+                    "None"
+                ]
+            },
+            "empty": {
+                "return": []
+            },
+            "get_converter": {
+                "variable_name": [],
+                "converter_name": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "get_empty_kwargs": {
+                "return": []
+            },
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "typing.Generator[Rule]"
+                ]
+            },
+            "provides_defaults_for": {
+                "rule": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "refresh": {
+                "return": [
+                    "None"
+                ]
+            },
+            "suitable_for": {
+                "values": [],
+                "method": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "EndpointPrefix": {
+            "__init__": {
+                "prefix": [],
+                "rules": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "RuleTemplateFactory": {
+            "__init__": {
+                "rules": [],
+                "context": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "typing.Generator[Rule]"
+                ]
+            }
+        },
+        "Subdomain": {
+            "__init__": {
+                "subdomain": [],
+                "rules": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "Submount": {
+            "__init__": {
+                "path": [],
+                "rules": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "global": {
+            "_find": {
+                "value": [],
+                "target": [],
+                "pos": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "_prefix_names": {
+                "src": [],
+                "expected_type": [],
+                "return": []
+            },
+            "_pythonize": {
+                "value": [],
+                "return": [
+                    "None",
+                    "bool",
+                    "str"
+                ]
+            },
+            "global": {},
+            "parse_converter_args": {
+                "argstr": [],
+                "return": [
+                    "tuple[typing.Union[tuple,dict]]"
+                ]
+            }
+        },
+        "RuleFactory": {
+            "get_rules": {
+                "map": [],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "werkzeug.sansio": {
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.sansio.http": {
+        "global": {
+            "_cookie_unslash_replace": {
+                "m": [],
+                "return": [
+                    "bytes"
+                ]
+            },
+            "global": {},
+            "is_resource_modified": {
+                "http_range": [
+                    "None"
+                ],
+                "http_if_range": [
+                    "None"
+                ],
+                "http_if_modified_since": [
+                    "None"
+                ],
+                "http_if_none_match": [
+                    "None"
+                ],
+                "http_if_match": [
+                    "None"
+                ],
+                "etag": [
+                    "None"
+                ],
+                "data": [
+                    "None"
+                ],
+                "last_modified": [
+                    "None"
+                ],
+                "ignore_if_range": [
+                    "bool"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "parse_cookie": {
+                "cookie": [
+                    "None"
+                ],
+                "cls": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.sansio.multipart": {
+        "MultipartDecoder": {
+            "__init__": {
+                "boundary": [],
+                "max_form_memory_size": [
+                    "None"
+                ],
+                "max_parts": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_parse_data": {
+                "data": [],
+                "start": [],
+                "return": [
+                    "tuple[typing.Union[bytes,int]]"
+                ]
+            },
+            "_parse_headers": {
+                "data": [],
+                "return": [
+                    "Headers"
+                ]
+            },
+            "last_newline": {
+                "data": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "next_event": {
+                "return": [
+                    "NeedData",
+                    "Epilogue",
+                    "Data",
+                    "Field",
+                    "File",
+                    "Preamble"
+                ]
+            },
+            "receive_data": {
+                "data": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "MultipartEncoder": {
+            "__init__": {
+                "boundary": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "send_event": {
+                "event": [],
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.sansio.request": {
+        "Request": {
+            "__init__": {
+                "method": [],
+                "scheme": [],
+                "server": [],
+                "root_path": [],
+                "path": [],
+                "query_string": [],
+                "headers": [],
+                "remote_addr": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_parse_content_type": {
+                "return": [
+                    "None"
+                ]
+            },
+            "accept_charsets": {
+                "return": []
+            },
+            "accept_encodings": {
+                "return": []
+            },
+            "accept_languages": {
+                "return": []
+            },
+            "accept_mimetypes": {
+                "return": []
+            },
+            "access_route": {
+                "return": []
+            },
+            "args": {
+                "return": []
+            },
+            "authorization": {
+                "return": []
+            },
+            "base_url": {
+                "return": []
+            },
+            "cache_control": {
+                "return": []
+            },
+            "content_length": {
+                "return": []
+            },
+            "cookies": {
+                "return": []
+            },
+            "full_path": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "host": {
+                "return": []
+            },
+            "host_url": {
+                "return": []
+            },
+            "if_match": {
+                "return": []
+            },
+            "if_modified_since": {
+                "return": []
+            },
+            "if_none_match": {
+                "return": []
+            },
+            "if_range": {
+                "return": []
+            },
+            "if_unmodified_since": {
+                "return": []
+            },
+            "is_json": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_secure": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "mimetype": {
+                "return": []
+            },
+            "mimetype_params": {
+                "return": []
+            },
+            "pragma": {
+                "return": []
+            },
+            "range": {
+                "return": []
+            },
+            "root_url": {
+                "return": []
+            },
+            "url": {
+                "return": []
+            },
+            "user_agent": {
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.sansio.utils": {
+        "global": {
+            "get_content_length": {
+                "http_content_length": [
+                    "None"
+                ],
+                "http_transfer_encoding": [
+                    "None"
+                ],
+                "return": [
+                    "None",
+                    "int"
+                ]
+            },
+            "get_current_url": {
+                "scheme": [],
+                "host": [],
+                "root_path": [],
+                "path": [],
+                "query_string": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_host": {
+                "scheme": [],
+                "host_header": [],
+                "server": [
+                    "None"
+                ],
+                "trusted_hosts": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "global": {},
+            "host_is_trusted": {
+                "hostname": [],
+                "trusted_list": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "werkzeug.security": {
+        "global": {
+            "_hash_internal": {
+                "method": [],
+                "salt": [],
+                "password": [],
+                "return": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            "check_password_hash": {
+                "pwhash": [],
+                "password": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "gen_salt": {
+                "length": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "generate_password_hash": {
+                "password": [],
+                "method": [
+                    "typing.Text"
+                ],
+                "salt_length": [
+                    "int"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "global": {},
+            "safe_join": {
+                "directory": [],
+                "pathnames": [],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "werkzeug.serving": {
+        "WSGIRequestHandler": {
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "address_string": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "connection_dropped": {
+                "error": [],
+                "environ": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "execute": {
+                "app": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "handle": {
+                "return": [
+                    "None"
+                ]
+            },
+            "log": {
+                "type": [],
+                "message": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "log_error": {
+                "format": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "log_message": {
+                "format": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "log_request": {
+                "code": [
+                    "typing.Text"
+                ],
+                "size": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "make_environ": {
+                "return": [
+                    "dict[typing.Text, typing.Union[tuple[int],typing.Text,bool,DechunkedInput]]"
+                ]
+            },
+            "port_integer": {
+                "return": []
+            },
+            "run_wsgi": {
+                "return": [
+                    "None"
+                ]
+            },
+            "server_version": {
+                "return": []
+            },
+            "start_response": {
+                "status": [],
+                "headers": [],
+                "exc_info": [],
+                "return": []
+            },
+            "write": {
+                "data": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_SslDummy": {
+            "__getattr__": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "BaseWSGIServer": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "app": [],
+                "handler": [
+                    "None"
+                ],
+                "passthrough_errors": [
+                    "bool"
+                ],
+                "ssl_context": [
+                    "None"
+                ],
+                "fd": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "handle_error": {
+                "request": [],
+                "client_address": [],
+                "return": []
+            },
+            "log": {
+                "type": [],
+                "message": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "log_startup": {
+                "return": [
+                    "None"
+                ]
+            },
+            "serve_forever": {
+                "poll_interval": [
+                    "float"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "DechunkedInput": {
+            "__init__": {
+                "rfile": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "read_chunk_len": {
+                "return": [
+                    "int"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "readinto": {
+                "buf": [],
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "ForkingWSGIServer": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "app": [],
+                "processes": [
+                    "int"
+                ],
+                "handler": [
+                    "None"
+                ],
+                "passthrough_errors": [
+                    "bool"
+                ],
+                "ssl_context": [
+                    "None"
+                ],
+                "fd": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_ansi_style": {
+                "value": [],
+                "styles": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "generate_adhoc_ssl_context": {
+                "return": []
+            },
+            "generate_adhoc_ssl_pair": {
+                "cn": [
+                    "None"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "get_interface_ip": {
+                "family": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_sockaddr": {
+                "host": [],
+                "port": [],
+                "family": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "global": {},
+            "is_running_from_reloader": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_ssl_error": {
+                "error": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "load_ssl_context": {
+                "cert_file": [],
+                "pkey_file": [
+                    "None"
+                ],
+                "protocol": [
+                    "None"
+                ],
+                "return": []
+            },
+            "make_server": {
+                "host": [],
+                "port": [],
+                "app": [],
+                "threaded": [
+                    "bool"
+                ],
+                "processes": [
+                    "int"
+                ],
+                "request_handler": [
+                    "None"
+                ],
+                "passthrough_errors": [
+                    "bool"
+                ],
+                "ssl_context": [
+                    "None"
+                ],
+                "fd": [
+                    "None"
+                ],
+                "return": [
+                    "ThreadedWSGIServer",
+                    "ForkingWSGIServer",
+                    "BaseWSGIServer"
+                ]
+            },
+            "make_ssl_devcert": {
+                "base_path": [],
+                "host": [
+                    "None"
+                ],
+                "cn": [
+                    "None"
+                ],
+                "return": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            "run_simple": {
+                "hostname": [],
+                "port": [],
+                "application": [],
+                "use_reloader": [
+                    "bool"
+                ],
+                "use_debugger": [
+                    "bool"
+                ],
+                "use_evalex": [
+                    "bool"
+                ],
+                "extra_files": [
+                    "None"
+                ],
+                "exclude_patterns": [
+                    "None"
+                ],
+                "reloader_interval": [
+                    "int"
+                ],
+                "reloader_type": [
+                    "typing.Text"
+                ],
+                "threaded": [
+                    "bool"
+                ],
+                "processes": [
+                    "int"
+                ],
+                "request_handler": [
+                    "None"
+                ],
+                "static_files": [
+                    "None"
+                ],
+                "passthrough_errors": [
+                    "bool"
+                ],
+                "ssl_context": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "select_address_family": {
+                "host": [],
+                "port": [],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.testapp": {
+        "global": {
+            "_get_werkzeug_version": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "global": {},
+            "iter_sys_path": {
+                "return": [
+                    "typing.Generator[tuple[bool]]"
+                ]
+            },
+            "strip": {
+                "x": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "test_app": {
+                "req": [],
+                "return": [
+                    "Response"
+                ]
+            }
+        }
+    },
+    "werkzeug.urls": {
+        "global": {
+            "_codec_error_url_quote": {
+                "e": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "_decode_idna": {
+                "domain": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "_make_unquote_part": {
+                "name": [],
+                "chars": [],
+                "return": []
+            },
+            "_unquote_partial": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "_urlencode": {
+                "query": [],
+                "return": []
+            },
+            "global": {},
+            "iri_to_uri": {
+                "iri": [],
+                "return": []
+            },
+            "uri_to_iri": {
+                "uri": [],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.user_agent": {
+        "UserAgent": {
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "string": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "to_header": {
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.utils": {
+        "cached_property": {
+            "__delete__": {
+                "obj": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__get__": {
+                "obj": [],
+                "type": [
+                    "None"
+                ],
+                "return": [
+                    "cached_property"
+                ]
+            },
+            "__init__": {
+                "fget": [],
+                "name": [
+                    "None"
+                ],
+                "doc": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__set__": {
+                "obj": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "ImportStringError": {
+            "__init__": {
+                "import_name": [],
+                "exception": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {
+            "append_slash_redirect": {
+                "environ": [],
+                "code": [
+                    "int"
+                ],
+                "return": []
+            },
+            "find_modules": {
+                "import_path": [],
+                "include_packages": [
+                    "bool"
+                ],
+                "recursive": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "get_content_type": {
+                "mimetype": [],
+                "charset": [],
+                "return": []
+            },
+            "global": {},
+            "import_string": {
+                "import_name": [],
+                "silent": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "redirect": {
+                "location": [],
+                "code": [
+                    "int"
+                ],
+                "Response": [
+                    "None"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "secure_filename": {
+                "filename": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "send_file": {
+                "path_or_file": [],
+                "environ": [],
+                "mimetype": [
+                    "None"
+                ],
+                "as_attachment": [
+                    "bool"
+                ],
+                "download_name": [
+                    "None"
+                ],
+                "conditional": [
+                    "bool"
+                ],
+                "etag": [
+                    "bool"
+                ],
+                "last_modified": [
+                    "None"
+                ],
+                "max_age": [
+                    "None"
+                ],
+                "use_x_sendfile": [
+                    "bool"
+                ],
+                "response_class": [
+                    "None"
+                ],
+                "_root_path": [
+                    "None"
+                ],
+                "return": []
+            },
+            "send_from_directory": {
+                "directory": [],
+                "path": [],
+                "environ": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "environ_property": {
+            "lookup": {
+                "obj": [],
+                "return": []
+            }
+        },
+        "header_property": {
+            "lookup": {
+                "obj": [],
+                "return": []
+            }
+        }
+    },
+    "werkzeug.wrappers": {
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.wrappers.request": {
+        "Request": {
+            "__enter__": {
+                "return": [
+                    "Request"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [],
+                "tb": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "environ": [],
+                "populate_request": [
+                    "bool"
+                ],
+                "shallow": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_file_stream": {
+                "total_content_length": [],
+                "content_type": [],
+                "filename": [
+                    "None"
+                ],
+                "content_length": [
+                    "None"
+                ],
+                "return": []
+            },
+            "_get_stream_for_parsing": {
+                "return": [
+                    "BytesIO"
+                ]
+            },
+            "_load_form_data": {
+                "return": [
+                    "None"
+                ]
+            },
+            "application": {
+                "cls": [],
+                "f": [],
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "data": {
+                "return": []
+            },
+            "files": {
+                "return": []
+            },
+            "form": {
+                "return": []
+            },
+            "from_values": {
+                "cls": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "get_data": {
+                "cache": [
+                    "bool"
+                ],
+                "as_text": [
+                    "bool"
+                ],
+                "parse_form_data": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_json": {
+                "force": [],
+                "silent": [],
+                "cache": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "json": {
+                "return": []
+            },
+            "make_form_data_parser": {
+                "return": []
+            },
+            "on_json_loading_failed": {
+                "e": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "script_root": {
+                "return": []
+            },
+            "stream": {
+                "return": []
+            },
+            "url_root": {
+                "return": []
+            },
+            "values": {
+                "return": [
+                    "CombinedMultiDict"
+                ]
+            },
+            "want_form_data_parsed": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "werkzeug.wrappers.response": {
+        "Response": {
+            "__call__": {
+                "environ": [],
+                "start_response": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "Response"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [],
+                "tb": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "response": [
+                    "None"
+                ],
+                "status": [
+                    "None"
+                ],
+                "headers": [
+                    "None"
+                ],
+                "mimetype": [
+                    "None"
+                ],
+                "content_type": [
+                    "None"
+                ],
+                "direct_passthrough": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_ensure_sequence": {
+                "mutable": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_is_range_request_processable": {
+                "environ": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_process_range_request": {
+                "environ": [],
+                "complete_length": [],
+                "accept_ranges": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_wrap_range_response": {
+                "start": [],
+                "length": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "add_etag": {
+                "overwrite": [
+                    "bool"
+                ],
+                "weak": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "calculate_content_length": {
+                "return": [
+                    "None",
+                    "int"
+                ]
+            },
+            "call_on_close": {
+                "func": [],
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "force_type": {
+                "cls": [],
+                "response": [],
+                "environ": [
+                    "None"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "freeze": {
+                "return": [
+                    "None"
+                ]
+            },
+            "from_app": {
+                "cls": [],
+                "app": [],
+                "environ": [],
+                "buffered": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "get_app_iter": {
+                "environ": [],
+                "return": [
+                    "ClosingIterator"
+                ]
+            },
+            "get_data": {
+                "as_text": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_json": {
+                "force": [],
+                "silent": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_wsgi_headers": {
+                "environ": [],
+                "return": [
+                    "Headers"
+                ]
+            },
+            "get_wsgi_response": {
+                "environ": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "is_sequence": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_streamed": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "iter_encoded": {
+                "return": []
+            },
+            "json": {
+                "return": []
+            },
+            "make_conditional": {
+                "request_or_environ": [],
+                "accept_ranges": [
+                    "bool"
+                ],
+                "complete_length": [
+                    "None"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "make_sequence": {
+                "return": [
+                    "None"
+                ]
+            },
+            "set_data": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "stream": {
+                "return": [
+                    "ResponseStream"
+                ]
+            }
+        },
+        "ResponseStream": {
+            "__init__": {
+                "response": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "encoding": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "flush": {
+                "return": [
+                    "None"
+                ]
+            },
+            "isatty": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "tell": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "write": {
+                "value": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "writelines": {
+                "seq": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_iter_encoded": {
+                "iterable": [],
+                "return": [
+                    "typing.Generator[bytes]",
+                    "typing.Generator"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "werkzeug.wsgi": {
+        "ClosingIterator": {
+            "__init__": {
+                "iterable": [],
+                "callbacks": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "ClosingIterator"
+                ]
+            },
+            "__next__": {
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "FileWrapper": {
+            "__init__": {
+                "file": [],
+                "buffer_size": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "FileWrapper"
+                ]
+            },
+            "__next__": {
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "seek": {
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "seekable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "tell": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "LimitedStream": {
+            "__init__": {
+                "stream": [],
+                "limit": [],
+                "is_max": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "exhaust": {
+                "return": [
+                    "bytes"
+                ]
+            },
+            "is_exhausted": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "on_disconnect": {
+                "error": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "on_exhausted": {
+                "return": [
+                    "None"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "readall": {
+                "return": [
+                    "bytes"
+                ]
+            },
+            "readinto": {
+                "b": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "tell": {
+                "return": []
+            }
+        },
+        "_RangeWrapper": {
+            "__init__": {
+                "iterable": [],
+                "start_byte": [
+                    "int"
+                ],
+                "byte_range": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "_RangeWrapper"
+                ]
+            },
+            "__next__": {
+                "return": []
+            },
+            "_first_iteration": {
+                "return": [
+                    "tuple[None]"
+                ]
+            },
+            "_next": {
+                "return": []
+            },
+            "_next_chunk": {
+                "return": []
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_get_server": {
+                "environ": [],
+                "return": [
+                    "None",
+                    "tuple[typing.Optional[int]]"
+                ]
+            },
+            "get_content_length": {
+                "environ": [],
+                "return": []
+            },
+            "get_current_url": {
+                "environ": [],
+                "root_only": [
+                    "bool"
+                ],
+                "strip_querystring": [
+                    "bool"
+                ],
+                "host_only": [
+                    "bool"
+                ],
+                "trusted_hosts": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_host": {
+                "environ": [],
+                "trusted_hosts": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_input_stream": {
+                "environ": [],
+                "safe_fallback": [
+                    "bool"
+                ],
+                "max_content_length": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_path_info": {
+                "environ": [],
+                "return": []
+            },
+            "global": {},
+            "responder": {
+                "f": [],
+                "return": []
+            },
+            "wrap_file": {
+                "environ": [],
+                "file": [],
+                "buffer_size": [
+                    "int"
+                ],
+                "return": []
+            }
+        }
+    }
+}

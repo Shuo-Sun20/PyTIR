@@ -1,0 +1,3794 @@
+{
+    "pre_commit.clientlib": {
+        "global": {
+            "check_type_tag": {
+                "tag": [],
+                "return": []
+            },
+            "parse_version": {
+                "s": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "check_min_version": {
+                "version": [
+                    "re.Pattern"
+                ],
+                "return": []
+            },
+            "transform_stage": {
+                "stage": [],
+                "return": []
+            },
+            "warn_for_stages_on_repo_init": {
+                "repo": [
+                    "builtins.str"
+                ],
+                "directory": [],
+                "return": []
+            },
+            "_entry": {
+                "modname": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "warn_unknown_keys_root": {
+                "extra": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "orig_keys": [],
+                "dct": [],
+                "return": []
+            },
+            "warn_unknown_keys_repo": {
+                "extra": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "orig_keys": [],
+                "dct": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "StagesMigrationNoDefault": {
+            "check": {
+                "dct": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": []
+            },
+            "apply_default": {
+                "dct": [
+                    "_typeshed.SupportsItemAccess[typing.Any, builtins.list[typing.Any]]"
+                ],
+                "return": []
+            },
+            "remove_default": {
+                "dct": [],
+                "return": []
+            }
+        },
+        "StagesMigration": {
+            "apply_default": {
+                "dct": [
+                    "typing.MutableMapping[typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "DeprecatedStagesWarning": {
+            "check": {
+                "dct": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": []
+            },
+            "apply_default": {
+                "dct": [],
+                "return": []
+            },
+            "remove_default": {
+                "dct": [],
+                "return": []
+            }
+        },
+        "DeprecatedDefaultStagesWarning": {
+            "check": {
+                "dct": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": []
+            },
+            "apply_default": {
+                "dct": [],
+                "return": []
+            },
+            "remove_default": {
+                "dct": [],
+                "return": []
+            }
+        },
+        "WarnMutableRev": {
+            "check": {
+                "dct": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": []
+            }
+        },
+        "OptionalSensibleRegexAtHook": {
+            "check": {
+                "dct": [
+                    "platform._Processor"
+                ],
+                "return": []
+            }
+        },
+        "OptionalSensibleRegexAtTop": {
+            "check": {
+                "dct": [
+                    "platform._Processor"
+                ],
+                "return": []
+            }
+        },
+        "NotAllowed": {
+            "check": {
+                "dct": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.color": {
+        "global": {
+            "format_color": {
+                "text": [],
+                "color": [],
+                "use_color_setting": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "use_color": {
+                "setting": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "add_color_option": {
+                "parser": [
+                    "argparse._ActionsContainer"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.envcontext": {
+        "global": {
+            "format_env": {
+                "parts": [
+                    "typing.Iterable[pre_commit.envcontext.Var]"
+                ],
+                "env": [
+                    "platform._Processor"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "envcontext": {
+                "patch": [
+                    "typing.Iterable[builtins.tuple[typing.Any, builtins.tuple]]"
+                ],
+                "_env": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.error_handler": {
+        "global": {
+            "_log_and_exit": {
+                "msg": [],
+                "ret_code": [],
+                "exc": [],
+                "formatted": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "error_handler": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.file_lock": {
+        "global": {
+            "lock": {
+                "path": [
+                    "builtins.str"
+                ],
+                "blocked_cb": [
+                    "typing.Callable[[], typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.git": {
+        "global": {
+            "zsplit": {
+                "s": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "no_git_env": {
+                "_env": [
+                    "os._Environ"
+                ],
+                "return": [
+                    "builtins.dict[ruamel.yaml.tag.Tag, typing.Any]"
+                ]
+            },
+            "get_root": {
+                "return": []
+            },
+            "get_git_dir": {
+                "git_root": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_git_common_dir": {
+                "git_root": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "is_in_merge_conflict": {
+                "return": []
+            },
+            "parse_merge_msg_for_conflicts": {
+                "merge_msg": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "get_conflicted_files": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "get_staged_files": {
+                "cwd": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "intent_to_add_files": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "get_all_files": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "get_changed_files": {
+                "old": [],
+                "new": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "head_rev": {
+                "remote": [],
+                "return": []
+            },
+            "has_diff": {
+                "args": [],
+                "repo": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "has_core_hookpaths_set": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "init_repo": {
+                "path": [],
+                "remote": [],
+                "return": []
+            },
+            "commit": {
+                "repo": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "git_path": {
+                "name": [],
+                "repo": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "check_for_cygwin_mismatch": {
+                "return": []
+            },
+            "get_best_candidate_tag": {
+                "rev": [],
+                "git_repo": [],
+                "return": [
+                    "typing.Collection[builtins.str]"
+                ]
+            }
+        }
+    },
+    "pre_commit.hook": {
+        "Hook": {
+            "install_key": {
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any, builtins.tuple]"
+                ]
+            },
+            "create": {
+                "src": [],
+                "prefix": [],
+                "dct": [
+                    "sqlite3.Row"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.lang_base": {
+        "global": {
+            "exe_exists": {
+                "exe": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "setup_cmd": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "cmd": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "environment_dir": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "d": [],
+                "language_version": [],
+                "return": []
+            },
+            "assert_version_default": {
+                "binary": [],
+                "version": [],
+                "return": []
+            },
+            "assert_no_additional_deps": {
+                "lang": [],
+                "additional_deps": [],
+                "return": []
+            },
+            "basic_get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "basic_health_check": {
+                "prefix": [],
+                "language_version": [],
+                "return": []
+            },
+            "no_install": {
+                "prefix": [],
+                "version": [],
+                "additional_dependencies": [],
+                "return": []
+            },
+            "no_env": {
+                "prefix": [],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "target_concurrency": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_shuffled": {
+                "seq": [
+                    "builtins.list[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "run_xargs": {
+                "cmd": [
+                    "builtins.tuple[typing.Collection[builtins.str]]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            },
+            "hook_cmd": {
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "basic_run_hook": {
+                "prefix": [],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        },
+        "Language": {
+            "ENVIRONMENT_DIR": {
+                "return": []
+            },
+            "get_default_version": {
+                "return": []
+            },
+            "health_check": {
+                "prefix": [],
+                "version": [],
+                "return": []
+            },
+            "install_environment": {
+                "prefix": [],
+                "version": [],
+                "additional_dependencies": [],
+                "return": []
+            },
+            "in_env": {
+                "prefix": [],
+                "version": [],
+                "return": []
+            },
+            "run_hook": {
+                "prefix": [],
+                "entry": [],
+                "args": [],
+                "file_args": [],
+                "is_local": [],
+                "require_serial": [],
+                "color": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.logging_handler": {
+        "global": {
+            "logging_handler": {
+                "use_color": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "LoggingHandler": {
+            "__init__": {
+                "use_color": [],
+                "return": []
+            },
+            "emit": {
+                "record": [
+                    "logging.LogRecord"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.main": {
+        "global": {
+            "_add_config_option": {
+                "parser": [
+                    "argparse._ActionsContainer"
+                ],
+                "return": []
+            },
+            "_add_hook_type_option": {
+                "parser": [
+                    "argparse._ActionsContainer"
+                ],
+                "return": []
+            },
+            "_add_run_options": {
+                "parser": [
+                    "argparse._ActionsContainer"
+                ],
+                "return": []
+            },
+            "_adjust_args_and_chdir": {
+                "args": [
+                    "pre_commit.commands.autoupdate.RevInfo"
+                ],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "builtins.list[builtins.str]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.output": {
+        "global": {
+            "write": {
+                "s": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "stream": [
+                    "zipfile._Tellable"
+                ],
+                "return": []
+            },
+            "write_line_b": {
+                "s": [],
+                "stream": [],
+                "logfile_name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "write_line": {
+                "s": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.parse_shebang": {
+        "global": {
+            "parse_filename": {
+                "filename": [],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "find_executable": {
+                "exe": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "env": [],
+                "return": [
+                    "typing.Collection[builtins.str]"
+                ]
+            },
+            "normexe": {
+                "orig": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "env": [],
+                "return": [
+                    "typing.Collection[builtins.str]"
+                ]
+            },
+            "normalize_cmd": {
+                "cmd": [
+                    "builtins.tuple[typing.Collection[builtins.str]]"
+                ],
+                "env": [],
+                "return": [
+                    "builtins.tuple[typing.Collection[builtins.str]]"
+                ]
+            }
+        },
+        "ExecutableNotFoundError": {
+            "to_output": {
+                "return": [
+                    "builtins.tuple[builtins.int, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.prefix": {
+        "Prefix": {
+            "path": {
+                "parts": [],
+                "return": []
+            },
+            "exists": {
+                "parts": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "star": {
+                "end": [],
+                "return": [
+                    "builtins.tuple"
+                ]
+            }
+        }
+    },
+    "pre_commit.repository": {
+        "global": {
+            "_state_filename_v1": {
+                "venv": [],
+                "return": []
+            },
+            "_state_filename_v2": {
+                "venv": [],
+                "return": []
+            },
+            "_state": {
+                "additional_deps": [],
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "_read_state": {
+                "venv": [],
+                "return": []
+            },
+            "_hook_installed": {
+                "hook": [
+                    "pre_commit.hook.Hook"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_hook_install": {
+                "hook": [
+                    "pre_commit.hook.Hook"
+                ],
+                "return": []
+            },
+            "_hook": {
+                "hook_dicts": [],
+                "root_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, _typeshed.SupportsGetItem[typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "typing.MutableMapping[builtins.str, typing.Any]"
+                ]
+            },
+            "_non_cloned_repository_hooks": {
+                "repo_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[_typeshed.SupportsGetItem[builtins.str, typing.Any]]]"
+                ],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "root_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, _typeshed.SupportsGetItem[typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "_cloned_repository_hooks": {
+                "repo_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[_typeshed.SupportsGetItem[builtins.str, typing.Any]]]"
+                ],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "root_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, _typeshed.SupportsGetItem[typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "_repository_hooks": {
+                "repo_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[_typeshed.SupportsGetItem[builtins.str, typing.Any]]]"
+                ],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "root_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, _typeshed.SupportsGetItem[typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "install_hook_envs": {
+                "hooks": [
+                    "typing.Iterable[pre_commit.hook.Hook]"
+                ],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": []
+            },
+            "all_hooks": {
+                "root_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, sqlite3.Row]"
+                ],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            }
+        }
+    },
+    "pre_commit.staged_files_only": {
+        "global": {
+            "_git_apply": {
+                "patch": [],
+                "return": []
+            },
+            "_intent_to_add_cleared": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_unstaged_changes_cleared": {
+                "patch_dir": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "staged_files_only": {
+                "patch_dir": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.store": {
+        "global": {
+            "_get_default_directory": {
+                "return": []
+            },
+            "_make_local_repo": {
+                "directory": [],
+                "return": []
+            }
+        },
+        "Store": {
+            "__init__": {
+                "directory": [],
+                "return": []
+            },
+            "exclusive_lock": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "connect": {
+                "db_path": [],
+                "return": [
+                    "typing.Generator[contextlib.AbstractContextManager, typing.Any, typing.Any]"
+                ]
+            },
+            "db_repo_name": {
+                "repo": [],
+                "deps": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_new_repo": {
+                "repo": [
+                    "builtins.str"
+                ],
+                "ref": [],
+                "deps": [],
+                "make_strategy": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": []
+            },
+            "_complete_clone": {
+                "ref": [],
+                "git_cmd": [
+                    "typing.Callable[[builtins.str, builtins.str, builtins.str, builtins.str], typing.Any]"
+                ],
+                "return": []
+            },
+            "_shallow_clone": {
+                "ref": [],
+                "git_cmd": [
+                    "typing.Callable[[builtins.str, builtins.str, builtins.str, builtins.str, builtins.str, builtins.str, builtins.str], typing.Any]"
+                ],
+                "return": []
+            },
+            "clone": {
+                "repo": [
+                    "builtins.str"
+                ],
+                "ref": [],
+                "deps": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "make_local": {
+                "deps": [],
+                "return": []
+            },
+            "_create_config_table": {
+                "db": [
+                    "sqlite3.Cursor"
+                ],
+                "return": []
+            },
+            "mark_config_used": {
+                "path": [],
+                "return": []
+            },
+            "select_all_configs": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "delete_configs": {
+                "configs": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "select_all_repos": {
+                "return": []
+            },
+            "delete_repo": {
+                "db_repo_name": [],
+                "ref": [],
+                "path": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.util": {
+        "global": {
+            "force_bytes": {
+                "exc": [],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "clean_path_on_failure": {
+                "path": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "resource_text": {
+                "filename": [],
+                "return": []
+            },
+            "make_executable": {
+                "filename": [],
+                "return": []
+            },
+            "_setdefault_kwargs": {
+                "kwargs": [
+                    "typing.MutableMapping[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "_oserror_to_output": {
+                "e": [],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes, typing.Any]"
+                ]
+            },
+            "cmd_output_b": {
+                "cmd": [],
+                "check": [
+                    "builtins.bool"
+                ],
+                "kwargs": [],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "cmd_output": {
+                "cmd": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_handle_readonly": {
+                "func": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "path": [],
+                "exc": [
+                    "shutil.ReadError"
+                ],
+                "return": []
+            },
+            "win_exe": {
+                "s": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "CalledProcessError": {
+            "__init__": {
+                "returncode": [],
+                "cmd": [],
+                "stdout": [],
+                "stderr": [],
+                "return": []
+            },
+            "__bytes__": {
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        }
+    },
+    "pre_commit.xargs": {
+        "global": {
+            "cpu_count": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_environ_size": {
+                "_env": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_get_platform_max_length": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_command_length": {
+                "cmd": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "partition": {
+                "cmd": [
+                    "builtins.tuple"
+                ],
+                "varargs": [
+                    "builtins.list[typing.Any]"
+                ],
+                "target_concurrency": [
+                    "builtins.int"
+                ],
+                "_max_length": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "_thread_mapper": {
+                "maxsize": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "xargs": {
+                "cmd": [
+                    "builtins.tuple[typing.Collection[builtins.str]]"
+                ],
+                "varargs": [
+                    "builtins.list[typing.Any]"
+                ],
+                "color": [
+                    "builtins.bool"
+                ],
+                "target_concurrency": [
+                    "builtins.int"
+                ],
+                "_max_length": [
+                    "builtins.int"
+                ],
+                "kwargs": [],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.yaml": {
+        "global": {
+            "yaml_dump": {
+                "o": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.yaml_rewrite": {
+        "global": {
+            "_match": {
+                "gen": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "m": [
+                    "pre_commit.yaml_rewrite._Matcher"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "match": {
+                "n": [],
+                "matcher": [
+                    "typing.Iterable[pre_commit.yaml_rewrite._Matcher]"
+                ],
+                "return": [
+                    "typing.Generator[yaml.nodes.ScalarNode, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "_Matcher": {
+            "match": {
+                "n": [],
+                "return": []
+            }
+        },
+        "MappingKey": {
+            "match": {
+                "n": [
+                    "yaml.nodes.MappingNode"
+                ],
+                "return": [
+                    "typing.Generator[enum.auto, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "MappingValue": {
+            "match": {
+                "n": [
+                    "yaml.nodes.MappingNode"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "SequenceItem": {
+            "match": {
+                "n": [
+                    "yaml.nodes.MappingNode"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.autoupdate": {
+        "global": {
+            "_check_hooks_still_exist_at_rev": {
+                "repo_config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[_typeshed.SupportsGetItem[builtins.str, typing.Any]]]"
+                ],
+                "info": [
+                    "pre_commit.commands.autoupdate.RevInfo"
+                ],
+                "return": []
+            },
+            "_update_one": {
+                "i": [],
+                "repo": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[_typeshed.SupportsGetItem[builtins.str, typing.Any]]]"
+                ],
+                "tags_only": [],
+                "freeze": [],
+                "return": [
+                    "builtins.tuple[typing.Any, ruamel.yaml.reader.Reader, pre_commit.commands.autoupdate.RevInfo]"
+                ]
+            },
+            "_original_lines": {
+                "path": [
+                    "builtins.str"
+                ],
+                "rev_infos": [
+                    "typing.Sized"
+                ],
+                "retry": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.list[typing.Any]]"
+                ]
+            },
+            "_write_new_config": {
+                "path": [
+                    "builtins.str"
+                ],
+                "rev_infos": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": []
+            },
+            "autoupdate": {
+                "config_file": [
+                    "builtins.str"
+                ],
+                "tags_only": [],
+                "freeze": [],
+                "repos": [
+                    "builtins.tuple"
+                ],
+                "jobs": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "RevInfo": {
+            "from_config": {
+                "config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Any]"
+                ],
+                "return": []
+            },
+            "update": {
+                "tags_only": [],
+                "freeze": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.commands.clean": {
+        "global": {
+            "clean": {
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.gc": {
+        "global": {
+            "_mark_used_repos": {
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "all_repos": [
+                    "platform._Processor"
+                ],
+                "unused_repos": [
+                    "typing.MutableSet[typing.Any]"
+                ],
+                "repo": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Iterable[importlib.metadata.Deprecated]]"
+                ],
+                "return": []
+            },
+            "_gc_repos": {
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "gc": {
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.hook_impl": {
+        "global": {
+            "_run_legacy": {
+                "hook_type": [
+                    "builtins.str"
+                ],
+                "hook_dir": [],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            },
+            "_validate_config": {
+                "retv": [],
+                "config": [],
+                "skip_on_missing_config": [],
+                "return": []
+            },
+            "_ns": {
+                "hook_type": [],
+                "color": [],
+                "all_files": [
+                    "builtins.bool"
+                ],
+                "remote_branch": [],
+                "local_branch": [],
+                "from_ref": [],
+                "to_ref": [],
+                "pre_rebase_upstream": [],
+                "pre_rebase_branch": [],
+                "remote_name": [],
+                "remote_url": [],
+                "commit_msg_filename": [],
+                "prepare_commit_message_source": [],
+                "commit_object_name": [],
+                "checkout_type": [],
+                "is_squash_merge": [],
+                "rewrite_command": [],
+                "return": [
+                    "argparse.Namespace"
+                ]
+            },
+            "_rev_exists": {
+                "rev": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_pre_push_ns": {
+                "color": [],
+                "args": [
+                    "_typeshed.SupportsGetItem[builtins.int, typing.Any]"
+                ],
+                "stdin": [
+                    "json.decoder.JSONDecoder"
+                ],
+                "return": [
+                    "argparse.Namespace"
+                ]
+            },
+            "_check_args_length": {
+                "hook_type": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Sized"
+                ],
+                "return": []
+            },
+            "_run_ns": {
+                "hook_type": [
+                    "builtins.str"
+                ],
+                "color": [],
+                "args": [
+                    "sqlite3.Row"
+                ],
+                "stdin": [
+                    "json.decoder.JSONDecoder"
+                ],
+                "return": [
+                    "argparse.Namespace"
+                ]
+            },
+            "hook_impl": {
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "config": [],
+                "color": [],
+                "hook_type": [
+                    "builtins.str"
+                ],
+                "hook_dir": [],
+                "skip_on_missing_config": [],
+                "args": [
+                    "sqlite3.Row"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.init_templatedir": {
+        "global": {
+            "init_templatedir": {
+                "config_file": [],
+                "store": [],
+                "directory": [],
+                "hook_types": [],
+                "skip_on_missing_config": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.install_uninstall": {
+        "global": {
+            "_hook_types": {
+                "cfg_filename": [],
+                "hook_types": [],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "_hook_paths": {
+                "hook_type": [],
+                "git_dir": [],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.str]"
+                ]
+            },
+            "is_our_script": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_install_hook_script": {
+                "config_file": [],
+                "hook_type": [],
+                "overwrite": [
+                    "builtins.bool"
+                ],
+                "skip_on_missing_config": [
+                    "builtins.bool"
+                ],
+                "git_dir": [],
+                "return": []
+            },
+            "install": {
+                "config_file": [],
+                "store": [],
+                "hook_types": [],
+                "overwrite": [
+                    "builtins.bool"
+                ],
+                "hooks": [
+                    "builtins.bool"
+                ],
+                "skip_on_missing_config": [
+                    "builtins.bool"
+                ],
+                "git_dir": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "install_hooks": {
+                "config_file": [],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_uninstall_hook_script": {
+                "hook_type": [],
+                "return": []
+            },
+            "uninstall": {
+                "config_file": [],
+                "hook_types": [],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.migrate_config": {
+        "global": {
+            "_is_header_line": {
+                "line": [
+                    "ruamel.yaml.tag.Tag"
+                ],
+                "return": []
+            },
+            "_migrate_map": {
+                "contents": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_preserve_style": {
+                "n": [
+                    "yaml.tokens.ScalarToken"
+                ],
+                "s": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_fix_stage": {
+                "n": [
+                    "yaml.tokens.ScalarToken"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_migrate_composed": {
+                "contents": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "migrate_config": {
+                "config_file": [
+                    "builtins.str"
+                ],
+                "quiet": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.run": {
+        "global": {
+            "_len_cjk": {
+                "msg": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_start_msg": {
+                "start": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "cols": [
+                    "builtins.int"
+                ],
+                "end_len": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_full_msg": {
+                "start": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "cols": [
+                    "builtins.int"
+                ],
+                "end_msg": [
+                    "typing.Sized"
+                ],
+                "end_color": [],
+                "use_color": [],
+                "postfix": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "filter_by_include_exclude": {
+                "names": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "include": [],
+                "exclude": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_skips": {
+                "environ": [
+                    "platform._Processor"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_subtle_line": {
+                "s": [],
+                "use_color": [],
+                "return": []
+            },
+            "_run_single_hook": {
+                "classifier": [
+                    "pre_commit.commands.run.Classifier"
+                ],
+                "hook": [
+                    "pre_commit.hook.Hook"
+                ],
+                "skips": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "cols": [
+                    "builtins.int"
+                ],
+                "diff_before": [],
+                "verbose": [],
+                "use_color": [],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            },
+            "_compute_cols": {
+                "hooks": [
+                    "typing.Iterable[logging.Filter]"
+                ],
+                "return": []
+            },
+            "_all_filenames": {
+                "args": [
+                    "importlib.metadata.Distribution"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_get_diff": {
+                "return": []
+            },
+            "_run_hooks": {
+                "config": [
+                    "_typeshed.SupportsGetItem[builtins.str, typing.Any]"
+                ],
+                "hooks": [
+                    "typing.Iterable[pre_commit.hook.Hook]"
+                ],
+                "skips": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "args": [
+                    "pre_commit.hook.Hook"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_has_unmerged_paths": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_has_unstaged_config": {
+                "config_file": [],
+                "return": []
+            },
+            "run": {
+                "config_file": [],
+                "store": [
+                    "pre_commit.store.Store"
+                ],
+                "args": [
+                    "pre_commit.hook.Hook"
+                ],
+                "environ": [
+                    "os._Environ"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "Classifier": {
+            "__init__": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "_types_for_file": {
+                "filename": [],
+                "return": []
+            },
+            "by_types": {
+                "names": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "types": [
+                    "builtins.frozenset[typing.Any]"
+                ],
+                "types_or": [
+                    "builtins.frozenset[typing.Any]"
+                ],
+                "exclude_types": [
+                    "builtins.frozenset[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "filenames_for_hook": {
+                "hook": [
+                    "pre_commit.hook.Hook"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "from_config": {
+                "filenames": [
+                    "typing.Generator[datetime.time, typing.Any, typing.Any]"
+                ],
+                "include": [],
+                "exclude": [],
+                "return": [
+                    "pre_commit.commands.run.Classifier"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.sample_config": {
+        "global": {
+            "sample_config": {
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.try_repo": {
+        "global": {
+            "_repo_ref": {
+                "tmpdir": [],
+                "repo": [
+                    "builtins.str"
+                ],
+                "ref": [],
+                "return": [
+                    "builtins.tuple[builtins.str, typing.Any]"
+                ]
+            },
+            "try_repo": {
+                "args": [
+                    "pre_commit.hook.Hook"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.validate_config": {
+        "global": {
+            "validate_config": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.commands.validate_manifest": {
+        "global": {
+            "validate_manifest": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.conda": {
+        "global": {
+            "get_env_patch": {
+                "env": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_conda_exe": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.coursier": {
+        "global": {
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "get_env_patch": {
+                "target_dir": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]], builtins.tuple[builtins.str, typing.Any]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.dart": {
+        "global": {
+            "get_env_patch": {
+                "venv": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.docker": {
+        "global": {
+            "_is_in_docker": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_get_container_id": {
+                "return": []
+            },
+            "_get_docker_path": {
+                "path": [
+                    "datetime.time"
+                ],
+                "return": [
+                    "datetime.time"
+                ]
+            },
+            "md5": {
+                "s": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": []
+            },
+            "docker_tag": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "build_docker_image": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "pull": [],
+                "return": []
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [],
+                "return": []
+            },
+            "get_docker_user": {
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str]"
+                ]
+            },
+            "get_docker_tty": {
+                "color": [],
+                "return": [
+                    "builtins.tuple[builtins.str]"
+                ]
+            },
+            "docker_cmd": {
+                "color": [],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "run_hook": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.docker_image": {
+        "global": {
+            "run_hook": {
+                "prefix": [],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.dotnet": {
+        "global": {
+            "get_env_patch": {
+                "venv": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_nuget_config_no_sources": {
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.fail": {
+        "global": {
+            "run_hook": {
+                "prefix": [],
+                "entry": [],
+                "args": [],
+                "file_args": [
+                    "typing.Iterable[json.encoder.JSONEncoder]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.golang": {
+        "global": {
+            "get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_env_patch": {
+                "venv": [],
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]], builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "_infer_go_version": {
+                "version": [],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "_get_url": {
+                "version": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_install_go": {
+                "version": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "dest": [],
+                "return": []
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "ExtractAll": {
+            "extractall": {
+                "path": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.haskell": {
+        "global": {
+            "get_env_patch": {
+                "target_dir": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.julia": {
+        "global": {
+            "run_hook": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            },
+            "get_env_patch": {
+                "target_dir": [],
+                "version": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.lua": {
+        "global": {
+            "_get_lua_version": {
+                "return": []
+            },
+            "get_env_patch": {
+                "d": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]], builtins.tuple[builtins.str, builtins.tuple[typing.Any, typing.Any]], builtins.tuple[builtins.str, builtins.tuple[typing.Any]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.node": {
+        "global": {
+            "get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_env_patch": {
+                "venv": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "health_check": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.perl": {
+        "global": {
+            "get_env_patch": {
+                "venv": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, builtins.str]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.pygrep": {
+        "global": {
+            "_process_filename_by_line": {
+                "pattern": [
+                    "importlib.metadata.Lookup"
+                ],
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_process_filename_at_once": {
+                "pattern": [
+                    "importlib.metadata.Lookup"
+                ],
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_process_filename_by_line_negated": {
+                "pattern": [
+                    "importlib.metadata.Lookup"
+                ],
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_process_filename_at_once_negated": {
+                "pattern": [
+                    "importlib.metadata.Lookup"
+                ],
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "run_hook": {
+                "prefix": [],
+                "entry": [],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.python": {
+        "global": {
+            "_version_info": {
+                "exe": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_read_pyvenv_cfg": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "bin_dir": {
+                "venv": [],
+                "return": []
+            },
+            "get_env_patch": {
+                "venv": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "_find_by_py_launcher": {
+                "version": [
+                    "ruamel.yaml.tag.Tag"
+                ],
+                "return": []
+            },
+            "_impl_exe_name": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_find_by_sys_executable": {
+                "return": [
+                    "typing.Collection[builtins.str]"
+                ]
+            },
+            "get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_sys_executable_matches": {
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "norm_version": {
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "health_check": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.r": {
+        "global": {
+            "_execute_r": {
+                "code": [],
+                "prefix": [],
+                "version": [],
+                "args": [
+                    "builtins.tuple"
+                ],
+                "cwd": [],
+                "cli_opts": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "_execute_r_in_renv": {
+                "code": [],
+                "prefix": [],
+                "version": [],
+                "args": [
+                    "builtins.tuple"
+                ],
+                "cwd": [],
+                "return": []
+            },
+            "_execute_vanilla_r": {
+                "code": [],
+                "prefix": [],
+                "version": [],
+                "args": [
+                    "builtins.tuple"
+                ],
+                "cwd": [],
+                "return": []
+            },
+            "_read_installed_version": {
+                "envdir": [],
+                "prefix": [],
+                "version": [],
+                "return": []
+            },
+            "_read_executable_version": {
+                "envdir": [],
+                "prefix": [],
+                "version": [],
+                "return": []
+            },
+            "_write_current_r_version": {
+                "envdir": [],
+                "prefix": [],
+                "version": [],
+                "return": []
+            },
+            "health_check": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_r_code_in_tempfile": {
+                "code": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "get_env_patch": {
+                "venv": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, typing.Any], builtins.tuple[builtins.str, typing.Any]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_prefix_if_file_entry": {
+                "entry": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "is_local": [],
+                "return": [
+                    "builtins.tuple[typing.Any]"
+                ]
+            },
+            "_rscript_exec": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_entry_validate": {
+                "entry": [
+                    "sqlite3.Row"
+                ],
+                "return": []
+            },
+            "_cmd_from_hook": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "is_local": [],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "_inline_r_setup": {
+                "code": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "run_hook": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.ruby": {
+        "global": {
+            "_resource_bytesio": {
+                "filename": [],
+                "return": []
+            },
+            "get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_env_patch": {
+                "venv": [],
+                "language_version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.str], builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, typing.Any, builtins.str, typing.Any, builtins.str, pre_commit.envcontext.Var]], builtins.tuple[builtins.str, builtins.str]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_extract_resource": {
+                "filename": [],
+                "dest": [],
+                "return": []
+            },
+            "_install_rbenv": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": []
+            },
+            "_install_ruby": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "return": []
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "additional_dependencies": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.rust": {
+        "global": {
+            "get_default_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_rust_toolchain": {
+                "language_version": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_env_patch": {
+                "target_dir": [],
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_add_dependencies": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "additional_dependencies": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": []
+            },
+            "install_rust_with_toolchain": {
+                "toolchain": [],
+                "envdir": [],
+                "return": []
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [
+                    "builtins.str"
+                ],
+                "additional_dependencies": [
+                    "typing.Iterable[ruamel.yaml.tag.Tag]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.languages.script": {
+        "global": {
+            "run_hook": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "entry": [
+                    "builtins.str"
+                ],
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "file_args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "is_local": [],
+                "require_serial": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.bytes]"
+                ]
+            }
+        }
+    },
+    "pre_commit.languages.swift": {
+        "global": {
+            "get_env_patch": {
+                "venv": [],
+                "return": [
+                    "builtins.tuple[builtins.tuple[builtins.str, builtins.tuple[typing.Any, builtins.str, pre_commit.envcontext.Var]]]"
+                ]
+            },
+            "in_env": {
+                "prefix": [
+                    "posix.DirEntry"
+                ],
+                "version": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "install_environment": {
+                "prefix": [
+                    "pre_commit.prefix.Prefix"
+                ],
+                "version": [],
+                "additional_dependencies": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit.meta_hooks.check_hooks_apply": {
+        "global": {
+            "check_all_hooks_match_files": {
+                "config_file": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.meta_hooks.check_useless_excludes": {
+        "global": {
+            "exclude_matches_any": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "include": [],
+                "exclude": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "check_useless_excludes": {
+                "config_file": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit.meta_hooks.identity": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[json.encoder.JSONEncoder]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_added_large_files": {
+        "global": {
+            "filter_lfs_files": {
+                "filenames": [
+                    "typing.MutableSequence[typing.Any]"
+                ],
+                "return": []
+            },
+            "find_large_added_files": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "maxkb": [
+                    "builtins.int"
+                ],
+                "enforce_all": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_ast": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_builtin_literals": {
+        "global": {
+            "check_file": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "ignore": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "allow_dict_kwargs": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "parse_ignore": {
+                "value": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "Visitor": {
+            "__init__": {
+                "ignore": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "allow_dict_kwargs": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_check_dict_call": {
+                "node": [
+                    "functools.partial"
+                ],
+                "return": []
+            },
+            "visit_Call": {
+                "node": [
+                    "functools.partial"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_byte_order_marker": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_case_conflict": {
+        "global": {
+            "lower_set": {
+                "iterable": [
+                    "typing.Iterable[ast.Slice]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "parents": {
+                "file": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "directories_for": {
+                "files": [
+                    "typing.Iterable[re.Pattern]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "find_conflicting_filenames": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_docstring_first": {
+        "global": {
+            "check_docstring_first": {
+                "src": [],
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_executables_have_shebangs": {
+        "global": {
+            "check_executables": {
+                "paths": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "git_ls_files": {
+                "paths": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[pre_commit_hooks.check_executables_have_shebangs.GitLsFile, typing.Any, typing.Any]"
+                ]
+            },
+            "_check_git_filemode": {
+                "paths": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "has_shebang": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_message": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_json": {
+        "global": {
+            "raise_duplicate_keys": {
+                "ordered_pairs": [
+                    "typing.Iterable[builtins.tuple[typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_merge_conflict": {
+        "global": {
+            "is_in_merge": {
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_shebang_scripts_are_executable": {
+        "global": {
+            "check_shebangs": {
+                "paths": [],
+                "return": []
+            },
+            "_check_git_filemode": {
+                "paths": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_message": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_symlinks": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_toml": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_vcs_permalinks": {
+        "global": {
+            "_get_pattern": {
+                "domain": [],
+                "return": [
+                    "re.Pattern"
+                ]
+            },
+            "_check_filename": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "patterns": [
+                    "typing.Iterable[importlib.metadata.Lookup]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_xml": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_yaml": {
+        "global": {
+            "_exhaust": {
+                "gen": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "_parse_unsafe": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_load_all": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.debug_statement_hook": {
+        "global": {
+            "check_file": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "DebugStatementParser": {
+            "__init__": {
+                "return": []
+            },
+            "visit_Import": {
+                "node": [
+                    "urllib.request.FileHandler"
+                ],
+                "return": []
+            },
+            "visit_ImportFrom": {
+                "node": [
+                    "logging.LogRecord"
+                ],
+                "return": []
+            },
+            "visit_Call": {
+                "node": [
+                    "functools.singledispatchmethod"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.destroyed_symlinks": {
+        "global": {
+            "find_destroyed_symlinks": {
+                "files": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_aws_credentials": {
+        "global": {
+            "get_aws_cred_files_from_env": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "get_aws_secrets_from_env": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "get_aws_secrets_from_file": {
+                "credentials_file": [],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "check_file_for_aws_keys": {
+                "filenames": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "keys": [
+                    "typing.Iterable[json.decoder.JSONDecoder]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_private_key": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.end_of_file_fixer": {
+        "global": {
+            "fix_file": {
+                "file_obj": [
+                    "typing.IO"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.file_contents_sorter": {
+        "global": {
+            "sort_file_contents": {
+                "f": [
+                    "typing.IO"
+                ],
+                "key": [],
+                "unique": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_byte_order_marker": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_encoding_pragma": {
+        "global": {
+            "has_coding": {
+                "line": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_get_expected_contents": {
+                "first_line": [
+                    "builtins.bytes"
+                ],
+                "second_line": [
+                    "builtins.bytes"
+                ],
+                "rest": [
+                    "builtins.bytes"
+                ],
+                "expected_pragma": [],
+                "return": [
+                    "pre_commit_hooks.fix_encoding_pragma.ExpectedContents"
+                ]
+            },
+            "fix_encoding_pragma": {
+                "f": [
+                    "typing.IO"
+                ],
+                "remove": [
+                    "builtins.bool"
+                ],
+                "expected_pragma": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_normalize_pragma": {
+                "pragma": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "ExpectedContents": {
+            "has_any_pragma": {
+                "return": []
+            },
+            "is_expected_pragma": {
+                "remove": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.forbid_new_submodules": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.mixed_line_ending": {
+        "global": {
+            "_fix": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "contents": [
+                    "builtins.str"
+                ],
+                "ending": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": []
+            },
+            "fix_filename": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "fix": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.no_commit_to_branch": {
+        "global": {
+            "is_on_branch": {
+                "protected": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "patterns": [
+                    "builtins.frozenset[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.pretty_format_json": {
+        "global": {
+            "_get_pretty_format": {
+                "contents": [],
+                "indent": [],
+                "ensure_ascii": [
+                    "builtins.bool"
+                ],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "top_keys": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_autofix": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "new_contents": [],
+                "return": []
+            },
+            "parse_num_to_int": {
+                "s": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "parse_topkeys": {
+                "s": [
+                    "re.Pattern"
+                ],
+                "return": []
+            },
+            "get_diff": {
+                "source": [
+                    "builtins.str"
+                ],
+                "target": [
+                    "builtins.str"
+                ],
+                "file": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.removed": {
+        "global": {
+            "main": {
+                "argv": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.requirements_txt_fixer": {
+        "global": {
+            "fix_requirements": {
+                "f": [
+                    "typing.IO"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "Requirement": {
+            "__init__": {
+                "return": []
+            },
+            "name": {
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "__lt__": {
+                "requirement": [
+                    "pre_commit_hooks.requirements_txt_fixer.Requirement"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_complete": {
+                "return": []
+            },
+            "append_value": {
+                "value": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.sort_simple_yaml": {
+        "global": {
+            "sort": {
+                "lines": [
+                    "builtins.list[typing.Any]"
+                ],
+                "return": [
+                    "typing.MutableSequence[typing.Any]"
+                ]
+            },
+            "parse_block": {
+                "lines": [
+                    "typing.MutableSequence[ruamel.yaml.tag.Tag]"
+                ],
+                "header": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "parse_blocks": {
+                "lines": [
+                    "typing.MutableSequence[builtins.str]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "first_key": {
+                "lines": [
+                    "typing.Iterable[typing.Sequence[typing.Any]]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.string_fixer": {
+        "global": {
+            "handle_match": {
+                "token_text": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_line_offsets_by_line_no": {
+                "src": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[builtins.int]"
+                ]
+            },
+            "fix_strings": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.tests_should_end_in_test": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.trailing_whitespace_fixer": {
+        "global": {
+            "_fix_file": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "is_markdown": [],
+                "chars": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_process_line": {
+                "line": [
+                    "builtins.str"
+                ],
+                "is_markdown": [],
+                "chars": [],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.util": {
+        "global": {
+            "added_files": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "cmd_output": {
+                "cmd": [],
+                "retcode": [
+                    "builtins.int"
+                ],
+                "kwargs": [],
+                "return": [
+                    "json.decoder.JSONDecoder"
+                ]
+            },
+            "zsplit": {
+                "s": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,969 @@
+{
+    "typer": {
+        "global": {
+            "global": {}
+        }
+    },
+    "typer.__main__": {
+        "global": {
+            "global": {}
+        }
+    },
+    "typer._completion_classes": {
+        "global": {
+            "_sanitize_help_text": {
+                "text": [],
+                "return": []
+            },
+            "completion_init": {
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {}
+        },
+        "BashComplete": {
+            "complete": {
+                "return": [
+                    "str"
+                ]
+            },
+            "format_completion": {
+                "item": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            "source_vars": {
+                "return": [
+                    "dict[typing.Text, ]"
+                ]
+            }
+        },
+        "FishComplete": {
+            "complete": {
+                "return": [
+                    "str",
+                    "typing.Text"
+                ]
+            },
+            "format_completion": {
+                "item": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            "source_vars": {
+                "return": [
+                    "dict[typing.Text, ]"
+                ]
+            }
+        },
+        "ZshComplete": {
+            "complete": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "escape": {
+                "s": [],
+                "return": []
+            },
+            "format_completion": {
+                "item": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            "source_vars": {
+                "return": [
+                    "dict[typing.Text, ]"
+                ]
+            }
+        },
+        "PowerShellComplete": {
+            "format_completion": {
+                "item": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "tuple"
+                ]
+            },
+            "source_vars": {
+                "return": [
+                    "dict[typing.Text, ]"
+                ]
+            }
+        }
+    },
+    "typer._completion_shared": {
+        "global": {
+            "get_completion_script": {
+                "prog_name": [],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "global": {},
+            "install": {
+                "shell": [
+                    "None"
+                ],
+                "prog_name": [
+                    "None"
+                ],
+                "complete_var": [
+                    "None"
+                ],
+                "return": [
+                    "tuple[None]"
+                ]
+            },
+            "install_bash": {
+                "prog_name": [],
+                "complete_var": [],
+                "shell": [],
+                "return": []
+            },
+            "install_fish": {
+                "prog_name": [],
+                "complete_var": [],
+                "shell": [],
+                "return": []
+            },
+            "install_powershell": {
+                "prog_name": [],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "Path"
+                ]
+            },
+            "install_zsh": {
+                "prog_name": [],
+                "complete_var": [],
+                "shell": [],
+                "return": []
+            }
+        }
+    },
+    "typer._types": {
+        "global": {
+            "global": {}
+        },
+        "TyperChoice": {
+            "normalize_choice": {
+                "choice": [],
+                "ctx": [],
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "typer._typing": {
+        "global": {
+            "all_literal_values": {
+                "type_": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "global": {},
+            "is_callable_type": {
+                "type_": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_literal_type": {
+                "type_": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_none_type": {
+                "type_": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_union": {
+                "tp": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "literal_values": {
+                "type_": [],
+                "return": []
+            }
+        }
+    },
+    "typer.cli": {
+        "State": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_parse_html": {
+                "input_text": [],
+                "return": []
+            },
+            "callback": {
+                "ctx": [],
+                "path_or_module": [],
+                "app": [
+                    "Option"
+                ],
+                "func": [
+                    "Option"
+                ],
+                "version": [
+                    "Option"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "docs": {
+                "ctx": [],
+                "name": [
+                    "Option"
+                ],
+                "output": [
+                    "Option"
+                ],
+                "title": [
+                    "Option"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_docs_for_click": {
+                "obj": [],
+                "ctx": [],
+                "indent": [
+                    "int"
+                ],
+                "name": [
+                    "typing.Text"
+                ],
+                "call_prefix": [
+                    "typing.Text"
+                ],
+                "title": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_typer_from_module": {
+                "module": [],
+                "return": [
+                    "typer_@_Typer",
+                    "None"
+                ]
+            },
+            "get_typer_from_state": {
+                "return": []
+            },
+            "global": {},
+            "main": {
+                "return": []
+            },
+            "maybe_add_run_to_cli": {
+                "cli": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "maybe_update_state": {
+                "ctx": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "print_version": {
+                "ctx": [],
+                "param": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "TyperCLIGroup": {
+            "get_command": {
+                "ctx": [],
+                "name": [],
+                "return": []
+            },
+            "invoke": {
+                "ctx": [],
+                "return": []
+            },
+            "list_commands": {
+                "ctx": [],
+                "return": []
+            },
+            "maybe_add_run": {
+                "ctx": [],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "typer.colors": {
+        "global": {
+            "global": {}
+        }
+    },
+    "typer.completion": {
+        "global": {
+            "_install_completion_no_auto_placeholder_function": {
+                "install_completion": [],
+                "show_completion": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_install_completion_placeholder_function": {
+                "install_completion": [],
+                "show_completion": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_completion_inspect_parameters": {
+                "return": [
+                    "tuple"
+                ]
+            },
+            "global": {},
+            "install_callback": {
+                "ctx": [],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "shell_complete": {
+                "cli": [],
+                "ctx_args": [],
+                "prog_name": [],
+                "complete_var": [],
+                "instruction": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "show_callback": {
+                "ctx": [],
+                "param": [],
+                "value": [],
+                "return": []
+            }
+        }
+    },
+    "typer.main": {
+        "Typer": {
+            "__call__": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "__init__": {
+                "name": [],
+                "cls": [],
+                "invoke_without_command": [],
+                "no_args_is_help": [],
+                "subcommand_metavar": [],
+                "chain": [],
+                "result_callback": [],
+                "context_settings": [],
+                "callback": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [],
+                "add_help_option": [],
+                "hidden": [],
+                "deprecated": [],
+                "add_completion": [
+                    "bool"
+                ],
+                "rich_markup_mode": [],
+                "rich_help_panel": [],
+                "pretty_exceptions_enable": [
+                    "bool"
+                ],
+                "pretty_exceptions_show_locals": [
+                    "bool"
+                ],
+                "pretty_exceptions_short": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "add_typer": {
+                "typer_instance": [],
+                "name": [],
+                "cls": [],
+                "invoke_without_command": [],
+                "no_args_is_help": [],
+                "subcommand_metavar": [],
+                "chain": [],
+                "result_callback": [],
+                "context_settings": [],
+                "callback": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [],
+                "add_help_option": [],
+                "hidden": [],
+                "deprecated": [],
+                "rich_help_panel": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "callback": {
+                "cls": [],
+                "invoke_without_command": [],
+                "no_args_is_help": [],
+                "subcommand_metavar": [],
+                "chain": [],
+                "result_callback": [],
+                "context_settings": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [],
+                "add_help_option": [],
+                "hidden": [],
+                "deprecated": [],
+                "rich_help_panel": [],
+                "return": []
+            },
+            "command": {
+                "name": [
+                    "None"
+                ],
+                "cls": [
+                    "None"
+                ],
+                "context_settings": [
+                    "None"
+                ],
+                "help": [
+                    "None"
+                ],
+                "epilog": [
+                    "None"
+                ],
+                "short_help": [
+                    "None"
+                ],
+                "options_metavar": [
+                    "typing.Text"
+                ],
+                "add_help_option": [
+                    "bool"
+                ],
+                "no_args_is_help": [
+                    "bool"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "rich_help_panel": [],
+                "return": []
+            },
+            "decorator": {
+                "f": [],
+                "return": []
+            }
+        },
+        "global": {
+            "_is_linux_or_bsd": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "_is_macos": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "convertor": {
+                "value": [],
+                "return": []
+            },
+            "determine_type_convertor": {
+                "type_": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "except_hook": {
+                "exc_type": [],
+                "exc_value": [],
+                "tb": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "generate_enum_convertor": {
+                "enum": [],
+                "return": []
+            },
+            "generate_list_convertor": {
+                "convertor": [],
+                "default_value": [],
+                "return": []
+            },
+            "generate_tuple_convertor": {
+                "types": [],
+                "return": []
+            },
+            "get_callback": {
+                "callback": [
+                    "None"
+                ],
+                "params": [
+                    "list"
+                ],
+                "convertors": [
+                    "None"
+                ],
+                "context_param_name": [
+                    "None"
+                ],
+                "pretty_exceptions_short": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_click_param": {
+                "param": [],
+                "return": []
+            },
+            "get_click_type": {
+                "annotation": [],
+                "parameter_info": [],
+                "return": [
+                    "TyperPath",
+                    "TyperChoice"
+                ]
+            },
+            "get_command": {
+                "typer_instance": [],
+                "return": []
+            },
+            "get_command_from_info": {
+                "command_info": [],
+                "pretty_exceptions_short": [],
+                "rich_markup_mode": [],
+                "return": []
+            },
+            "get_command_name": {
+                "name": [],
+                "return": []
+            },
+            "get_group": {
+                "typer_instance": [],
+                "return": []
+            },
+            "get_group_from_info": {
+                "group_info": [],
+                "pretty_exceptions_short": [],
+                "rich_markup_mode": [],
+                "return": []
+            },
+            "get_install_completion_arguments": {
+                "return": [
+                    "tuple"
+                ]
+            },
+            "get_param_callback": {
+                "callback": [
+                    "None"
+                ],
+                "convertor": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_param_completion": {
+                "callback": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_params_convertors_ctx_param_name_from_function": {
+                "callback": [],
+                "return": [
+                    "tuple[typing.Union[list,dict,None]]"
+                ]
+            },
+            "global": {},
+            "internal_convertor": {
+                "value": [],
+                "return": [
+                    "None",
+                    "list"
+                ]
+            },
+            "launch": {
+                "url": [],
+                "wait": [
+                    "bool"
+                ],
+                "locate": [
+                    "bool"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "lenient_issubclass": {
+                "cls": [],
+                "class_or_tuple": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "param_path_convertor": {
+                "value": [
+                    "None"
+                ],
+                "return": [
+                    "Path",
+                    "None"
+                ]
+            },
+            "run": {
+                "function": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "solve_typer_info_defaults": {
+                "typer_info": [],
+                "return": [
+                    "TyperInfo"
+                ]
+            },
+            "solve_typer_info_help": {
+                "typer_info": [],
+                "return": []
+            },
+            "wrapper": {
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "typer.params": {
+        "global": {
+            "Argument": {
+                "default": [],
+                "callback": [
+                    "None"
+                ],
+                "metavar": [
+                    "None"
+                ],
+                "expose_value": [
+                    "bool"
+                ],
+                "is_eager": [
+                    "bool"
+                ],
+                "envvar": [
+                    "None"
+                ],
+                "shell_complete": [
+                    "None"
+                ],
+                "autocompletion": [
+                    "None"
+                ],
+                "default_factory": [
+                    "None"
+                ],
+                "parser": [
+                    "None"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "show_choices": [
+                    "bool"
+                ],
+                "show_envvar": [
+                    "bool"
+                ],
+                "help": [
+                    "None"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "min": [
+                    "None"
+                ],
+                "max": [
+                    "None"
+                ],
+                "clamp": [
+                    "bool"
+                ],
+                "formats": [
+                    "None"
+                ],
+                "mode": [
+                    "None"
+                ],
+                "encoding": [
+                    "None"
+                ],
+                "errors": [
+                    "typing.Text"
+                ],
+                "lazy": [
+                    "None"
+                ],
+                "atomic": [
+                    "bool"
+                ],
+                "exists": [
+                    "bool"
+                ],
+                "file_okay": [
+                    "bool"
+                ],
+                "dir_okay": [
+                    "bool"
+                ],
+                "writable": [
+                    "bool"
+                ],
+                "readable": [
+                    "bool"
+                ],
+                "resolve_path": [
+                    "bool"
+                ],
+                "allow_dash": [
+                    "bool"
+                ],
+                "path_type": [
+                    "None"
+                ],
+                "rich_help_panel": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "Option": {
+                "default": [],
+                "callback": [
+                    "None"
+                ],
+                "metavar": [
+                    "None"
+                ],
+                "expose_value": [
+                    "bool"
+                ],
+                "is_eager": [
+                    "bool"
+                ],
+                "envvar": [
+                    "None"
+                ],
+                "shell_complete": [
+                    "None"
+                ],
+                "autocompletion": [
+                    "None"
+                ],
+                "default_factory": [
+                    "None"
+                ],
+                "parser": [
+                    "None"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "prompt": [
+                    "bool"
+                ],
+                "confirmation_prompt": [
+                    "bool"
+                ],
+                "prompt_required": [
+                    "bool"
+                ],
+                "hide_input": [
+                    "bool"
+                ],
+                "is_flag": [
+                    "None"
+                ],
+                "flag_value": [
+                    "None"
+                ],
+                "count": [
+                    "bool"
+                ],
+                "allow_from_autoenv": [
+                    "bool"
+                ],
+                "help": [
+                    "None"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "show_choices": [
+                    "bool"
+                ],
+                "show_envvar": [
+                    "bool"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "min": [
+                    "None"
+                ],
+                "max": [
+                    "None"
+                ],
+                "clamp": [
+                    "bool"
+                ],
+                "formats": [
+                    "None"
+                ],
+                "mode": [
+                    "None"
+                ],
+                "encoding": [
+                    "None"
+                ],
+                "errors": [
+                    "typing.Text"
+                ],
+                "lazy": [
+                    "None"
+                ],
+                "atomic": [
+                    "bool"
+                ],
+                "exists": [
+                    "bool"
+                ],
+                "file_okay": [
+                    "bool"
+                ],
+                "dir_okay": [
+                    "bool"
+                ],
+                "writable": [
+                    "bool"
+                ],
+                "readable": [
+                    "bool"
+                ],
+                "resolve_path": [
+                    "bool"
+                ],
+                "allow_dash": [
+                    "bool"
+                ],
+                "path_type": [
+                    "None"
+                ],
+                "rich_help_panel": [
+                    "None"
+                ],
+                "param_decls": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "typer.testing": {
+        "global": {
+            "global": {}
+        },
+        "CliRunner": {
+            "invoke": {
+                "app": [],
+                "args": [
+                    "None"
+                ],
+                "input": [
+                    "None"
+                ],
+                "env": [
+                    "None"
+                ],
+                "catch_exceptions": [
+                    "bool"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "extra": [],
+                "return": []
+            }
+        }
+    }
+}

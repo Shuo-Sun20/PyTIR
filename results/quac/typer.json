@@ -1,0 +1,1926 @@
+{
+    "typer._completion_classes": {
+        "global": {
+            "_sanitize_help_text": {
+                "text": [],
+                "return": []
+            },
+            "completion_init": {
+                "return": []
+            }
+        },
+        "BashComplete": {
+            "source_vars": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "builtins.tuple[typing.Sequence[builtins.str], builtins.str]"
+                ]
+            },
+            "format_completion": {
+                "item": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "complete": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "ZshComplete": {
+            "source_vars": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "builtins.tuple[typing.Sequence[builtins.str], builtins.str]"
+                ]
+            },
+            "format_completion": {
+                "item": [
+                    "click.shell_completion.CompletionItem"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "complete": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "FishComplete": {
+            "source_vars": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "builtins.tuple[typing.Sequence[builtins.str], builtins.str]"
+                ]
+            },
+            "format_completion": {
+                "item": [
+                    "click.shell_completion.CompletionItem"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "complete": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "PowerShellComplete": {
+            "source_vars": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "builtins.tuple[typing.Sequence[typing.Any], builtins.str]"
+                ]
+            },
+            "format_completion": {
+                "item": [
+                    "click.shell_completion.CompletionItem"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "typer._completion_shared": {
+        "global": {
+            "get_completion_script": {
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [],
+                "shell": [],
+                "return": []
+            },
+            "install_bash": {
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_zsh": {
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_fish": {
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "install_powershell": {
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [],
+                "shell": [],
+                "return": [
+                    "pathlib.Path"
+                ]
+            },
+            "install": {
+                "shell": [
+                    "builtins.str"
+                ],
+                "prog_name": [
+                    "rich.emoji.Emoji"
+                ],
+                "complete_var": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, pathlib.Path]"
+                ]
+            }
+        }
+    },
+    "typer._types": {
+        "TyperChoice": {
+            "normalize_choice": {
+                "choice": [
+                    "enum.Enum"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "typer._typing": {
+        "global": {
+            "is_callable_type": {
+                "type_": [],
+                "return": []
+            },
+            "is_literal_type": {
+                "type_": [],
+                "return": []
+            },
+            "literal_values": {
+                "type_": [],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "all_literal_values": {
+                "type_": [],
+                "return": [
+                    "builtins.tuple[typing.Any]"
+                ]
+            }
+        }
+    },
+    "typer.cli": {
+        "global": {
+            "maybe_update_state": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "return": []
+            },
+            "get_typer_from_module": {
+                "module": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "typer.main.Typer"
+                ]
+            },
+            "get_typer_from_state": {
+                "return": [
+                    "typer.main.Typer"
+                ]
+            },
+            "maybe_add_run_to_cli": {
+                "cli": [
+                    "click.core.Group"
+                ],
+                "return": []
+            },
+            "print_version": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "callback": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "path_or_module": [
+                    "typer.models.ArgumentInfo"
+                ],
+                "app": [
+                    "typer.models.OptionInfo"
+                ],
+                "func": [
+                    "typer.models.OptionInfo"
+                ],
+                "version": [
+                    "typer.models.OptionInfo"
+                ],
+                "return": []
+            },
+            "get_docs_for_click": {
+                "obj": [
+                    "click.core.Group"
+                ],
+                "ctx": [],
+                "indent": [
+                    "builtins.int"
+                ],
+                "name": [
+                    "builtins.str"
+                ],
+                "call_prefix": [
+                    "builtins.str"
+                ],
+                "title": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_parse_html": {
+                "input_text": [],
+                "return": []
+            },
+            "docs": {
+                "ctx": [],
+                "name": [
+                    "builtins.str"
+                ],
+                "output": [
+                    "typer.models.OptionInfo"
+                ],
+                "title": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "main": {
+                "return": []
+            }
+        },
+        "State": {
+            "__init__": {
+                "return": []
+            }
+        },
+        "TyperCLIGroup": {
+            "list_commands": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "return": []
+            },
+            "get_command": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "name": [],
+                "return": []
+            },
+            "invoke": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "return": []
+            },
+            "maybe_add_run": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "return": []
+            }
+        }
+    },
+    "typer.completion": {
+        "global": {
+            "get_completion_inspect_parameters": {
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            },
+            "install_callback": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "show_callback": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_install_completion_placeholder_function": {
+                "install_completion": [
+                    "typer.models.OptionInfo"
+                ],
+                "show_completion": [
+                    "typer.models.OptionInfo"
+                ],
+                "return": []
+            },
+            "_install_completion_no_auto_placeholder_function": {
+                "install_completion": [
+                    "typer.models.OptionInfo"
+                ],
+                "show_completion": [
+                    "typer.models.OptionInfo"
+                ],
+                "return": []
+            },
+            "shell_complete": {
+                "cli": [],
+                "ctx_args": [],
+                "prog_name": [],
+                "complete_var": [],
+                "instruction": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "typer.core": {
+        "global": {
+            "_split_opt": {
+                "opt": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, typing.Sequence[typing.Any]]"
+                ]
+            },
+            "_typer_param_setup_autocompletion_compat": {
+                "self": [
+                    "click.core.Parameter"
+                ],
+                "autocompletion": [
+                    "typing.Callable[[typing.Any, builtins.list[typing.Any], typing.Any], typing.Iterable[builtins.str]]"
+                ],
+                "return": []
+            },
+            "_get_default_string": {
+                "obj": [
+                    "click.core.Option"
+                ],
+                "ctx": [],
+                "show_default_is_str": [],
+                "default_value": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_extract_default_help_str": {
+                "obj": [
+                    "click.core.Parameter"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "return": []
+            },
+            "_main": {
+                "self": [
+                    "click.core.Command"
+                ],
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "prog_name": [],
+                "complete_var": [],
+                "standalone_mode": [
+                    "builtins.bool"
+                ],
+                "windows_expand_args": [
+                    "builtins.bool"
+                ],
+                "rich_markup_mode": [
+                    "builtins.str"
+                ],
+                "extra": [],
+                "return": []
+            },
+            "_typer_format_options": {
+                "self": [
+                    "click.core.Command"
+                ],
+                "ctx": [],
+                "formatter": [
+                    "click.formatting.HelpFormatter"
+                ],
+                "return": []
+            },
+            "_typer_main_shell_completion": {
+                "self": [],
+                "ctx_args": [],
+                "prog_name": [],
+                "complete_var": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        },
+        "TyperArgument": {
+            "__init__": {
+                "param_decls": [],
+                "type": [],
+                "required": [],
+                "default": [],
+                "callback": [],
+                "nargs": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [
+                    "typing.Callable[[typing.Any, builtins.list[typing.Any], typing.Any], typing.Iterable[builtins.str]]"
+                ],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "rich_help_panel": [],
+                "return": []
+            },
+            "_get_default_string": {
+                "ctx": [],
+                "show_default_is_str": [],
+                "default_value": [],
+                "return": []
+            },
+            "_extract_default_help_str": {
+                "ctx": [],
+                "return": []
+            },
+            "get_help_record": {
+                "ctx": [
+                    "typer.models.ParameterInfo"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str]"
+                ]
+            },
+            "make_metavar": {
+                "ctx": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "TyperOption": {
+            "__init__": {
+                "param_decls": [],
+                "type": [],
+                "required": [],
+                "default": [],
+                "callback": [],
+                "nargs": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [
+                    "typing.Callable[[typing.Any, builtins.list[typing.Any], typing.Any], typing.Iterable[builtins.str]]"
+                ],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "prompt": [
+                    "builtins.bool"
+                ],
+                "confirmation_prompt": [
+                    "builtins.bool"
+                ],
+                "prompt_required": [
+                    "builtins.bool"
+                ],
+                "hide_input": [
+                    "builtins.bool"
+                ],
+                "is_flag": [],
+                "multiple": [
+                    "builtins.bool"
+                ],
+                "count": [
+                    "builtins.bool"
+                ],
+                "allow_from_autoenv": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "rich_help_panel": [],
+                "return": []
+            },
+            "_get_default_string": {
+                "ctx": [],
+                "show_default_is_str": [],
+                "default_value": [],
+                "return": []
+            },
+            "_extract_default_help_str": {
+                "ctx": [],
+                "return": []
+            },
+            "make_metavar": {
+                "ctx": [],
+                "return": []
+            },
+            "get_help_record": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.str]"
+                ]
+            }
+        },
+        "TyperCommand": {
+            "__init__": {
+                "name": [],
+                "context_settings": [],
+                "callback": [],
+                "params": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [
+                    "builtins.str"
+                ],
+                "add_help_option": [
+                    "builtins.bool"
+                ],
+                "no_args_is_help": [
+                    "builtins.bool"
+                ],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "deprecated": [
+                    "builtins.bool"
+                ],
+                "rich_markup_mode": [
+                    "builtins.str"
+                ],
+                "rich_help_panel": [],
+                "return": []
+            },
+            "format_options": {
+                "ctx": [],
+                "formatter": [
+                    "click.formatting.HelpFormatter"
+                ],
+                "return": []
+            },
+            "_main_shell_completion": {
+                "ctx_args": [],
+                "prog_name": [],
+                "complete_var": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "main": {
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "prog_name": [],
+                "complete_var": [],
+                "standalone_mode": [
+                    "builtins.bool"
+                ],
+                "windows_expand_args": [
+                    "builtins.bool"
+                ],
+                "extra": [],
+                "return": []
+            },
+            "format_help": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "formatter": [],
+                "return": []
+            }
+        },
+        "TyperGroup": {
+            "__init__": {
+                "name": [],
+                "commands": [],
+                "rich_markup_mode": [
+                    "builtins.str"
+                ],
+                "rich_help_panel": [],
+                "attrs": [],
+                "return": []
+            },
+            "format_options": {
+                "ctx": [],
+                "formatter": [
+                    "click.formatting.HelpFormatter"
+                ],
+                "return": []
+            },
+            "_main_shell_completion": {
+                "ctx_args": [],
+                "prog_name": [],
+                "complete_var": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "main": {
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "prog_name": [],
+                "complete_var": [],
+                "standalone_mode": [
+                    "builtins.bool"
+                ],
+                "windows_expand_args": [
+                    "builtins.bool"
+                ],
+                "extra": [],
+                "return": []
+            },
+            "format_help": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "formatter": [],
+                "return": []
+            },
+            "list_commands": {
+                "ctx": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "typer.main": {
+        "global": {
+            "except_hook": {
+                "exc_type": [],
+                "exc_value": [
+                    "subprocess.SubprocessError"
+                ],
+                "tb": [],
+                "return": []
+            },
+            "get_install_completion_arguments": {
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            },
+            "get_group": {
+                "typer_instance": [
+                    "typer.main.Typer"
+                ],
+                "return": []
+            },
+            "get_command": {
+                "typer_instance": [
+                    "typer.main.Typer"
+                ],
+                "return": [
+                    "click.core.Command"
+                ]
+            },
+            "solve_typer_info_help": {
+                "typer_info": [
+                    "typer.models.TyperInfo"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "solve_typer_info_defaults": {
+                "typer_info": [
+                    "typer.models.TyperInfo"
+                ],
+                "return": [
+                    "typer.models.TyperInfo"
+                ]
+            },
+            "get_group_from_info": {
+                "group_info": [
+                    "typer.models.TyperInfo"
+                ],
+                "pretty_exceptions_short": [],
+                "rich_markup_mode": [],
+                "return": []
+            },
+            "get_command_name": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_params_convertors_ctx_param_name_from_function": {
+                "callback": [
+                    "typing.Callable"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.list[typing.Any], builtins.dict[typing.Any, typing.Any], typing.Any]"
+                ]
+            },
+            "get_command_from_info": {
+                "command_info": [
+                    "typer.models.CommandInfo"
+                ],
+                "pretty_exceptions_short": [],
+                "rich_markup_mode": [],
+                "return": []
+            },
+            "determine_type_convertor": {
+                "type_": [],
+                "return": []
+            },
+            "param_path_convertor": {
+                "value": [],
+                "return": [
+                    "pathlib.Path"
+                ]
+            },
+            "generate_enum_convertor": {
+                "enum": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "generate_list_convertor": {
+                "convertor": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "default_value": [],
+                "return": [
+                    "typing.Callable[[typing.Collection[typing.Any]], builtins.list[typing.Any]]"
+                ]
+            },
+            "generate_tuple_convertor": {
+                "types": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Iterable[typing.Any]], builtins.tuple]"
+                ]
+            },
+            "get_callback": {
+                "callback": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "params": [
+                    "builtins.list[typer.models.ParamMeta]"
+                ],
+                "convertors": [],
+                "context_param_name": [],
+                "pretty_exceptions_short": [],
+                "return": [
+                    "typing.Callable[..., typing.Any]"
+                ]
+            },
+            "get_click_type": {
+                "annotation": [
+                    "typing.Callable[[typing.Any], pathlib.Path]"
+                ],
+                "parameter_info": [
+                    "typer.models.ParameterInfo"
+                ],
+                "return": [
+                    "click.types.Path"
+                ]
+            },
+            "lenient_issubclass": {
+                "cls": [
+                    "builtins.type"
+                ],
+                "class_or_tuple": [],
+                "return": []
+            },
+            "get_click_param": {
+                "param": [
+                    "typer.models.ParamMeta"
+                ],
+                "return": [
+                    "builtins.tuple[typer.core.TyperOption, typing.Callable[[typing.Collection[typing.Any]], builtins.list[typing.Any]]]"
+                ]
+            },
+            "get_param_callback": {
+                "callback": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "convertor": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any, typing.Any, typing.Any], typing.Any]"
+                ]
+            },
+            "get_param_completion": {
+                "callback": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any, typing.Any, typing.Any], typing.Any]"
+                ]
+            },
+            "run": {
+                "function": [],
+                "return": []
+            },
+            "_is_macos": {
+                "return": []
+            },
+            "_is_linux_or_bsd": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "launch": {
+                "url": [
+                    "builtins.str"
+                ],
+                "wait": [
+                    "builtins.bool"
+                ],
+                "locate": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "Typer": {
+            "__init__": {
+                "name": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "cls": [],
+                "invoke_without_command": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "no_args_is_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "subcommand_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "chain": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "result_callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "context_settings": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "epilog": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "short_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "options_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "add_help_option": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "hidden": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "deprecated": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "add_completion": [
+                    "builtins.bool"
+                ],
+                "rich_markup_mode": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "rich_help_panel": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "pretty_exceptions_enable": [
+                    "builtins.bool"
+                ],
+                "pretty_exceptions_show_locals": [
+                    "builtins.bool"
+                ],
+                "pretty_exceptions_short": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "callback": {
+                "cls": [],
+                "invoke_without_command": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "no_args_is_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "subcommand_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "chain": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "result_callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "context_settings": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "epilog": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "short_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "options_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "add_help_option": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "hidden": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "deprecated": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "rich_help_panel": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "return": [
+                    "typing.Callable[[typer.models.DefaultPlaceholder], typer.models.DefaultPlaceholder]"
+                ]
+            },
+            "command": {
+                "name": [],
+                "cls": [],
+                "context_settings": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [
+                    "builtins.str"
+                ],
+                "add_help_option": [
+                    "builtins.bool"
+                ],
+                "no_args_is_help": [
+                    "builtins.bool"
+                ],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "deprecated": [
+                    "builtins.bool"
+                ],
+                "rich_help_panel": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_typer": {
+                "typer_instance": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "name": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "cls": [],
+                "invoke_without_command": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "no_args_is_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "subcommand_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "chain": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "result_callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "context_settings": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "epilog": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "short_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "options_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "add_help_option": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "hidden": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "deprecated": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "rich_help_panel": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "typer.models": {
+        "global": {
+            "Default": {
+                "value": [],
+                "return": [
+                    "typer.models.DefaultPlaceholder"
+                ]
+            }
+        },
+        "DefaultPlaceholder": {
+            "__init__": {
+                "value": [],
+                "return": []
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "CommandInfo": {
+            "__init__": {
+                "name": [],
+                "cls": [],
+                "context_settings": [],
+                "callback": [],
+                "help": [],
+                "epilog": [],
+                "short_help": [],
+                "options_metavar": [
+                    "builtins.str"
+                ],
+                "add_help_option": [
+                    "builtins.bool"
+                ],
+                "no_args_is_help": [
+                    "builtins.bool"
+                ],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "deprecated": [
+                    "builtins.bool"
+                ],
+                "rich_help_panel": [],
+                "return": []
+            }
+        },
+        "TyperInfo": {
+            "__init__": {
+                "typer_instance": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "name": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "cls": [],
+                "invoke_without_command": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "no_args_is_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "subcommand_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "chain": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "result_callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "context_settings": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "callback": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "epilog": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "short_help": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "options_metavar": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "add_help_option": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "hidden": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "deprecated": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "rich_help_panel": [
+                    "typer.models.DefaultPlaceholder"
+                ],
+                "return": []
+            }
+        },
+        "ParameterInfo": {
+            "__init__": {
+                "default": [],
+                "param_decls": [],
+                "callback": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [],
+                "default_factory": [],
+                "parser": [],
+                "click_type": [],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "min": [],
+                "max": [],
+                "clamp": [
+                    "builtins.bool"
+                ],
+                "formats": [],
+                "mode": [],
+                "encoding": [],
+                "errors": [
+                    "builtins.str"
+                ],
+                "lazy": [],
+                "atomic": [
+                    "builtins.bool"
+                ],
+                "exists": [
+                    "builtins.bool"
+                ],
+                "file_okay": [
+                    "builtins.bool"
+                ],
+                "dir_okay": [
+                    "builtins.bool"
+                ],
+                "writable": [
+                    "builtins.bool"
+                ],
+                "readable": [
+                    "builtins.bool"
+                ],
+                "resolve_path": [
+                    "builtins.bool"
+                ],
+                "allow_dash": [
+                    "builtins.bool"
+                ],
+                "path_type": [],
+                "rich_help_panel": [],
+                "return": []
+            }
+        },
+        "OptionInfo": {
+            "__init__": {
+                "default": [],
+                "param_decls": [],
+                "callback": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [],
+                "default_factory": [],
+                "parser": [],
+                "click_type": [],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "prompt": [
+                    "builtins.bool"
+                ],
+                "confirmation_prompt": [
+                    "builtins.bool"
+                ],
+                "prompt_required": [
+                    "builtins.bool"
+                ],
+                "hide_input": [
+                    "builtins.bool"
+                ],
+                "is_flag": [],
+                "flag_value": [],
+                "count": [
+                    "builtins.bool"
+                ],
+                "allow_from_autoenv": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "min": [],
+                "max": [],
+                "clamp": [
+                    "builtins.bool"
+                ],
+                "formats": [],
+                "mode": [],
+                "encoding": [],
+                "errors": [
+                    "builtins.str"
+                ],
+                "lazy": [],
+                "atomic": [
+                    "builtins.bool"
+                ],
+                "exists": [
+                    "builtins.bool"
+                ],
+                "file_okay": [
+                    "builtins.bool"
+                ],
+                "dir_okay": [
+                    "builtins.bool"
+                ],
+                "writable": [
+                    "builtins.bool"
+                ],
+                "readable": [
+                    "builtins.bool"
+                ],
+                "resolve_path": [
+                    "builtins.bool"
+                ],
+                "allow_dash": [
+                    "builtins.bool"
+                ],
+                "path_type": [],
+                "rich_help_panel": [],
+                "return": []
+            }
+        },
+        "ArgumentInfo": {
+            "__init__": {
+                "default": [],
+                "param_decls": [],
+                "callback": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [],
+                "default_factory": [],
+                "parser": [],
+                "click_type": [],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "min": [],
+                "max": [],
+                "clamp": [
+                    "builtins.bool"
+                ],
+                "formats": [],
+                "mode": [],
+                "encoding": [],
+                "errors": [
+                    "builtins.str"
+                ],
+                "lazy": [],
+                "atomic": [
+                    "builtins.bool"
+                ],
+                "exists": [
+                    "builtins.bool"
+                ],
+                "file_okay": [
+                    "builtins.bool"
+                ],
+                "dir_okay": [
+                    "builtins.bool"
+                ],
+                "writable": [
+                    "builtins.bool"
+                ],
+                "readable": [
+                    "builtins.bool"
+                ],
+                "resolve_path": [
+                    "builtins.bool"
+                ],
+                "allow_dash": [
+                    "builtins.bool"
+                ],
+                "path_type": [],
+                "rich_help_panel": [],
+                "return": []
+            }
+        },
+        "ParamMeta": {
+            "__init__": {
+                "name": [],
+                "default": [],
+                "annotation": [],
+                "return": []
+            }
+        },
+        "DeveloperExceptionConfig": {
+            "__init__": {
+                "pretty_exceptions_enable": [
+                    "builtins.bool"
+                ],
+                "pretty_exceptions_show_locals": [
+                    "builtins.bool"
+                ],
+                "pretty_exceptions_short": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        },
+        "TyperPath": {
+            "shell_complete": {
+                "ctx": [],
+                "param": [],
+                "incomplete": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "typer.params": {
+        "global": {
+            "Option": {
+                "default": [],
+                "param_decls": [],
+                "callback": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [],
+                "default_factory": [],
+                "parser": [],
+                "click_type": [],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "prompt": [
+                    "builtins.bool"
+                ],
+                "confirmation_prompt": [
+                    "builtins.bool"
+                ],
+                "prompt_required": [
+                    "builtins.bool"
+                ],
+                "hide_input": [
+                    "builtins.bool"
+                ],
+                "is_flag": [],
+                "flag_value": [],
+                "count": [
+                    "builtins.bool"
+                ],
+                "allow_from_autoenv": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "min": [],
+                "max": [],
+                "clamp": [
+                    "builtins.bool"
+                ],
+                "formats": [],
+                "mode": [],
+                "encoding": [],
+                "errors": [
+                    "builtins.str"
+                ],
+                "lazy": [],
+                "atomic": [
+                    "builtins.bool"
+                ],
+                "exists": [
+                    "builtins.bool"
+                ],
+                "file_okay": [
+                    "builtins.bool"
+                ],
+                "dir_okay": [
+                    "builtins.bool"
+                ],
+                "writable": [
+                    "builtins.bool"
+                ],
+                "readable": [
+                    "builtins.bool"
+                ],
+                "resolve_path": [
+                    "builtins.bool"
+                ],
+                "allow_dash": [
+                    "builtins.bool"
+                ],
+                "path_type": [],
+                "rich_help_panel": [],
+                "return": [
+                    "typer.models.OptionInfo"
+                ]
+            },
+            "Argument": {
+                "default": [],
+                "callback": [],
+                "metavar": [],
+                "expose_value": [
+                    "builtins.bool"
+                ],
+                "is_eager": [
+                    "builtins.bool"
+                ],
+                "envvar": [],
+                "shell_complete": [],
+                "autocompletion": [],
+                "default_factory": [],
+                "parser": [],
+                "click_type": [],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "show_envvar": [
+                    "builtins.bool"
+                ],
+                "help": [],
+                "hidden": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "min": [],
+                "max": [],
+                "clamp": [
+                    "builtins.bool"
+                ],
+                "formats": [],
+                "mode": [],
+                "encoding": [],
+                "errors": [
+                    "builtins.str"
+                ],
+                "lazy": [],
+                "atomic": [
+                    "builtins.bool"
+                ],
+                "exists": [
+                    "builtins.bool"
+                ],
+                "file_okay": [
+                    "builtins.bool"
+                ],
+                "dir_okay": [
+                    "builtins.bool"
+                ],
+                "writable": [
+                    "builtins.bool"
+                ],
+                "readable": [
+                    "builtins.bool"
+                ],
+                "resolve_path": [
+                    "builtins.bool"
+                ],
+                "allow_dash": [
+                    "builtins.bool"
+                ],
+                "path_type": [],
+                "rich_help_panel": [],
+                "return": [
+                    "typer.models.ArgumentInfo"
+                ]
+            }
+        }
+    },
+    "typer.rich_utils": {
+        "global": {
+            "_get_rich_console": {
+                "stderr": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.console.Console"
+                ]
+            },
+            "_make_rich_text": {
+                "text": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.markdown.Markdown"
+                ]
+            },
+            "_get_help_text": {
+                "obj": [
+                    "typer.models.CommandInfo"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_parameter_help": {
+                "param": [
+                    "typer.core.TyperArgument"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.columns.Columns"
+                ]
+            },
+            "_make_command_help": {
+                "help_text": [
+                    "builtins.str"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.markdown.Markdown"
+                ]
+            },
+            "_print_options_panel": {
+                "name": [],
+                "params": [
+                    "typing.Iterable[typer.core.TyperOption]"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "console": [
+                    "rich.console.Console"
+                ],
+                "return": []
+            },
+            "_print_commands_panel": {
+                "name": [],
+                "commands": [
+                    "typing.Iterable[typer.models.CommandInfo]"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "console": [
+                    "rich.console.Console"
+                ],
+                "cmd_len": [],
+                "return": []
+            },
+            "rich_format_help": {
+                "obj": [
+                    "click.core.Group"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "markup_mode": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "rich_format_error": {
+                "self": [
+                    "click.exceptions.UsageError"
+                ],
+                "return": []
+            },
+            "rich_abort_error": {
+                "return": []
+            },
+            "rich_to_html": {
+                "input_text": [],
+                "return": []
+            },
+            "rich_render_text": {
+                "text": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "typer.testing": {
+        "CliRunner": {
+            "invoke": {
+                "app": [
+                    "typer.main.Typer"
+                ],
+                "args": [],
+                "input": [],
+                "env": [],
+                "catch_exceptions": [
+                    "builtins.bool"
+                ],
+                "color": [
+                    "builtins.bool"
+                ],
+                "extra": [],
+                "return": []
+            }
+        }
+    },
+    "typer.utils": {
+        "global": {
+            "_param_type_to_user_string": {
+                "param_type": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_split_annotation_from_typer_annotations": {
+                "base_annotation": [],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.list[typer.models.ParameterInfo]]"
+                ]
+            },
+            "get_params_from_function": {
+                "func": [
+                    "typing.Callable"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typer.models.ParamMeta]"
+                ]
+            }
+        },
+        "AnnotatedParamWithDefaultValueError": {
+            "__init__": {
+                "argument_name": [],
+                "param_type": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "MixedAnnotatedAndDefaultStyleError": {
+            "__init__": {
+                "argument_name": [],
+                "annotated_param_type": [],
+                "default_param_type": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "MultipleTyperAnnotationsError": {
+            "__init__": {
+                "argument_name": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "DefaultFactoryAndDefaultValueError": {
+            "__init__": {
+                "argument_name": [],
+                "param_type": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    }
+}

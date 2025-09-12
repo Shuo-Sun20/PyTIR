@@ -1,0 +1,3710 @@
+{
+    "jinja2": {
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2._identifier": {
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.async_utils": {
+        "_IteratorToAsyncIterator": {
+            "__aiter__": {
+                "return": [
+                    "_IteratorToAsyncIterator"
+                ]
+            },
+            "__anext__": {
+                "return": []
+            },
+            "__init__": {
+                "iterator": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "async_variant": {
+                "normal_func": [],
+                "return": []
+            },
+            "auto_aiter": {
+                "iterable": [],
+                "return": [
+                    "_IteratorToAsyncIterator"
+                ]
+            },
+            "auto_await": {
+                "value": [],
+                "return": []
+            },
+            "auto_to_list": {
+                "value": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "decorator": {
+                "async_func": [],
+                "return": []
+            },
+            "global": {},
+            "is_async": {
+                "args": [],
+                "return": []
+            },
+            "wrapper": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.bccache": {
+        "Bucket": {
+            "__init__": {
+                "environment": [],
+                "key": [],
+                "checksum": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "bytecode_from_string": {
+                "string": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "bytecode_to_string": {
+                "return": []
+            },
+            "load_bytecode": {
+                "f": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "reset": {
+                "return": [
+                    "None"
+                ]
+            },
+            "write_bytecode": {
+                "f": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "FileSystemBytecodeCache": {
+            "__init__": {
+                "directory": [
+                    "None"
+                ],
+                "pattern": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_cache_filename": {
+                "bucket": [],
+                "return": []
+            },
+            "_get_default_cache_dir": {
+                "return": []
+            },
+            "_unsafe_dir": {
+                "return": [
+                    "None"
+                ]
+            },
+            "clear": {
+                "return": [
+                    "None"
+                ]
+            },
+            "dump_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "load_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "remove_silent": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "MemcachedBytecodeCache": {
+            "__init__": {
+                "client": [],
+                "prefix": [
+                    "typing.Text"
+                ],
+                "timeout": [
+                    "None"
+                ],
+                "ignore_memcache_errors": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "dump_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "load_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "BytecodeCache": {
+            "clear": {
+                "return": [
+                    "None"
+                ]
+            },
+            "dump_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_bucket": {
+                "environment": [],
+                "name": [],
+                "filename": [],
+                "source": [],
+                "return": [
+                    "Bucket"
+                ]
+            },
+            "get_cache_key": {
+                "name": [],
+                "filename": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_source_checksum": {
+                "source": [],
+                "return": []
+            },
+            "load_bytecode": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "set_bucket": {
+                "bucket": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_MemcachedClient": {
+            "get": {
+                "key": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "set": {
+                "key": [],
+                "value": [],
+                "timeout": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.constants": {
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.debug": {
+        "global": {
+            "fake_traceback": {
+                "exc_value": [],
+                "tb": [],
+                "filename": [],
+                "lineno": [],
+                "return": []
+            },
+            "get_template_locals": {
+                "real_locals": [],
+                "return": [
+                    "dict"
+                ]
+            },
+            "global": {},
+            "rewrite_traceback_stack": {
+                "source": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "jinja2.defaults": {
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.environment": {
+        "TemplateExpression": {
+            "__call__": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "template": [],
+                "undefined_to_none": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "TemplateModule": {
+            "__html__": {
+                "return": [
+                    "Markup"
+                ]
+            },
+            "__init__": {
+                "template": [],
+                "context": [],
+                "body_stream": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "Environment": {
+            "__init__": {
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [
+                    "tuple"
+                ],
+                "optimized": [
+                    "bool"
+                ],
+                "undefined": [],
+                "finalize": [
+                    "None"
+                ],
+                "autoescape": [
+                    "bool"
+                ],
+                "loader": [
+                    "None"
+                ],
+                "cache_size": [
+                    "int"
+                ],
+                "auto_reload": [
+                    "bool"
+                ],
+                "bytecode_cache": [
+                    "None"
+                ],
+                "enable_async": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_compile": {
+                "source": [],
+                "filename": [],
+                "return": []
+            },
+            "_filter_test_common": {
+                "name": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "context": [],
+                "eval_ctx": [],
+                "is_filter": [],
+                "return": []
+            },
+            "_generate": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "defer_init": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "_load_template": {
+                "name": [],
+                "globals": [],
+                "return": []
+            },
+            "_parse": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "_tokenize": {
+                "source": [],
+                "name": [],
+                "filename": [
+                    "None"
+                ],
+                "state": [
+                    "None"
+                ],
+                "return": [
+                    "TokenStream"
+                ]
+            },
+            "add_extension": {
+                "extension": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "call_filter": {
+                "name": [],
+                "value": [],
+                "args": [
+                    "None"
+                ],
+                "kwargs": [
+                    "None"
+                ],
+                "context": [
+                    "None"
+                ],
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            },
+            "call_test": {
+                "name": [],
+                "value": [],
+                "args": [
+                    "None"
+                ],
+                "kwargs": [
+                    "None"
+                ],
+                "context": [
+                    "None"
+                ],
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            },
+            "compile": {
+                "source": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "raw": [
+                    "bool"
+                ],
+                "defer_init": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "compile_expression": {
+                "source": [],
+                "undefined_to_none": [
+                    "bool"
+                ],
+                "return": [
+                    "TemplateExpression"
+                ]
+            },
+            "compile_templates": {
+                "target": [],
+                "extensions": [
+                    "None"
+                ],
+                "filter_func": [
+                    "None"
+                ],
+                "zip": [
+                    "typing.Text"
+                ],
+                "log_function": [
+                    "None"
+                ],
+                "ignore_errors": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "extend": {
+                "attributes": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "filter_func": {
+                "x": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "from_string": {
+                "source": [],
+                "globals": [
+                    "None"
+                ],
+                "template_class": [
+                    "None"
+                ],
+                "return": []
+            },
+            "get_or_select_template": {
+                "template_name_or_list": [],
+                "parent": [
+                    "None"
+                ],
+                "globals": [
+                    "None"
+                ],
+                "return": [
+                    "Template"
+                ]
+            },
+            "get_template": {
+                "name": [],
+                "parent": [
+                    "None"
+                ],
+                "globals": [
+                    "None"
+                ],
+                "return": [
+                    "Template"
+                ]
+            },
+            "getattr": {
+                "obj": [],
+                "attribute": [],
+                "return": []
+            },
+            "getitem": {
+                "obj": [],
+                "argument": [],
+                "return": []
+            },
+            "handle_exception": {
+                "source": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "iter_extensions": {
+                "return": []
+            },
+            "join_path": {
+                "template": [],
+                "parent": [],
+                "return": []
+            },
+            "lex": {
+                "source": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "return": []
+            },
+            "lexer": {
+                "return": []
+            },
+            "list_templates": {
+                "extensions": [
+                    "None"
+                ],
+                "filter_func": [
+                    "None"
+                ],
+                "return": [
+                    "list"
+                ]
+            },
+            "log_function": {
+                "x": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "make_globals": {
+                "d": [],
+                "return": [
+                    "ChainMap"
+                ]
+            },
+            "overlay": {
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [],
+                "optimized": [],
+                "undefined": [],
+                "finalize": [],
+                "autoescape": [],
+                "loader": [],
+                "cache_size": [],
+                "auto_reload": [],
+                "bytecode_cache": [],
+                "enable_async": [],
+                "return": []
+            },
+            "parse": {
+                "source": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "return": []
+            },
+            "preprocess": {
+                "source": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "return": []
+            },
+            "select_template": {
+                "names": [],
+                "parent": [
+                    "None"
+                ],
+                "globals": [
+                    "None"
+                ],
+                "return": [
+                    "Template"
+                ]
+            },
+            "write_file": {
+                "filename": [],
+                "data": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "TemplateStream": {
+            "__init__": {
+                "gen": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "TemplateStream"
+                ]
+            },
+            "__next__": {
+                "return": []
+            },
+            "_buffered_generator": {
+                "size": [],
+                "return": [
+                    "None",
+                    "typing.Generator"
+                ]
+            },
+            "disable_buffering": {
+                "return": [
+                    "None"
+                ]
+            },
+            "dump": {
+                "fp": [],
+                "encoding": [
+                    "None"
+                ],
+                "errors": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "enable_buffering": {
+                "size": [
+                    "int"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Template": {
+            "__new__": {
+                "cls": [],
+                "source": [],
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [
+                    "tuple"
+                ],
+                "optimized": [
+                    "bool"
+                ],
+                "undefined": [],
+                "finalize": [
+                    "None"
+                ],
+                "autoescape": [
+                    "bool"
+                ],
+                "enable_async": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_from_namespace": {
+                "cls": [],
+                "environment": [],
+                "namespace": [],
+                "globals": [],
+                "return": []
+            },
+            "_get_default_module": {
+                "ctx": [
+                    "None"
+                ],
+                "return": []
+            },
+            "_get_default_module_async": {
+                "ctx": [
+                    "None"
+                ],
+                "return": []
+            },
+            "debug_info": {
+                "return": [
+                    "list[tuple]",
+                    "list"
+                ]
+            },
+            "from_code": {
+                "cls": [],
+                "environment": [],
+                "code": [],
+                "globals": [],
+                "uptodate": [
+                    "None"
+                ],
+                "return": []
+            },
+            "from_module_dict": {
+                "cls": [],
+                "environment": [],
+                "module_dict": [],
+                "globals": [],
+                "return": []
+            },
+            "generate": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "typing.Generator",
+                    "None"
+                ]
+            },
+            "generate_async": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "get_corresponding_lineno": {
+                "lineno": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "is_up_to_date": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "make_module": {
+                "vars": [
+                    "None"
+                ],
+                "shared": [
+                    "bool"
+                ],
+                "locals": [
+                    "None"
+                ],
+                "return": [
+                    "TemplateModule"
+                ]
+            },
+            "make_module_async": {
+                "vars": [
+                    "None"
+                ],
+                "shared": [
+                    "bool"
+                ],
+                "locals": [
+                    "None"
+                ],
+                "return": [
+                    "TemplateModule"
+                ]
+            },
+            "module": {
+                "return": []
+            },
+            "new_context": {
+                "vars": [
+                    "None"
+                ],
+                "shared": [
+                    "bool"
+                ],
+                "locals": [
+                    "None"
+                ],
+                "return": []
+            },
+            "render": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "render_async": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "stream": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "TemplateStream"
+                ]
+            },
+            "to_list": {
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "global": {
+            "_environment_config_check": {
+                "environment": [],
+                "return": []
+            },
+            "copy_cache": {
+                "cache": [],
+                "return": [
+                    "None",
+                    "dict",
+                    "LRUCache"
+                ]
+            },
+            "create_cache": {
+                "size": [],
+                "return": [
+                    "None",
+                    "dict",
+                    "LRUCache"
+                ]
+            },
+            "get_spontaneous_environment": {
+                "cls": [],
+                "args": [],
+                "return": []
+            },
+            "global": {},
+            "load_extensions": {
+                "environment": [],
+                "extensions": [],
+                "return": [
+                    "dict"
+                ]
+            }
+        }
+    },
+    "jinja2.exceptions": {
+        "TemplateError": {
+            "__init__": {
+                "message": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "message": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "TemplateNotFound": {
+            "__init__": {
+                "name": [],
+                "message": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "TemplateSyntaxError": {
+            "__init__": {
+                "message": [],
+                "lineno": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__reduce__": {
+                "return": [
+                    "tuple[tuple]"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "TemplatesNotFound": {
+            "__init__": {
+                "names": [
+                    "tuple"
+                ],
+                "message": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.ext": {
+        "Extension": {
+            "__init__": {
+                "environment": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__init_subclass__": {
+                "cls": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "attr": {
+                "name": [],
+                "lineno": [
+                    "None"
+                ],
+                "return": []
+            },
+            "bind": {
+                "environment": [],
+                "return": []
+            },
+            "call_method": {
+                "name": [],
+                "args": [
+                    "None"
+                ],
+                "kwargs": [
+                    "None"
+                ],
+                "dyn_args": [
+                    "None"
+                ],
+                "dyn_kwargs": [
+                    "None"
+                ],
+                "lineno": [
+                    "None"
+                ],
+                "return": []
+            },
+            "filter_stream": {
+                "stream": [],
+                "return": []
+            },
+            "parse": {
+                "parser": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "preprocess": {
+                "source": [],
+                "name": [],
+                "filename": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "InternationalizationExtension": {
+            "__init__": {
+                "environment": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_extract": {
+                "source": [],
+                "gettext_functions": [
+                    "tuple[typing.Text]"
+                ],
+                "return": []
+            },
+            "_install": {
+                "translations": [],
+                "newstyle": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_install_callables": {
+                "gettext": [],
+                "ngettext": [],
+                "newstyle": [
+                    "None"
+                ],
+                "pgettext": [
+                    "None"
+                ],
+                "npgettext": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_install_null": {
+                "newstyle": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_make_node": {
+                "singular": [],
+                "plural": [],
+                "context": [],
+                "variables": [],
+                "plural_expr": [],
+                "vars_referenced": [],
+                "num_called_num": [],
+                "return": []
+            },
+            "_parse_block": {
+                "parser": [],
+                "allow_pluralize": [],
+                "return": [
+                    "tuple[list]"
+                ]
+            },
+            "_trim_whitespace": {
+                "string": [],
+                "_ws_re": [],
+                "return": []
+            },
+            "_uninstall": {
+                "translations": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "npgettext": {
+                "c": [],
+                "s": [],
+                "p": [],
+                "n": [],
+                "return": []
+            },
+            "parse": {
+                "parser": [],
+                "return": []
+            },
+            "pgettext": {
+                "c": [],
+                "s": [],
+                "return": []
+            }
+        },
+        "_CommentFinder": {
+            "__init__": {
+                "tokens": [],
+                "comment_tags": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "find_backwards": {
+                "offset": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "find_comments": {
+                "lineno": [],
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "global": {
+            "_gettext_alias": {
+                "__context": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "_make_new_gettext": {
+                "func": [],
+                "return": []
+            },
+            "_make_new_ngettext": {
+                "func": [],
+                "return": []
+            },
+            "_make_new_npgettext": {
+                "func": [],
+                "return": []
+            },
+            "_make_new_pgettext": {
+                "func": [],
+                "return": []
+            },
+            "babel_extract": {
+                "fileobj": [],
+                "keywords": [],
+                "comment_tags": [],
+                "options": [],
+                "return": [
+                    "None",
+                    "typing.Generator[tuple]"
+                ]
+            },
+            "extract_from_ast": {
+                "ast": [],
+                "gettext_functions": [
+                    "tuple[typing.Text]"
+                ],
+                "babel_style": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Generator[tuple[typing.Optional[tuple[None]]]]"
+                ]
+            },
+            "getbool": {
+                "options": [],
+                "key": [],
+                "default": [
+                    "bool"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "gettext": {
+                "__context": [],
+                "__string": [],
+                "variables": [],
+                "return": []
+            },
+            "global": {},
+            "ngettext": {
+                "__context": [],
+                "__singular": [],
+                "__plural": [],
+                "__num": [],
+                "variables": [],
+                "return": []
+            },
+            "npgettext": {
+                "__context": [],
+                "__string_ctx": [],
+                "__singular": [],
+                "__plural": [],
+                "__num": [],
+                "variables": [],
+                "return": []
+            },
+            "pgettext": {
+                "__context": [],
+                "__string_ctx": [],
+                "__string": [],
+                "variables": [],
+                "return": []
+            }
+        },
+        "DebugExtension": {
+            "_render": {
+                "context": [],
+                "return": []
+            },
+            "parse": {
+                "parser": [],
+                "return": []
+            }
+        },
+        "_TranslationsBasic": {
+            "gettext": {
+                "message": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "ngettext": {
+                "singular": [],
+                "plural": [],
+                "n": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_TranslationsContext": {
+            "npgettext": {
+                "context": [],
+                "singular": [],
+                "plural": [],
+                "n": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "pgettext": {
+                "context": [],
+                "message": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "ExprStmtExtension": {
+            "parse": {
+                "parser": [],
+                "return": []
+            }
+        },
+        "LoopControlExtension": {
+            "parse": {
+                "parser": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.filters": {
+        "HasHTML": {
+            "__html__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_GroupTuple": {
+            "__repr__": {
+                "return": []
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "global": {
+            "_min_or_max": {
+                "environment": [],
+                "value": [],
+                "func": [],
+                "case_sensitive": [],
+                "attribute": [],
+                "return": []
+            },
+            "_prepare_attribute_parts": {
+                "attr": [],
+                "return": [
+                    "list",
+                    "list[typing.Union[int,str]]",
+                    "list[typing.Optional[str]]"
+                ]
+            },
+            "async_select_or_reject": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "modfunc": [],
+                "lookup_attr": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "attrgetter": {
+                "item": [],
+                "return": []
+            },
+            "do_attr": {
+                "environment": [],
+                "obj": [],
+                "name": [],
+                "return": []
+            },
+            "do_batch": {
+                "value": [],
+                "linecount": [],
+                "fill_with": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator[list]",
+                    "typing.Generator[list[None]]"
+                ]
+            },
+            "do_capitalize": {
+                "s": [],
+                "return": []
+            },
+            "do_center": {
+                "value": [],
+                "width": [
+                    "int"
+                ],
+                "return": []
+            },
+            "do_default": {
+                "value": [],
+                "default_value": [
+                    "typing.Text"
+                ],
+                "boolean": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "do_dictsort": {
+                "value": [],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "by": [
+                    "typing.Text"
+                ],
+                "reverse": [
+                    "bool"
+                ],
+                "return": [
+                    "list"
+                ]
+            },
+            "do_filesizeformat": {
+                "value": [],
+                "binary": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "do_first": {
+                "environment": [],
+                "seq": [],
+                "return": []
+            },
+            "do_float": {
+                "value": [],
+                "default": [
+                    "float"
+                ],
+                "return": [
+                    "float"
+                ]
+            },
+            "do_forceescape": {
+                "value": [],
+                "return": []
+            },
+            "do_format": {
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "do_groupby": {
+                "environment": [],
+                "value": [],
+                "attribute": [],
+                "default": [
+                    "None"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "return": [
+                    "list[_GroupTuple]"
+                ]
+            },
+            "do_indent": {
+                "s": [],
+                "width": [
+                    "int"
+                ],
+                "first": [
+                    "bool"
+                ],
+                "blank": [
+                    "bool"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "do_int": {
+                "value": [],
+                "default": [
+                    "int"
+                ],
+                "base": [
+                    "int"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "do_items": {
+                "value": [],
+                "return": [
+                    "None",
+                    "typing.Generator"
+                ]
+            },
+            "do_join": {
+                "eval_ctx": [],
+                "value": [],
+                "d": [
+                    "typing.Text"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_last": {
+                "environment": [],
+                "seq": [],
+                "return": []
+            },
+            "do_list": {
+                "value": [],
+                "return": []
+            },
+            "do_lower": {
+                "s": [],
+                "return": []
+            },
+            "do_map": {
+                "context": [],
+                "value": [],
+                "name": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "do_mark_safe": {
+                "value": [],
+                "return": [
+                    "Markup"
+                ]
+            },
+            "do_mark_unsafe": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "do_max": {
+                "environment": [],
+                "value": [],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_min": {
+                "environment": [],
+                "value": [],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_pprint": {
+                "value": [],
+                "return": []
+            },
+            "do_random": {
+                "context": [],
+                "seq": [],
+                "return": []
+            },
+            "do_reject": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "do_rejectattr": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "do_replace": {
+                "eval_ctx": [],
+                "s": [],
+                "old": [],
+                "new": [],
+                "count": [
+                    "None"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "do_reverse": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "do_round": {
+                "value": [],
+                "precision": [
+                    "int"
+                ],
+                "method": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "float"
+                ]
+            },
+            "do_select": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "do_selectattr": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "do_slice": {
+                "value": [],
+                "slices": [],
+                "fill_with": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_sort": {
+                "environment": [],
+                "value": [],
+                "reverse": [
+                    "bool"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": [
+                    "list"
+                ]
+            },
+            "do_striptags": {
+                "value": [],
+                "return": []
+            },
+            "do_sum": {
+                "environment": [],
+                "iterable": [],
+                "attribute": [
+                    "None"
+                ],
+                "start": [
+                    "int"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "do_title": {
+                "s": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "do_tojson": {
+                "eval_ctx": [],
+                "value": [],
+                "indent": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_trim": {
+                "value": [],
+                "chars": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_truncate": {
+                "env": [],
+                "s": [],
+                "length": [
+                    "int"
+                ],
+                "killwords": [
+                    "bool"
+                ],
+                "end": [
+                    "typing.Text"
+                ],
+                "leeway": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_unique": {
+                "environment": [],
+                "value": [],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": []
+            },
+            "do_upper": {
+                "s": [],
+                "return": []
+            },
+            "do_urlencode": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "do_urlize": {
+                "eval_ctx": [],
+                "value": [],
+                "trim_url_limit": [
+                    "None"
+                ],
+                "nofollow": [
+                    "bool"
+                ],
+                "target": [
+                    "None"
+                ],
+                "rel": [
+                    "None"
+                ],
+                "extra_schemes": [
+                    "None"
+                ],
+                "return": [
+                    "Markup"
+                ]
+            },
+            "do_wordcount": {
+                "s": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "do_wordwrap": {
+                "environment": [],
+                "s": [],
+                "width": [
+                    "int"
+                ],
+                "break_long_words": [
+                    "bool"
+                ],
+                "wrapstring": [
+                    "None"
+                ],
+                "break_on_hyphens": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "do_xmlattr": {
+                "eval_ctx": [],
+                "d": [],
+                "autospace": [
+                    "bool"
+                ],
+                "return": [
+                    "str",
+                    "Markup"
+                ]
+            },
+            "func": {
+                "x": [],
+                "return": []
+            },
+            "global": {},
+            "ignore_case": {
+                "value": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "make_attrgetter": {
+                "environment": [],
+                "attribute": [],
+                "postprocess": [
+                    "None"
+                ],
+                "default": [
+                    "None"
+                ],
+                "return": []
+            },
+            "make_multi_attrgetter": {
+                "environment": [],
+                "attribute": [],
+                "postprocess": [
+                    "None"
+                ],
+                "return": []
+            },
+            "prepare_map": {
+                "context": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "prepare_select_or_reject": {
+                "context": [],
+                "args": [],
+                "kwargs": [],
+                "modfunc": [],
+                "lookup_attr": [],
+                "return": [
+                    "typing.Callable"
+                ]
+            },
+            "select_or_reject": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "modfunc": [],
+                "lookup_attr": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "sort_func": {
+                "item": [],
+                "return": []
+            },
+            "sync_do_first": {
+                "environment": [],
+                "seq": [],
+                "return": []
+            },
+            "sync_do_groupby": {
+                "environment": [],
+                "value": [],
+                "attribute": [],
+                "default": [
+                    "None"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "return": [
+                    "list[_GroupTuple]"
+                ]
+            },
+            "sync_do_join": {
+                "eval_ctx": [],
+                "value": [],
+                "d": [
+                    "typing.Text"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "sync_do_list": {
+                "value": [],
+                "return": [
+                    "list"
+                ]
+            },
+            "sync_do_map": {
+                "context": [],
+                "value": [],
+                "name": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "sync_do_reject": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "sync_do_rejectattr": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "sync_do_select": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "sync_do_selectattr": {
+                "context": [],
+                "value": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "sync_do_slice": {
+                "value": [],
+                "slices": [],
+                "fill_with": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "sync_do_sum": {
+                "environment": [],
+                "iterable": [],
+                "attribute": [
+                    "None"
+                ],
+                "start": [
+                    "int"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "sync_do_unique": {
+                "environment": [],
+                "value": [],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "attribute": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "transfunc": {
+                "x": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.idtracking": {
+        "FrameSymbolVisitor": {
+            "__init__": {
+                "symbols": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "inner_visit": {
+                "nodes": [],
+                "return": []
+            },
+            "visit_Assign": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_AssignBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Block": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_CallBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_FilterBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_For": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_FromImport": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_If": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Import": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Macro": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_NSRef": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Name": {
+                "node": [],
+                "store_as_param": [
+                    "bool"
+                ],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_OverlayScope": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Scope": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_With": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "RootVisitor": {
+            "__init__": {
+                "symbols": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_simple_visit": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "generic_visit": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_AssignBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_CallBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_For": {
+                "node": [],
+                "for_branch": [
+                    "typing.Text"
+                ],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_OverlayScope": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_With": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Symbols": {
+            "__init__": {
+                "parent": [
+                    "None"
+                ],
+                "level": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_define_ref": {
+                "name": [],
+                "load": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "analyze_node": {
+                "node": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "branch_update": {
+                "branch_symbols": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "copy": {
+                "return": []
+            },
+            "declare_parameter": {
+                "name": [],
+                "return": []
+            },
+            "dump_param_targets": {
+                "return": [
+                    "set"
+                ]
+            },
+            "dump_stores": {
+                "return": [
+                    "dict"
+                ]
+            },
+            "find_load": {
+                "target": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "find_ref": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "load": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "ref": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "store": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "find_symbols": {
+                "nodes": [],
+                "parent_symbols": [
+                    "None"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            },
+            "global": {},
+            "symbols_for_node": {
+                "node": [],
+                "parent_symbols": [
+                    "None"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            }
+        }
+    },
+    "jinja2.meta": {
+        "TrackingCodeGenerator": {
+            "__init__": {
+                "environment": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "enter_frame": {
+                "frame": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "x": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "find_referenced_templates": {
+                "ast": [],
+                "return": [
+                    "typing.Generator[str]",
+                    "typing.Generator[None]"
+                ]
+            },
+            "find_undeclared_variables": {
+                "ast": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "jinja2.nativetypes": {
+        "NativeCodeGenerator": {
+            "_default_finalize": {
+                "value": [],
+                "return": []
+            },
+            "_output_child_post": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_output_child_pre": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_output_child_to_const": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": []
+            },
+            "_output_const_repr": {
+                "group": [],
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "global": {},
+            "native_concat": {
+                "values": [],
+                "return": [
+                    "None",
+                    "str"
+                ]
+            }
+        },
+        "NativeTemplate": {
+            "render": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "render_async": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.nodes": {
+        "Node": {
+            "__eq__": {
+                "other": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "attributes": [],
+                "fields": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "_dump": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "dump": {
+                "return": [
+                    "str"
+                ]
+            },
+            "find": {
+                "node_type": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "find_all": {
+                "node_type": [],
+                "return": [
+                    "typing.Generator[node_type]",
+                    "typing.Generator"
+                ]
+            },
+            "iter_child_nodes": {
+                "exclude": [
+                    "None"
+                ],
+                "only": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator[Node]"
+                ]
+            },
+            "iter_fields": {
+                "exclude": [
+                    "None"
+                ],
+                "only": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator[tuple]"
+                ]
+            },
+            "set_ctx": {
+                "ctx": [],
+                "return": [
+                    "Node"
+                ]
+            },
+            "set_environment": {
+                "environment": [],
+                "return": [
+                    "Node"
+                ]
+            },
+            "set_lineno": {
+                "lineno": [],
+                "override": [
+                    "bool"
+                ],
+                "return": [
+                    "Node"
+                ]
+            }
+        },
+        "EvalContext": {
+            "__init__": {
+                "environment": [],
+                "template_name": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "revert": {
+                "old": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "save": {
+                "return": []
+            }
+        },
+        "InternalName": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "NodeType": {
+            "__new__": {
+                "mcs": [],
+                "name": [],
+                "bases": [],
+                "d": [],
+                "return": []
+            }
+        },
+        "global": {
+            "_failing_new": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "args_as_const": {
+                "node": [],
+                "eval_ctx": [],
+                "return": [
+                    "tuple[list]"
+                ]
+            },
+            "get_eval_context": {
+                "node": [],
+                "ctx": [],
+                "return": [
+                    "EvalContext",
+                    "None"
+                ]
+            },
+            "global": {}
+        },
+        "And": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "BinExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Compare": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "Concat": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "CondExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Const": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            },
+            "from_untrusted": {
+                "cls": [],
+                "value": [],
+                "lineno": [
+                    "None"
+                ],
+                "environment": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Dict": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Expr": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "can_assign": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "Filter": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Getattr": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Getitem": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Keyword": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            }
+        },
+        "List": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "MarkSafe": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "Markup"
+                ]
+            }
+        },
+        "MarkSafeIfAutoescape": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "Markup"
+                ]
+            }
+        },
+        "Or": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "Pair": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            }
+        },
+        "Slice": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "range"
+                ]
+            },
+            "const": {
+                "obj": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "TemplateData": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "Markup"
+                ]
+            }
+        },
+        "Tuple": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "can_assign": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "UnaryExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "_FilterTestCommon": {
+            "as_const": {
+                "eval_ctx": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "NSRef": {
+            "can_assign": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "Name": {
+            "can_assign": {
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "jinja2.optimizer": {
+        "Optimizer": {
+            "__init__": {
+                "environment": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "generic_visit": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "nodes_@_Expr"
+                ]
+            }
+        },
+        "global": {
+            "global": {},
+            "optimize": {
+                "node": [],
+                "environment": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.parser": {
+        "Parser": {
+            "__init__": {
+                "environment": [],
+                "source": [],
+                "name": [
+                    "None"
+                ],
+                "filename": [
+                    "None"
+                ],
+                "state": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_fail_ut_eof": {
+                "name": [],
+                "end_token_stack": [],
+                "lineno": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "ensure": {
+                "expr": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "fail": {
+                "msg": [],
+                "lineno": [
+                    "None"
+                ],
+                "exc": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "fail_eof": {
+                "end_tokens": [
+                    "None"
+                ],
+                "lineno": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "fail_unknown_tag": {
+                "name": [],
+                "lineno": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "flush_data": {
+                "return": [
+                    "None"
+                ]
+            },
+            "free_identifier": {
+                "lineno": [
+                    "None"
+                ],
+                "return": []
+            },
+            "is_tuple_end": {
+                "extra_end_rules": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "parse": {
+                "return": []
+            },
+            "parse_and": {
+                "return": []
+            },
+            "parse_assign_target": {
+                "with_tuple": [],
+                "name_only": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_autoescape": {
+                "return": []
+            },
+            "parse_block": {
+                "return": []
+            },
+            "parse_call": {
+                "node": [],
+                "return": []
+            },
+            "parse_call_args": {
+                "return": [
+                    "tuple[typing.Optional[list]]"
+                ]
+            },
+            "parse_call_block": {
+                "return": []
+            },
+            "parse_compare": {
+                "return": []
+            },
+            "parse_concat": {
+                "return": []
+            },
+            "parse_condexpr": {
+                "return": []
+            },
+            "parse_context": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "parse_dict": {
+                "return": []
+            },
+            "parse_expression": {
+                "with_condexpr": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_extends": {
+                "return": []
+            },
+            "parse_filter": {
+                "node": [],
+                "start_inline": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_filter_block": {
+                "return": []
+            },
+            "parse_filter_expr": {
+                "node": [],
+                "return": []
+            },
+            "parse_for": {
+                "return": []
+            },
+            "parse_from": {
+                "return": []
+            },
+            "parse_if": {
+                "return": []
+            },
+            "parse_import": {
+                "return": []
+            },
+            "parse_import_context": {
+                "node": [],
+                "default": [],
+                "return": []
+            },
+            "parse_include": {
+                "return": []
+            },
+            "parse_list": {
+                "return": []
+            },
+            "parse_macro": {
+                "return": []
+            },
+            "parse_math1": {
+                "return": []
+            },
+            "parse_math2": {
+                "return": []
+            },
+            "parse_not": {
+                "return": []
+            },
+            "parse_or": {
+                "return": []
+            },
+            "parse_postfix": {
+                "node": [],
+                "return": []
+            },
+            "parse_pow": {
+                "return": []
+            },
+            "parse_primary": {
+                "with_namespace": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_print": {
+                "return": []
+            },
+            "parse_set": {
+                "return": []
+            },
+            "parse_signature": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_statement": {
+                "return": []
+            },
+            "parse_statements": {
+                "end_tokens": [],
+                "drop_needle": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_subscribed": {
+                "return": []
+            },
+            "parse_subscript": {
+                "node": [],
+                "return": []
+            },
+            "parse_test": {
+                "node": [],
+                "return": []
+            },
+            "parse_tuple": {
+                "simplified": [
+                    "bool"
+                ],
+                "with_condexpr": [
+                    "bool"
+                ],
+                "extra_end_rules": [
+                    "None"
+                ],
+                "explicit_parentheses": [
+                    "bool"
+                ],
+                "with_namespace": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_unary": {
+                "with_filter": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "parse_with": {
+                "return": []
+            },
+            "subparse": {
+                "end_tokens": [
+                    "None"
+                ],
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "jinja2.sandbox": {
+        "SandboxedEnvironment": {
+            "__init__": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "call": {
+                "__self": [],
+                "__context": [],
+                "__obj": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "call_binop": {
+                "context": [],
+                "operator": [],
+                "left": [],
+                "right": [],
+                "return": []
+            },
+            "call_unop": {
+                "context": [],
+                "operator": [],
+                "arg": [],
+                "return": []
+            },
+            "getattr": {
+                "obj": [],
+                "attribute": [],
+                "return": []
+            },
+            "getitem": {
+                "obj": [],
+                "argument": [],
+                "return": []
+            },
+            "is_safe_attribute": {
+                "obj": [],
+                "attr": [],
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_safe_callable": {
+                "obj": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "unsafe_undefined": {
+                "obj": [],
+                "attribute": [],
+                "return": []
+            },
+            "wrap_str_format": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "wrapper": {
+                "kwargs": [],
+                "args": [],
+                "return": []
+            }
+        },
+        "SandboxedFormatter": {
+            "__init__": {
+                "env": [],
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_field": {
+                "field_name": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "tuple"
+                ]
+            }
+        },
+        "global": {
+            "global": {},
+            "is_internal_attribute": {
+                "obj": [],
+                "attr": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "modifies_known_mutable": {
+                "obj": [],
+                "attr": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "safe_range": {
+                "args": [],
+                "return": [
+                    "range"
+                ]
+            },
+            "unsafe": {
+                "f": [],
+                "return": []
+            }
+        },
+        "ImmutableSandboxedEnvironment": {
+            "is_safe_attribute": {
+                "obj": [],
+                "attr": [],
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "jinja2.tests": {
+        "global": {
+            "global": {},
+            "test_boolean": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_defined": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_divisibleby": {
+                "value": [],
+                "num": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_escaped": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_even": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_false": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_filter": {
+                "env": [],
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_float": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_in": {
+                "value": [],
+                "seq": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_integer": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_iterable": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_lower": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_mapping": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_none": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_number": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_odd": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_sameas": {
+                "value": [],
+                "other": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_sequence": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_string": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_test": {
+                "env": [],
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_true": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_undefined": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "test_upper": {
+                "value": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "jinja2.utils": {
+        "Joiner": {
+            "__call__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__init__": {
+                "sep": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "LRUCache": {
+            "__contains__": {
+                "key": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "__delitem__": {
+                "key": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "__getnewargs__": {
+                "return": [
+                    "tuple"
+                ]
+            },
+            "__getstate__": {
+                "return": [
+                    "dict[typing.Text, ]"
+                ]
+            },
+            "__init__": {
+                "capacity": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "__len__": {
+                "return": [
+                    "int"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__reversed__": {
+                "return": []
+            },
+            "__setitem__": {
+                "key": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__setstate__": {
+                "d": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_postinit": {
+                "return": [
+                    "None"
+                ]
+            },
+            "clear": {
+                "return": [
+                    "None"
+                ]
+            },
+            "copy": {
+                "return": []
+            },
+            "get": {
+                "key": [],
+                "default": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "items": {
+                "return": [
+                    "list[tuple]"
+                ]
+            },
+            "keys": {
+                "return": [
+                    "list"
+                ]
+            },
+            "setdefault": {
+                "key": [],
+                "default": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "values": {
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "Namespace": {
+            "__getattribute__": {
+                "name": [],
+                "return": []
+            },
+            "__init__": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__setitem__": {
+                "name": [],
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Cycler": {
+            "__init__": {
+                "items": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "current": {
+                "return": []
+            },
+            "next": {
+                "return": []
+            },
+            "reset": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_MissingType": {
+            "__reduce__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {
+            "autoescape": {
+                "template_name": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "clear_caches": {
+                "return": [
+                    "None"
+                ]
+            },
+            "consume": {
+                "iterable": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "generate_lorem_ipsum": {
+                "n": [
+                    "int"
+                ],
+                "html": [
+                    "bool"
+                ],
+                "min": [
+                    "int"
+                ],
+                "max": [
+                    "int"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "global": {},
+            "htmlsafe_json_dumps": {
+                "obj": [],
+                "dumps": [
+                    "None"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "import_string": {
+                "import_name": [],
+                "silent": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "internalcode": {
+                "f": [],
+                "return": []
+            },
+            "is_undefined": {
+                "obj": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "object_type_repr": {
+                "obj": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "open_if_exists": {
+                "filename": [],
+                "mode": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None",
+                    "typing.IO"
+                ]
+            },
+            "pass_context": {
+                "f": [],
+                "return": []
+            },
+            "pass_environment": {
+                "f": [],
+                "return": []
+            },
+            "pass_eval_context": {
+                "f": [],
+                "return": []
+            },
+            "pformat": {
+                "obj": [],
+                "return": []
+            },
+            "select_autoescape": {
+                "enabled_extensions": [
+                    "tuple[typing.Text]"
+                ],
+                "disabled_extensions": [
+                    "tuple"
+                ],
+                "default_for_string": [
+                    "bool"
+                ],
+                "default": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "trim_url": {
+                "x": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "url_quote": {
+                "obj": [],
+                "charset": [
+                    "typing.Text"
+                ],
+                "for_qs": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "urlize": {
+                "text": [],
+                "trim_url_limit": [
+                    "None"
+                ],
+                "rel": [
+                    "None"
+                ],
+                "target": [
+                    "None"
+                ],
+                "extra_schemes": [
+                    "None"
+                ],
+                "return": []
+            }
+        },
+        "_PassArg": {
+            "from_obj": {
+                "cls": [],
+                "obj": [],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "jinja2.visitor": {
+        "VisitCallable": {
+            "__call__": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "NodeTransformer": {
+            "generic_visit": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            },
+            "visit_list": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "NodeVisitor": {
+            "generic_visit": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_visitor": {
+                "node": [],
+                "return": []
+            },
+            "visit": {
+                "node": [],
+                "kwargs": [],
+                "args": [],
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    }
+}

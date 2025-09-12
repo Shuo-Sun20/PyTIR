@@ -1,0 +1,3253 @@
+{
+    "black": {
+        "global": {
+            "read_pyproject_toml": {
+                "ctx": [
+                    "black.handle_ipynb_magics.CellMagic"
+                ],
+                "param": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "spellcheck_pyproject_toml_keys": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "config_keys": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "config_file_path": [],
+                "return": []
+            },
+            "target_version_option_callback": {
+                "c": [],
+                "p": [],
+                "v": [
+                    "typing.Iterable[ast.Slice]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "enable_unstable_feature_callback": {
+                "c": [],
+                "p": [],
+                "v": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "re_compile_maybe_verbose": {
+                "regex": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "re.Pattern"
+                ]
+            },
+            "validate_regex": {
+                "ctx": [],
+                "param": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "re.Pattern"
+                ]
+            },
+            "main": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "code": [],
+                "line_length": [],
+                "target_version": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "check": [],
+                "diff": [],
+                "line_ranges": [
+                    "typing.Iterable[re.Pattern]"
+                ],
+                "color": [],
+                "fast": [],
+                "pyi": [],
+                "ipynb": [],
+                "python_cell_magics": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "skip_source_first_line": [],
+                "skip_string_normalization": [],
+                "skip_magic_trailing_comma": [],
+                "preview": [],
+                "unstable": [],
+                "enable_unstable_feature": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "quiet": [
+                    "builtins.bool"
+                ],
+                "verbose": [],
+                "required_version": [
+                    "re.Pattern"
+                ],
+                "include": [],
+                "exclude": [],
+                "extend_exclude": [],
+                "force_exclude": [],
+                "stdin_filename": [],
+                "workers": [],
+                "src": [
+                    "builtins.list[builtins.str]"
+                ],
+                "config": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_sources": {
+                "root": [
+                    "pathlib.Path"
+                ],
+                "src": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "quiet": [],
+                "verbose": [],
+                "include": [
+                    "re.Pattern"
+                ],
+                "exclude": [
+                    "re.Pattern"
+                ],
+                "extend_exclude": [
+                    "re.Pattern"
+                ],
+                "force_exclude": [
+                    "re.Pattern"
+                ],
+                "report": [
+                    "black.report.Report"
+                ],
+                "stdin_filename": [],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "path_empty": {
+                "src": [],
+                "msg": [],
+                "quiet": [],
+                "verbose": [],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "return": []
+            },
+            "reformat_code": {
+                "content": [],
+                "fast": [],
+                "write_back": [],
+                "mode": [],
+                "report": [
+                    "black.report.Report"
+                ],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "reformat_one": {
+                "src": [
+                    "pathlib.Path"
+                ],
+                "fast": [],
+                "write_back": [],
+                "mode": [
+                    "black.cache.Cache"
+                ],
+                "report": [
+                    "black.report.Report"
+                ],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "format_file_in_place": {
+                "src": [
+                    "builtins.str"
+                ],
+                "fast": [],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "write_back": [],
+                "lock": [],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "format_stdin_to_stdout": {
+                "fast": [],
+                "content": [],
+                "write_back": [],
+                "mode": [],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "check_stability_and_equivalence": {
+                "src_contents": [],
+                "dst_contents": [],
+                "mode": [],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "format_file_contents": {
+                "src_contents": [],
+                "fast": [],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "format_cell": {
+                "src": [
+                    "builtins.str"
+                ],
+                "fast": [],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "validate_metadata": {
+                "nb": [
+                    "platform._Processor"
+                ],
+                "return": []
+            },
+            "format_ipynb_string": {
+                "src_contents": [
+                    "_typeshed.SupportsGetItem[builtins.int, builtins.str]"
+                ],
+                "fast": [],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_str": {
+                "src_contents": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "mode": [],
+                "lines": [
+                    "builtins.list[builtins.tuple[builtins.int, builtins.int]]"
+                ],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "_format_str_once": {
+                "src_contents": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "decode_bytes": {
+                "src": [],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str]"
+                ]
+            },
+            "get_features_used": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "future_imports": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_contains_asexpr": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "detect_target_versions": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "future_imports": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "get_future_imports": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_black_info": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "assert_equivalent": {
+                "src": [],
+                "dst": [],
+                "return": []
+            },
+            "assert_stable": {
+                "src": [],
+                "dst": [
+                    "builtins.str"
+                ],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "nullcontext": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "patched_main": {
+                "return": []
+            }
+        },
+        "WriteBack": {
+            "from_configuration": {
+                "check": [],
+                "diff": [],
+                "color": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.cache": {
+        "global": {
+            "get_cache_dir": {
+                "return": [
+                    "pathlib.Path"
+                ]
+            },
+            "get_cache_file": {
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "return": [
+                    "pathlib.Path"
+                ]
+            }
+        },
+        "Cache": {
+            "read": {
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "return": []
+            },
+            "hash_digest": {
+                "path": [
+                    "pathlib.Path"
+                ],
+                "return": []
+            },
+            "get_file_data": {
+                "path": [
+                    "posix.DirEntry"
+                ],
+                "return": [
+                    "black.cache.FileData"
+                ]
+            },
+            "is_changed": {
+                "source": [
+                    "pathlib.Path"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "filtered_cached": {
+                "sources": [
+                    "typing.Iterable[pathlib.Path]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.set[typing.Any], builtins.set[typing.Any]]"
+                ]
+            },
+            "write": {
+                "sources": [
+                    "typing.Iterable[posix.DirEntry]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.nodes": {
+        "global": {
+            "whitespace": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "complex_subscript": [],
+                "mode": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "make_simple_prefix": {
+                "nl_count": [
+                    "builtins.int"
+                ],
+                "form_feed": [],
+                "empty_line": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "preceding_leaf": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "blib2to3.pytree.Leaf"
+                ]
+            },
+            "prev_siblings_are": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "tokens": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "parent_type": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "child_towards": {
+                "ancestor": [],
+                "descendant": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "blib2to3.pytree.Base"
+                ]
+            },
+            "replace_child": {
+                "old_child": [
+                    "blib2to3.pytree.Base"
+                ],
+                "new_child": [],
+                "return": []
+            },
+            "container_of": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "blib2to3.pytree.Base"
+                ]
+            },
+            "first_leaf_of": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "blib2to3.pytree.Leaf"
+                ]
+            },
+            "is_arith_like": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_docstring": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_empty_tuple": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "is_one_tuple": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_tuple_containing_walrus": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_tuple_containing_star": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_generator": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_one_sequence_between": {
+                "opening": [
+                    "dataclasses.InitVar"
+                ],
+                "closing": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "leaves": [
+                    "typing.Sequence[blib2to3.pytree.Leaf]"
+                ],
+                "brackets": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_walrus_assignment": {
+                "node": [],
+                "return": []
+            },
+            "is_simple_decorator_trailer": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "last": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "is_simple_decorator_expression": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_yield": {
+                "node": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_vararg": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "within": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_fstring": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": []
+            },
+            "fstring_to_string": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "blib2to3.pytree.Leaf"
+                ]
+            },
+            "is_multiline_string": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_parent_function_or_class": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_function_or_class": {
+                "node": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_stub_suite": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_stub_body": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_atom_with_invisible_parens": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_empty_par": {
+                "leaf": [],
+                "return": []
+            },
+            "is_empty_lpar": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": []
+            },
+            "is_empty_rpar": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": []
+            },
+            "is_import": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_with_or_async_with_stmt": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": []
+            },
+            "is_async_stmt_or_funcdef": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_type_comment": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": []
+            },
+            "is_type_ignore_comment": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": []
+            },
+            "is_type_ignore_comment_string": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "wrap_in_parentheses": {
+                "parent": [
+                    "blib2to3.pytree.Node"
+                ],
+                "child": [
+                    "blib2to3.pytree.Base"
+                ],
+                "visible": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "unwrap_singleton_parenthesis": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "ensure_visible": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": []
+            },
+            "is_name_token": {
+                "nl": [
+                    "dataclasses.InitVar"
+                ],
+                "return": []
+            },
+            "is_lpar_token": {
+                "nl": [
+                    "dataclasses.InitVar"
+                ],
+                "return": []
+            },
+            "is_rpar_token": {
+                "nl": [
+                    "dataclasses.InitVar"
+                ],
+                "return": []
+            },
+            "is_number_token": {
+                "nl": [
+                    "dataclasses.InitVar"
+                ],
+                "return": []
+            },
+            "get_annotation_type": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "is_part_of_annotation": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "first_leaf": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "blib2to3.pytree.Leaf"
+                ]
+            },
+            "last_leaf": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "blib2to3.pytree.Leaf"
+                ]
+            },
+            "furthest_ancestor_with_last_leaf": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "blib2to3.pytree.Base"
+                ]
+            }
+        },
+        "Visitor": {
+            "visit": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_default": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "black.handle_ipynb_magics": {
+        "global": {
+            "jupyter_dependencies_are_installed": {
+                "warn": [],
+                "return": []
+            },
+            "validate_cell": {
+                "src": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "return": []
+            },
+            "remove_trailing_semicolon": {
+                "src": [],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.bool]"
+                ]
+            },
+            "put_trailing_semicolon_back": {
+                "src": [],
+                "has_trailing_semicolon": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "mask_cell": {
+                "src": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.list[typing.Any]]"
+                ]
+            },
+            "create_token": {
+                "n_chars": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_token": {
+                "src": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "magic": [
+                    "typing.Sized"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "replace_cell_magics": {
+                "src": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.list[typing.Any]]"
+                ]
+            },
+            "replace_magics": {
+                "src": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.list[typing.Any]]"
+                ]
+            },
+            "unmask_cell": {
+                "src": [
+                    "types.CodeType"
+                ],
+                "replacements": [
+                    "typing.Iterable[black.handle_ipynb_magics.Replacement]"
+                ],
+                "return": [
+                    "types.CodeType"
+                ]
+            },
+            "_get_code_start": {
+                "src": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_is_ipython_magic": {
+                "node": [
+                    "ast.AnnAssign"
+                ],
+                "return": []
+            },
+            "_get_str_args": {
+                "args": [
+                    "typing.Iterable[ast.Constant]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "CellMagic": {
+            "header": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "CellMagicFinder": {
+            "__init__": {
+                "cell_magic": [],
+                "return": []
+            },
+            "visit_Expr": {
+                "node": [
+                    "enum.auto"
+                ],
+                "return": []
+            }
+        },
+        "MagicFinder": {
+            "__init__": {
+                "return": []
+            },
+            "visit_Assign": {
+                "node": [
+                    "enum.auto"
+                ],
+                "return": []
+            },
+            "visit_Expr": {
+                "node": [
+                    "enum.auto"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.parsing": {
+        "global": {
+            "get_grammars": {
+                "target_versions": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[blib2to3.pgen2.pgen.PgenGrammar]"
+                ]
+            },
+            "lib2to3_parse": {
+                "src_txt": [
+                    "builtins.str"
+                ],
+                "target_versions": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "blib2to3.pytree.Node"
+                ]
+            },
+            "matches_grammar": {
+                "src_txt": [],
+                "grammar": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "lib2to3_unparse": {
+                "node": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_parse_single_version": {
+                "src": [],
+                "version": [],
+                "type_comments": [],
+                "return": []
+            },
+            "parse_ast": {
+                "src": [],
+                "return": []
+            },
+            "_normalize": {
+                "lineend": [
+                    "asyncio.queues.Queue"
+                ],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "stringify_ast": {
+                "node": [],
+                "return": []
+            },
+            "_stringify_ast_with_new_parent": {
+                "node": [],
+                "parent_stack": [
+                    "typing.MutableSequence[typing.Any]"
+                ],
+                "new_parent": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_stringify_ast": {
+                "node": [
+                    "ast.Constant"
+                ],
+                "parent_stack": [
+                    "typing.MutableSequence[ast.excepthandler]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "black.trans": {
+        "global": {
+            "TErr": {
+                "err_msg": [],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "hug_power_op": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "features": [],
+                "mode": [],
+                "return": [
+                    "typing.Generator[logging.PlaceHolder, typing.Any, typing.Any]"
+                ]
+            },
+            "handle_is_simple_look_up_prev": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "index": [
+                    "builtins.int"
+                ],
+                "disallowed": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "handle_is_simple_lookup_forward": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "index": [
+                    "builtins.int"
+                ],
+                "disallowed": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_expression_chained": {
+                "chained_leaves": [
+                    "typing.Sequence[dataclasses.InitVar]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "iter_fexpr_spans": {
+                "s": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, builtins.int], typing.Any, typing.Any]"
+                ]
+            },
+            "fstring_contains_expr": {
+                "s": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_toggle_fexpr_quotes": {
+                "fstring": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "old_quote": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "insert_str_child_factory": {
+                "string_leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "is_valid_index_factory": {
+                "seq": [
+                    "typing.Sized"
+                ],
+                "return": [
+                    "typing.Callable[[builtins.int], typing.Any]"
+                ]
+            }
+        },
+        "StringTransformer": {
+            "__init__": {
+                "line_length": [],
+                "normalize_strings": [],
+                "return": []
+            },
+            "do_match": {
+                "line": [],
+                "return": []
+            },
+            "do_transform": {
+                "line": [],
+                "string_indices": [],
+                "return": []
+            },
+            "__call__": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "_features": [],
+                "_mode": [],
+                "return": [
+                    "typing.Generator[blib2to3.pytree.Base, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "CustomSplitMapMixin": {
+            "_get_key": {
+                "string": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.object]"
+                ]
+            },
+            "add_custom_splits": {
+                "string": [
+                    "builtins.object"
+                ],
+                "custom_splits": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "pop_custom_splits": {
+                "string": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "has_custom_splits": {
+                "string": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "StringMerger": {
+            "do_match": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "do_transform": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Iterable[builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[black.rusty.Err, typing.Any, typing.Any]"
+                ]
+            },
+            "_remove_backslash_line_continuation_chars": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "_merge_string_group": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Iterable[builtins.int]"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "_merge_one_string_group": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, blib2to3.pytree.Leaf]"
+                ],
+                "string_idx": [
+                    "builtins.int"
+                ],
+                "is_valid_index": [
+                    "typing.Callable[[builtins.int], typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, blib2to3.pytree.Leaf]"
+                ]
+            },
+            "_validate_msg": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_idx": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            }
+        },
+        "StringParenStripper": {
+            "do_match": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "do_transform": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Iterable[builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[black.rusty.Err, typing.Any, typing.Any]"
+                ]
+            },
+            "_transform_to_new_line": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_and_rpar_indices": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "logging.PlaceHolder"
+                ]
+            }
+        },
+        "BaseStringSplitter": {
+            "do_splitter_match": {
+                "line": [],
+                "return": []
+            },
+            "do_match": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "_validate": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_idx": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "_get_max_string_length": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_idx": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_prefer_paren_wrap_match": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, blib2to3.pytree.Base]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "StringSplitter": {
+            "do_splitter_match": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "do_transform": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Sequence[builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[black.rusty.Err, typing.Any, typing.Any]"
+                ]
+            },
+            "_iter_nameescape_slices": {
+                "string": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.int, builtins.int], typing.Any, typing.Any]"
+                ]
+            },
+            "_iter_fexpr_slices": {
+                "string": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_illegal_split_indices": {
+                "string": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_get_break_idx": {
+                "string": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "max_break_idx": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_maybe_normalize_string_quotes": {
+                "leaf": [
+                    "enum.auto"
+                ],
+                "return": []
+            },
+            "_normalize_f_string": {
+                "string": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "prefix": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_get_string_operator_leaves": {
+                "leaves": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "StringParenWrapper": {
+            "do_splitter_match": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "black.rusty.Err"
+                ]
+            },
+            "_return_match": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, black.comments.ProtoComment]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_else_match": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, black.comments.ProtoComment]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_assert_match": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, black.comments.ProtoComment]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_assign_match": {
+                "LL": [
+                    "_typeshed.SupportsGetItem[builtins.int, blib2to3.pytree.Base]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_dict_or_lambda_match": {
+                "LL": [
+                    "typing.Sequence[blib2to3.pytree.Base]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "do_transform": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "string_indices": [
+                    "typing.Sequence[builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[black.rusty.Ok, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "StringParser": {
+            "__init__": {
+                "return": []
+            },
+            "parse": {
+                "leaves": [
+                    "typing.Sequence[dataclasses.InitVar]"
+                ],
+                "string_idx": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_next_state": {
+                "leaf": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    },
+    "black.lines": {
+        "global": {
+            "enumerate_reversed": {
+                "sequence": [
+                    "typing.Sized"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.int, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "append_leaves": {
+                "new_line": [
+                    "logging.PlaceHolder"
+                ],
+                "old_line": [
+                    "black.lines.Line"
+                ],
+                "leaves": [
+                    "typing.Iterable[blib2to3.pytree.Leaf]"
+                ],
+                "preformatted": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "is_line_short_enough": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "mode": [
+                    "typing.Collection[black.mode.Preview]"
+                ],
+                "line_str": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "can_be_split": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "can_omit_invisible_parens": {
+                "rhs": [
+                    "black.linegen._BracketSplitComponent"
+                ],
+                "line_length": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_can_omit_opening_paren": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "first": [],
+                "line_length": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_can_omit_closing_paren": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "last": [
+                    "black.lines.RHSResult"
+                ],
+                "line_length": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "line_to_string": {
+                "line": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Line": {
+            "append": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "preformatted": [
+                    "builtins.bool"
+                ],
+                "track_bracket": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "append_safe": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "preformatted": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "is_comment": {
+                "return": []
+            },
+            "is_decorator": {
+                "return": []
+            },
+            "is_import": {
+                "return": []
+            },
+            "is_with_or_async_with_stmt": {
+                "return": []
+            },
+            "is_class": {
+                "return": []
+            },
+            "is_stub_class": {
+                "return": []
+            },
+            "is_def": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_stub_def": {
+                "return": []
+            },
+            "is_class_paren_empty": {
+                "return": []
+            },
+            "_is_triple_quoted_string": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_docstring": {
+                "return": []
+            },
+            "is_chained_assignment": {
+                "return": []
+            },
+            "opens_block": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_fmt_pass_converted": {
+                "first_leaf_matches": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_standalone_comments": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_implicit_multiline_string_with_comments": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_uncollapsable_type_comments": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_unsplittable_type_ignore": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_multiline_strings": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "has_magic_trailing_comma": {
+                "closing": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "append_comment": {
+                "comment": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "comments_after": {
+                "leaf": [
+                    "builtins.object"
+                ],
+                "return": []
+            },
+            "remove_trailing_comma": {
+                "return": []
+            },
+            "is_complex_subscript": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "enumerate_with_length": {
+                "is_reversed": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, enum.auto, builtins.int], typing.Any, typing.Any]"
+                ]
+            },
+            "clone": {
+                "return": [
+                    "black.lines.Line"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "LinesBlock": {
+            "all_lines": {
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            }
+        },
+        "EmptyLineTracker": {
+            "maybe_empty_lines": {
+                "current_line": [
+                    "black.lines.Line"
+                ],
+                "return": [
+                    "black.lines.LinesBlock"
+                ]
+            },
+            "_maybe_empty_lines": {
+                "current_line": [
+                    "black.lines.Line"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ]
+            },
+            "_maybe_empty_lines_for_class_or_def": {
+                "current_line": [
+                    "black.lines.Line"
+                ],
+                "before": [
+                    "builtins.int"
+                ],
+                "user_had_newline": [],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ]
+            }
+        }
+    },
+    "black.comments": {
+        "global": {
+            "generate_comments": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Generator[blib2to3.pytree.Leaf, typing.Any, typing.Any]"
+                ]
+            },
+            "list_comments": {
+                "prefix": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "is_endmarker": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "normalize_trailing_prefix": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "total_consumed": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "make_comment": {
+                "content": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "normalize_fmt_off": {
+                "node": [],
+                "mode": [],
+                "lines": [],
+                "return": []
+            },
+            "convert_one_fmt_off_pair": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "mode": [],
+                "lines": [
+                    "typing.Collection[_typeshed.SupportsGetItem[builtins.int, _typeshed.SupportsSub]]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "generate_ignored_nodes": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "comment": [
+                    "enum.auto"
+                ],
+                "mode": [],
+                "return": [
+                    "typing.Generator[blib2to3.pytree.Leaf, typing.Any, typing.Any]"
+                ]
+            },
+            "_generate_ignored_nodes_from_fmt_skip": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "comment": [
+                    "enum.auto"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "is_fmt_on": {
+                "container": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "children_contains_fmt_on": {
+                "container": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "contains_pragma_comment": {
+                "comment_list": [
+                    "typing.Iterable[enum.auto]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_contains_fmt_skip_comment": {
+                "comment_line": [
+                    "re.Pattern"
+                ],
+                "mode": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    },
+    "black.numerics": {
+        "global": {
+            "format_hex": {
+                "text": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_scientific_notation": {
+                "text": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_complex_number": {
+                "text": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_float_or_int_string": {
+                "text": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "normalize_numeric_literal": {
+                "leaf": [
+                    "enum.auto"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.concurrency": {
+        "global": {
+            "maybe_install_uvloop": {
+                "return": []
+            },
+            "cancel": {
+                "tasks": [
+                    "typing.Iterable[asyncio.events.Handle]"
+                ],
+                "return": []
+            },
+            "shutdown": {
+                "loop": [
+                    "asyncio.events.AbstractEventLoop"
+                ],
+                "return": []
+            },
+            "reformat_many": {
+                "sources": [],
+                "fast": [],
+                "write_back": [],
+                "mode": [],
+                "report": [],
+                "workers": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "schedule_formatting": {
+                "sources": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "fast": [],
+                "write_back": [],
+                "mode": [
+                    "black.cache.Cache"
+                ],
+                "report": [
+                    "black.report.Report"
+                ],
+                "loop": [
+                    "asyncio.events.AbstractEventLoop"
+                ],
+                "executor": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "black.brackets": {
+        "global": {
+            "is_split_after_delimiter": {
+                "leaf": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "is_split_before_delimiter": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "previous": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "max_delimiter_priority_in_atom": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "get_leaves_inside_matching_brackets": {
+                "leaves": [
+                    "typing.Sequence[dataclasses.InitVar]"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            }
+        },
+        "BracketTracker": {
+            "mark": {
+                "leaf": [
+                    "typing.MutableSequence[typing.Any]"
+                ],
+                "return": []
+            },
+            "any_open_for_or_lambda": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "any_open_brackets": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "max_delimiter_priority": {
+                "exclude": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "delimiter_count_with_priority": {
+                "priority": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "maybe_increment_for_loop_variable": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "maybe_decrement_after_for_loop_variable": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "maybe_increment_lambda_arguments": {
+                "leaf": [
+                    "black.comments.ProtoComment"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "maybe_decrement_after_lambda_arguments": {
+                "leaf": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_open_lsqb": {
+                "return": []
+            }
+        }
+    },
+    "black.rusty": {
+        "Ok": {
+            "__init__": {
+                "value": [],
+                "return": []
+            },
+            "ok": {
+                "return": []
+            }
+        },
+        "Err": {
+            "__init__": {
+                "e": [],
+                "return": []
+            },
+            "err": {
+                "return": []
+            }
+        }
+    },
+    "black.linegen": {
+        "global": {
+            "_hugging_power_ops_line_to_string": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "features": [],
+                "mode": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "transform_line": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "features": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "typing.Generator[black.lines.Line, typing.Any, typing.Any]"
+                ]
+            },
+            "should_split_funcdef_with_rhs": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "mode": [],
+                "return": []
+            },
+            "left_hand_split": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "_features": [],
+                "mode": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "right_hand_split": {
+                "line": [],
+                "mode": [],
+                "features": [
+                    "builtins.tuple"
+                ],
+                "omit": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_first_right_hand_split": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "omit": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "black.lines.RHSResult"
+                ]
+            },
+            "_maybe_split_omitting_optional_parens": {
+                "rhs": [
+                    "black.lines.RHSResult"
+                ],
+                "line": [
+                    "black.lines.Line"
+                ],
+                "mode": [
+                    "typing.Collection[black.mode.Preview]"
+                ],
+                "features": [
+                    "builtins.tuple"
+                ],
+                "omit": [
+                    "builtins.set[builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_prefer_split_rhs_oop_over_rhs": {
+                "rhs_oop": [
+                    "black.linegen._BracketSplitComponent"
+                ],
+                "rhs": [
+                    "black.lines.RHSResult"
+                ],
+                "mode": [
+                    "typing.Collection[black.mode.Preview]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "bracket_split_succeeded_or_raise": {
+                "head": [],
+                "body": [],
+                "tail": [],
+                "return": []
+            },
+            "_ensure_trailing_comma": {
+                "leaves": [
+                    "typing.Iterable[blib2to3.pytree.Base]"
+                ],
+                "original": [
+                    "black.lines.Line"
+                ],
+                "opening_bracket": [
+                    "enum.auto"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "bracket_split_build_line": {
+                "leaves": [
+                    "typing.MutableSequence[blib2to3.pytree.Leaf]"
+                ],
+                "original": [
+                    "black.lines.Line"
+                ],
+                "opening_bracket": [
+                    "enum.auto"
+                ],
+                "component": [],
+                "return": [
+                    "black.lines.Line"
+                ]
+            },
+            "dont_increase_indentation": {
+                "split_func": [
+                    "typing.Callable[[typing.Any, typing.Any, typing.Any], typing.Iterable[blib2to3.pytree.Base]]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any, typing.Any, typing.Any], typing.Generator[blib2to3.pytree.Base, typing.Any, typing.Any]]"
+                ]
+            },
+            "_get_last_non_comment_leaf": {
+                "line": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "_can_add_trailing_comma": {
+                "leaf": [
+                    "blib2to3.pytree.Base"
+                ],
+                "features": [
+                    "typing.Collection[black.mode.Feature]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_safe_add_trailing_comma": {
+                "safe": [],
+                "delimiter_priority": [
+                    "builtins.int"
+                ],
+                "line": [
+                    "logging.PlaceHolder"
+                ],
+                "return": [
+                    "logging.PlaceHolder"
+                ]
+            },
+            "delimiter_split": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "features": [
+                    "typing.Collection[black.mode.Feature]"
+                ],
+                "mode": [],
+                "return": [
+                    "typing.Generator[black.lines.Line, typing.Any, typing.Any]"
+                ]
+            },
+            "standalone_comment_split": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "features": [],
+                "mode": [],
+                "return": [
+                    "typing.Generator[black.lines.Line, typing.Any, typing.Any]"
+                ]
+            },
+            "normalize_invisible_parens": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "parens_after": [
+                    "typing.Collection[types.GetSetDescriptorType]"
+                ],
+                "mode": [],
+                "features": [],
+                "return": []
+            },
+            "_normalize_import_from": {
+                "parent": [
+                    "blib2to3.pytree.Node"
+                ],
+                "child": [
+                    "black.comments.ProtoComment"
+                ],
+                "index": [],
+                "return": []
+            },
+            "remove_await_parens": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": []
+            },
+            "_maybe_wrap_cms_in_parens": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "mode": [],
+                "features": [
+                    "typing.Collection[black.mode.Feature]"
+                ],
+                "return": []
+            },
+            "remove_with_parens": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "parent": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": []
+            },
+            "maybe_make_parens_invisible_in_atom": {
+                "node": [
+                    "black.comments.ProtoComment"
+                ],
+                "parent": [
+                    "dataclasses.InitVar"
+                ],
+                "remove_brackets_around_comma": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "should_split_line": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "opening_bracket": [
+                    "enum.auto"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "generate_trailers_to_omit": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "line_length": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Generator[builtins.set[typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "run_transformer": {
+                "line": [
+                    "black.lines.Line"
+                ],
+                "transform": [
+                    "typing.Callable[[black.lines.Line, builtins.tuple, black.mode.Mode], typing.Iterable[black.lines.Line]]"
+                ],
+                "mode": [
+                    "black.mode.Mode"
+                ],
+                "features": [
+                    "builtins.tuple"
+                ],
+                "line_str": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[black.lines.Line]"
+                ]
+            }
+        },
+        "LineGenerator": {
+            "__init__": {
+                "mode": [],
+                "features": [],
+                "return": []
+            },
+            "line": {
+                "indent": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Generator[black.brackets.BracketTracker, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_default": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_test": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_INDENT": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_DEDENT": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_stmt": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "keywords": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "parens": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_typeparams": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_typevartuple": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_paramspec": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_dictsetmaker": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_funcdef": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_match_case": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_suite": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_simple_stmt": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_async_stmt": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_decorators": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_power": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_SEMI": {
+                "leaf": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_ENDMARKER": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_STANDALONE_COMMENT": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_factor": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_tname": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_STRING": {
+                "leaf": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_NUMBER": {
+                "leaf": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_atom": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_fstring": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__post_init__": {
+                "return": []
+            }
+        }
+    },
+    "black.report": {
+        "Report": {
+            "done": {
+                "src": [],
+                "changed": [],
+                "return": []
+            },
+            "failed": {
+                "src": [],
+                "message": [],
+                "return": []
+            },
+            "path_ignored": {
+                "path": [],
+                "message": [],
+                "return": []
+            },
+            "return_code": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "black.files": {
+        "global": {
+            "_load_toml": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_cached_resolve": {
+                "path": [
+                    "pathlib.Path"
+                ],
+                "return": []
+            },
+            "find_project_root": {
+                "srcs": [
+                    "builtins.list[builtins.str]"
+                ],
+                "stdin_filename": [],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str]"
+                ]
+            },
+            "find_pyproject_toml": {
+                "path_search_start": [
+                    "builtins.list[builtins.str]"
+                ],
+                "stdin_filename": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "parse_pyproject_toml": {
+                "path_config": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.dict[builtins.str, builtins.list[typing.Any]]"
+                ]
+            },
+            "infer_target_version": {
+                "pyproject_toml": [
+                    "platform._Processor"
+                ],
+                "return": []
+            },
+            "parse_req_python_version": {
+                "requires_python": [],
+                "return": [
+                    "builtins.list[black.mode.TargetVersion]"
+                ]
+            },
+            "parse_req_python_specifier": {
+                "requires_python": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "strip_specifier_set": {
+                "specifier_set": [
+                    "typing.Iterable[packaging.specifiers.Specifier]"
+                ],
+                "return": [
+                    "packaging.specifiers.SpecifierSet"
+                ]
+            },
+            "find_user_pyproject_toml": {
+                "return": []
+            },
+            "get_gitignore": {
+                "root": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "resolves_outside_root_or_cannot_stat": {
+                "path": [
+                    "pathlib.Path"
+                ],
+                "root": [],
+                "report": [
+                    "black.report.Report"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "best_effort_relative_path": {
+                "path": [
+                    "pathlib.Path"
+                ],
+                "root": [],
+                "return": []
+            },
+            "_path_is_ignored": {
+                "root_relative_path": [
+                    "posix.DirEntry"
+                ],
+                "root": [
+                    "posix.DirEntry"
+                ],
+                "gitignore_dict": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "path_is_excluded": {
+                "normalized_path": [],
+                "pattern": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "gen_python_files": {
+                "paths": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "root": [
+                    "builtins.str"
+                ],
+                "include": [
+                    "re.Pattern"
+                ],
+                "exclude": [
+                    "re.Pattern"
+                ],
+                "extend_exclude": [
+                    "re.Pattern"
+                ],
+                "force_exclude": [
+                    "re.Pattern"
+                ],
+                "report": [
+                    "black.report.Report"
+                ],
+                "gitignore_dict": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "verbose": [],
+                "quiet": [],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "wrap_stream_for_windows": {
+                "f": [],
+                "return": []
+            }
+        }
+    },
+    "black.debug": {
+        "DebugVisitor": {
+            "out": {
+                "message": [
+                    "black.debug.DebugVisitor"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_default": {
+                "node": [
+                    "blib2to3.pytree.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "show": {
+                "code": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.mode": {
+        "global": {
+            "supports_feature": {
+                "target_versions": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "feature": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "TargetVersion": {
+            "pretty": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Mode": {
+            "__contains__": {
+                "feature": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_cache_key": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "black.output": {
+        "global": {
+            "_out": {
+                "message": [],
+                "nl": [
+                    "builtins.bool"
+                ],
+                "styles": [],
+                "return": []
+            },
+            "_err": {
+                "message": [],
+                "nl": [
+                    "builtins.bool"
+                ],
+                "styles": [],
+                "return": []
+            },
+            "out": {
+                "message": [],
+                "nl": [
+                    "builtins.bool"
+                ],
+                "styles": [],
+                "return": []
+            },
+            "err": {
+                "message": [],
+                "nl": [
+                    "builtins.bool"
+                ],
+                "styles": [],
+                "return": []
+            },
+            "ipynb_diff": {
+                "a": [],
+                "b": [],
+                "a_name": [],
+                "b_name": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_splitlines_no_ff": {
+                "source": [],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "diff": {
+                "a": [],
+                "b": [],
+                "a_name": [],
+                "b_name": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "color_diff": {
+                "contents": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "dump_to_file": {
+                "output": [],
+                "ensure_final_newline": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.strings": {
+        "global": {
+            "sub_twice": {
+                "regex": [
+                    "re.Pattern"
+                ],
+                "replacement": [],
+                "original": [],
+                "return": []
+            },
+            "has_triple_quotes": {
+                "string": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "lines_with_leading_tabs_expanded": {
+                "s": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "fix_multiline_docstring": {
+                "docstring": [
+                    "builtins.str"
+                ],
+                "prefix": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_string_prefix": {
+                "string": [
+                    "_typeshed.SupportsGetItem[builtins.int, builtins.str]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "assert_is_leaf_string": {
+                "string": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": []
+            },
+            "normalize_string_prefix": {
+                "s": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_cached_compile": {
+                "pattern": [],
+                "return": [
+                    "re.Pattern"
+                ]
+            },
+            "normalize_string_quotes": {
+                "s": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "normalize_fstring_quotes": {
+                "quote": [
+                    "builtins.str"
+                ],
+                "middles": [
+                    "typing.Iterable[enum.auto]"
+                ],
+                "is_raw_fstring": [],
+                "return": [
+                    "builtins.tuple[typing.Iterable[enum.auto], builtins.str]"
+                ]
+            },
+            "normalize_unicode_escape_sequences": {
+                "leaf": [
+                    "enum.auto"
+                ],
+                "return": []
+            },
+            "char_width": {
+                "char": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "str_width": {
+                "line_str": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "count_chars_in_width": {
+                "line_str": [
+                    "typing.Sized"
+                ],
+                "max_width": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "black.schema": {
+        "global": {
+            "get_schema": {
+                "tool_name": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.ranges": {
+        "global": {
+            "parse_line_ranges": {
+                "line_ranges": [
+                    "typing.Iterable[re.Pattern]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "is_valid_line_range": {
+                "lines": [
+                    "_typeshed.SupportsGetItem[builtins.int, typing.Any]"
+                ],
+                "return": []
+            },
+            "sanitized_lines": {
+                "lines": [
+                    "typing.Iterable[builtins.tuple[builtins.int, builtins.int]]"
+                ],
+                "src_contents": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "adjusted_lines": {
+                "lines": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "original_source": [],
+                "modified_source": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "convert_unchanged_lines": {
+                "src_node": [],
+                "lines": [
+                    "typing.Iterable[builtins.tuple[typing.Any, builtins.int]]"
+                ],
+                "return": []
+            },
+            "_contains_standalone_comment": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_convert_unchanged_line_by_line": {
+                "node": [
+                    "blib2to3.pytree.Base"
+                ],
+                "lines_set": [],
+                "return": []
+            },
+            "_convert_node_to_standalone_comment": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": []
+            },
+            "_convert_nodes_to_standalone_comment": {
+                "nodes": [
+                    "typing.Sequence[blib2to3.pytree.Leaf]"
+                ],
+                "newline": [
+                    "blib2to3.pytree.Base"
+                ],
+                "return": []
+            },
+            "_leaf_line_end": {
+                "leaf": [
+                    "dataclasses.InitVar"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_get_line_range": {
+                "node_or_nodes": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            },
+            "_calculate_lines_mappings": {
+                "original_source": [
+                    "builtins.str"
+                ],
+                "modified_source": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "_find_lines_mapping_index": {
+                "original_line": [],
+                "lines_mappings": [
+                    "typing.Sequence[black.ranges._LinesMapping]"
+                ],
+                "start_index": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "_TopLevelStatementsVisitor": {
+            "__init__": {
+                "lines_set": [],
+                "return": []
+            },
+            "visit_simple_stmt": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_suite": {
+                "node": [
+                    "blib2to3.pytree.Leaf"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    }
+}

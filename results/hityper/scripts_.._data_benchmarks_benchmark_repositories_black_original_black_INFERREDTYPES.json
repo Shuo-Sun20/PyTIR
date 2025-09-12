@@ -1,0 +1,4823 @@
+{
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/__init__.py": {
+        "_black_info@global": [
+            {
+                "category": "return",
+                "name": "_black_info",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "_contains_asexpr@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_contains_asexpr",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "_format_str_once@global": [
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst_blocks",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "context_manager_features",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "line_generator",
+                "type": [
+                    "LineGenerator"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "elt",
+                "type": [
+                    "EmptyLineTracker"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "split_line_features",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "block",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst_contents",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_format_str_once",
+                "type": [
+                    "typing.Text",
+                    "str"
+                ]
+            }
+        ],
+        "assert_equivalent@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "dst",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "exc",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src_ast_str",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst_ast_str",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "assert_equivalent",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "assert_stable@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "dst",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "assert_stable",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "check_stability_and_equivalence@global": [
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "dst_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "check_stability_and_equivalence",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "decode_bytes@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "decode_bytes",
+                "type": [
+                    "tuple[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "newline",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "detect_target_versions@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "future_imports",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "future_imports",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "detect_target_versions",
+                "type": [
+                    "set"
+                ]
+            }
+        ],
+        "enable_unstable_feature_callback@global": [
+            {
+                "category": "arg",
+                "name": "c",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "p",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "v",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "enable_unstable_feature_callback",
+                "type": [
+                    "list"
+                ]
+            }
+        ],
+        "format_cell@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "format_cell",
+                "type": []
+            }
+        ],
+        "format_file_contents@global": [
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_file_contents",
+                "type": []
+            }
+        ],
+        "format_file_in_place@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "write_back",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lock",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "header",
+                "type": [
+                    "bytes"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "buf",
+                "type": [
+                    "typing.IO"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_file_in_place",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "f",
+                "type": [
+                    "typing.IO"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src_name",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst_name",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lock",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "format_ipynb_string@global": [
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "trailing_newline",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "modified",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_ipynb_string",
+                "type": []
+            }
+        ],
+        "format_stdin_to_stdout@global": [
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "content",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "write_back",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "content",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "encoding",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "newline",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_stdin_to_stdout",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src_name",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "dst_name",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "format_str@global": [
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_str",
+                "type": []
+            }
+        ],
+        "from_configuration@WriteBack": [
+            {
+                "category": "arg",
+                "name": "cls",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "check",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "diff",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "color",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "from_configuration",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "color",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "get_features_used@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "future_imports",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "features",
+                "type": [
+                    "set",
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_features_used",
+                "type": []
+            }
+        ],
+        "get_future_imports@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "imports",
+                "type": [
+                    "set",
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first_child",
+                "type": [
+                    "Leaf"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_future_imports",
+                "type": [
+                    "set",
+                    "int"
+                ]
+            }
+        ],
+        "get_imports_from_children@global": [
+            {
+                "category": "arg",
+                "name": "children",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "child",
+                "type": [
+                    "Leaf"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_imports_from_children",
+                "type": [
+                    "typing.Generator"
+                ]
+            }
+        ],
+        "get_sources@global": [
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "quiet",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "verbose",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "include",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "extend_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "force_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "report",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "stdin_filename",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "sources",
+                "type": [
+                    "set",
+                    "set[Path]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "exclude",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "using_default_exclude",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "gitignore",
+                "type": [
+                    "None",
+                    "dict"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "path",
+                "type": [
+                    "Path"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "is_stdin",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_sources",
+                "type": [
+                    "set[Path]"
+                ]
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "COMPILED",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FileContent",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "Encoding",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "NewLine",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "main@global": [
+            {
+                "category": "arg",
+                "name": "ctx",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "code",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "line_length",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "target_version",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "check",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "diff",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "line_ranges",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "color",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "pyi",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "ipynb",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "python_cell_magics",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "skip_source_first_line",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "skip_string_normalization",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "skip_magic_trailing_comma",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "preview",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "unstable",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "enable_unstable_feature",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "quiet",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "verbose",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "required_version",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "include",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "extend_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "force_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "stdin_filename",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "workers",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "config",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "code",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "root",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "method",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "user_level_config",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "error_msg",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "versions",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "mode",
+                "type": [
+                    "Mode"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "quiet",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "report",
+                "type": [
+                    "Report"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "main",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "nullcontext@global": [
+            {
+                "category": "return",
+                "name": "nullcontext",
+                "type": [
+                    "typing.Generator"
+                ]
+            }
+        ],
+        "patched_main@global": [
+            {
+                "category": "return",
+                "name": "patched_main",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "path_empty@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "msg",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "quiet",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "verbose",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "ctx",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "path_empty",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "re_compile_maybe_verbose@global": [
+            {
+                "category": "arg",
+                "name": "regex",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "re_compile_maybe_verbose",
+                "type": []
+            }
+        ],
+        "read_pyproject_toml@global": [
+            {
+                "category": "arg",
+                "name": "ctx",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "param",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "value",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "value",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "read_pyproject_toml",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "config",
+                "type": [
+                    "dict[, str]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "target_version",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "exclude",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "extend_exclude",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "line_ranges",
+                "type": [
+                    "str",
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "default_map",
+                "type": [
+                    "dict",
+                    "dict[, str]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "ctx_",
+                "type": [
+                    "dict[, str]"
+                ]
+            }
+        ],
+        "reformat_code@global": [
+            {
+                "category": "arg",
+                "name": "content",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "write_back",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "report",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "path",
+                "type": [
+                    "Path"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "exc",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "reformat_code",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "reformat_one@global": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "fast",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "write_back",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "report",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src",
+                "type": [
+                    "Path"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "is_stdin",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "exc",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "reformat_one",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "spellcheck_pyproject_toml_keys@global": [
+            {
+                "category": "arg",
+                "name": "ctx",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "config_keys",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "config_file_path",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "invalid_keys",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "available_config_options",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "keys_str",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "spellcheck_pyproject_toml_keys",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "target_version_option_callback@global": [
+            {
+                "category": "arg",
+                "name": "c",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "p",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "v",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "target_version_option_callback",
+                "type": [
+                    "list"
+                ]
+            }
+        ],
+        "validate_metadata@global": [
+            {
+                "category": "arg",
+                "name": "nb",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "validate_metadata",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "validate_regex@global": [
+            {
+                "category": "arg",
+                "name": "ctx",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "param",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "value",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "value",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "validate_regex",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/__main__.py": {
+        "global@global": []
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/_width_table.py": {
+        "global@global": []
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/brackets.py": {
+        "any_open_brackets@BracketTracker": [
+            {
+                "category": "return",
+                "name": "any_open_brackets",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "any_open_for_or_lambda@BracketTracker": [
+            {
+                "category": "return",
+                "name": "any_open_for_or_lambda",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "delimiter_count_with_priority@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "priority",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "delimiter_count_with_priority",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "priority",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "get_leaves_inside_matching_brackets@global": [
+            {
+                "category": "arg",
+                "name": "leaves",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "get_leaves_inside_matching_brackets",
+                "type": [
+                    "set",
+                    "set[int]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "bracket_stack",
+                "type": [
+                    "list",
+                    "list[tuple]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "ids",
+                "type": [
+                    "set",
+                    "set[int]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "start",
+                "type": [
+                    "tuple"
+                ]
+            }
+        ],
+        "get_open_lsqb@BracketTracker": [
+            {
+                "category": "return",
+                "name": "get_open_lsqb",
+                "type": []
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "Depth",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "LeafID",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "NodeType",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "Priority",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMPREHENSION_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMMA_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "TERNARY_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "LOGIC_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "STRING_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMPARATOR_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "MATH_PRIORITIES",
+                "type": [
+                    "dict[, int]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "DOT_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "is_split_after_delimiter@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "COMMA_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "is_split_after_delimiter",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "is_split_before_delimiter@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "previous",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "is_split_before_delimiter",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "previous",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "DOT_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "MATH_PRIORITIES",
+                "type": [
+                    "dict[, int]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMPARATOR_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "STRING_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMPREHENSION_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "TERNARY_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "LOGIC_PRIORITY",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "mark@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "leaf_",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "mark",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "depth",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            }
+        ],
+        "max_delimiter_priority@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "exclude",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "exclude",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "max_delimiter_priority",
+                "type": []
+            }
+        ],
+        "max_delimiter_priority_in_atom@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "max_delimiter_priority_in_atom",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "bt",
+                "type": [
+                    "BracketTracker"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "c",
+                "type": [
+                    "Leaf"
+                ]
+            }
+        ],
+        "maybe_decrement_after_for_loop_variable@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "depth",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "maybe_decrement_after_for_loop_variable",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "maybe_decrement_after_lambda_arguments@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "depth",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "maybe_decrement_after_lambda_arguments",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "maybe_increment_for_loop_variable@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "maybe_increment_for_loop_variable",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "maybe_increment_lambda_arguments@BracketTracker": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "maybe_increment_lambda_arguments",
+                "type": [
+                    "bool"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/cache.py": {
+        "filtered_cached@Cache": [
+            {
+                "category": "arg",
+                "name": "sources",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "changed",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "done",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "filtered_cached",
+                "type": [
+                    "tuple[set]"
+                ]
+            }
+        ],
+        "get_cache_dir@global": [
+            {
+                "category": "local",
+                "name": "cache_dir",
+                "type": [
+                    "Path"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_cache_dir",
+                "type": []
+            }
+        ],
+        "get_cache_file@global": [
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "get_cache_file",
+                "type": []
+            }
+        ],
+        "get_file_data@Cache": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "get_file_data",
+                "type": [
+                    "FileData"
+                ]
+            }
+        ],
+        "global@global": [],
+        "hash_digest@Cache": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "hash_digest",
+                "type": []
+            }
+        ],
+        "is_changed@Cache": [
+            {
+                "category": "arg",
+                "name": "source",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "old",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "is_changed",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "read@Cache": [
+            {
+                "category": "arg",
+                "name": "cls",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "read",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "file_data",
+                "type": [
+                    "dict[, FileData]"
+                ]
+            }
+        ],
+        "write@Cache": [
+            {
+                "category": "arg",
+                "name": "sources",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "data",
+                "type": [
+                    "dict[, tuple]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "write",
+                "type": [
+                    "None"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/comments.py": {
+        "_contains_fmt_skip_comment@global": [
+            {
+                "category": "arg",
+                "name": "comment_line",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "_COMMENT_PREFIX",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "comment",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_COMMENT_LIST_SEPARATOR",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "semantic_comment_blocks",
+                "type": [
+                    "list[list]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_SKIP",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_contains_fmt_skip_comment",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "_generate_ignored_nodes_from_fmt_skip@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "comment",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "leaf_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "prev_sibling",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_generate_ignored_nodes_from_fmt_skip",
+                "type": [
+                    "None",
+                    "typing.Generator[list[int]]",
+                    "typing.Generator"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "siblings",
+                "type": [
+                    "list",
+                    "list[int]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "ignored_nodes",
+                "type": [
+                    "list",
+                    "list[int]"
+                ]
+            }
+        ],
+        "children_contains_fmt_on@global": [
+            {
+                "category": "arg",
+                "name": "container",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "children_contains_fmt_on",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "contains_pragma_comment@global": [
+            {
+                "category": "arg",
+                "name": "comment_list",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "contains_pragma_comment",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "convert_one_fmt_off_pair@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "previous_consumed",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_OFF",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "is_fmt_off",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "ignored_nodes",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "fmt_off_prefix",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first_idx",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "convert_one_fmt_off_pair",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "generate_comments@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "total_consumed",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "generate_comments",
+                "type": [
+                    "typing.Generator[Leaf]"
+                ]
+            }
+        ],
+        "generate_ignored_nodes@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "comment",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "generate_ignored_nodes",
+                "type": [
+                    "typing.Generator",
+                    "None"
+                ]
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "FMT_OFF",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_SKIP",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_ON",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMMENT_EXCEPTIONS",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_COMMENT_PREFIX",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_COMMENT_LIST_SEPARATOR",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "is_fmt_on@global": [
+            {
+                "category": "arg",
+                "name": "container",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "fmt_on",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_ON",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "FMT_OFF",
+                "type": [
+                    "set[typing.Text]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "is_fmt_on",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "list_comments@global": [
+            {
+                "category": "arg",
+                "name": "prefix",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "is_endmarker",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "result",
+                "type": [
+                    "list",
+                    "list[ProtoComment]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "list_comments",
+                "type": [
+                    "list",
+                    "list[ProtoComment]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "consumed",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nlines",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "ignored_lines",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "form_feed",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "make_comment@global": [
+            {
+                "category": "arg",
+                "name": "content",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "make_comment",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "NON_BREAKING_SPACE",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "COMMENT_EXCEPTIONS",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "normalize_fmt_off@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "mode",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "try_again",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "normalize_fmt_off",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "normalize_trailing_prefix@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "total_consumed",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "leaf_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "form_feed",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "normalize_trailing_prefix",
+                "type": [
+                    "None"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/const.py": {
+        "global@global": [
+            {
+                "category": "local",
+                "name": "DEFAULT_LINE_LENGTH",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "DEFAULT_EXCLUDES",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "DEFAULT_INCLUDES",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "STDIN_PLACEHOLDER",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/debug.py": {
+        "global@global": [
+            {
+                "category": "local",
+                "name": "T",
+                "type": [
+                    "TypeVar"
+                ]
+            }
+        ],
+        "out@DebugVisitor": [
+            {
+                "category": "arg",
+                "name": "message",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "kwargs",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "args",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "out",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "show@DebugVisitor": [
+            {
+                "category": "arg",
+                "name": "cls",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "code",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "v",
+                "type": [
+                    "DebugVisitor"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "code",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "show",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "visit_default@DebugVisitor": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "tree_depth",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "node",
+                "type": [
+                    "Node"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "visit_default",
+                "type": [
+                    "typing.Generator"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/files.py": {
+        "_cached_resolve@global": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_cached_resolve",
+                "type": []
+            }
+        ],
+        "_load_toml@global": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "f",
+                "type": [
+                    "typing.IO"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_load_toml",
+                "type": []
+            }
+        ],
+        "_path_is_ignored@global": [
+            {
+                "category": "arg",
+                "name": "root_relative_path",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "gitignore_dict",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_path_is_ignored",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "best_effort_relative_path@global": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "best_effort_relative_path",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "root_parent",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "find_project_root@global": [
+            {
+                "category": "arg",
+                "name": "srcs",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "stdin_filename",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "stdin_filename",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "srcs",
+                "type": [
+                    "tuple",
+                    "list[str]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "path_srcs",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "src_parents",
+                "type": [
+                    "list[list]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "parents",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "common_base",
+                "type": [
+                    "set",
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "directory",
+                "type": [
+                    "int",
+                    "set"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "find_project_root",
+                "type": [
+                    "tuple[typing.Union[set,int,typing.Text]]"
+                ]
+            }
+        ],
+        "find_pyproject_toml@global": [
+            {
+                "category": "arg",
+                "name": "path_search_start",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "stdin_filename",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "stdin_filename",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "find_pyproject_toml",
+                "type": [
+                    "str",
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            }
+        ],
+        "find_user_pyproject_toml@global": [
+            {
+                "category": "return",
+                "name": "find_user_pyproject_toml",
+                "type": []
+            }
+        ],
+        "gen_python_files@global": [
+            {
+                "category": "arg",
+                "name": "paths",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "include",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "extend_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "force_exclude",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "report",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "gitignore_dict",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "verbose",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "quiet",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "gitignore_dict",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "new_gitignore_dict",
+                "type": [
+                    "dict",
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "gen_python_files",
+                "type": [
+                    "typing.Generator"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "include_match",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "get_gitignore@global": [
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_gitignore",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            }
+        ],
+        "global@global": [],
+        "infer_target_version@global": [
+            {
+                "category": "arg",
+                "name": "pyproject_toml",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "requires_python",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "infer_target_version",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "parse_pyproject_toml@global": [
+            {
+                "category": "arg",
+                "name": "path_config",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "config",
+                "type": [
+                    "dict",
+                    "dict[typing.Text, list]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "inferred_target_version",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "parse_pyproject_toml",
+                "type": [
+                    "dict[typing.Text, list]"
+                ]
+            }
+        ],
+        "parse_req_python_specifier@global": [
+            {
+                "category": "arg",
+                "name": "requires_python",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "parse_req_python_specifier",
+                "type": [
+                    "None",
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "target_version_map",
+                "type": [
+                    "dict[typing.Text, ]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "compatible_versions",
+                "type": [
+                    "list"
+                ]
+            }
+        ],
+        "parse_req_python_version@global": [
+            {
+                "category": "arg",
+                "name": "requires_python",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "version",
+                "type": [
+                    "Version"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "parse_req_python_version",
+                "type": [
+                    "None",
+                    "list[TargetVersion]"
+                ]
+            }
+        ],
+        "path_is_excluded@global": [
+            {
+                "category": "arg",
+                "name": "normalized_path",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "pattern",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "match",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "path_is_excluded",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "resolves_outside_root_or_cannot_stat@global": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "root",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "report",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "e",
+                "type": [
+                    "Exception"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "report",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "resolves_outside_root_or_cannot_stat",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "strip_specifier_set@global": [
+            {
+                "category": "arg",
+                "name": "specifier_set",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "specifiers",
+                "type": [
+                    "list",
+                    "list[Specifier]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "s",
+                "type": [
+                    "Specifier"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "version",
+                "type": [
+                    "Version"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "stripped",
+                "type": [
+                    "Specifier"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "strip_specifier_set",
+                "type": [
+                    "SpecifierSet"
+                ]
+            }
+        ],
+        "wrap_stream_for_windows@global": [
+            {
+                "category": "arg",
+                "name": "f",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "wrap_stream_for_windows",
+                "type": []
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/mode.py": {
+        "__contains__@Mode": [
+            {
+                "category": "arg",
+                "name": "feature",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "__contains__",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "UNSTABLE_FEATURES",
+                "type": [
+                    "set"
+                ]
+            }
+        ],
+        "get_cache_key@Mode": [
+            {
+                "category": "local",
+                "name": "version_str",
+                "type": [
+                    "str",
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_MAX_CACHE_KEY_PART_LENGTH",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "features_and_magics",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "parts",
+                "type": [
+                    "list[typing.Text]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_cache_key",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "FUTURE_FLAG_TO_FEATURE",
+                "type": [
+                    "dict[typing.Text, ]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "VERSION_TO_FEATURES",
+                "type": [
+                    "dict[, set]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "UNSTABLE_FEATURES",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_MAX_CACHE_KEY_PART_LENGTH",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "pretty@TargetVersion": [
+            {
+                "category": "return",
+                "name": "pretty",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "supports_feature@global": [
+            {
+                "category": "arg",
+                "name": "target_versions",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "feature",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "VERSION_TO_FEATURES",
+                "type": [
+                    "dict[, set]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "supports_feature",
+                "type": [
+                    "bool"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/numerics.py": {
+        "format_complex_number@global": [
+            {
+                "category": "arg",
+                "name": "text",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "format_complex_number",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "format_float_or_int_string@global": [
+            {
+                "category": "arg",
+                "name": "text",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "format_float_or_int_string",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "format_hex@global": [
+            {
+                "category": "arg",
+                "name": "text",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "format_hex",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "format_scientific_notation@global": [
+            {
+                "category": "arg",
+                "name": "text",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "sign",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "format_scientific_notation",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "global@global": [],
+        "normalize_numeric_literal@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "normalize_numeric_literal",
+                "type": [
+                    "None"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/output.py": {
+        "_err@global": [
+            {
+                "category": "arg",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "styles",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_err",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "_out@global": [
+            {
+                "category": "arg",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "styles",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_out",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "_splitlines_no_ff@global": [
+            {
+                "category": "arg",
+                "name": "source",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "result",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_splitlines_no_ff",
+                "type": [
+                    "list"
+                ]
+            }
+        ],
+        "color_diff@global": [
+            {
+                "category": "arg",
+                "name": "contents",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "color_diff",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "diff@global": [
+            {
+                "category": "arg",
+                "name": "a",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "b",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "a_name",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "b_name",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "diff_lines",
+                "type": [
+                    "list",
+                    "list[typing.Text]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "diff",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "dump_to_file@global": [
+            {
+                "category": "arg",
+                "name": "ensure_final_newline",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "output",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "ensure_final_newline",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "dump_to_file",
+                "type": []
+            }
+        ],
+        "err@global": [
+            {
+                "category": "arg",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "styles",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "err",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "global@global": [],
+        "ipynb_diff@global": [
+            {
+                "category": "arg",
+                "name": "a",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "b",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "a_name",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "b_name",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "diff_lines",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "ipynb_diff",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "out@global": [
+            {
+                "category": "arg",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "arg",
+                "name": "styles",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "message",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nl",
+                "type": [
+                    "bool"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "out",
+                "type": [
+                    "None"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/ranges.py": {
+        "__init__@_TopLevelStatementsVisitor": [
+            {
+                "category": "arg",
+                "name": "lines_set",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "__init__",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "_calculate_lines_mappings@global": [
+            {
+                "category": "arg",
+                "name": "original_source",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "modified_source",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "lines_mappings",
+                "type": [
+                    "list",
+                    "list[_LinesMapping]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_calculate_lines_mappings",
+                "type": [
+                    "list[_LinesMapping]"
+                ]
+            }
+        ],
+        "_contains_standalone_comment@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "node",
+                "type": [
+                    "Leaf"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_contains_standalone_comment",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "_convert_node_to_standalone_comment@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_convert_node_to_standalone_comment",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first",
+                "type": [
+                    "last"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "index",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "value",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "_convert_nodes_to_standalone_comment@global": [
+            {
+                "category": "arg",
+                "name": "nodes",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "newline",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_convert_nodes_to_standalone_comment",
+                "type": [
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "first_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "value",
+                "type": [
+                    "str"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "newline_",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "index",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "_convert_unchanged_line_by_line@global": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines_set",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "nodes_to_ignore",
+                "type": [
+                    "list",
+                    "list[int]"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_convert_unchanged_line_by_line",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "_find_lines_mapping_index@global": [
+            {
+                "category": "arg",
+                "name": "original_line",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines_mappings",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "start_index",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_find_lines_mapping_index",
+                "type": []
+            }
+        ],
+        "_get_line_range@global": [
+            {
+                "category": "arg",
+                "name": "node_or_nodes",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "node_or_nodes",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "nodes",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "_get_line_range",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "node",
+                "type": [
+                    "Leaf"
+                ]
+            }
+        ],
+        "_leaf_line_end@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_leaf_line_end",
+                "type": []
+            }
+        ],
+        "adjusted_lines@global": [
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "original_source",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "modified_source",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "new_lines",
+                "type": [
+                    "list",
+                    "list[tuple]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "current_mapping_index",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "new_range",
+                "type": [
+                    "tuple"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "adjusted_lines",
+                "type": [
+                    "list[tuple]"
+                ]
+            }
+        ],
+        "convert_unchanged_lines@global": [
+            {
+                "category": "arg",
+                "name": "src_node",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "lines_set",
+                "type": [
+                    "set"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "visitor",
+                "type": [
+                    "_TopLevelStatementsVisitor"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "_",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "convert_unchanged_lines",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "global@global": [],
+        "is_valid_line_range@global": [
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "is_valid_line_range",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "parse_line_ranges@global": [
+            {
+                "category": "arg",
+                "name": "line_ranges",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "list",
+                    "list[tuple[int]]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "start",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "end",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "parse_line_ranges",
+                "type": [
+                    "list[tuple[int]]"
+                ]
+            }
+        ],
+        "sanitized_lines@global": [
+            {
+                "category": "arg",
+                "name": "lines",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "src_contents",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "sanitized_lines",
+                "type": [
+                    "list",
+                    "list[tuple[int]]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "good_lines",
+                "type": [
+                    "list",
+                    "list[tuple[int]]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "start",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "visit_simple_stmt@_TopLevelStatementsVisitor": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "visit_simple_stmt",
+                "type": [
+                    "typing.Generator[list]",
+                    "None"
+                ]
+            }
+        ],
+        "visit_suite@_TopLevelStatementsVisitor": [
+            {
+                "category": "arg",
+                "name": "node",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "visit_suite",
+                "type": [
+                    "typing.Generator[list]",
+                    "None"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "semantic_parent",
+                "type": [
+                    "None"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/report.py": {
+        "__str__@Report": [
+            {
+                "category": "local",
+                "name": "reformatted",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "unchanged",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "failed",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "report",
+                "type": [
+                    "list"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "s",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "__str__",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "done@Report": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "changed",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "changed",
+                "type": [
+                    "Changed_@_YES",
+                    "Changed_@_NO"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "reformatted",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "msg",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "done",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "failed@Report": [
+            {
+                "category": "arg",
+                "name": "src",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "message",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "failed",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "global@global": [],
+        "path_ignored@Report": [
+            {
+                "category": "arg",
+                "name": "path",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "message",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "path_ignored",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "return_code@Report": [
+            {
+                "category": "return",
+                "name": "return_code",
+                "type": [
+                    "int"
+                ]
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/resources/__init__.py": {
+        "global@global": []
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/rusty.py": {
+        "__init__@Err": [
+            {
+                "category": "arg",
+                "name": "e",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "__init__",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "__init__@Ok": [
+            {
+                "category": "arg",
+                "name": "value",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "__init__",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "err@Err": [
+            {
+                "category": "return",
+                "name": "err",
+                "type": []
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "T",
+                "type": [
+                    "TypeVar"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "E",
+                "type": [
+                    "TypeVar"
+                ]
+            }
+        ],
+        "ok@Ok": [
+            {
+                "category": "return",
+                "name": "ok",
+                "type": []
+            }
+        ]
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/schema.py": {
+        "get_schema@global": [
+            {
+                "category": "arg",
+                "name": "tool_name",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "pkg",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "fname",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_schema",
+                "type": []
+            }
+        ],
+        "global@global": []
+    },
+    "scripts/../data/benchmarks/benchmark_repositories/black/original/black/strings.py": {
+        "_cached_compile@global": [
+            {
+                "category": "arg",
+                "name": "pattern",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "_cached_compile",
+                "type": []
+            }
+        ],
+        "assert_is_leaf_string@global": [
+            {
+                "category": "arg",
+                "name": "string",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "assert_is_leaf_string",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "char_width@global": [
+            {
+                "category": "arg",
+                "name": "char",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "codepoint",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "highest",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "lowest",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "idx",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "char_width",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "count_chars_in_width@global": [
+            {
+                "category": "arg",
+                "name": "line_str",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "max_width",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "total_width",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "count_chars_in_width",
+                "type": [
+                    "int"
+                ]
+            }
+        ],
+        "fix_multiline_docstring@global": [
+            {
+                "category": "arg",
+                "name": "docstring",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "prefix",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "indent",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "trimmed",
+                "type": [
+                    "list",
+                    "list[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "last_line_idx",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "fix_multiline_docstring",
+                "type": [
+                    "str"
+                ]
+            }
+        ],
+        "get_string_prefix@global": [
+            {
+                "category": "arg",
+                "name": "string",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "prefix",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "prefix_idx",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "STRING_PREFIX_CHARS",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "get_string_prefix",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "global@global": [
+            {
+                "category": "local",
+                "name": "STRING_PREFIX_CHARS",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "has_triple_quotes@global": [
+            {
+                "category": "arg",
+                "name": "string",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "STRING_PREFIX_CHARS",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "has_triple_quotes",
+                "type": [
+                    "bool"
+                ]
+            }
+        ],
+        "lines_with_leading_tabs_expanded@global": [
+            {
+                "category": "arg",
+                "name": "s",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "lines",
+                "type": [
+                    "list",
+                    "list[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "prefix_length",
+                "type": [
+                    "int"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "lines_with_leading_tabs_expanded",
+                "type": [
+                    "list[typing.Text]"
+                ]
+            }
+        ],
+        "normalize_fstring_quotes@global": [
+            {
+                "category": "arg",
+                "name": "quote",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "middles",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "is_raw_fstring",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "normalize_fstring_quotes",
+                "type": [
+                    "tuple",
+                    "tuple[typing.Text]"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "new_quote",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "new_segments",
+                "type": [
+                    "list"
+                ]
+            }
+        ],
+        "normalize_string_prefix@global": [
+            {
+                "category": "arg",
+                "name": "s",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "normalize_string_prefix",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "normalize_string_quotes@global": [
+            {
+                "category": "arg",
+                "name": "s",
+                "type": []
+            },
+            {
+                "category": "local",
+                "name": "s",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "STRING_PREFIX_CHARS",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "return",
+                "name": "normalize_string_quotes",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "orig_quote",
+                "type": [
+                    "typing.Text"
+                ]
+            },
+            {
+                "category": "local",
+                "name": "new_quote",
+                "type": [
+                    "typing.Text"
+                ]
+            }
+        ],
+        "normalize_unicode_escape_sequences@global": [
+            {
+                "category": "arg",
+                "name": "leaf",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "normalize_unicode_escape_sequences",
+                "type": [
+                    "None"
+                ]
+            }
+        ],
+        "replace@global": [
+            {
+                "category": "arg",
+                "name": "m",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "replace",
+                "type": []
+            }
+        ],
+        "str_width@global": [
+            {
+                "category": "arg",
+                "name": "line_str",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "str_width",
+                "type": [
+                    "int",
+                    "bool"
+                ]
+            }
+        ],
+        "sub_twice@global": [
+            {
+                "category": "arg",
+                "name": "regex",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "replacement",
+                "type": []
+            },
+            {
+                "category": "arg",
+                "name": "original",
+                "type": []
+            },
+            {
+                "category": "return",
+                "name": "sub_twice",
+                "type": []
+            }
+        ]
+    }
+}

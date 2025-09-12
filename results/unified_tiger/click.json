@@ -1,0 +1,4712 @@
+{
+    "click.core": {
+        "Command": {
+            "global": {
+                "context_class": [
+                    "typing.Type"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "str"
+                ]
+            },
+            "parse_args": {
+                "return": [
+                    "Namespace"
+                ],
+                "args": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "add_help_option": [
+                    "bool"
+                ],
+                "callback": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "context_settings": [
+                    "dict[str, typing.Any]"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "epilog": [
+                    "typing.Optional[str]"
+                ],
+                "help": [
+                    "typing.Optional[str]"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "name": [
+                    "str"
+                ],
+                "no_args_is_help": [
+                    "bool"
+                ],
+                "options_metavar": [
+                    "str"
+                ],
+                "params": [
+                    "list[typing.Any]"
+                ],
+                "short_help": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "get_params": {
+                "return": [
+                    "list"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "format_help_text": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "formatter": [
+                    "Formatter"
+                ]
+            },
+            "get_short_help_str": {
+                "return": [
+                    "str"
+                ],
+                "limit": [
+                    "int"
+                ]
+            },
+            "_main_shell_completion": {
+                "return": [
+                    "None"
+                ],
+                "complete_var": [
+                    "typing.Optional[str]"
+                ],
+                "ctx_args": [
+                    "Namespace"
+                ],
+                "prog_name": [
+                    "str"
+                ]
+            },
+            "invoke": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "CallbackContext"
+                ]
+            },
+            "get_help_option": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "make_context": {
+                "return": [
+                    "Context"
+                ],
+                "args": [
+                    "list"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "info_name": [
+                    "str"
+                ],
+                "parent": [
+                    "Parent"
+                ]
+            },
+            "format_options": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "formatter": [
+                    "Formatter"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "get_help_option_names": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "format_epilog": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "formatter": [
+                    "Formatter"
+                ]
+            },
+            "collect_usage_pieces": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "format_help": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "formatter": [
+                    "Formatter"
+                ]
+            },
+            "make_parser": {
+                "return": [
+                    "_OptionParser"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "format_usage": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "formatter": [
+                    "HelpFormatter"
+                ]
+            },
+            "get_usage": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "get_help": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "args": [
+                    "list"
+                ],
+                "kwargs": [
+                    "dict"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Group": {
+            "global": {
+                "command_class": [
+                    "None"
+                ],
+                "group_class": [
+                    "None"
+                ]
+            },
+            "invoke": {
+                "return": [
+                    "Result"
+                ],
+                "ctx": [
+                    "AbstractContext"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "chain": [
+                    "bool"
+                ],
+                "commands": [
+                    "typing.Optional[list[Command]]"
+                ],
+                "invoke_without_command": [
+                    "bool"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "no_args_is_help": [
+                    "bool"
+                ],
+                "result_callback": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "subcommand_metavar": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "format_commands": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "formatter": [
+                    "Formatter"
+                ]
+            },
+            "resolve_command": {
+                "return": [
+                    "tuple[typing.Union[str,Command,list[str]]]"
+                ],
+                "args": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "result_callback": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "replace": [
+                    "bool"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "parse_args": {
+                "return": [
+                    "Namespace"
+                ],
+                "args": [
+                    "bool"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "bool"
+                ]
+            },
+            "add_command": {
+                "return": [
+                    "None"
+                ],
+                "cmd": [
+                    "Command"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "collect_usage_pieces": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "format_options": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "formatter": [
+                    "OptionsFormatter"
+                ]
+            },
+            "get_command": {
+                "return": [
+                    "Command"
+                ],
+                "cmd_name": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "list_commands": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            }
+        },
+        "Context": {
+            "global": {
+                "formatter_class": [
+                    "typing.Type"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "Command"
+                ],
+                "allow_extra_args": [
+                    "typing.Optional[bool]"
+                ],
+                "allow_interspersed_args": [
+                    "typing.Optional[bool]"
+                ],
+                "auto_envvar_prefix": [
+                    "typing.Optional[str]"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "command": [
+                    "Command"
+                ],
+                "default_map": [
+                    "typing.Optional[dict[str, str]]"
+                ],
+                "help_option_names": [
+                    "typing.Optional[list[str]]"
+                ],
+                "ignore_unknown_options": [
+                    "bool"
+                ],
+                "info_name": [
+                    "typing.Optional[str]"
+                ],
+                "max_content_width": [
+                    "typing.Optional[int]"
+                ],
+                "obj": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "parent": [
+                    "typing.Optional[Command]"
+                ],
+                "resilient_parsing": [
+                    "bool"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "terminal_width": [
+                    "typing.Optional[int]"
+                ],
+                "token_normalize_func": [
+                    "typing.Optional[typing.Callable]"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "forward": {
+                "return": [
+                    "Result"
+                ],
+                "args": [
+                    "list[typing.Any]"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "cmd": [
+                    "Command"
+                ]
+            },
+            "scope": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "cleanup": [
+                    "bool"
+                ]
+            },
+            "find_object": {
+                "return": [
+                    "typing.Optional[Object]"
+                ],
+                "object_type": [
+                    "typing.Type"
+                ]
+            },
+            "ensure_object": {
+                "return": [
+                    "typing.Type"
+                ],
+                "object_type": [
+                    "typing.Type"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "None"
+                ],
+                "exc_type": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "exc_value": [
+                    "typing.Optional[Exception]"
+                ],
+                "tb": [
+                    "typing.Optional[traceback.TracebackType]"
+                ]
+            },
+            "make_formatter": {
+                "return": [
+                    "Formatter"
+                ]
+            },
+            "find_root": {
+                "return": [
+                    "Node"
+                ]
+            },
+            "_make_sub_context": {
+                "return": [
+                    "SubContext"
+                ],
+                "command": [
+                    "Command"
+                ]
+            },
+            "with_resource": {
+                "return": [
+                    "None"
+                ],
+                "context_manager": [
+                    "ContextManager"
+                ]
+            },
+            "set_parameter_source": {
+                "return": [
+                    "None"
+                ],
+                "name": [
+                    "str"
+                ],
+                "source": [
+                    "str"
+                ]
+            },
+            "get_parameter_source": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "Context"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "call_on_close": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "typing.Callable"
+                ]
+            },
+            "exit": {
+                "return": [
+                    "None"
+                ],
+                "code": [
+                    "int"
+                ]
+            },
+            "fail": {
+                "return": [
+                    "None"
+                ],
+                "message": [
+                    "str"
+                ]
+            },
+            "get_usage": {
+                "return": [
+                    "str"
+                ]
+            },
+            "get_help": {
+                "return": [
+                    "str"
+                ]
+            },
+            "abort": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Option": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "allow_from_autoenv": [
+                    "bool"
+                ],
+                "attrs": [
+                    "dict[str, typing.Any]"
+                ],
+                "confirmation_prompt": [
+                    "bool"
+                ],
+                "count": [
+                    "bool"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "flag_value": [
+                    "typing.Optional[str]"
+                ],
+                "help": [
+                    "typing.Optional[str]"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "hide_input": [
+                    "bool"
+                ],
+                "is_flag": [
+                    "typing.Optional[bool]"
+                ],
+                "multiple": [
+                    "bool"
+                ],
+                "param_decls": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "prompt": [
+                    "bool"
+                ],
+                "prompt_required": [
+                    "bool"
+                ],
+                "show_choices": [
+                    "bool"
+                ],
+                "show_default": [
+                    "typing.Optional[bool]"
+                ],
+                "show_envvar": [
+                    "bool"
+                ],
+                "type": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "get_help_extra": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "_parse_decls": {
+                "return": [
+                    "tuple[typing.Union[str,list[str],list[str]]]"
+                ],
+                "decls": [
+                    "list[str]"
+                ],
+                "expose_value": [
+                    "bool"
+                ]
+            },
+            "get_help_record": {
+                "return": [
+                    "typing.Optional[tuple[typing.Union[str,str]]]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "consume_value": {
+                "return": [
+                    "tuple[typing.Union[typing.Any,typing.Any]]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "opts": [
+                    "Options"
+                ]
+            },
+            "add_to_parser": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "parser": [
+                    "argparse.ArgumentParser"
+                ]
+            },
+            "prompt_for_value": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "resolve_envvar_value": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "value_from_envvar": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "get_error_hint": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            }
+        },
+        "Parameter": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "callback": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "default": [
+                    "typing.Optional[list[str]]"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "envvar": [
+                    "typing.Optional[str]"
+                ],
+                "expose_value": [
+                    "bool"
+                ],
+                "is_eager": [
+                    "bool"
+                ],
+                "metavar": [
+                    "typing.Optional[str]"
+                ],
+                "multiple": [
+                    "bool"
+                ],
+                "nargs": [
+                    "typing.Optional[int]"
+                ],
+                "param_decls": [
+                    "typing.Optional[typing.Iterable[str]]"
+                ],
+                "required": [
+                    "bool"
+                ],
+                "shell_complete": [
+                    "typing.Optional[bool]"
+                ],
+                "type": [
+                    "typing.Optional[typing.Type]"
+                ]
+            },
+            "type_cast_value": {
+                "return": [
+                    "typing.Optional[tuple[typing.Union[typing.Any,...]]]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "value": [
+                    "typing.Optional[typing.Any]"
+                ]
+            },
+            "handle_parse_result": {
+                "return": [
+                    "tuple[typing.Union[typing.Any,list[str]]]"
+                ],
+                "args": [
+                    "list"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "opts": [
+                    "Namespace"
+                ]
+            },
+            "consume_value": {
+                "return": [
+                    "tuple[typing.Union[str,str]]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "opts": [
+                    "dict"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "bool"
+                ]
+            },
+            "resolve_envvar_value": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "process_value": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "make_metavar": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "value_from_envvar": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "value_is_missing": {
+                "return": [
+                    "bool"
+                ],
+                "value": [
+                    "typing.Optional[typing.Any]"
+                ]
+            },
+            "get_error_hint": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "_parse_decls": {
+                "return": [
+                    "list[Decl]"
+                ],
+                "decls": [
+                    "list[Decl]"
+                ],
+                "expose_value": [
+                    "bool"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "add_to_parser": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "parser": [
+                    "argparse.ArgumentParser"
+                ]
+            },
+            "get_usage_pieces": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "get_help_record": {
+                "return": [
+                    "HelpRecord"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            }
+        },
+        "Argument": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "attrs": [
+                    "dict[str, typing.Any]"
+                ],
+                "param_decls": [
+                    "typing.Type"
+                ],
+                "required": [
+                    "typing.Optional[bool]"
+                ]
+            },
+            "_parse_decls": {
+                "return": [
+                    "tuple[typing.Union[str,list,list]]"
+                ],
+                "decls": [
+                    "list[Parameter]"
+                ],
+                "expose_value": [
+                    "bool"
+                ]
+            },
+            "make_metavar": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "add_to_parser": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "parser": [
+                    "ArgumentParser"
+                ]
+            },
+            "get_error_hint": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "get_usage_pieces": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            }
+        },
+        "global": {
+            "_check_nested_chain": {
+                "return": [
+                    "None"
+                ],
+                "base_command": [
+                    "Command"
+                ],
+                "cmd": [
+                    "Command"
+                ],
+                "cmd_name": [
+                    "str"
+                ],
+                "register": [
+                    "bool"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Type"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "augment_usage_errors": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "param": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_complete_visible_commands": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "incomplete": [
+                    "str"
+                ]
+            },
+            "iter_params_for_processing": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "declaration_order": [
+                    "list[Declaration]"
+                ],
+                "invocation_order": [
+                    "list[Parameter]"
+                ]
+            },
+            "batch": {
+                "return": [
+                    "list[tuple[typing.Union[int,int]]]"
+                ],
+                "batch_size": [
+                    "int"
+                ],
+                "iterable": [
+                    "typing.Iterable"
+                ]
+            },
+            "_check_iter": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "CommandCollection": {
+            "get_command": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "cmd_name": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "list_commands": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "name": [
+                    "str"
+                ],
+                "sources": [
+                    "list[str]"
+                ]
+            },
+            "add_source": {
+                "return": [
+                    "None"
+                ],
+                "group": [
+                    "str"
+                ]
+            }
+        },
+        "_FakeSubclassCheck": {
+            "__instancecheck__": {
+                "return": [
+                    "bool"
+                ],
+                "instance": [
+                    "typing.Union[typing.Any, builtins.str]"
+                ]
+            },
+            "__subclasscheck__": {
+                "return": [
+                    "bool"
+                ],
+                "subclass": [
+                    "typing.Type"
+                ]
+            }
+        }
+    },
+    "click.types": {
+        "Path": {
+            "global": {
+                "envvar_list_splitter": [
+                    "str"
+                ]
+            },
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "bytes"
+                ]
+            },
+            "__init__": {
+                "allow_dash": [
+                    "bool"
+                ],
+                "dir_okay": [
+                    "bool"
+                ],
+                "executable": [
+                    "bool"
+                ],
+                "exists": [
+                    "bool"
+                ],
+                "file_okay": [
+                    "bool"
+                ],
+                "path_type": [
+                    "typing.Optional[str]"
+                ],
+                "readable": [
+                    "bool"
+                ],
+                "resolve_path": [
+                    "bool"
+                ],
+                "writable": [
+                    "bool"
+                ]
+            },
+            "coerce_path_result": {
+                "return": [
+                    "typing.Union[str,pathlib.PathLike]"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "bool"
+                ],
+                "param": [
+                    "str"
+                ]
+            }
+        },
+        "File": {
+            "global": {
+                "envvar_list_splitter": [
+                    "str"
+                ]
+            },
+            "convert": {
+                "return": [
+                    "typing.Union[pathlib.PathLike, builtins.str]"
+                ],
+                "ctx": [
+                    "typing.Optional[tentaclio.context.Context]"
+                ],
+                "param": [
+                    "typing.Optional[tentaclio.core.Params]"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "atomic": [
+                    "bool"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "lazy": [
+                    "typing.Optional[bool]"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "resolve_lazy_flag": {
+                "return": [
+                    "bool"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "bool"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            }
+        },
+        "ParamType": {
+            "global": {
+                "envvar_list_splitter": [
+                    "str"
+                ],
+                "is_composite": [
+                    "str"
+                ],
+                "arity": [
+                    "int"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, str]"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "ctx": [
+                    "dict"
+                ],
+                "param": [
+                    "typing.Optional[torch.Tensor]"
+                ],
+                "value": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "fail": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "dict"
+                ],
+                "message": [
+                    "str"
+                ],
+                "param": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "split_envvar_value": {
+                "return": [
+                    "list[str]"
+                ],
+                "rv": [
+                    "str"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "incomplete": [
+                    "bool"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "get_missing_message": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "get_metavar": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "convert_type": {
+                "return": [
+                    "ParamType"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "ty": [
+                    "typing.Type"
+                ]
+            },
+            "_is_file_like": {
+                "return": [
+                    "bool"
+                ],
+                "value": [
+                    "typing.Union[pathlib.Path, builtins.str]"
+                ]
+            }
+        },
+        "_NumberRangeBase": {
+            "convert": {
+                "return": [
+                    "typing.Union[int,float]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "typing.Union[str,int]"
+                ]
+            },
+            "_describe_range": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "clamp": [
+                    "bool"
+                ],
+                "max": [
+                    "typing.Optional[float]"
+                ],
+                "max_open": [
+                    "bool"
+                ],
+                "min": [
+                    "typing.Optional[float]"
+                ],
+                "min_open": [
+                    "bool"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "_clamp": {
+                "return": [
+                    "tuple[typing.Union[int,int]]"
+                ],
+                "bound": [
+                    "float"
+                ],
+                "dir": [
+                    "int"
+                ],
+                "open": [
+                    "bool"
+                ]
+            }
+        },
+        "StringParamType": {
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "DateTime": {
+            "convert": {
+                "return": [
+                    "typing.Union[datetime.datetime, builtins.str]"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "typing.Union[datetime.datetime, builtins.str]"
+                ]
+            },
+            "_try_to_convert_date": {
+                "return": [
+                    "typing.Optional[datetime.datetime]"
+                ],
+                "format": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "__init__": {
+                "formats": [
+                    "list[str]"
+                ]
+            },
+            "get_metavar": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Choice": {
+            "get_metavar": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "param": [
+                    "Param"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "list[CompletionItem]"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "incomplete": [
+                    "str"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "normalize_choice": {
+                "return": [
+                    "str"
+                ],
+                "choice": [
+                    "Choice"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "get_invalid_choice_message": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "dict"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "get_missing_message": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "dict"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "_normalized_mapping": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "case_sensitive": [
+                    "bool"
+                ],
+                "choices": [
+                    "list[str]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Tuple": {
+            "convert": {
+                "return": [
+                    "tuple[typing.Union[typing.Any,...]]"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "list[str]"
+                ],
+                "types": [
+                    "list[str]"
+                ]
+            }
+        },
+        "BoolParamType": {
+            "convert": {
+                "return": [
+                    "bool"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "_NumberParamTypeBase": {
+            "global": {
+                "_number_class": [
+                    "typing.Type"
+                ]
+            },
+            "convert": {
+                "return": [
+                    "typing.Union[float,int]"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "UUIDParameterType": {
+            "convert": {
+                "return": [
+                    "typing.Union[str,uuid.UUID]"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "Params"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "FloatRange": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "clamp": [
+                    "bool"
+                ],
+                "max": [
+                    "typing.Optional[float]"
+                ],
+                "max_open": [
+                    "bool"
+                ],
+                "min": [
+                    "typing.Optional[float]"
+                ],
+                "min_open": [
+                    "bool"
+                ]
+            },
+            "_clamp": {
+                "return": [
+                    "Bound"
+                ],
+                "bound": [
+                    "float"
+                ],
+                "dir": [
+                    "bool"
+                ],
+                "open": [
+                    "bool"
+                ]
+            }
+        },
+        "FuncParamType": {
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "UserContext"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "to_info_dict": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "func": [
+                    "typing.Callable"
+                ]
+            }
+        },
+        "IntRange": {
+            "_clamp": {
+                "return": [
+                    "int"
+                ],
+                "bound": [
+                    "int"
+                ],
+                "dir": [
+                    "int"
+                ],
+                "open": [
+                    "bool"
+                ]
+            }
+        },
+        "OptionHelpExtra": {
+            "global": {
+                "required": [
+                    "bool"
+                ],
+                "default": [
+                    "str"
+                ],
+                "envvars": [
+                    "dict[str, str]"
+                ],
+                "range": [
+                    "int"
+                ]
+            }
+        },
+        "UnprocessedParamType": {
+            "convert": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "FloatParamType": {
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "IntParamType": {
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click.testing": {
+        "CliRunner": {
+            "isolation": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "env": [
+                    "dict[str, str]"
+                ],
+                "input": [
+                    "typing.Optional[typing.IO]"
+                ]
+            },
+            "invoke": {
+                "return": [
+                    "Result"
+                ],
+                "args": [
+                    "typing.Optional[str]"
+                ],
+                "catch_exceptions": [
+                    "typing.Optional[bool]"
+                ],
+                "cli": [
+                    "Cli"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "env": [
+                    "dict[str, str]"
+                ],
+                "extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "input": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "isolated_filesystem": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "temp_dir": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "catch_exceptions": [
+                    "bool"
+                ],
+                "charset": [
+                    "str"
+                ],
+                "echo_stdin": [
+                    "bool"
+                ],
+                "env": [
+                    "dict[str, str]"
+                ]
+            },
+            "make_env": {
+                "return": [
+                    "dict[str, str]"
+                ],
+                "overrides": [
+                    "dict[str, str]"
+                ]
+            },
+            "get_default_prog_name": {
+                "return": [
+                    "str"
+                ],
+                "cli": [
+                    "BaseCli"
+                ]
+            }
+        },
+        "global": {
+            "make_input_stream": {
+                "return": [
+                    "typing.IO"
+                ],
+                "charset": [
+                    "str"
+                ],
+                "input": [
+                    "typing.Union[str,typing.IO]"
+                ]
+            },
+            "_pause_echo": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "stream": [
+                    "typing.Optional[typing.IO]"
+                ]
+            }
+        },
+        "Result": {
+            "__init__": {
+                "exc_info": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "exception": [
+                    "typing.Optional[Exception]"
+                ],
+                "exit_code": [
+                    "int"
+                ],
+                "output_bytes": [
+                    "bytes"
+                ],
+                "return_value": [
+                    "typing.Optional[str]"
+                ],
+                "runner": [
+                    "Runner"
+                ],
+                "stderr_bytes": [
+                    "bytes"
+                ],
+                "stdout_bytes": [
+                    "bytes"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "StreamMixer": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_NamedTextIOWrapper": {
+            "__next__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "buffer": [
+                    "bytes"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "mode": [
+                    "int"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        },
+        "EchoingStdin": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "input": [
+                    "str"
+                ],
+                "output": [
+                    "str"
+                ]
+            },
+            "_echo": {
+                "return": [
+                    "str"
+                ],
+                "rv": [
+                    "str"
+                ]
+            },
+            "readlines": {
+                "return": [
+                    "list[str]"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "readline": {
+                "return": [
+                    "str"
+                ],
+                "n": [
+                    "int"
+                ]
+            },
+            "read1": {
+                "return": [
+                    "str"
+                ],
+                "n": [
+                    "int"
+                ]
+            },
+            "read": {
+                "return": [
+                    "bytes"
+                ],
+                "n": [
+                    "int"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "str"
+                ],
+                "x": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "BytesIOCopy": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "copy_to": [
+                    "str"
+                ]
+            },
+            "write": {
+                "return": [
+                    "int"
+                ],
+                "b": [
+                    "bytes"
+                ]
+            },
+            "flush": {
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "click.shell_completion": {
+        "global": {
+            "global": {
+                "_available_shells": [
+                    "str"
+                ]
+            },
+            "_resolve_context": {
+                "return": [
+                    "Context"
+                ],
+                "args": [
+                    "Namespace"
+                ],
+                "cli": [
+                    "Cli"
+                ],
+                "ctx_args": [
+                    "dict[str, typing.Any]"
+                ],
+                "prog_name": [
+                    "str"
+                ]
+            },
+            "_resolve_incomplete": {
+                "return": [
+                    "tuple[typing.Union[Command,str]]"
+                ],
+                "args": [
+                    "list[str]"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "incomplete": [
+                    "str"
+                ]
+            },
+            "shell_complete": {
+                "return": [
+                    "int"
+                ],
+                "cli": [
+                    "MtiStreamCli"
+                ],
+                "complete_var": [
+                    "str"
+                ],
+                "ctx_args": [
+                    "Namespace"
+                ],
+                "instruction": [
+                    "str"
+                ],
+                "prog_name": [
+                    "str"
+                ]
+            },
+            "_is_incomplete_option": {
+                "return": [
+                    "bool"
+                ],
+                "args": [
+                    "list"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "param": [
+                    "Param"
+                ]
+            },
+            "_is_incomplete_argument": {
+                "return": [
+                    "bool"
+                ],
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "Parameter"
+                ]
+            },
+            "split_arg_string": {
+                "return": [
+                    "list[str]"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "add_completion_class": {
+                "return": [
+                    "typing.Type"
+                ],
+                "cls": [
+                    "typing.Type"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_start_of_option": {
+                "return": [
+                    "bool"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "value": [
+                    "list[str]"
+                ]
+            },
+            "get_completion_class": {
+                "return": [
+                    "typing.Type"
+                ],
+                "shell": [
+                    "str"
+                ]
+            }
+        },
+        "ShellComplete": {
+            "global": {
+                "source_template": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "get_completions": {
+                "return": [
+                    "list[str]"
+                ],
+                "args": [
+                    "Namespace"
+                ],
+                "incomplete": [
+                    "bool"
+                ]
+            },
+            "complete": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "cli": [
+                    "MtiStreamCli"
+                ],
+                "complete_var": [
+                    "str"
+                ],
+                "ctx_args": [
+                    "Namespace"
+                ],
+                "prog_name": [
+                    "str"
+                ]
+            },
+            "source_vars": {
+                "return": [
+                    "dict[str, str]"
+                ]
+            },
+            "source": {
+                "return": [
+                    "str"
+                ]
+            },
+            "format_completion": {
+                "return": [
+                    "str"
+                ],
+                "item": [
+                    "CompletionItem"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "CompletionArgs"
+                ]
+            }
+        },
+        "BashComplete": {
+            "_check_version": {
+                "return": [
+                    "None"
+                ]
+            },
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Union[list[str],str]]"
+                ]
+            },
+            "format_completion": {
+                "return": [
+                    "str"
+                ],
+                "item": [
+                    "CompletionItem"
+                ]
+            },
+            "source": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "ZshComplete": {
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Union[list[str],str]]"
+                ]
+            },
+            "format_completion": {
+                "return": [
+                    "str"
+                ],
+                "item": [
+                    "CompletionItem"
+                ]
+            }
+        },
+        "FishComplete": {
+            "get_completion_args": {
+                "return": [
+                    "tuple[typing.Union[list[str],str]]"
+                ]
+            },
+            "format_completion": {
+                "return": [
+                    "str"
+                ],
+                "item": [
+                    "CompletionItem"
+                ]
+            }
+        },
+        "CompletionItem": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "help": [
+                    "typing.Optional[str]"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "type": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click._compat": {
+        "global": {
+            "open_stream": {
+                "return": [
+                    "tuple[typing.Union[typing.IO,bool]]"
+                ],
+                "atomic": [
+                    "bool"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "_force_correct_text_stream": {
+                "return": [
+                    "typing.IO"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ],
+                "find_binary": [
+                    "typing.Callable"
+                ],
+                "force_readable": [
+                    "bool"
+                ],
+                "force_writable": [
+                    "bool"
+                ],
+                "is_binary": [
+                    "typing.Callable"
+                ],
+                "text_stream": [
+                    "typing.Union[typing.IO,typing.IO]"
+                ]
+            },
+            "global": {
+                "_ansi_stream_wrappers": [
+                    "dict[str, typing.Callable]"
+                ],
+                "auto_wrap_for_ansi": [
+                    "None"
+                ],
+                "binary_streams": [
+                    "dict[str, typing.Callable]"
+                ],
+                "text_streams": [
+                    "dict[str, typing.Callable]"
+                ]
+            },
+            "auto_wrap_for_ansi": {
+                "return": [
+                    "typing.IO"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_make_cached_stream_func": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "src_func": [
+                    "typing.Callable"
+                ],
+                "wrapper_func": [
+                    "typing.Callable"
+                ]
+            },
+            "_make_text_stream": {
+                "return": [
+                    "_NonClosingTextIOWrapper"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "force_readable": [
+                    "bool"
+                ],
+                "force_writable": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_find_binary_reader": {
+                "return": [
+                    "typing.Optional[io.BinaryIO]"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_find_binary_writer": {
+                "return": [
+                    "typing.Optional[io.BinaryIO]"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_is_binary_writer": {
+                "return": [
+                    "bool"
+                ],
+                "default": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "get_text_stderr": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "get_text_stdout": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "get_text_stdin": {
+                "return": [
+                    "typing.IO"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "should_strip_ansi": {
+                "return": [
+                    "bool"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.Optional[typing.IO]"
+                ]
+            },
+            "_force_correct_text_reader": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "list[str]"
+                ],
+                "force_readable": [
+                    "bool"
+                ],
+                "text_reader": [
+                    "TextReader"
+                ]
+            },
+            "_force_correct_text_writer": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "list[str]"
+                ],
+                "force_writable": [
+                    "bool"
+                ],
+                "text_writer": [
+                    "TextWriter"
+                ]
+            },
+            "_is_jupyter_kernel_output": {
+                "return": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.Union[_FixupStream, _NonClosingTextIOWrapper]"
+                ]
+            },
+            "get_binary_stderr": {
+                "return": [
+                    "BinaryWriter"
+                ]
+            },
+            "get_binary_stdout": {
+                "return": [
+                    "BinaryWriter"
+                ]
+            },
+            "get_binary_stdin": {
+                "return": [
+                    "BinaryReader"
+                ]
+            },
+            "_is_compat_stream_attr": {
+                "return": [
+                    "bool"
+                ],
+                "attr": [
+                    "str"
+                ],
+                "stream": [
+                    "typing.IO"
+                ],
+                "value": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_is_compatible_text_stream": {
+                "return": [
+                    "bool"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "list[str]"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "get_best_encoding": {
+                "return": [
+                    "str"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_wrap_io_open": {
+                "return": [
+                    "typing.IO"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "file": [
+                    "str"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "_is_binary_reader": {
+                "return": [
+                    "bool"
+                ],
+                "default": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "is_ascii_encoding": {
+                "return": [
+                    "bool"
+                ],
+                "encoding": [
+                    "str"
+                ]
+            },
+            "_stream_is_misconfigured": {
+                "return": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_get_argv_encoding": {
+                "return": [
+                    "str"
+                ]
+            },
+            "isatty": {
+                "return": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "_get_windows_console_stream": {
+                "return": [
+                    "typing.Optional[typing.IO]"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ],
+                "f": [
+                    "typing.IO"
+                ]
+            },
+            "strip_ansi": {
+                "return": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            },
+            "term_len": {
+                "return": [
+                    "int"
+                ],
+                "x": [
+                    "str"
+                ]
+            }
+        },
+        "_FixupStream": {
+            "writable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "seekable": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "force_readable": [
+                    "bool"
+                ],
+                "force_writable": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "read1": {
+                "return": [
+                    "bytes"
+                ],
+                "size": [
+                    "int"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        },
+        "_NonClosingTextIOWrapper": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "force_readable": [
+                    "bool"
+                ],
+                "force_writable": [
+                    "bool"
+                ],
+                "stream": [
+                    "typing.IO"
+                ]
+            },
+            "isatty": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__del__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_AtomicFile": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "typing.IO"
+                ],
+                "real_filename": [
+                    "str"
+                ],
+                "tmp_filename": [
+                    "str"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ],
+                "delete": [
+                    "bool"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "None"
+                ],
+                "exc_type": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "exc_value": [
+                    "typing.Optional[Exception]"
+                ],
+                "tb": [
+                    "typing.Optional[types.TracebackType]"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "Config"
+                ]
+            }
+        }
+    },
+    "click.decorators": {
+        "global": {
+            "version_option": {
+                "return": [
+                    "Option"
+                ],
+                "kwargs": [
+                    "dict[str, typing.Any]"
+                ],
+                "message": [
+                    "typing.Optional[str]"
+                ],
+                "package_name": [
+                    "typing.Optional[str]"
+                ],
+                "param_decls": [
+                    "tuple[str]"
+                ],
+                "prog_name": [
+                    "typing.Optional[str]"
+                ],
+                "version": [
+                    "str"
+                ]
+            },
+            "make_pass_decorator": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "ensure": [
+                    "bool"
+                ],
+                "object_type": [
+                    "typing.Type"
+                ]
+            },
+            "help_option": {
+                "return": [
+                    "Option"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "param_decls": [
+                    "tuple[str]"
+                ]
+            },
+            "pass_meta_key": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "doc_description": [
+                    "typing.Optional[str]"
+                ],
+                "key": [
+                    "str"
+                ]
+            },
+            "confirmation_option": {
+                "return": [
+                    "Option"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "param_decls": [
+                    "tuple[str]"
+                ]
+            },
+            "password_option": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "param_decls": [
+                    "tuple[str]"
+                ]
+            },
+            "_param_memo": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "typing.Callable"
+                ],
+                "param": [
+                    "str"
+                ]
+            },
+            "argument": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "attrs": [
+                    "dict"
+                ],
+                "cls": [
+                    "typing.Type"
+                ],
+                "param_decls": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "option": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "attrs": [
+                    "dict"
+                ],
+                "cls": [
+                    "typing.Type"
+                ],
+                "param_decls": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "pass_context": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "f": [
+                    "typing.Callable"
+                ]
+            },
+            "pass_obj": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "f": [
+                    "typing.Callable"
+                ]
+            }
+        }
+    },
+    "click._termui_impl": {
+        "global": {
+            "open_url": {
+                "return": [
+                    "int"
+                ],
+                "locate": [
+                    "bool"
+                ],
+                "url": [
+                    "str"
+                ],
+                "wait": [
+                    "bool"
+                ]
+            },
+            "_pipepager": {
+                "return": [
+                    "bool"
+                ],
+                "cmd_parts": [
+                    "list[str]"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "generator": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "pager": {
+                "return": [
+                    "None"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "generator": [
+                    "typing.Generator"
+                ]
+            },
+            "_tempfilepager": {
+                "return": [
+                    "bool"
+                ],
+                "cmd_parts": [
+                    "list[str]"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "generator": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "raw_terminal": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "getchar": {
+                "echo": [
+                    "bool"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "_translate_ch_to_exc": {
+                "return": [
+                    "typing.Optional[Exception]"
+                ],
+                "ch": [
+                    "str"
+                ]
+            },
+            "_nullpager": {
+                "return": [
+                    "None"
+                ],
+                "color": [
+                    "bool"
+                ],
+                "generator": [
+                    "typing.Iterator"
+                ],
+                "stream": [
+                    "StringIO"
+                ]
+            }
+        },
+        "ProgressBar": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "bar_template": [
+                    "str"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "empty_char": [
+                    "str"
+                ],
+                "file": [
+                    "StringIO"
+                ],
+                "fill_char": [
+                    "str"
+                ],
+                "hidden": [
+                    "bool"
+                ],
+                "info_sep": [
+                    "str"
+                ],
+                "item_show_func": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "iterable": [
+                    "typing.Iterable[V]"
+                ],
+                "label": [
+                    "str"
+                ],
+                "length": [
+                    "typing.Optional[int]"
+                ],
+                "show_eta": [
+                    "bool"
+                ],
+                "show_percent": [
+                    "typing.Optional[bool]"
+                ],
+                "show_pos": [
+                    "bool"
+                ],
+                "update_min_steps": [
+                    "int"
+                ],
+                "width": [
+                    "int"
+                ]
+            },
+            "render_progress": {
+                "return": [
+                    "None"
+                ]
+            },
+            "format_progress_line": {
+                "return": [
+                    "str"
+                ]
+            },
+            "format_bar": {
+                "return": [
+                    "str"
+                ]
+            },
+            "generator": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "make_step": {
+                "return": [
+                    "None"
+                ],
+                "n_steps": [
+                    "int"
+                ]
+            },
+            "format_eta": {
+                "return": [
+                    "str"
+                ]
+            },
+            "update": {
+                "return": [
+                    "None"
+                ],
+                "current_item": [
+                    "int"
+                ],
+                "n_steps": [
+                    "int"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "render_finish": {
+                "return": [
+                    "None"
+                ]
+            },
+            "format_pos": {
+                "return": [
+                    "str"
+                ]
+            },
+            "finish": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "Progress"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "None"
+                ],
+                "exc_type": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "exc_value": [
+                    "typing.Optional[Exception]"
+                ],
+                "tb": [
+                    "typing.Optional[traceback.TracebackType]"
+                ]
+            },
+            "format_pct": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__next__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Editor": {
+            "edit_files": {
+                "return": [
+                    "None"
+                ],
+                "filenames": [
+                    "list[str]"
+                ]
+            },
+            "get_editor": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "editor": [
+                    "typing.Optional[str]"
+                ],
+                "env": [
+                    "typing.Optional[dict[str, str]]"
+                ],
+                "extension": [
+                    "str"
+                ],
+                "require_save": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "click.termui": {
+        "global": {
+            "prompt": {
+                "return": [
+                    "str"
+                ],
+                "confirmation_prompt": [
+                    "bool"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "err": [
+                    "bool"
+                ],
+                "hide_input": [
+                    "bool"
+                ],
+                "prompt_suffix": [
+                    "str"
+                ],
+                "show_choices": [
+                    "bool"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "text": [
+                    "str"
+                ],
+                "type": [
+                    "str"
+                ],
+                "value_proc": [
+                    "typing.Callable[str, str]"
+                ]
+            },
+            "style": {
+                "return": [
+                    "str"
+                ],
+                "bg": [
+                    "typing.Optional[str]"
+                ],
+                "blink": [
+                    "typing.Optional[bool]"
+                ],
+                "bold": [
+                    "typing.Optional[bool]"
+                ],
+                "dim": [
+                    "typing.Optional[int]"
+                ],
+                "fg": [
+                    "str"
+                ],
+                "italic": [
+                    "typing.Optional[int]"
+                ],
+                "overline": [
+                    "typing.Optional[bool]"
+                ],
+                "reset": [
+                    "bool"
+                ],
+                "reverse": [
+                    "typing.Optional[bool]"
+                ],
+                "strikethrough": [
+                    "typing.Optional[bool]"
+                ],
+                "text": [
+                    "str"
+                ],
+                "underline": [
+                    "typing.Optional[bool]"
+                ]
+            },
+            "confirm": {
+                "return": [
+                    "bool"
+                ],
+                "abort": [
+                    "bool"
+                ],
+                "default": [
+                    "bool"
+                ],
+                "err": [
+                    "bool"
+                ],
+                "prompt_suffix": [
+                    "str"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "text": [
+                    "str"
+                ]
+            },
+            "echo_via_pager": {
+                "return": [
+                    "str"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "text_or_generator": [
+                    "typing.Union[str,typing.Generator]"
+                ]
+            },
+            "global": {
+                "visible_prompt_func": [
+                    "typing.Callable"
+                ],
+                "_getchar": [
+                    "None"
+                ]
+            },
+            "pause": {
+                "return": [
+                    "None"
+                ],
+                "err": [
+                    "bool"
+                ],
+                "info": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_build_prompt": {
+                "return": [
+                    "str"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "show_choices": [
+                    "bool"
+                ],
+                "show_default": [
+                    "bool"
+                ],
+                "suffix": [
+                    "str"
+                ],
+                "text": [
+                    "str"
+                ],
+                "type": [
+                    "typing.Optional[typing.Type]"
+                ]
+            },
+            "_interpret_color": {
+                "return": [
+                    "str"
+                ],
+                "color": [
+                    "typing.Union[int,tuple,list]"
+                ],
+                "offset": [
+                    "int"
+                ]
+            },
+            "secho": {
+                "return": [
+                    "None"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "err": [
+                    "bool"
+                ],
+                "file": [
+                    "typing.Optional[str]"
+                ],
+                "message": [
+                    "typing.Optional[str]"
+                ],
+                "nl": [
+                    "bool"
+                ],
+                "styles": [
+                    "dict"
+                ]
+            },
+            "getchar": {
+                "return": [
+                    "str"
+                ],
+                "echo": [
+                    "bool"
+                ]
+            },
+            "_format_default": {
+                "return": [
+                    "str"
+                ],
+                "default": [
+                    "typing.Union[str,typing.IO]"
+                ]
+            },
+            "launch": {
+                "return": [
+                    "None"
+                ],
+                "locate": [
+                    "bool"
+                ],
+                "url": [
+                    "str"
+                ],
+                "wait": [
+                    "bool"
+                ]
+            },
+            "clear": {
+                "return": [
+                    "None"
+                ]
+            },
+            "hidden_prompt_func": {
+                "return": [
+                    "str"
+                ],
+                "prompt": [
+                    "str"
+                ]
+            },
+            "raw_terminal": {
+                "return": [
+                    "str"
+                ]
+            },
+            "unstyle": {
+                "return": [
+                    "str"
+                ],
+                "text": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click.formatting": {
+        "global": {
+            "wrap_text": {
+                "return": [
+                    "str"
+                ],
+                "initial_indent": [
+                    "str"
+                ],
+                "preserve_paragraphs": [
+                    "bool"
+                ],
+                "subsequent_indent": [
+                    "str"
+                ],
+                "text": [
+                    "str"
+                ],
+                "width": [
+                    "int"
+                ]
+            },
+            "join_options": {
+                "return": [
+                    "tuple[typing.Union[str,bool]]"
+                ],
+                "options": [
+                    "list[str]"
+                ]
+            },
+            "measure_table": {
+                "return": [
+                    "tuple[typing.Union[int,...]]"
+                ],
+                "rows": [
+                    "list[list[str]]"
+                ]
+            },
+            "iter_rows": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "col_count": [
+                    "int"
+                ],
+                "rows": [
+                    "typing.Iterable[list[str]]"
+                ]
+            },
+            "global": {
+                "FORCED_WIDTH": [
+                    "None"
+                ]
+            }
+        },
+        "HelpFormatter": {
+            "write_dl": {
+                "return": [
+                    "None"
+                ],
+                "col_max": [
+                    "int"
+                ],
+                "col_spacing": [
+                    "int"
+                ],
+                "rows": [
+                    "list[str]"
+                ]
+            },
+            "write_usage": {
+                "return": [
+                    "None"
+                ],
+                "args": [
+                    "str"
+                ],
+                "prefix": [
+                    "typing.Optional[str]"
+                ],
+                "prog": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "indent_increment": [
+                    "int"
+                ],
+                "max_width": [
+                    "int"
+                ],
+                "width": [
+                    "typing.Optional[int]"
+                ]
+            },
+            "write_text": {
+                "return": [
+                    "None"
+                ],
+                "text": [
+                    "str"
+                ]
+            },
+            "section": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "indentation": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "write_heading": {
+                "return": [
+                    "None"
+                ],
+                "heading": [
+                    "str"
+                ]
+            },
+            "write_paragraph": {
+                "return": [
+                    "None"
+                ]
+            },
+            "dedent": {
+                "return": [
+                    "None"
+                ]
+            },
+            "indent": {
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "return": [
+                    "None"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "getvalue": {
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click": {
+        "global": {
+            "__getattr__": {
+                "return": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click.utils": {
+        "global": {
+            "echo": {
+                "return": [
+                    "None"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ],
+                "err": [
+                    "bool"
+                ],
+                "file": [
+                    "typing.Optional[typing.IO]"
+                ],
+                "message": [
+                    "typing.Union[str,bytes,bytearray]"
+                ],
+                "nl": [
+                    "bool"
+                ]
+            },
+            "make_default_short_help": {
+                "return": [
+                    "str"
+                ],
+                "help": [
+                    "str"
+                ],
+                "max_length": [
+                    "int"
+                ]
+            },
+            "get_app_dir": {
+                "return": [
+                    "str"
+                ],
+                "app_name": [
+                    "str"
+                ],
+                "force_posix": [
+                    "bool"
+                ],
+                "roaming": [
+                    "bool"
+                ]
+            },
+            "_detect_program_name": {
+                "return": [
+                    "str"
+                ],
+                "_main": [
+                    "typing.Optional[sys.modules[str]]"
+                ],
+                "path": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_expand_args": {
+                "return": [
+                    "list[str]"
+                ],
+                "args": [
+                    "list[str]"
+                ],
+                "env": [
+                    "bool"
+                ],
+                "glob_recursive": [
+                    "bool"
+                ],
+                "user": [
+                    "bool"
+                ]
+            },
+            "format_filename": {
+                "return": [
+                    "str"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "shorten": [
+                    "bool"
+                ]
+            },
+            "open_file": {
+                "return": [
+                    "typing.IO"
+                ],
+                "atomic": [
+                    "bool"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "lazy": [
+                    "bool"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "make_str": {
+                "return": [
+                    "str"
+                ],
+                "value": [
+                    "typing.Union[bytes,str]"
+                ]
+            },
+            "get_text_stream": {
+                "return": [
+                    "typing.IO"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "safecall": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "func": [
+                    "typing.Callable"
+                ]
+            },
+            "get_binary_stream": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "_posixify": {
+                "return": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        },
+        "LazyFile": {
+            "__init__": {
+                "atomic": [
+                    "bool"
+                ],
+                "encoding": [
+                    "typing.Optional[str]"
+                ],
+                "errors": [
+                    "str"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "open": {
+                "return": [
+                    "typing.IO"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "close_intelligently": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "None"
+                ],
+                "exc_type": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "exc_value": [
+                    "typing.Optional[Exception]"
+                ],
+                "tb": [
+                    "typing.Optional[types.TracebackType]"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "Config"
+                ]
+            }
+        },
+        "PacifyFlushWrapper": {
+            "flush": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "attr": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "wrapped": [
+                    "typing.Callable"
+                ]
+            }
+        },
+        "KeepOpenFile": {
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "None"
+                ],
+                "exc_type": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "exc_value": [
+                    "typing.Optional[Exception]"
+                ],
+                "tb": [
+                    "typing.Optional[types.TracebackType]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "file": [
+                    "typing.IO"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "Config"
+                ]
+            }
+        }
+    },
+    "click._winconsole": {
+        "global": {
+            "global": {
+                "_stream_factories": [
+                    "dict[int, typing.Callable]"
+                ]
+            },
+            "_get_windows_console_stream": {
+                "return": [
+                    "typing.Optional[typing.IO]"
+                ],
+                "encoding": [
+                    "str"
+                ],
+                "errors": [
+                    "typing.Optional[str]"
+                ],
+                "f": [
+                    "typing.IO"
+                ]
+            },
+            "get_buffer": {
+                "return": [
+                    "bytes"
+                ],
+                "obj": [
+                    "typing.Union[typing.Type, builtins.str]"
+                ],
+                "writable": [
+                    "bool"
+                ]
+            },
+            "_is_console": {
+                "return": [
+                    "bool"
+                ],
+                "f": [
+                    "typing.IO"
+                ]
+            },
+            "_get_text_stderr": {
+                "return": [
+                    "ConsoleStream"
+                ],
+                "buffer_stream": [
+                    "typing.IO"
+                ]
+            },
+            "_get_text_stdout": {
+                "return": [
+                    "ConsoleStream"
+                ],
+                "buffer_stream": [
+                    "typing.IO"
+                ]
+            },
+            "_get_text_stdin": {
+                "return": [
+                    "ConsoleStream"
+                ],
+                "buffer_stream": [
+                    "typing.IO"
+                ]
+            }
+        },
+        "_WindowsConsoleReader": {
+            "readinto": {
+                "return": [
+                    "int"
+                ],
+                "b": [
+                    "bytes"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "_WindowsConsoleWriter": {
+            "write": {
+                "return": [
+                    "int"
+                ],
+                "b": [
+                    "bytes"
+                ]
+            },
+            "_get_error_message": {
+                "return": [
+                    "str"
+                ],
+                "errno": [
+                    "int"
+                ]
+            },
+            "writable": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "ConsoleStream": {
+            "write": {
+                "return": [
+                    "int"
+                ],
+                "x": [
+                    "typing.Union[str,int]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "byte_stream": [
+                    "ByteStream"
+                ],
+                "text_stream": [
+                    "TextIO"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "writelines": {
+                "return": [
+                    "None"
+                ],
+                "lines": [
+                    "list[str]"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "isatty": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "_WindowsConsoleRawIOBase": {
+            "isatty": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "handle": [
+                    "Handle"
+                ]
+            }
+        }
+    },
+    "click.exceptions": {
+        "MissingParameter": {
+            "format_message": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[str]"
+                ],
+                "message": [
+                    "typing.Optional[str]"
+                ],
+                "param": [
+                    "typing.Optional[str]"
+                ],
+                "param_hint": [
+                    "typing.Optional[str]"
+                ],
+                "param_type": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "UsageError": {
+            "show": {
+                "return": [
+                    "None"
+                ],
+                "file": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[discord.ext.commands.Context]"
+                ],
+                "message": [
+                    "str"
+                ]
+            }
+        },
+        "BadParameter": {
+            "format_message": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[dict]"
+                ],
+                "message": [
+                    "str"
+                ],
+                "param": [
+                    "typing.Optional[str]"
+                ],
+                "param_hint": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "NoSuchOption": {
+            "format_message": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[click.core.Context]"
+                ],
+                "message": [
+                    "typing.Optional[str]"
+                ],
+                "option_name": [
+                    "str"
+                ],
+                "possibilities": [
+                    "typing.Optional[list[str]]"
+                ]
+            }
+        },
+        "FileError": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "hint": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "format_message": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "ClickException": {
+            "show": {
+                "return": [
+                    "None"
+                ],
+                "file": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "message": [
+                    "str"
+                ]
+            },
+            "format_message": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "_join_param_hints": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "param_hint": [
+                    "typing.Optional[list[str]]"
+                ]
+            }
+        },
+        "BadOptionUsage": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[Configuration]"
+                ],
+                "message": [
+                    "str"
+                ],
+                "option_name": [
+                    "str"
+                ]
+            }
+        },
+        "NoArgsIsHelpError": {
+            "show": {
+                "return": [
+                    "None"
+                ],
+                "file": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Configuration"
+                ]
+            }
+        },
+        "Exit": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "code": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "click.parser": {
+        "global": {
+            "_unpack_args": {
+                "return": [
+                    "tuple"
+                ],
+                "args": [
+                    "list[typing.Any]"
+                ],
+                "nargs_spec": [
+                    "typing.Deque"
+                ]
+            },
+            "__getattr__": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "_normalize_opt": {
+                "return": [
+                    "str"
+                ],
+                "ctx": [
+                    "Configuration"
+                ],
+                "opt": [
+                    "str"
+                ]
+            },
+            "_split_opt": {
+                "return": [
+                    "tuple[typing.Union[str,str]]"
+                ],
+                "opt": [
+                    "str"
+                ]
+            }
+        },
+        "_OptionParser": {
+            "_match_short_opt": {
+                "return": [
+                    "None"
+                ],
+                "arg": [
+                    "list[str]"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "_get_value_from_state": {
+                "return": [
+                    "tuple"
+                ],
+                "option": [
+                    "Option"
+                ],
+                "option_name": [
+                    "str"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "_match_long_opt": {
+                "return": [
+                    "None"
+                ],
+                "explicit_value": [
+                    "typing.Optional[str]"
+                ],
+                "opt": [
+                    "str"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "_process_opts": {
+                "return": [
+                    "None"
+                ],
+                "arg": [
+                    "str"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "_process_args_for_options": {
+                "return": [
+                    "None"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "add_option": {
+                "return": [
+                    "_Option"
+                ],
+                "action": [
+                    "typing.Optional[str]"
+                ],
+                "const": [
+                    "bool"
+                ],
+                "dest": [
+                    "str"
+                ],
+                "nargs": [
+                    "int"
+                ],
+                "obj": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "opts": [
+                    "list[str]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "typing.Optional[argparse.Namespace]"
+                ]
+            },
+            "parse_args": {
+                "return": [
+                    "tuple[typing.Union[Options,LArgs,Order]]"
+                ],
+                "args": [
+                    "Namespace"
+                ]
+            },
+            "_process_args_for_args": {
+                "return": [
+                    "None"
+                ],
+                "state": [
+                    "State"
+                ]
+            },
+            "add_argument": {
+                "return": [
+                    "None"
+                ],
+                "dest": [
+                    "str"
+                ],
+                "nargs": [
+                    "int"
+                ],
+                "obj": [
+                    "str"
+                ]
+            }
+        },
+        "_Option": {
+            "__init__": {
+                "action": [
+                    "typing.Optional[str]"
+                ],
+                "const": [
+                    "bool"
+                ],
+                "dest": [
+                    "str"
+                ],
+                "nargs": [
+                    "int"
+                ],
+                "obj": [
+                    "dict"
+                ],
+                "opts": [
+                    "list[str]"
+                ]
+            },
+            "process": {
+                "return": [
+                    "None"
+                ],
+                "state": [
+                    "State"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "_Argument": {
+            "process": {
+                "return": [
+                    "None"
+                ],
+                "state": [
+                    "State"
+                ],
+                "value": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "dest": [
+                    "str"
+                ],
+                "nargs": [
+                    "int"
+                ],
+                "obj": [
+                    "typing.Type"
+                ]
+            }
+        },
+        "_ParsingState": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "rargs": [
+                    "list[str]"
+                ]
+            }
+        }
+    },
+    "click._textwrap": {
+        "TextWrapper": {
+            "_handle_long_word": {
+                "return": [
+                    "None"
+                ],
+                "cur_len": [
+                    "int"
+                ],
+                "cur_line": [
+                    "list[str]"
+                ],
+                "reversed_chunks": [
+                    "list[list[str]]"
+                ],
+                "width": [
+                    "int"
+                ]
+            },
+            "extra_indent": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "indent": [
+                    "int"
+                ]
+            },
+            "indent_only": {
+                "return": [
+                    "str"
+                ],
+                "text": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "click.globals": {
+        "global": {
+            "resolve_color_default": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "color": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "push_context": {
+                "return": [
+                    "None"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "pop_context": {
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    }
+}

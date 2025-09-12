@@ -1,0 +1,3106 @@
+{
+    "flask.app": {
+        "Flask": {
+            "__init__": {
+                "import_name": [],
+                "static_host": [],
+                "instance_path": [
+                    "Optional[str]"
+                ],
+                "instance_relative_config": [
+                    "bool"
+                ],
+                "static_folder": [
+                    "str"
+                ],
+                "static_url_path": [
+                    "Optional[str]"
+                ],
+                "subdomain_matching": [
+                    "None"
+                ],
+                "template_folder": [
+                    "str"
+                ],
+                "host_matching": [],
+                "root_path": []
+            },
+            "__call__": {
+                "environ": [
+                    "Dict"
+                ],
+                "start_response": [
+                    "Callable"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "create_jinja_environment": {
+                "return": [
+                    "rv"
+                ]
+            },
+            "async_to_sync": {
+                "func": [
+                    "Callable"
+                ],
+                "return": [
+                    "func"
+                ]
+            },
+            "do_teardown_request": {
+                "return": [],
+                "exc": []
+            },
+            "do_teardown_appcontext": {
+                "return": [],
+                "exc": []
+            },
+            "app_context": {
+                "return": []
+            },
+            "create_url_adapter": {
+                "return": [],
+                "request": []
+            },
+            "dispatch_request": {
+                "return": []
+            },
+            "ensure_sync": {
+                "return": [],
+                "func": []
+            },
+            "finalize_request": {
+                "return": [],
+                "from_error_handler": [],
+                "rv": []
+            },
+            "get_send_file_max_age": {
+                "filename": [
+                    "str"
+                ],
+                "return": []
+            },
+            "global": {
+                "session_interface": [
+                    "SessionInterface"
+                ],
+                "request_class": [
+                    "Request"
+                ],
+                "response_class": [
+                    "Response"
+                ]
+            },
+            "handle_http_exception": {
+                "e": [
+                    "e.code"
+                ],
+                "return": [
+                    "RoutingException"
+                ]
+            },
+            "full_dispatch_request": {
+                "return": [
+                    "rv"
+                ]
+            },
+            "make_response": {
+                "return": [
+                    "Response"
+                ],
+                "rv": [
+                    "BaseResponse"
+                ]
+            },
+            "handle_user_exception": {
+                "e": [
+                    "HTTPException"
+                ],
+                "return": []
+            },
+            "handle_exception": {
+                "e": [
+                    "e"
+                ],
+                "return": []
+            },
+            "log_exception": {
+                "return": [
+                    "None"
+                ],
+                "exc_info": [
+                    "None"
+                ]
+            },
+            "open_instance_resource": {
+                "encoding": [
+                    "encoding"
+                ],
+                "resource": [],
+                "mode": [
+                    "str"
+                ],
+                "return": [
+                    "IO"
+                ]
+            },
+            "make_default_options_response": {
+                "return": [
+                    "Response"
+                ]
+            },
+            "make_shell_context": {
+                "return": [
+                    "rv"
+                ]
+            },
+            "preprocess_request": {
+                "return": [
+                    "None"
+                ]
+            },
+            "open_resource": {
+                "return": [
+                    "IO[Any]"
+                ],
+                "mode": [
+                    "Optional[str]"
+                ],
+                "resource": [
+                    "str"
+                ],
+                "encoding": [
+                    "StreamReader"
+                ]
+            },
+            "raise_routing_exception": {
+                "return": [],
+                "request": [
+                    "HttpRequest"
+                ]
+            },
+            "request_context": {
+                "return": [
+                    "RequestContext"
+                ],
+                "environ": [
+                    "WSGIEnvironment"
+                ]
+            },
+            "process_response": {
+                "response": [
+                    "Response"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "run": {
+                "options": [
+                    "dict"
+                ],
+                "load_dotenv": [
+                    "bool"
+                ],
+                "host": [
+                    "Optional[str]"
+                ],
+                "debug": [
+                    "bool"
+                ],
+                "port": [
+                    "Optional[int]"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "send_static_file": {
+                "filename": [
+                    "filename"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "test_cli_runner": {
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "cls"
+                ]
+            },
+            "test_client": {
+                "use_cookies": [
+                    "True"
+                ],
+                "return": [
+                    "TestClient"
+                ],
+                "kwargs": [
+                    "Dict[str, Any]"
+                ]
+            },
+            "update_template_context": {
+                "return": [
+                    "None"
+                ],
+                "context": [
+                    "dict"
+                ]
+            },
+            "test_request_context": {
+                "args": [
+                    "args"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "EnvironBuilder"
+                ]
+            },
+            "url_for": {
+                "_external": [
+                    "Optional[bool]"
+                ],
+                "_scheme": [
+                    "str"
+                ],
+                "_anchor": [
+                    "None"
+                ],
+                "return": [
+                    "rv"
+                ],
+                "_method": [
+                    "None"
+                ],
+                "endpoint": [
+                    "endpoint"
+                ],
+                "values": [
+                    "MutableMapping"
+                ]
+            },
+            "wsgi_app": {
+                "environ": [
+                    "WSGIEnvironment"
+                ],
+                "return": [],
+                "start_response": [
+                    "Callable"
+                ]
+            }
+        },
+        "global": {
+            "_make_timedelta": {
+                "value": [
+                    "Union[None, int, float, timedelta]"
+                ],
+                "return": [
+                    "timedelta"
+                ]
+            }
+        }
+    },
+    "flask": {
+        "global": {
+            "__getattr__": {
+                "return": [
+                    "str"
+                ],
+                "name": []
+            }
+        }
+    },
+    "flask.blueprints": {
+        "Blueprint": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "name": [
+                    "str"
+                ],
+                "import_name": [
+                    "str"
+                ],
+                "root_path": [
+                    "PathLike"
+                ],
+                "cli_group": [
+                    "Union[str, None]"
+                ],
+                "static_url_path": [
+                    "str"
+                ],
+                "subdomain": [
+                    "str"
+                ],
+                "url_prefix": [
+                    "str"
+                ],
+                "static_folder": [
+                    "Optional"
+                ],
+                "template_folder": [
+                    "None"
+                ],
+                "url_defaults": [
+                    "Optional[dict]"
+                ]
+            },
+            "get_send_file_max_age": {
+                "return": [],
+                "filename": [
+                    "filename"
+                ]
+            },
+            "open_resource": {
+                "encoding": [
+                    "encoding"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "resource": [
+                    "resource"
+                ],
+                "return": [
+                    "TextIO"
+                ]
+            },
+            "send_static_file": {
+                "return": [
+                    "Response"
+                ],
+                "filename": [
+                    "filename"
+                ]
+            }
+        }
+    },
+    "flask.cli": {
+        "FlaskGroup": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "add_version_option": [],
+                "add_default_commands": [
+                    "True"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "load_dotenv": [
+                    "True"
+                ],
+                "create_app": [
+                    "Config"
+                ],
+                "set_debug_flag": [
+                    "bool"
+                ]
+            },
+            "_load_plugin_commands": {
+                "return": []
+            },
+            "get_command": {
+                "name": [
+                    "str"
+                ],
+                "return": [
+                    "rv"
+                ],
+                "ctx": [
+                    "ctx"
+                ]
+            },
+            "list_commands": {
+                "return": [
+                    "list"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "make_context": {
+                "args": [],
+                "info_name": [],
+                "extra": [
+                    "dict"
+                ],
+                "return": [],
+                "parent": [
+                    "parent"
+                ]
+            },
+            "parse_args": {
+                "ctx": [
+                    "Context"
+                ],
+                "args": [
+                    "Sequence[str]"
+                ],
+                "return": []
+            }
+        },
+        "CertParamType": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "convert": {
+                "param": [
+                    "BadParameter"
+                ],
+                "ctx": [
+                    "ctx"
+                ],
+                "return": [
+                    "ssl.SSLContext"
+                ],
+                "value": [
+                    "click.STRING"
+                ]
+            }
+        },
+        "global": {
+            "_env_file_callback": {
+                "return": [],
+                "param": [
+                    "Parameter"
+                ],
+                "value": [
+                    "value"
+                ],
+                "ctx": [
+                    "Context"
+                ]
+            },
+            "_called_with_wrong_args": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_set_app": {
+                "return": [],
+                "param": [],
+                "ctx": [
+                    "Context"
+                ],
+                "value": [
+                    "Optional[str]"
+                ]
+            },
+            "_path_is_ancestor": {
+                "return": [
+                    "bool"
+                ],
+                "other": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "_set_debug": {
+                "ctx": [
+                    "Context"
+                ],
+                "param": [
+                    "Parameter"
+                ],
+                "value": [
+                    "bool"
+                ],
+                "return": [
+                    "Optional[bool]"
+                ]
+            },
+            "_validate_key": {
+                "return": [
+                    "value"
+                ],
+                "ctx": [
+                    "click.Context"
+                ],
+                "param": [
+                    "param"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "find_best_app": {
+                "return": [],
+                "module": [
+                    "ModuleType"
+                ]
+            },
+            "find_app_by_string": {
+                "return": [
+                    "Flask"
+                ],
+                "app_name": [
+                    "str"
+                ],
+                "module": [
+                    "module"
+                ]
+            },
+            "get_version": {
+                "return": [],
+                "value": [],
+                "ctx": [
+                    "return"
+                ],
+                "param": [
+                    "param"
+                ]
+            },
+            "load_dotenv": {
+                "load_defaults": [
+                    "bool"
+                ],
+                "return": [
+                    "False"
+                ],
+                "path": [
+                    "None"
+                ]
+            },
+            "main": {
+                "return": [
+                    "None"
+                ]
+            },
+            "routes_command": {
+                "all_methods": [
+                    "False"
+                ],
+                "return": [
+                    "None"
+                ],
+                "sort": [
+                    "str"
+                ]
+            },
+            "prepare_import": {
+                "path": [
+                    "str"
+                ],
+                "return": [
+                    "path"
+                ]
+            },
+            "run_command": {
+                "exclude_patterns": [
+                    "os.path.pathsep"
+                ],
+                "host": [
+                    "str"
+                ],
+                "info": [
+                    "ScriptInfo"
+                ],
+                "extra_files": [
+                    "os.path.pathsep"
+                ],
+                "cert": [
+                    "CertParamType"
+                ],
+                "debugger": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ],
+                "port": [
+                    "int"
+                ],
+                "reload": [
+                    "None"
+                ],
+                "with_threads": [
+                    "bool"
+                ]
+            },
+            "show_server_banner": {
+                "return": [],
+                "app_import_path": [
+                    "str"
+                ],
+                "debug": [
+                    "None"
+                ]
+            },
+            "with_appcontext": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "shell_command": {
+                "return": []
+            }
+        },
+        "ScriptInfo": {
+            "__init__": {
+                "set_debug_flag": [
+                    "bool"
+                ],
+                "return": [
+                    "pass"
+                ],
+                "app_import_path": [],
+                "load_dotenv_defaults": [
+                    "True"
+                ],
+                "create_app": []
+            },
+            "load_app": {
+                "return": [
+                    "app"
+                ]
+            }
+        },
+        "AppGroup": {
+            "command": {
+                "return": [
+                    "Callable[..., Any]"
+                ],
+                "args": [
+                    "Tuple[Any, ...]"
+                ],
+                "kwargs": [
+                    "dict"
+                ]
+            },
+            "group": {
+                "kwargs": [],
+                "return": [
+                    "group"
+                ],
+                "args": [
+                    "tuple"
+                ]
+            }
+        },
+        "SeparatedPathType": {
+            "convert": {
+                "return": [],
+                "value": [
+                    "value"
+                ],
+                "ctx": [
+                    "ctx"
+                ],
+                "param": [
+                    "param"
+                ]
+            }
+        }
+    },
+    "flask.config": {
+        "Config": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "defaults": [
+                    "Optional[dict]"
+                ],
+                "root_path": [
+                    "pathlib"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "from_envvar": {
+                "silent": [
+                    "bool"
+                ],
+                "variable_name": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "from_file": {
+                "silent": [
+                    "bool"
+                ],
+                "load": [
+                    "load"
+                ],
+                "return": [
+                    "silent"
+                ],
+                "text": [
+                    "text"
+                ],
+                "filename": [
+                    "filename"
+                ]
+            },
+            "from_mapping": {
+                "return": [],
+                "kwargs": [
+                    "kwargs"
+                ],
+                "mapping": [
+                    "None"
+                ]
+            },
+            "from_prefixed_env": {
+                "return": [
+                    "True"
+                ],
+                "prefix": [
+                    "str"
+                ],
+                "loads": [
+                    "json.loads"
+                ]
+            },
+            "from_object": {
+                "return": [
+                    "None"
+                ],
+                "obj": [
+                    "obj"
+                ]
+            },
+            "from_pyfile": {
+                "return": [
+                    "bool"
+                ],
+                "silent": [
+                    "False"
+                ],
+                "filename": [
+                    "str"
+                ]
+            },
+            "get_namespace": {
+                "trim_namespace": [
+                    "False"
+                ],
+                "return": [
+                    "namespace"
+                ],
+                "namespace": [
+                    "namespace"
+                ],
+                "lowercase": []
+            }
+        },
+        "ConfigAttribute": {
+            "__init__": {
+                "return": [
+                    "name"
+                ],
+                "name": [
+                    "None"
+                ],
+                "get_converter": [
+                    "BaseTypescriptConverter"
+                ]
+            },
+            "__set__": {
+                "return": [],
+                "obj": [
+                    "config"
+                ],
+                "value": [
+                    "config"
+                ]
+            }
+        }
+    },
+    "flask.ctx": {
+        "AppContext": {
+            "__exit__": {
+                "return": [],
+                "exc_type": [],
+                "tb": [
+                    "types.TracebackType"
+                ],
+                "exc_value": [
+                    "BaseException"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "self"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "app": [
+                    "Flask"
+                ]
+            },
+            "pop": {
+                "return": [
+                    "None"
+                ],
+                "exc": [
+                    "None"
+                ]
+            },
+            "push": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "_AppCtxGlobals": {
+            "__delattr__": {
+                "return": [
+                    "None"
+                ],
+                "name": [
+                    "None"
+                ]
+            },
+            "__contains__": {
+                "item": [
+                    "str"
+                ],
+                "return": [
+                    "False"
+                ]
+            },
+            "__repr__": {
+                "return": []
+            },
+            "__getattr__": {
+                "return": [],
+                "name": [
+                    "name"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "Iterator"
+                ]
+            },
+            "__setattr__": {
+                "return": [
+                    "None"
+                ],
+                "value": [
+                    "Any"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "get": {
+                "default": [],
+                "name": [
+                    "str"
+                ],
+                "return": [
+                    "default"
+                ]
+            },
+            "pop": {
+                "name": [],
+                "default": [
+                    "default"
+                ],
+                "return": [
+                    "default"
+                ]
+            },
+            "setdefault": {
+                "name": [
+                    "None"
+                ],
+                "return": [
+                    "name"
+                ],
+                "default": [
+                    "None"
+                ]
+            }
+        },
+        "RequestContext": {
+            "__enter__": {
+                "return": [
+                    "self"
+                ]
+            },
+            "__exit__": {
+                "return": [
+                    "False"
+                ],
+                "tb": [
+                    "tb"
+                ],
+                "exc_type": [
+                    "None"
+                ],
+                "exc_value": [
+                    "None"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "session": [
+                    "session"
+                ],
+                "app": [
+                    "app"
+                ],
+                "request": [
+                    "Request"
+                ],
+                "environ": [
+                    "Dict[str, Any]"
+                ]
+            },
+            "__repr__": {
+                "return": []
+            },
+            "copy": {
+                "return": [
+                    "Request"
+                ]
+            },
+            "pop": {
+                "return": [],
+                "exc": [
+                    "Exception"
+                ]
+            },
+            "push": {
+                "return": []
+            },
+            "match_request": {
+                "return": []
+            }
+        },
+        "global": {
+            "after_this_request": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "f"
+                ]
+            },
+            "copy_current_request_context": {
+                "f": [
+                    "Callable"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "has_request_context": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "has_app_context": {
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "flask.debughelpers": {
+        "FormDataRoutingRedirect": {
+            "__init__": {
+                "return": [],
+                "request": [
+                    "Dict"
+                ]
+            }
+        },
+        "DebugFilesKeyError": {
+            "__init__": {
+                "return": [
+                    "key"
+                ],
+                "request": [
+                    "flask.Request"
+                ],
+                "key": [
+                    "str"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "global": {
+            "_dump_loader_info": {
+                "return": [
+                    "Iterator[str]"
+                ],
+                "loader": [
+                    "loader"
+                ]
+            },
+            "explain_template_loading_attempts": {
+                "return": [],
+                "app": [
+                    "Application"
+                ],
+                "template": [
+                    "str"
+                ],
+                "attempts": [
+                    "attempts"
+                ]
+            },
+            "attach_enctype_error_multidict": {
+                "request": [
+                    "request"
+                ],
+                "return": [
+                    "newcls"
+                ]
+            }
+        }
+    },
+    "flask.globals": {
+        "global": {
+            "global": {
+                "current_app": [],
+                "request": [
+                    "LocalProxy"
+                ],
+                "g": [
+                    "LocalProxy"
+                ],
+                "app_ctx": [
+                    "LocalProxy"
+                ],
+                "_cv_app": [
+                    "ContextVar"
+                ],
+                "_cv_request": [
+                    "ContextVar"
+                ],
+                "session": [
+                    "LocalProxy"
+                ],
+                "request_ctx": [
+                    "LocalProxy"
+                ]
+            }
+        }
+    },
+    "flask.helpers": {
+        "global": {
+            "abort": {
+                "return": [
+                    "None"
+                ],
+                "args": [
+                    "args"
+                ],
+                "code": [],
+                "kwargs": [
+                    "abort"
+                ]
+            },
+            "_prepare_send_file_kwargs": {
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "Dict[str, Any]"
+                ]
+            },
+            "_split_blueprint_path": {
+                "name": [
+                    "str"
+                ],
+                "return": [
+                    "out"
+                ]
+            },
+            "get_flashed_messages": {
+                "category_filter": [],
+                "return": [],
+                "with_categories": [
+                    "bool"
+                ]
+            },
+            "get_load_dotenv": {
+                "default": [
+                    "True"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "get_debug_flag": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "flash": {
+                "category": [
+                    "category"
+                ],
+                "message": [
+                    "Any"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_root_path": {
+                "return": [
+                    "os.path.abspath"
+                ],
+                "import_name": [
+                    "str"
+                ]
+            },
+            "get_template_attribute": {
+                "attribute": [
+                    "attribute"
+                ],
+                "template_name": [],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "redirect": {
+                "location": [],
+                "code": [
+                    "code"
+                ],
+                "Response": [
+                    "Response"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "send_file": {
+                "as_attachment": [],
+                "download_name": [],
+                "etag": [
+                    "False"
+                ],
+                "conditional": [
+                    "True"
+                ],
+                "return": [
+                    "Response"
+                ],
+                "max_age": [
+                    "Optional[int]"
+                ],
+                "last_modified": [
+                    "Optional[datetime]"
+                ],
+                "mimetype": [
+                    "None"
+                ],
+                "path_or_file": []
+            },
+            "make_response": {
+                "return": [
+                    "Response"
+                ],
+                "args": [
+                    "Tuple[Any, ...]"
+                ]
+            },
+            "send_from_directory": {
+                "kwargs": [
+                    "dict"
+                ],
+                "directory": [
+                    "PathLike"
+                ],
+                "path": [
+                    "path"
+                ],
+                "return": [
+                    "Response"
+                ]
+            },
+            "url_for": {
+                "_scheme": [
+                    "str"
+                ],
+                "_method": [],
+                "_external": [],
+                "return": [],
+                "_anchor": [
+                    "None"
+                ],
+                "endpoint": [
+                    "None"
+                ],
+                "values": [
+                    "values"
+                ]
+            }
+        }
+    },
+    "flask.json": {
+        "global": {
+            "dump": {
+                "return": [],
+                "obj": [],
+                "kwargs": [
+                    "dict"
+                ],
+                "fp": [
+                    "fp"
+                ]
+            },
+            "jsonify": {
+                "return": [
+                    "Response"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "args": [
+                    "tuple"
+                ]
+            },
+            "dumps": {
+                "kwargs": [
+                    "Any"
+                ],
+                "return": [
+                    "str"
+                ],
+                "obj": [
+                    "obj"
+                ]
+            },
+            "load": {
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "list"
+                ],
+                "fp": [
+                    "load"
+                ]
+            },
+            "loads": {
+                "kwargs": [
+                    "dict"
+                ],
+                "s": [
+                    "s"
+                ],
+                "return": [
+                    "s"
+                ]
+            }
+        }
+    },
+    "flask.json.provider": {
+        "JSONProvider": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "app": [
+                    "Flask"
+                ]
+            },
+            "dump": {
+                "kwargs": [],
+                "fp": [
+                    "io.TextIOBase"
+                ],
+                "obj": [
+                    "Any"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_prepare_response_obj": {
+                "args": [
+                    "args"
+                ],
+                "kwargs": [
+                    "kwargs"
+                ],
+                "return": []
+            },
+            "dumps": {
+                "return": [
+                    "None"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "obj": [
+                    "Any"
+                ]
+            },
+            "load": {
+                "fp": [
+                    "IO"
+                ],
+                "kwargs": [
+                    "Dict[str, Any]"
+                ],
+                "return": [
+                    "fp"
+                ]
+            },
+            "loads": {
+                "kwargs": [
+                    "Dict[str, Any]"
+                ],
+                "s": [
+                    "pickle.loads"
+                ],
+                "return": [
+                    "List"
+                ]
+            },
+            "response": {
+                "kwargs": [
+                    "kwargs"
+                ],
+                "args": [
+                    "Any"
+                ],
+                "return": [
+                    "Response"
+                ]
+            }
+        },
+        "global": {
+            "_default": {
+                "return": [
+                    "str"
+                ],
+                "o": [
+                    "TypeError"
+                ]
+            }
+        },
+        "DefaultJSONProvider": {
+            "dumps": {
+                "return": [
+                    "dumps"
+                ],
+                "kwargs": [
+                    "default"
+                ],
+                "obj": [
+                    "dumps"
+                ]
+            },
+            "global": {
+                "compact": [
+                    "None"
+                ],
+                "default": [
+                    "staticmethod"
+                ]
+            },
+            "loads": {
+                "s": [],
+                "return": [
+                    "None"
+                ],
+                "kwargs": [
+                    "Dict[str, Any]"
+                ]
+            },
+            "response": {
+                "kwargs": [],
+                "args": [
+                    "Tuple[Any, ...]"
+                ],
+                "return": [
+                    "Response"
+                ]
+            }
+        }
+    },
+    "flask.json.tag": {
+        "JSONTag": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "serializer": [
+                    "Serializer"
+                ]
+            },
+            "check": {
+                "return": [],
+                "value": [
+                    "None"
+                ]
+            },
+            "to_json": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "tag": {
+                "return": [
+                    "self.key"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "global": {
+                "key": [
+                    "str"
+                ]
+            },
+            "to_python": {
+                "value": [
+                    "value"
+                ],
+                "return": [
+                    "Mapping"
+                ]
+            }
+        },
+        "TaggedJSONSerializer": {
+            "_untag_scan": {
+                "return": [
+                    "value"
+                ],
+                "value": [
+                    "Union[dict, list, Any]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "register": {
+                "return": [
+                    "None"
+                ],
+                "index": [
+                    "None"
+                ],
+                "force": [
+                    "bool"
+                ],
+                "tag_class": []
+            },
+            "dumps": {
+                "value": [
+                    "value"
+                ],
+                "return": [
+                    "json.dumps"
+                ]
+            },
+            "tag": {
+                "return": [],
+                "value": [
+                    "value"
+                ]
+            },
+            "loads": {
+                "value": [
+                    "None"
+                ],
+                "return": [
+                    "loads"
+                ]
+            },
+            "untag": {
+                "value": [
+                    "value"
+                ],
+                "return": [
+                    "Any"
+                ]
+            }
+        },
+        "PassDict": {
+            "check": {
+                "return": [
+                    "dict"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "dict"
+                ],
+                "value": [
+                    "Dict"
+                ]
+            }
+        },
+        "PassList": {
+            "check": {
+                "return": [],
+                "value": [
+                    "Any"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "value"
+                ],
+                "value": [
+                    "value"
+                ]
+            }
+        },
+        "TagBytes": {
+            "check": {
+                "return": [],
+                "value": [
+                    "bytes"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "str"
+                ],
+                "value": [
+                    "bytes"
+                ]
+            },
+            "to_python": {
+                "return": [],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "TagDateTime": {
+            "check": {
+                "value": [],
+                "return": [
+                    "datetime"
+                ]
+            },
+            "to_json": {
+                "return": [],
+                "value": [
+                    "value"
+                ]
+            },
+            "to_python": {
+                "value": [
+                    "value"
+                ],
+                "return": [
+                    "date"
+                ]
+            }
+        },
+        "TagDict": {
+            "check": {
+                "return": [
+                    "False"
+                ],
+                "value": [
+                    "self.serializer.tags"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "self.serializer.tag"
+                ],
+                "value": [
+                    "Dict"
+                ]
+            },
+            "to_python": {
+                "return": [
+                    "dict"
+                ],
+                "value": [
+                    "Dict[str, Any]"
+                ]
+            }
+        },
+        "TagMarkup": {
+            "check": {
+                "return": [
+                    "value"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "Dict[str, Any]"
+                ],
+                "value": [
+                    "Dict"
+                ]
+            },
+            "to_python": {
+                "return": [
+                    "Markup"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "TagUUID": {
+            "check": {
+                "value": [
+                    "UUID"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "bytearray"
+                ],
+                "return": [
+                    "bytearray"
+                ]
+            },
+            "to_python": {
+                "return": [
+                    "uuid"
+                ],
+                "value": [
+                    "UUID"
+                ]
+            }
+        },
+        "TagTuple": {
+            "check": {
+                "return": [
+                    "value"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "to_json": {
+                "return": [
+                    "value"
+                ],
+                "value": [
+                    "value"
+                ]
+            },
+            "to_python": {
+                "return": [
+                    "tuple"
+                ],
+                "value": [
+                    "value"
+                ]
+            }
+        }
+    },
+    "flask.logging": {
+        "global": {
+            "has_level_handler": {
+                "return": [],
+                "logger": [
+                    "Logger"
+                ]
+            },
+            "create_logger": {
+                "return": [],
+                "app": [
+                    "Flask"
+                ]
+            },
+            "wsgi_errors_stream": {
+                "return": [
+                    "TextIO"
+                ]
+            }
+        }
+    },
+    "flask.sansio.app": {
+        "App": {
+            "__init__": {
+                "import_name": [
+                    "str"
+                ],
+                "host_matching": [
+                    "False"
+                ],
+                "instance_relative_config": [
+                    "bool"
+                ],
+                "static_folder": [
+                    "str"
+                ],
+                "static_host": [],
+                "instance_path": [
+                    "PathLike"
+                ],
+                "subdomain_matching": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ],
+                "root_path": [
+                    "Optional[str]"
+                ],
+                "template_folder": [
+                    "None"
+                ],
+                "static_url_path": [
+                    "None"
+                ]
+            },
+            "_check_setup_finished": {
+                "return": [
+                    "None"
+                ],
+                "f_name": [
+                    "str"
+                ]
+            },
+            "_find_error_handler": {
+                "return": [
+                    "None"
+                ],
+                "blueprints": [
+                    "blueprints"
+                ],
+                "e": [
+                    "Exception"
+                ]
+            },
+            "add_template_filter": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "Callable"
+                ],
+                "name": [
+                    "Optional[str]"
+                ]
+            },
+            "add_template_global": {
+                "return": [],
+                "name": [
+                    "None"
+                ],
+                "f": [
+                    "f"
+                ]
+            },
+            "add_template_test": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "f"
+                ],
+                "name": [
+                    "name"
+                ]
+            },
+            "add_url_rule": {
+                "provide_automatic_options": [],
+                "return": [
+                    "None"
+                ],
+                "options": [],
+                "rule": [
+                    "rule"
+                ],
+                "view_func": [
+                    "flask.views.View"
+                ],
+                "endpoint": [
+                    "endpoint"
+                ]
+            },
+            "create_global_jinja_loader": {
+                "return": [
+                    "DispatchingJinjaLoader"
+                ]
+            },
+            "global": {
+                "default_config": [
+                    "t.Any"
+                ],
+                "jinja_options": [
+                    "t"
+                ],
+                "response_class": [
+                    "redirect"
+                ],
+                "test_client_class": [
+                    "None"
+                ],
+                "test_cli_runner_class": [
+                    "FlaskCliRunner"
+                ],
+                "json_provider_class": [
+                    "DefaultJSONProvider"
+                ]
+            },
+            "auto_find_instance_path": {
+                "return": [
+                    "str"
+                ]
+            },
+            "handle_url_build_error": {
+                "error": [
+                    "BuildError"
+                ],
+                "endpoint": [
+                    "endpoint"
+                ],
+                "values": [],
+                "return": []
+            },
+            "inject_url_defaults": {
+                "return": [],
+                "endpoint": [
+                    "str"
+                ],
+                "values": [
+                    "typing"
+                ]
+            },
+            "make_config": {
+                "return": [],
+                "instance_relative": [
+                    "bool"
+                ]
+            },
+            "redirect": {
+                "return": [],
+                "code": [
+                    "int"
+                ],
+                "location": [
+                    "location"
+                ]
+            },
+            "make_aborter": {
+                "return": []
+            },
+            "create_jinja_environment": {
+                "return": [
+                    "Environment"
+                ]
+            },
+            "select_jinja_autoescape": {
+                "filename": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "shell_context_processor": {
+                "return": [],
+                "f": [
+                    "Callable"
+                ]
+            },
+            "register_blueprint": {
+                "options": [
+                    "dict"
+                ],
+                "return": [],
+                "blueprint": [
+                    "Blueprint"
+                ]
+            },
+            "iter_blueprints": {
+                "return": [
+                    "blueprints"
+                ]
+            },
+            "template_filter": {
+                "return": [],
+                "name": [
+                    "Optional[Any]"
+                ]
+            },
+            "teardown_appcontext": {
+                "f": [
+                    "Callable"
+                ],
+                "return": []
+            },
+            "should_ignore_error": {
+                "return": [
+                    "False"
+                ],
+                "error": [
+                    "pyflakes.messages"
+                ]
+            },
+            "trap_http_exception": {
+                "return": [
+                    "False"
+                ],
+                "e": [
+                    "e"
+                ]
+            },
+            "template_global": {
+                "name": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "template_test": {
+                "name": [
+                    "setupmethod"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            }
+        },
+        "global": {
+            "_make_timedelta": {
+                "return": [
+                    "None"
+                ],
+                "value": [
+                    "Union[None, timedelta, int, float]"
+                ]
+            }
+        }
+    },
+    "flask.sansio.blueprints": {
+        "Blueprint": {
+            "__init__": {
+                "cli_group": [
+                    "None"
+                ],
+                "import_name": [],
+                "name": [
+                    "str"
+                ],
+                "static_url_path": [
+                    "None"
+                ],
+                "root_path": [
+                    "None"
+                ],
+                "subdomain": [
+                    "None"
+                ],
+                "url_prefix": [
+                    "Optional[str]"
+                ],
+                "static_folder": [
+                    "Optional[str]"
+                ],
+                "template_folder": [
+                    "pathlib.Path"
+                ],
+                "url_defaults": [
+                    "None"
+                ]
+            },
+            "_check_setup_finished": {
+                "return": [],
+                "f_name": []
+            },
+            "add_app_template_global": {
+                "return": [],
+                "name": [
+                    "None"
+                ],
+                "f": [
+                    "Callable"
+                ]
+            },
+            "_merge_blueprint_funcs": {
+                "return": [
+                    "None"
+                ],
+                "app": [
+                    "Flask"
+                ],
+                "name": [
+                    "Optional[str]"
+                ]
+            },
+            "add_app_template_filter": {
+                "f": [
+                    "Callable"
+                ],
+                "name": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "add_app_template_test": {
+                "name": [],
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "f"
+                ]
+            },
+            "add_url_rule": {
+                "return": [
+                    "None"
+                ],
+                "provide_automatic_options": [
+                    "True"
+                ],
+                "rule": [
+                    "str"
+                ],
+                "endpoint": [
+                    "Optional[str]"
+                ],
+                "options": [
+                    "None"
+                ],
+                "view_func": [
+                    "MethodView"
+                ]
+            },
+            "after_app_request": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "app_context_processor": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "setupmethod"
+                ]
+            },
+            "app_template_filter": {
+                "return": [
+                    "decorator"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "app_template_test": {
+                "name": [],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "app_errorhandler": {
+                "return": [
+                    "decorator"
+                ],
+                "code": [
+                    "int"
+                ]
+            },
+            "app_url_defaults": {
+                "return": [
+                    "f"
+                ],
+                "f": [
+                    "f"
+                ]
+            },
+            "before_app_request": {
+                "f": [],
+                "return": [
+                    "f"
+                ]
+            },
+            "app_url_value_preprocessor": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "f"
+                ]
+            },
+            "make_setup_state": {
+                "app": [
+                    "BlueprintSetupState"
+                ],
+                "first_registration": [
+                    "False"
+                ],
+                "options": [
+                    "options"
+                ],
+                "return": [
+                    "BlueprintSetupState"
+                ]
+            },
+            "app_template_global": {
+                "name": [
+                    "Optional[str]"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "record": {
+                "return": [
+                    "None"
+                ],
+                "func": [
+                    "func"
+                ]
+            },
+            "register": {
+                "app": [
+                    "app"
+                ],
+                "options": [
+                    "options"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "record_once": {
+                "func": [
+                    "func"
+                ],
+                "return": [
+                    "wrapper"
+                ]
+            },
+            "register_blueprint": {
+                "options": [],
+                "blueprint": [
+                    "Blueprint"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "teardown_app_request": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "f"
+                ]
+            }
+        },
+        "BlueprintSetupState": {
+            "__init__": {
+                "return": [],
+                "blueprint": [
+                    "Blueprint"
+                ],
+                "options": [
+                    "options"
+                ],
+                "first_registration": [
+                    "bool"
+                ],
+                "app": [
+                    "Flask"
+                ]
+            },
+            "add_url_rule": {
+                "rule": [],
+                "options": [
+                    "pop"
+                ],
+                "view_func": [
+                    "Callable"
+                ],
+                "return": [
+                    "None"
+                ],
+                "endpoint": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "flask.sansio.scaffold": {
+        "Scaffold": {
+            "__init__": {
+                "import_name": [
+                    "str"
+                ],
+                "root_path": [
+                    "None"
+                ],
+                "static_folder": [
+                    "Optional[str]"
+                ],
+                "static_url_path": [
+                    "None"
+                ],
+                "template_folder": [
+                    "Optional[str]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "_check_setup_finished": {
+                "return": [
+                    "None"
+                ],
+                "f_name": [
+                    "pass"
+                ]
+            },
+            "_get_exc_class_and_code": {
+                "return": [
+                    "None"
+                ],
+                "exc_class_or_code": [
+                    "HTTPException"
+                ]
+            },
+            "add_url_rule": {
+                "return": [
+                    "None"
+                ],
+                "provide_automatic_options": [
+                    "bool"
+                ],
+                "view_func": [
+                    "Callable"
+                ],
+                "options": [
+                    "Dict[str, Any]"
+                ],
+                "endpoint": [
+                    "endpoint"
+                ],
+                "rule": [
+                    "rule"
+                ]
+            },
+            "_method_route": {
+                "options": [
+                    "dict"
+                ],
+                "method": [
+                    "str"
+                ],
+                "rule": [
+                    "str"
+                ],
+                "return": [
+                    "self.route"
+                ]
+            },
+            "context_processor": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "f"
+                ]
+            },
+            "after_request": {
+                "return": [
+                    "Callable"
+                ],
+                "f": [
+                    "f"
+                ]
+            },
+            "before_request": {
+                "return": [
+                    "f"
+                ],
+                "f": [
+                    "f"
+                ]
+            },
+            "delete": {
+                "rule": [
+                    "str"
+                ],
+                "options": [
+                    "MutableMapping"
+                ],
+                "return": [
+                    "delete"
+                ]
+            },
+            "endpoint": {
+                "return": [
+                    "None"
+                ],
+                "endpoint": [
+                    "str"
+                ]
+            },
+            "get": {
+                "options": [
+                    "dict"
+                ],
+                "return": [
+                    "None"
+                ],
+                "rule": [
+                    "str"
+                ]
+            },
+            "global": {
+                "_static_folder": [
+                    "None"
+                ],
+                "_static_url_path": [
+                    "Scaffold"
+                ],
+                "cli": [
+                    "Group"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "errorhandler": {
+                "code_or_exception": [
+                    "InternalServerError"
+                ],
+                "return": [
+                    "errorhandler"
+                ]
+            },
+            "patch": {
+                "options": [
+                    "dict"
+                ],
+                "rule": [
+                    "rule"
+                ],
+                "return": [
+                    "options"
+                ]
+            },
+            "put": {
+                "return": [
+                    "put"
+                ],
+                "rule": [
+                    "rule"
+                ],
+                "options": [
+                    "None"
+                ]
+            },
+            "post": {
+                "rule": [
+                    "rule"
+                ],
+                "options": [
+                    "dict"
+                ],
+                "return": [
+                    "post"
+                ]
+            },
+            "register_error_handler": {
+                "return": [
+                    "None"
+                ],
+                "f": [
+                    "f"
+                ],
+                "code_or_exception": []
+            },
+            "route": {
+                "options": [
+                    "Dict[str, Any]"
+                ],
+                "rule": [
+                    "rule"
+                ],
+                "return": [
+                    "Callable[..., Any]"
+                ]
+            },
+            "url_defaults": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "f"
+                ]
+            },
+            "teardown_request": {
+                "f": [
+                    "f"
+                ],
+                "return": [
+                    "Callable"
+                ]
+            },
+            "url_value_preprocessor": {
+                "return": [
+                    "f"
+                ],
+                "f": [
+                    "f"
+                ]
+            }
+        },
+        "global": {
+            "_endpoint_from_view_func": {
+                "view_func": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "_find_package_path": {
+                "import_name": [
+                    "str"
+                ],
+                "return": [
+                    "os"
+                ]
+            },
+            "find_package": {
+                "import_name": [],
+                "return": [
+                    "parent"
+                ]
+            },
+            "setupmethod": {
+                "return": [
+                    "F"
+                ],
+                "f": [
+                    "Callable"
+                ]
+            }
+        }
+    },
+    "flask.sessions": {
+        "SecureCookieSession": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "initial": [
+                    "initial"
+                ]
+            },
+            "__getitem__": {
+                "key": [],
+                "return": [
+                    "key"
+                ]
+            },
+            "get": {
+                "default": [
+                    "None"
+                ],
+                "key": [
+                    "None"
+                ],
+                "return": [
+                    "Any"
+                ]
+            },
+            "setdefault": {
+                "key": [],
+                "default": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "NullSession": {
+            "_fail": {
+                "return": [
+                    "None"
+                ],
+                "args": [
+                    "args"
+                ],
+                "kwargs": []
+            }
+        },
+        "global": {
+            "_lazy_sha1": {
+                "return": [
+                    "hashlib"
+                ],
+                "string": [
+                    "bytes"
+                ]
+            }
+        },
+        "SessionInterface": {
+            "get_cookie_name": {
+                "app": [
+                    "config"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "get_cookie_httponly": {
+                "return": [
+                    "httponly"
+                ],
+                "app": [
+                    "config"
+                ]
+            },
+            "get_cookie_domain": {
+                "app": [
+                    "config"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "get_cookie_partitioned": {
+                "app": [
+                    "config"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "get_cookie_samesite": {
+                "return": [],
+                "app": [
+                    "config"
+                ]
+            },
+            "get_cookie_path": {
+                "app": [
+                    "Flask"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "get_expiration_time": {
+                "app": [
+                    "Flask"
+                ],
+                "session": [
+                    "Response"
+                ],
+                "return": []
+            },
+            "get_cookie_secure": {
+                "return": [
+                    "False"
+                ],
+                "app": [
+                    "MagicMock"
+                ]
+            },
+            "is_null_session": {
+                "return": [
+                    "obj"
+                ],
+                "obj": [
+                    "obj"
+                ]
+            },
+            "make_null_session": {
+                "app": [
+                    "app"
+                ],
+                "return": []
+            },
+            "open_session": {
+                "app": [
+                    "pass"
+                ],
+                "request": [
+                    "Request"
+                ],
+                "return": [
+                    "pass"
+                ]
+            },
+            "save_session": {
+                "return": [
+                    "[ ]"
+                ],
+                "response": [
+                    "response"
+                ],
+                "app": [
+                    "Flask"
+                ],
+                "session": [
+                    "StudentSession"
+                ]
+            },
+            "should_set_cookie": {
+                "return": [],
+                "app": [
+                    "Flask"
+                ],
+                "session": [
+                    "CallbackDict"
+                ]
+            }
+        },
+        "SecureCookieSessionInterface": {
+            "get_signing_serializer": {
+                "return": [],
+                "app": [
+                    "app"
+                ]
+            },
+            "open_session": {
+                "app": [
+                    "Flask"
+                ],
+                "return": [],
+                "request": [
+                    "flask.Request"
+                ]
+            },
+            "save_session": {
+                "return": [
+                    "return"
+                ],
+                "session": [
+                    "SessionMixin"
+                ],
+                "response": [
+                    "django.http.HttpResponse"
+                ],
+                "app": []
+            }
+        }
+    },
+    "flask.templating": {
+        "DispatchingJinjaLoader": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "app": [
+                    "app"
+                ]
+            },
+            "_get_source_explained": {
+                "return": [
+                    "None"
+                ],
+                "environment": [
+                    "TemplateNotFound"
+                ],
+                "template": [
+                    "str"
+                ]
+            },
+            "_get_source_fast": {
+                "return": [
+                    "source"
+                ],
+                "environment": [],
+                "template": [
+                    "str"
+                ]
+            },
+            "_iter_loaders": {
+                "template": [
+                    "template"
+                ],
+                "return": [
+                    "loader"
+                ]
+            },
+            "get_source": {
+                "template": [
+                    "Template"
+                ],
+                "environment": [
+                    "Environment"
+                ],
+                "return": []
+            },
+            "list_templates": {
+                "return": [
+                    "list"
+                ]
+            }
+        },
+        "Environment": {
+            "__init__": {
+                "app": [
+                    "Flask"
+                ],
+                "return": [
+                    "Any"
+                ],
+                "options": [
+                    "dict"
+                ]
+            }
+        },
+        "global": {
+            "_default_template_ctx_processor": {
+                "return": [
+                    "rv"
+                ]
+            },
+            "_render": {
+                "context": [
+                    "dict"
+                ],
+                "template": [
+                    "Template"
+                ],
+                "app": [
+                    "app"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_stream": {
+                "context": [
+                    "Context"
+                ],
+                "app": [
+                    "Sanic"
+                ],
+                "template": [
+                    "Template"
+                ],
+                "return": [
+                    "rv"
+                ]
+            },
+            "render_template": {
+                "context": [],
+                "template_name_or_list": [
+                    "Union[str, List[str]]"
+                ],
+                "return": []
+            },
+            "render_template_string": {
+                "context": [
+                    "Dict[str, Any]"
+                ],
+                "return": [
+                    "template"
+                ],
+                "source": [
+                    "str"
+                ]
+            },
+            "stream_template": {
+                "context": [
+                    "dict"
+                ],
+                "template_name_or_list": [
+                    "List[str]"
+                ],
+                "return": []
+            },
+            "stream_template_string": {
+                "source": [
+                    "str"
+                ],
+                "context": [
+                    "Dict[str, Any]"
+                ],
+                "return": [
+                    "StreamingResponse"
+                ]
+            }
+        }
+    },
+    "flask.testing": {
+        "FlaskClient": {
+            "__exit__": {
+                "return": [],
+                "exc_value": [],
+                "tb": [
+                    "types.TracebackType"
+                ],
+                "exc_type": [
+                    "Type"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "self"
+                ]
+            },
+            "__init__": {
+                "args": [
+                    "tuple"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_request_from_builder_args": {
+                "kwargs": [
+                    "EnvironBuilder"
+                ],
+                "args": [
+                    "args"
+                ],
+                "return": [
+                    "Request"
+                ]
+            },
+            "_copy_environ": {
+                "return": [
+                    "os.environ"
+                ],
+                "other": [
+                    "other"
+                ]
+            },
+            "global": {
+                "application": [
+                    "Flask"
+                ]
+            },
+            "open": {
+                "buffered": [
+                    "bool"
+                ],
+                "follow_redirects": [
+                    "False"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "args": [
+                    "BaseRequest"
+                ],
+                "return": [
+                    "open"
+                ]
+            },
+            "session_transaction": {
+                "args": [
+                    "args"
+                ],
+                "return": [
+                    "None"
+                ],
+                "kwargs": [
+                    "kwargs"
+                ]
+            }
+        },
+        "EnvironBuilder": {
+            "__init__": {
+                "base_url": [],
+                "return": [
+                    "None"
+                ],
+                "app": [
+                    "Flask"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "subdomain": [
+                    "subdomain"
+                ],
+                "path": [
+                    "str"
+                ],
+                "args": [
+                    "args"
+                ],
+                "url_scheme": [
+                    "str"
+                ]
+            },
+            "json_dumps": {
+                "kwargs": [
+                    "dict"
+                ],
+                "obj": [],
+                "return": [
+                    "kwargs"
+                ]
+            }
+        },
+        "FlaskCliRunner": {
+            "__init__": {
+                "app": [
+                    "app"
+                ],
+                "kwargs": [
+                    "dict"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "invoke": {
+                "return": [],
+                "cli": [
+                    "self.app.cli"
+                ],
+                "args": [
+                    "args"
+                ],
+                "kwargs": [
+                    "dict"
+                ]
+            }
+        },
+        "global": {
+            "_get_werkzeug_version": {
+                "return": []
+            }
+        }
+    },
+    "flask.views": {
+        "MethodView": {
+            "__init_subclass__": {
+                "kwargs": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "dispatch_request": {
+                "return": [
+                    "None"
+                ],
+                "kwargs": [
+                    "Dict"
+                ]
+            }
+        },
+        "View": {
+            "as_view": {
+                "class_kwargs": [],
+                "class_args": [
+                    "cls"
+                ],
+                "name": [
+                    "str"
+                ],
+                "return": [
+                    "cls.decorators"
+                ]
+            },
+            "dispatch_request": {
+                "return": []
+            },
+            "global": {
+                "init_every_request": [
+                    "True"
+                ],
+                "methods": [
+                    "update"
+                ],
+                "provide_automatic_options": [
+                    "None"
+                ],
+                "decorators": [
+                    "t.Any"
+                ]
+            }
+        }
+    },
+    "flask.wrappers": {
+        "Request": {
+            "_load_form_data": {
+                "return": []
+            },
+            "global": {
+                "_max_content_length": [],
+                "routing_exception": [
+                    "None"
+                ],
+                "view_args": [
+                    "None"
+                ],
+                "_max_form_parts": [
+                    "None"
+                ],
+                "_max_form_memory_size": [],
+                "url_rule": [
+                    "None"
+                ],
+                "json_module": [
+                    "Any"
+                ]
+            },
+            "on_json_loading_failed": {
+                "return": [
+                    "None"
+                ],
+                "e": [
+                    "Exception"
+                ]
+            }
+        },
+        "Response": {
+            "global": {
+                "default_mimetype": [
+                    "None"
+                ]
+            }
+        }
+    }
+}

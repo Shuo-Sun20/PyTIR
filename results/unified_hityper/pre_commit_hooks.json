@@ -1,0 +1,867 @@
+{
+    "pre_commit_hooks": {
+        "global": {
+            "global": {}
+        }
+    },
+    "pre_commit_hooks.check_added_large_files": {
+        "global": {
+            "filter_lfs_files": {
+                "filenames": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "find_large_added_files": {
+                "filenames": [],
+                "maxkb": [],
+                "enforce_all": [
+                    "bool"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_ast": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_builtin_literals": {
+        "Visitor": {
+            "__init__": {
+                "ignore": [],
+                "allow_dict_kwargs": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_check_dict_call": {
+                "node": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "visit_Call": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "check_file": {
+                "filename": [],
+                "ignore": [
+                    "None"
+                ],
+                "allow_dict_kwargs": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "parse_ignore": {
+                "value": [],
+                "return": [
+                    "set"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_byte_order_marker": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_case_conflict": {
+        "global": {
+            "directories_for": {
+                "files": [],
+                "return": [
+                    "set"
+                ]
+            },
+            "find_conflicting_filenames": {
+                "filenames": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "lower_set": {
+                "iterable": [],
+                "return": [
+                    "set"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": []
+            },
+            "parents": {
+                "file": [],
+                "return": [
+                    "typing.Generator[str]"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_docstring_first": {
+        "global": {
+            "check_docstring_first": {
+                "src": [],
+                "filename": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_executables_have_shebangs": {
+        "global": {
+            "_check_git_filemode": {
+                "paths": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "_message": {
+                "path": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_executables": {
+                "paths": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "git_ls_files": {
+                "paths": [],
+                "return": [
+                    "typing.Generator[GitLsFile]"
+                ]
+            },
+            "global": {},
+            "has_shebang": {
+                "path": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_json": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "raise_duplicate_keys": {
+                "ordered_pairs": [],
+                "return": [
+                    "dict"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_merge_conflict": {
+        "global": {
+            "global": {},
+            "is_in_merge": {
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_shebang_scripts_are_executable": {
+        "global": {
+            "_check_git_filemode": {
+                "paths": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "_message": {
+                "path": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_shebangs": {
+                "paths": [],
+                "return": []
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_symlinks": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_toml": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_vcs_permalinks": {
+        "global": {
+            "_check_filename": {
+                "filename": [],
+                "patterns": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "_get_pattern": {
+                "domain": [],
+                "return": []
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_xml": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_yaml": {
+        "global": {
+            "_exhaust": {
+                "gen": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_load_all": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_parse_unsafe": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.debug_statement_hook": {
+        "DebugStatementParser": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Call": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Import": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_ImportFrom": {
+                "node": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "check_file": {
+                "filename": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.destroyed_symlinks": {
+        "global": {
+            "find_destroyed_symlinks": {
+                "files": [],
+                "return": [
+                    "list",
+                    "list[str]"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_aws_credentials": {
+        "global": {
+            "check_file_for_aws_keys": {
+                "filenames": [],
+                "keys": [],
+                "return": [
+                    "list[BadFile]"
+                ]
+            },
+            "get_aws_cred_files_from_env": {
+                "return": [
+                    "set"
+                ]
+            },
+            "get_aws_secrets_from_env": {
+                "return": [
+                    "set"
+                ]
+            },
+            "get_aws_secrets_from_file": {
+                "credentials_file": [],
+                "return": [
+                    "set"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_private_key": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.end_of_file_fixer": {
+        "global": {
+            "fix_file": {
+                "file_obj": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.file_contents_sorter": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "sort_file_contents": {
+                "f": [],
+                "key": [],
+                "unique": [
+                    "bool"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_byte_order_marker": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_encoding_pragma": {
+        "global": {
+            "_get_expected_contents": {
+                "first_line": [],
+                "second_line": [],
+                "rest": [],
+                "expected_pragma": [],
+                "return": [
+                    "ExpectedContents"
+                ]
+            },
+            "_normalize_pragma": {
+                "pragma": [],
+                "return": []
+            },
+            "fix_encoding_pragma": {
+                "f": [],
+                "remove": [
+                    "bool"
+                ],
+                "expected_pragma": [
+                    "bytes"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "has_coding": {
+                "line": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "ExpectedContents": {
+            "has_any_pragma": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_expected_pragma": {
+                "remove": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.forbid_new_submodules": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.mixed_line_ending": {
+        "global": {
+            "_fix": {
+                "filename": [],
+                "contents": [],
+                "ending": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "fix_filename": {
+                "filename": [],
+                "fix": [],
+                "return": [
+                    "bool",
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.no_commit_to_branch": {
+        "global": {
+            "global": {},
+            "is_on_branch": {
+                "protected": [],
+                "patterns": [
+                    "frozenset"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.pretty_format_json": {
+        "global": {
+            "_autofix": {
+                "filename": [],
+                "new_contents": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_get_pretty_format": {
+                "contents": [],
+                "indent": [],
+                "ensure_ascii": [
+                    "bool"
+                ],
+                "sort_keys": [
+                    "bool"
+                ],
+                "top_keys": [
+                    "tuple"
+                ],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "get_diff": {
+                "source": [],
+                "target": [],
+                "file": [],
+                "return": [
+                    "str"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "pairs_first": {
+                "pairs": [],
+                "return": []
+            },
+            "parse_num_to_int": {
+                "s": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "parse_topkeys": {
+                "s": [],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.removed": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.requirements_txt_fixer": {
+        "Requirement": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__lt__": {
+                "requirement": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "append_value": {
+                "value": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "is_complete": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "name": {
+                "return": []
+            }
+        },
+        "global": {
+            "fix_requirements": {
+                "f": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.string_fixer": {
+        "global": {
+            "fix_strings": {
+                "filename": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "get_line_offsets_by_line_no": {
+                "src": [],
+                "return": [
+                    "list[int]"
+                ]
+            },
+            "global": {},
+            "handle_match": {
+                "token_text": [],
+                "return": []
+            },
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.tests_should_end_in_test": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.trailing_whitespace_fixer": {
+        "global": {
+            "_fix_file": {
+                "filename": [],
+                "is_markdown": [],
+                "chars": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_process_line": {
+                "line": [],
+                "is_markdown": [],
+                "chars": [],
+                "return": []
+            },
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.util": {
+        "global": {
+            "added_files": {
+                "return": [
+                    "set"
+                ]
+            },
+            "cmd_output": {
+                "retcode": [
+                    "int"
+                ],
+                "kwargs": [],
+                "cmd": [],
+                "return": []
+            },
+            "global": {},
+            "zsplit": {
+                "s": [],
+                "return": [
+                    "list"
+                ]
+            }
+        }
+    }
+}

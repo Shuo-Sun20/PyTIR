@@ -1,0 +1,6473 @@
+{
+    "fastapi.openapi.utils": {
+        "global": {
+            "get_openapi_path": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "field_mapping": [
+                    "dict[str, str]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ],
+                "operation_ids": [
+                    "list[str]"
+                ],
+                "route": [
+                    "Route"
+                ],
+                "schema_generator": [
+                    "SchemaGenerator"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ]
+            },
+            "get_openapi": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "contact": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "license_info": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_version": [
+                    "str"
+                ],
+                "routes": [
+                    "list[APIRoute]"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ],
+                "servers": [
+                    "list[str]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ],
+                "terms_of_service": [
+                    "typing.Optional[str]"
+                ],
+                "title": [
+                    "str"
+                ],
+                "version": [
+                    "str"
+                ],
+                "webhooks": [
+                    "list[str]"
+                ]
+            },
+            "_get_openapi_operation_parameters": {
+                "return": [
+                    "list[OpenAPIParameter]"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "field_mapping": [
+                    "dict[str, str]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ],
+                "schema_generator": [
+                    "SchemaGenerator"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ]
+            },
+            "get_fields_from_routes": {
+                "return": [
+                    "list[ModelField]"
+                ],
+                "routes": [
+                    "list[Routing]"
+                ]
+            },
+            "get_openapi_operation_request_body": {
+                "return": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "body_field": [
+                    "ModelField"
+                ],
+                "field_mapping": [
+                    "dict[str, str]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ],
+                "schema_generator": [
+                    "SchemaGenerator"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ]
+            },
+            "get_openapi_operation_metadata": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "method": [
+                    "str"
+                ],
+                "operation_ids": [
+                    "set[str]"
+                ],
+                "route": [
+                    "Route"
+                ]
+            },
+            "global": {
+                "status_code_ranges": [
+                    "dict[str, str]"
+                ]
+            },
+            "get_openapi_security_definitions": {
+                "return": [
+                    "tuple[typing.Union[dict[str, typing.Any],list[dict[str, typing.Any]]]]"
+                ],
+                "flat_dependant": [
+                    "FlatDependant"
+                ]
+            },
+            "generate_operation_id": {
+                "return": [
+                    "str"
+                ],
+                "method": [
+                    "str"
+                ],
+                "route": [
+                    "Route"
+                ]
+            },
+            "generate_operation_summary": {
+                "return": [
+                    "str"
+                ],
+                "method": [
+                    "str"
+                ],
+                "route": [
+                    "Route"
+                ]
+            }
+        }
+    },
+    "fastapi.routing": {
+        "global": {
+            "get_request_handler": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "body_field": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "embed_body_fields": [
+                    "bool"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_field": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[str]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ]
+            },
+            "serialize_response": {
+                "return": [
+                    "str"
+                ],
+                "by_alias": [
+                    "bool"
+                ],
+                "exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "exclude_defaults": [
+                    "bool"
+                ],
+                "exclude_none": [
+                    "bool"
+                ],
+                "exclude_unset": [
+                    "bool"
+                ],
+                "field": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "is_coroutine": [
+                    "bool"
+                ],
+                "response_content": [
+                    "dict"
+                ]
+            },
+            "_prepare_response_content": {
+                "return": [
+                    "dict"
+                ],
+                "exclude_defaults": [
+                    "bool"
+                ],
+                "exclude_none": [
+                    "bool"
+                ],
+                "exclude_unset": [
+                    "bool"
+                ],
+                "res": [
+                    "typing.Union[list,dict]"
+                ]
+            },
+            "get_websocket_app": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "embed_body_fields": [
+                    "bool"
+                ]
+            },
+            "_merge_lifespan_context": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "nested_context": [
+                    "typing.Callable"
+                ],
+                "original_context": [
+                    "typing.Callable"
+                ]
+            },
+            "run_endpoint_function": {
+                "return": [
+                    "tuple[typing.Union[typing.Any,...]]"
+                ],
+                "dependant": [
+                    "EndpointFunction"
+                ],
+                "is_coroutine": [
+                    "bool"
+                ],
+                "values": [
+                    "dict"
+                ]
+            }
+        },
+        "APIRoute": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "list[str]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "Response"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[str]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "get_route_handler": {
+                "return": [
+                    "typing.Callable"
+                ]
+            },
+            "matches": {
+                "return": [
+                    "tuple[typing.Union[Match,dict]]"
+                ],
+                "scope": [
+                    "Scope"
+                ]
+            }
+        },
+        "APIRouter": {
+            "include_router": {
+                "return": [
+                    "None"
+                ],
+                "callbacks": [
+                    "list[Callback]"
+                ],
+                "default_response_class": [
+                    "typing.Type"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "prefix": [
+                    "str"
+                ],
+                "responses": [
+                    "dict[typing.Any, typing.Any]"
+                ],
+                "router": [
+                    "Router"
+                ],
+                "tags": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "add_api_route": {
+                "return": [
+                    "Route"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "list[str]"
+                ],
+                "name": [
+                    "str"
+                ],
+                "openapi_extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "responses": [
+                    "dict[str, typing.Any]"
+                ],
+                "route_class_override": [
+                    "typing.Optional[typing.Type]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "api_route": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[str]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "typing.Optional[list[str]]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "options": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "delete": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "patch": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "trace": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "head": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "post": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "get": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "put": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "callbacks": [
+                    "list[Callback]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_response_class": [
+                    "typing.Type"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "lifespan": [
+                    "typing.Optional[int]"
+                ],
+                "on_shutdown": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "on_startup": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "prefix": [
+                    "str"
+                ],
+                "redirect_slashes": [
+                    "bool"
+                ],
+                "responses": [
+                    "dict[str, APIResponse]"
+                ],
+                "route_class": [
+                    "typing.Type"
+                ],
+                "routes": [
+                    "list[Route]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "add_api_websocket_route": {
+                "return": [
+                    "APIWebSocketRoute"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "on_event": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "event_type": [
+                    "str"
+                ]
+            },
+            "route": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "list[str]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "websocket": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "dependencies": [
+                    "dict[str, str]"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "websocket_route": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            }
+        },
+        "APIWebSocketRoute": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "matches": {
+                "return": [
+                    "tuple[typing.Union[Match,dict]]"
+                ],
+                "scope": [
+                    "Scope"
+                ]
+            }
+        }
+    },
+    "fastapi.dependencies.utils": {
+        "global": {
+            "analyze_param": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "annotation": [
+                    "inspect.Signature"
+                ],
+                "is_path_param": [
+                    "bool"
+                ],
+                "param_name": [
+                    "str"
+                ],
+                "value": [
+                    "inspect.Signature"
+                ]
+            },
+            "solve_dependencies": {
+                "return": [
+                    "dict"
+                ],
+                "async_exit_stack": [
+                    "list[AsyncExitStack]"
+                ],
+                "background_tasks": [
+                    "typing.Optional[list[Task]]"
+                ],
+                "body": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "dependency_cache": [
+                    "dict[typing.Any, typing.Any]"
+                ],
+                "dependency_overrides_provider": [
+                    "DependencyOverridesProvider"
+                ],
+                "embed_body_fields": [
+                    "bool"
+                ],
+                "request": [
+                    "Request"
+                ],
+                "response": [
+                    "Response"
+                ]
+            },
+            "request_params_to_args": {
+                "return": [
+                    "tuple[typing.Union[dict[str, typing.Any],list[typing.Any]]]"
+                ],
+                "fields": [
+                    "list[Field]"
+                ],
+                "received_params": [
+                    "dict"
+                ]
+            },
+            "request_body_to_args": {
+                "return": [
+                    "tuple[typing.Union[dict,list]]"
+                ],
+                "body_fields": [
+                    "list[Field]"
+                ],
+                "embed_body_fields": [
+                    "bool"
+                ],
+                "received_body": [
+                    "typing.Union[aiohttp.web.FormData, builtins.str]"
+                ]
+            },
+            "get_dependant": {
+                "return": [
+                    "Dependant"
+                ],
+                "call": [
+                    "Call"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "security_scopes": [
+                    "list[str]"
+                ],
+                "use_cache": [
+                    "bool"
+                ]
+            },
+            "get_body_field": {
+                "return": [
+                    "typing.Optional[django.core.fields.Field]"
+                ],
+                "embed_body_fields": [
+                    "bool"
+                ],
+                "flat_dependant": [
+                    "FlatDependant"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "get_flat_dependant": {
+                "return": [
+                    "Dependant"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "skip_repeats": [
+                    "bool"
+                ],
+                "visited": [
+                    "list[str]"
+                ]
+            },
+            "_extract_form_body": {
+                "return": [
+                    "dict"
+                ],
+                "body_fields": [
+                    "list[Field]"
+                ],
+                "received_body": [
+                    "dict"
+                ]
+            },
+            "add_non_field_param_to_dependency": {
+                "return": [
+                    "None"
+                ],
+                "dependant": [
+                    "Dependency"
+                ],
+                "param_name": [
+                    "str"
+                ],
+                "type_annotation": [
+                    "typing.Type"
+                ]
+            },
+            "get_sub_dependant": {
+                "return": [
+                    "Dependant"
+                ],
+                "dependency": [
+                    "typing.Union[SecurityBase, OAuth2,OpenIdConnect]"
+                ],
+                "depends": [
+                    "typing.Union[params.Security, OpenIdConnect]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "security_scopes": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "ensure_multipart_is_installed": {
+                "return": [
+                    "None"
+                ]
+            },
+            "add_param_to_fields": {
+                "return": [
+                    "None"
+                ],
+                "dependant": [
+                    "Dependant"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "_validate_value_with_model_field": {
+                "return": [
+                    "tuple[typing.Union[typing.Any,typing.Any]]"
+                ],
+                "field": [
+                    "ModelField"
+                ],
+                "loc": [
+                    "str"
+                ],
+                "value": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "values": [
+                    "list[str]"
+                ]
+            },
+            "_get_multidict_value": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "field": [
+                    "Field"
+                ],
+                "values": [
+                    "typing.Union[ImmutableMultiDict, Headers]"
+                ]
+            },
+            "_should_embed_body_fields": {
+                "return": [
+                    "bool"
+                ],
+                "fields": [
+                    "list[Field]"
+                ]
+            },
+            "get_flat_params": {
+                "return": [
+                    "list[str]"
+                ],
+                "dependant": [
+                    "Dependant"
+                ]
+            },
+            "get_typed_signature": {
+                "return": [
+                    "inspect.Signature"
+                ],
+                "call": [
+                    "typing.Callable"
+                ]
+            },
+            "is_union_of_base_models": {
+                "return": [
+                    "bool"
+                ],
+                "field_type": [
+                    "typing.Type"
+                ]
+            },
+            "_get_flat_fields_from_params": {
+                "return": [
+                    "list[Field]"
+                ],
+                "fields": [
+                    "list[Field]"
+                ]
+            },
+            "solve_generator": {
+                "return": [
+                    "Generator"
+                ],
+                "call": [
+                    "typing.Callable"
+                ],
+                "stack": [
+                    "Stack"
+                ],
+                "sub_values": [
+                    "dict"
+                ]
+            },
+            "get_typed_return_annotation": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "call": [
+                    "typing.Callable"
+                ]
+            },
+            "is_coroutine_callable": {
+                "return": [
+                    "bool"
+                ],
+                "call": [
+                    "typing.Callable"
+                ]
+            },
+            "get_param_sub_dependant": {
+                "return": [
+                    "str"
+                ],
+                "depends": [
+                    "Depends"
+                ],
+                "param_name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ],
+                "security_scopes": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "get_parameterless_sub_dependant": {
+                "return": [
+                    "str"
+                ],
+                "depends": [
+                    "Depends"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "get_typed_annotation": {
+                "return": [
+                    "ForwardRef"
+                ],
+                "annotation": [
+                    "typing.Union[str,ForwardRef]"
+                ],
+                "globalns": [
+                    "GlobalNamespace"
+                ]
+            },
+            "is_async_gen_callable": {
+                "return": [
+                    "bool"
+                ],
+                "call": [
+                    "typing.Callable"
+                ]
+            },
+            "is_gen_callable": {
+                "return": [
+                    "bool"
+                ],
+                "call": [
+                    "typing.Callable"
+                ]
+            }
+        },
+        "SolvedDependency": {
+            "global": {
+                "background_tasks": [
+                    "list[Task]"
+                ],
+                "dependency_cache": [
+                    "DependencyCache"
+                ],
+                "response": [
+                    "str"
+                ],
+                "errors": [
+                    "list[Error]"
+                ],
+                "values": [
+                    "str"
+                ]
+            }
+        },
+        "ParamDetails": {
+            "global": {
+                "type_annotation": [
+                    "str"
+                ],
+                "depends": [
+                    "str"
+                ],
+                "field": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.encoders": {
+        "global": {
+            "jsonable_encoder": {
+                "return": [
+                    "str"
+                ],
+                "by_alias": [
+                    "bool"
+                ],
+                "custom_encoder": [
+                    "dict[typing.Type, typing.Type]"
+                ],
+                "exclude": [
+                    "typing.Optional[set[str]]"
+                ],
+                "exclude_defaults": [
+                    "bool"
+                ],
+                "exclude_none": [
+                    "bool"
+                ],
+                "exclude_unset": [
+                    "bool"
+                ],
+                "include": [
+                    "typing.Optional[set[str]]"
+                ],
+                "obj": [
+                    "BaseModel"
+                ],
+                "sqlalchemy_safe": [
+                    "bool"
+                ]
+            },
+            "global": {
+                "ENCODERS_BY_TYPE": [
+                    "dict[str, typing.Type]"
+                ]
+            },
+            "generate_encoders_by_class_tuples": {
+                "return": [
+                    "dict[str, tuple[str]]"
+                ],
+                "type_encoder_map": [
+                    "dict[str, typing.TypeEncoder]"
+                ]
+            },
+            "decimal_encoder": {
+                "return": [
+                    "float"
+                ],
+                "dec_value": [
+                    "Decimal"
+                ]
+            },
+            "isoformat": {
+                "return": [
+                    "str"
+                ],
+                "o": [
+                    "datetime.datetime"
+                ]
+            }
+        }
+    },
+    "fastapi.openapi.docs": {
+        "global": {
+            "get_swagger_ui_oauth2_redirect_html": {
+                "return": [
+                    "str"
+                ]
+            },
+            "get_swagger_ui_html": {
+                "return": [
+                    "str"
+                ],
+                "init_oauth": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "oauth2_redirect_url": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_url": [
+                    "str"
+                ],
+                "swagger_css_url": [
+                    "str"
+                ],
+                "swagger_favicon_url": [
+                    "str"
+                ],
+                "swagger_js_url": [
+                    "str"
+                ],
+                "swagger_ui_parameters": [
+                    "dict[str, typing.Any]"
+                ],
+                "title": [
+                    "str"
+                ]
+            },
+            "get_redoc_html": {
+                "return": [
+                    "HTMLResponse"
+                ],
+                "openapi_url": [
+                    "str"
+                ],
+                "redoc_favicon_url": [
+                    "str"
+                ],
+                "redoc_js_url": [
+                    "str"
+                ],
+                "title": [
+                    "str"
+                ],
+                "with_google_fonts": [
+                    "bool"
+                ]
+            },
+            "global": {
+                "swagger_ui_default_parameters": [
+                    "dict[str, typing.Union[bool,str]]"
+                ]
+            }
+        }
+    },
+    "fastapi.applications": {
+        "FastAPI": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "contact": [
+                    "typing.Optional[str]"
+                ],
+                "debug": [
+                    "bool"
+                ],
+                "default_response_class": [
+                    "typing.Type"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "docs_url": [
+                    "str"
+                ],
+                "exception_handlers": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "license_info": [
+                    "typing.Optional[str]"
+                ],
+                "lifespan": [
+                    "typing.Optional[str]"
+                ],
+                "middleware": [
+                    "typing.Optional[list[Middleware]]"
+                ],
+                "on_shutdown": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "on_startup": [
+                    "typing.Optional[typing.Callable[..., typing.Any]]"
+                ],
+                "openapi_prefix": [
+                    "str"
+                ],
+                "openapi_tags": [
+                    "list[str]"
+                ],
+                "openapi_url": [
+                    "str"
+                ],
+                "redirect_slashes": [
+                    "bool"
+                ],
+                "redoc_url": [
+                    "str"
+                ],
+                "responses": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "root_path": [
+                    "str"
+                ],
+                "root_path_in_servers": [
+                    "bool"
+                ],
+                "routes": [
+                    "list[Route]"
+                ],
+                "self": [
+                    "dict"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ],
+                "servers": [
+                    "list[str]"
+                ],
+                "summary": [
+                    "str"
+                ],
+                "swagger_ui_init_oauth": [
+                    "typing.Optional[str]"
+                ],
+                "swagger_ui_oauth2_redirect_url": [
+                    "str"
+                ],
+                "swagger_ui_parameters": [
+                    "list[str]"
+                ],
+                "terms_of_service": [
+                    "typing.Optional[str]"
+                ],
+                "title": [
+                    "str"
+                ],
+                "version": [
+                    "str"
+                ],
+                "webhooks": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "setup": {
+                "return": [
+                    "None"
+                ]
+            },
+            "api_route": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "dependencies": [
+                    "list[str]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "typing.Optional[list[str]]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "add_api_route": {
+                "return": [
+                    "None"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "methods": [
+                    "typing.Optional[list[str]]"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "options": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "delete": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Optional[str]"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "patch": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Optional[str]"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "trace": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Optional[str]"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[str]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "head": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "post": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[list[str]]"
+                ]
+            },
+            "get": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Type"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "put": {
+                "return": [
+                    "Response"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "dependencies": [
+                    "list[Dependency]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "name": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "operation_id": [
+                    "typing.Optional[str]"
+                ],
+                "path": [
+                    "str"
+                ],
+                "response_class": [
+                    "typing.Optional[str]"
+                ],
+                "response_description": [
+                    "str"
+                ],
+                "response_model": [
+                    "ResponseModel"
+                ],
+                "response_model_by_alias": [
+                    "bool"
+                ],
+                "response_model_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "response_model_exclude_defaults": [
+                    "bool"
+                ],
+                "response_model_exclude_none": [
+                    "bool"
+                ],
+                "response_model_exclude_unset": [
+                    "bool"
+                ],
+                "response_model_include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ],
+                "summary": [
+                    "typing.Optional[str]"
+                ],
+                "tags": [
+                    "typing.Optional[dict[str, str]]"
+                ]
+            },
+            "include_router": {
+                "return": [
+                    "None"
+                ],
+                "callbacks": [
+                    "typing.Optional[list[Callback]]"
+                ],
+                "default_response_class": [
+                    "typing.Type"
+                ],
+                "dependencies": [
+                    "list[str]"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "generate_unique_id_function": [
+                    "typing.Optional[typing.Callable]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "prefix": [
+                    "str"
+                ],
+                "responses": [
+                    "typing.Optional[list[Response]]"
+                ],
+                "router": [
+                    "Router"
+                ],
+                "tags": [
+                    "list[str]"
+                ]
+            },
+            "openapi": {
+                "return": [
+                    "JSONResponse"
+                ]
+            },
+            "on_event": {
+                "return": [
+                    "None"
+                ],
+                "event_type": [
+                    "str"
+                ]
+            },
+            "websocket": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "dependencies": [
+                    "dict[str, str]"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "exception_handler": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "exc_class_or_status_code": [
+                    "typing.Type"
+                ]
+            },
+            "add_api_websocket_route": {
+                "return": [
+                    "None"
+                ],
+                "dependencies": [
+                    "dict[str, str]"
+                ],
+                "endpoint": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "websocket_route": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "middleware": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "middleware_type": [
+                    "str"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "None"
+                ],
+                "receive": [
+                    "Receive"
+                ],
+                "scope": [
+                    "Scope"
+                ],
+                "send": [
+                    "Send"
+                ]
+            }
+        }
+    },
+    "fastapi.params": {
+        "Param": {
+            "global": {
+                "in_": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "str"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[str]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Body": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "str"
+                ],
+                "embed": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[list[str]]"
+                ],
+                "examples": [
+                    "list[str]"
+                ],
+                "extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[str]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            }
+        },
+        "Path": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Header": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "convert_underscores": [
+                    "bool"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Form": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[float]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "File": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[float]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Cookie": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Query": {
+            "__init__": {
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "annotation": [
+                    "typing.Optional[str]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Depends": {
+            "__repr__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "dependency": [
+                    "typing.Optional[str]"
+                ],
+                "use_cache": [
+                    "bool"
+                ]
+            }
+        },
+        "Security": {
+            "__init__": {
+                "dependency": [
+                    "Dependency"
+                ],
+                "scopes": [
+                    "list[Scope]"
+                ],
+                "use_cache": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {
+            "global": {
+                "_Unset": [
+                    "typing.Type"
+                ]
+            }
+        }
+    },
+    "fastapi.openapi.models": {
+        "Schema": {
+            "global": {
+                "unevaluatedProperties": [
+                    "Field"
+                ],
+                "additionalProperties": [
+                    "Field"
+                ],
+                "dependentRequired": [
+                    "Field"
+                ],
+                "patternProperties": [
+                    "Field"
+                ],
+                "contentMediaType": [
+                    "Field"
+                ],
+                "dependentSchemas": [
+                    "None"
+                ],
+                "exclusiveMaximum": [
+                    "Field"
+                ],
+                "exclusiveMinimum": [
+                    "Field"
+                ],
+                "unevaluatedItems": [
+                    "Field"
+                ],
+                "contentEncoding": [
+                    "Field"
+                ],
+                "contentSchema": [
+                    "Field"
+                ],
+                "discriminator": [
+                    "Field"
+                ],
+                "dynamicAnchor": [
+                    "Field"
+                ],
+                "maxProperties": [
+                    "Field"
+                ],
+                "minProperties": [
+                    "Field"
+                ],
+                "propertyNames": [
+                    "Field"
+                ],
+                "externalDocs": [
+                    "Field"
+                ],
+                "description": [
+                    "Field"
+                ],
+                "maxContains": [
+                    "Field"
+                ],
+                "minContains": [
+                    "Field"
+                ],
+                "prefixItems": [
+                    "Field"
+                ],
+                "uniqueItems": [
+                    "Field"
+                ],
+                "deprecated": [
+                    "Field"
+                ],
+                "dynamicRef": [
+                    "Field"
+                ],
+                "multipleOf": [
+                    "Field"
+                ],
+                "properties": [
+                    "Field"
+                ],
+                "vocabulary": [
+                    "Field"
+                ],
+                "maxLength": [
+                    "Field"
+                ],
+                "minLength": [
+                    "Field"
+                ],
+                "writeOnly": [
+                    "bool"
+                ],
+                "contains": [
+                    "Field"
+                ],
+                "examples": [
+                    "Field"
+                ],
+                "maxItems": [
+                    "Field"
+                ],
+                "minItems": [
+                    "Field"
+                ],
+                "readOnly": [
+                    "bool"
+                ],
+                "required": [
+                    "Field"
+                ],
+                "comment": [
+                    "Field"
+                ],
+                "default": [
+                    "Field"
+                ],
+                "example": [
+                    "Schema"
+                ],
+                "maximum": [
+                    "Field"
+                ],
+                "minimum": [
+                    "Field"
+                ],
+                "pattern": [
+                    "Field"
+                ],
+                "schema_": [
+                    "Field"
+                ],
+                "anchor": [
+                    "Field"
+                ],
+                "format": [
+                    "Field"
+                ],
+                "allOf": [
+                    "None"
+                ],
+                "anyOf": [
+                    "Field"
+                ],
+                "const": [
+                    "Field"
+                ],
+                "else_": [
+                    "Field"
+                ],
+                "items": [
+                    "Field"
+                ],
+                "oneOf": [
+                    "Field"
+                ],
+                "title": [
+                    "Field"
+                ],
+                "defs": [
+                    "Field"
+                ],
+                "enum": [
+                    "Field"
+                ],
+                "not_": [
+                    "Field"
+                ],
+                "then": [
+                    "Field"
+                ],
+                "type": [
+                    "Field"
+                ],
+                "if_": [
+                    "Field"
+                ],
+                "ref": [
+                    "Field"
+                ],
+                "xml": [
+                    "Field"
+                ],
+                "id": [
+                    "Field"
+                ]
+            }
+        },
+        "PathItem": {
+            "global": {
+                "description": [
+                    "Field"
+                ],
+                "parameters": [
+                    "None"
+                ],
+                "options": [
+                    "Field"
+                ],
+                "servers": [
+                    "Field"
+                ],
+                "summary": [
+                    "Field"
+                ],
+                "delete": [
+                    "Field"
+                ],
+                "patch": [
+                    "Field"
+                ],
+                "trace": [
+                    "Field"
+                ],
+                "head": [
+                    "Field"
+                ],
+                "post": [
+                    "Field"
+                ],
+                "get": [
+                    "Field"
+                ],
+                "put": [
+                    "Field"
+                ],
+                "ref": [
+                    "Field"
+                ]
+            }
+        },
+        "Operation": {
+            "global": {
+                "externalDocs": [
+                    "None"
+                ],
+                "description": [
+                    "str"
+                ],
+                "operationId": [
+                    "str"
+                ],
+                "requestBody": [
+                    "str"
+                ],
+                "deprecated": [
+                    "None"
+                ],
+                "parameters": [
+                    "None"
+                ],
+                "callbacks": [
+                    "None"
+                ],
+                "responses": [
+                    "None"
+                ],
+                "security": [
+                    "None"
+                ],
+                "servers": [
+                    "None"
+                ],
+                "summary": [
+                    "str"
+                ],
+                "tags": [
+                    "None"
+                ]
+            }
+        },
+        "ParameterBase": {
+            "global": {
+                "allowReserved": [
+                    "None"
+                ],
+                "description": [
+                    "None"
+                ],
+                "deprecated": [
+                    "bool"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "required": [
+                    "None"
+                ],
+                "content": [
+                    "None"
+                ],
+                "example": [
+                    "str"
+                ],
+                "explode": [
+                    "None"
+                ],
+                "schema_": [
+                    "Field"
+                ],
+                "style": [
+                    "str"
+                ]
+            }
+        },
+        "Components": {
+            "global": {
+                "securitySchemes": [
+                    "None"
+                ],
+                "requestBodies": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "parameters": [
+                    "None"
+                ],
+                "callbacks": [
+                    "None"
+                ],
+                "pathItems": [
+                    "None"
+                ],
+                "responses": [
+                    "None"
+                ],
+                "examples": [
+                    "None"
+                ],
+                "headers": [
+                    "None"
+                ],
+                "schemas": [
+                    "None"
+                ],
+                "links": [
+                    "dict[str, str]"
+                ]
+            }
+        },
+        "OpenAPI": {
+            "global": {
+                "jsonSchemaDialect": [
+                    "None"
+                ],
+                "externalDocs": [
+                    "None"
+                ],
+                "components": [
+                    "None"
+                ],
+                "security": [
+                    "None"
+                ],
+                "webhooks": [
+                    "None"
+                ],
+                "openapi": [
+                    "OpenAPI"
+                ],
+                "servers": [
+                    "None"
+                ],
+                "paths": [
+                    "None"
+                ],
+                "info": [
+                    "dict[str, typing.Any]"
+                ],
+                "tags": [
+                    "dict[str, typing.Any]"
+                ]
+            }
+        },
+        "EmailStr": {
+            "_validate": {
+                "return": [
+                    "str"
+                ],
+                "_": [
+                    "dict"
+                ],
+                "__input_value": [
+                    "str"
+                ]
+            },
+            "validate": {
+                "return": [
+                    "str"
+                ],
+                "v": [
+                    "str"
+                ]
+            },
+            "__get_pydantic_core_schema__": {
+                "return": [
+                    "Schema"
+                ],
+                "handler": [
+                    "HandlerFunction"
+                ],
+                "source": [
+                    "str"
+                ]
+            },
+            "__get_pydantic_json_schema__": {
+                "return": [
+                    "dict[str, str]"
+                ],
+                "core_schema": [
+                    "dict[str, typing.Any]"
+                ],
+                "handler": [
+                    "Handler"
+                ]
+            },
+            "__get_validators__": {
+                "return": [
+                    "typing.Iterator"
+                ]
+            }
+        },
+        "Example": {
+            "global": {
+                "externalValue": [
+                    "str"
+                ],
+                "description": [
+                    "str"
+                ],
+                "summary": [
+                    "str"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "Link": {
+            "global": {
+                "operationRef": [
+                    "None"
+                ],
+                "description": [
+                    "str"
+                ],
+                "operationId": [
+                    "typing.Optional[str]"
+                ],
+                "requestBody": [
+                    "str"
+                ],
+                "parameters": [
+                    "None"
+                ],
+                "server": [
+                    "None"
+                ]
+            }
+        },
+        "MediaType": {
+            "global": {
+                "encoding": [
+                    "None"
+                ],
+                "examples": [
+                    "None"
+                ],
+                "example": [
+                    "Field"
+                ],
+                "schema_": [
+                    "Field"
+                ]
+            }
+        },
+        "OAuthFlows": {
+            "global": {
+                "authorizationCode": [
+                    "None"
+                ],
+                "clientCredentials": [
+                    "None"
+                ],
+                "implicit": [
+                    "None"
+                ],
+                "password": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "Encoding": {
+            "global": {
+                "allowReserved": [
+                    "None"
+                ],
+                "contentType": [
+                    "None"
+                ],
+                "explode": [
+                    "None"
+                ],
+                "headers": [
+                    "None"
+                ],
+                "style": [
+                    "None"
+                ]
+            }
+        },
+        "Info": {
+            "global": {
+                "termsOfService": [
+                    "None"
+                ],
+                "description": [
+                    "str"
+                ],
+                "contact": [
+                    "None"
+                ],
+                "license": [
+                    "None"
+                ],
+                "summary": [
+                    "str"
+                ],
+                "version": [
+                    "str"
+                ],
+                "title": [
+                    "str"
+                ]
+            }
+        },
+        "XML": {
+            "global": {
+                "attribute": [
+                    "None"
+                ],
+                "namespace": [
+                    "typing.Optional[str]"
+                ],
+                "wrapped": [
+                    "None"
+                ],
+                "prefix": [
+                    "typing.Optional[str]"
+                ],
+                "name": [
+                    "None"
+                ]
+            }
+        },
+        "APIKey": {
+            "global": {
+                "type_": [
+                    "Field"
+                ],
+                "name": [
+                    "str"
+                ],
+                "in_": [
+                    "Field"
+                ]
+            }
+        },
+        "OpenIdConnect": {
+            "global": {
+                "openIdConnectUrl": [
+                    "str"
+                ],
+                "type_": [
+                    "Field"
+                ]
+            }
+        },
+        "SecurityBase": {
+            "global": {
+                "description": [
+                    "None"
+                ],
+                "type_": [
+                    "Field"
+                ]
+            }
+        },
+        "Response": {
+            "global": {
+                "description": [
+                    "str"
+                ],
+                "content": [
+                    "None"
+                ],
+                "headers": [
+                    "None"
+                ],
+                "links": [
+                    "None"
+                ]
+            }
+        },
+        "HTTPBase": {
+            "global": {
+                "scheme": [
+                    "SecurityScheme"
+                ],
+                "type_": [
+                    "Field"
+                ]
+            }
+        },
+        "OAuth2": {
+            "global": {
+                "flows": [
+                    "Flow"
+                ],
+                "type_": [
+                    "Field"
+                ]
+            }
+        },
+        "RequestBody": {
+            "global": {
+                "description": [
+                    "None"
+                ],
+                "required": [
+                    "None"
+                ],
+                "content": [
+                    "str"
+                ]
+            }
+        },
+        "ServerVariable": {
+            "global": {
+                "description": [
+                    "None"
+                ],
+                "default": [
+                    "str"
+                ],
+                "enum": [
+                    "None"
+                ]
+            }
+        },
+        "Tag": {
+            "global": {
+                "externalDocs": [
+                    "None"
+                ],
+                "description": [
+                    "None"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        },
+        "Server": {
+            "global": {
+                "description": [
+                    "None"
+                ],
+                "variables": [
+                    "None"
+                ],
+                "url": [
+                    "str"
+                ]
+            }
+        },
+        "Contact": {
+            "global": {
+                "email": [
+                    "typing.Optional[str]"
+                ],
+                "name": [
+                    "None"
+                ],
+                "url": [
+                    "str"
+                ]
+            }
+        },
+        "HTTPBearer": {
+            "global": {
+                "bearerFormat": [
+                    "None"
+                ],
+                "scheme": [
+                    "str"
+                ]
+            }
+        },
+        "OAuthFlow": {
+            "global": {
+                "refreshUrl": [
+                    "None"
+                ],
+                "scopes": [
+                    "dict[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "ExternalDocumentation": {
+            "global": {
+                "description": [
+                    "None"
+                ],
+                "url": [
+                    "str"
+                ]
+            }
+        },
+        "License": {
+            "global": {
+                "identifier": [
+                    "None"
+                ],
+                "name": [
+                    "str"
+                ],
+                "url": [
+                    "None"
+                ]
+            }
+        },
+        "OAuthFlowAuthorizationCode": {
+            "global": {
+                "authorizationUrl": [
+                    "str"
+                ],
+                "tokenUrl": [
+                    "str"
+                ]
+            }
+        },
+        "Parameter": {
+            "global": {
+                "name": [
+                    "str"
+                ],
+                "in_": [
+                    "Field"
+                ]
+            }
+        },
+        "Discriminator": {
+            "global": {
+                "propertyName": [
+                    "str"
+                ],
+                "mapping": [
+                    "None"
+                ]
+            }
+        },
+        "OAuthFlowClientCredentials": {
+            "global": {
+                "tokenUrl": [
+                    "str"
+                ]
+            }
+        },
+        "OAuthFlowImplicit": {
+            "global": {
+                "authorizationUrl": [
+                    "str"
+                ]
+            }
+        },
+        "Reference": {
+            "global": {
+                "ref": [
+                    "Field"
+                ]
+            }
+        },
+        "OAuthFlowPassword": {
+            "global": {
+                "tokenUrl": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.utils": {
+        "global": {
+            "create_cloned_field": {
+                "return": [
+                    "Field"
+                ],
+                "cloned_types": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "create_model_field": {
+                "return": [
+                    "ModelField"
+                ],
+                "alias": [
+                    "str"
+                ],
+                "class_validators": [
+                    "dict[str, ClassValidator]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "field_info": [
+                    "FieldInfo"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "model_config": [
+                    "typing.Type"
+                ],
+                "name": [
+                    "str"
+                ],
+                "required": [
+                    "typing.Optional[bool]"
+                ],
+                "type_": [
+                    "str"
+                ]
+            },
+            "deep_dict_update": {
+                "return": [
+                    "None"
+                ],
+                "main_dict": [
+                    "dict"
+                ],
+                "update_dict": [
+                    "dict"
+                ]
+            },
+            "generate_operation_id_for_path": {
+                "return": [
+                    "str"
+                ],
+                "method": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "is_body_allowed_for_status_code": {
+                "return": [
+                    "bool"
+                ],
+                "status_code": [
+                    "typing.Optional[int]"
+                ]
+            },
+            "generate_unique_id": {
+                "return": [
+                    "str"
+                ],
+                "route": [
+                    "Route"
+                ]
+            },
+            "get_value_or_default": {
+                "return": [
+                    "typing.Union[str,DefaultPlaceholder]"
+                ],
+                "extra_items": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "first_item": [
+                    "typing.Union[str,DefaultPlaceholder]"
+                ]
+            },
+            "global": {
+                "_CLONED_TYPES_CACHE": [
+                    "WeakKeyDictionary"
+                ]
+            },
+            "get_path_param_names": {
+                "return": [
+                    "set[str]"
+                ],
+                "path": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi._compat": {
+        "ModelField": {
+            "global": {
+                "field_info": [
+                    "FieldInfo"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ]
+            },
+            "serialize": {
+                "return": [
+                    "str"
+                ],
+                "by_alias": [
+                    "bool"
+                ],
+                "exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "exclude_defaults": [
+                    "bool"
+                ],
+                "exclude_none": [
+                    "bool"
+                ],
+                "exclude_unset": [
+                    "bool"
+                ],
+                "include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "value": [
+                    "typing.Union[dict,list]"
+                ]
+            },
+            "validate": {
+                "return": [
+                    "tuple[typing.Union[None,ValidationError,None]]"
+                ],
+                "loc": [
+                    "tuple"
+                ],
+                "value": [
+                    "str"
+                ],
+                "values": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "get_default": {
+                "return": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "__post_init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__hash__": {
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "global": {
+            "global": {
+                "RequiredParam": [
+                    "typing.Type"
+                ],
+                "Url": [
+                    "str"
+                ]
+            },
+            "get_definitions": {
+                "fields": [
+                    "list[Field]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ],
+                "schema_generator": [
+                    "SchemaGenerator"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ],
+                "return": [
+                    "tuple[typing.Union[dict[str, typing.Any],dict[str, typing.Any]]]"
+                ]
+            },
+            "field_annotation_is_scalar_sequence": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "Annotation"
+                ]
+            },
+            "is_pv1_scalar_field": {
+                "return": [
+                    "bool"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "is_uploadfile_sequence_annotation": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "FieldAnnotation"
+                ]
+            },
+            "get_model_definitions": {
+                "return": [
+                    "dict[str, typing.Any]"
+                ],
+                "flat_models": [
+                    "list[str]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ]
+            },
+            "is_bytes_sequence_annotation": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "Annotation"
+                ]
+            },
+            "get_schema_from_model_field": {
+                "field": [
+                    "ModelField"
+                ],
+                "field_mapping": [
+                    "dict[Field, typing.Any]"
+                ],
+                "model_name_map": [
+                    "dict[str, str]"
+                ],
+                "schema_generator": [
+                    "SchemaGenerator"
+                ],
+                "separate_input_output_schemas": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "_normalize_errors": {
+                "return": [
+                    "list[typing.Any]"
+                ],
+                "errors": [
+                    "list[Error]"
+                ]
+            },
+            "is_pv1_scalar_sequence_field": {
+                "return": [
+                    "bool"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "field_annotation_is_complex": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "Annotation"
+                ]
+            },
+            "field_annotation_is_sequence": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "Annotation"
+                ]
+            },
+            "is_uploadfile_or_nonable_uploadfile_annotation": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "typing.Type"
+                ]
+            },
+            "is_bytes_or_nonable_bytes_annotation": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "Type"
+                ]
+            },
+            "copy_field_info": {
+                "annotation": [
+                    "Annotation"
+                ],
+                "field_info": [
+                    "FieldInfo"
+                ],
+                "return": [
+                    "FieldInfo"
+                ]
+            },
+            "serialize_sequence_value": {
+                "field": [
+                    "Field"
+                ],
+                "value": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "get_missing_field_error": {
+                "loc": [
+                    "str"
+                ],
+                "return": [
+                    "ValidationError"
+                ]
+            },
+            "create_body_model": {
+                "fields": [
+                    "list[Field]"
+                ],
+                "model_name": [
+                    "str"
+                ],
+                "return": [
+                    "BodyModel"
+                ]
+            },
+            "_regenerate_error_with_loc": {
+                "return": [
+                    "list[dict[str, typing.Any]]"
+                ],
+                "errors": [
+                    "list[Error]"
+                ],
+                "loc_prefix": [
+                    "list[str]"
+                ]
+            },
+            "_annotation_is_complex": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "typing.Type"
+                ]
+            },
+            "is_scalar_field": {
+                "field": [
+                    "Field"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_annotation_is_sequence": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "typing.Type"
+                ]
+            },
+            "get_compat_model_name_map": {
+                "return": [
+                    "dict[str, str]"
+                ],
+                "fields": [
+                    "dict[str, str]"
+                ]
+            },
+            "get_model_fields": {
+                "model": [
+                    "Model"
+                ],
+                "return": [
+                    "list[str]"
+                ]
+            },
+            "field_annotation_is_scalar": {
+                "return": [
+                    "bool"
+                ],
+                "annotation": [
+                    "FieldAnnotation"
+                ]
+            },
+            "is_bytes_sequence_field": {
+                "return": [
+                    "bool"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "value_is_sequence": {
+                "return": [
+                    "bool"
+                ],
+                "value": [
+                    "list[typing.Any]"
+                ]
+            },
+            "is_sequence_field": {
+                "return": [
+                    "bool"
+                ],
+                "field": [
+                    "Field"
+                ]
+            },
+            "with_info_plain_validator_function": {
+                "return": [
+                    "dict"
+                ],
+                "function": [
+                    "ValidatorFunction"
+                ],
+                "metadata": [
+                    "dict"
+                ],
+                "ref": [
+                    "dict"
+                ],
+                "serialization": [
+                    "dict"
+                ]
+            },
+            "is_scalar_sequence_field": {
+                "field": [
+                    "Field"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_model_dump": {
+                "kwargs": [
+                    "dict"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "model": [
+                    "Model"
+                ],
+                "return": [
+                    "dict"
+                ]
+            },
+            "get_annotation_from_field_info": {
+                "return": [
+                    "Annotation"
+                ],
+                "annotation": [
+                    "Annotation"
+                ],
+                "field_info": [
+                    "FieldInfo"
+                ],
+                "field_name": [
+                    "str"
+                ]
+            },
+            "is_bytes_field": {
+                "field": [
+                    "Field"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "get_cached_model_fields": {
+                "return": [
+                    "list[str]"
+                ],
+                "model": [
+                    "typing.Type"
+                ]
+            },
+            "_model_rebuild": {
+                "return": [
+                    "None"
+                ],
+                "model": [
+                    "Model"
+                ]
+            },
+            "_get_model_config": {
+                "return": [
+                    "dict"
+                ],
+                "model": [
+                    "Model"
+                ]
+            }
+        },
+        "GenerateJsonSchema": {
+            "global": {
+                "ref_template": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.datastructures": {
+        "UploadFile": {
+            "global": {
+                "content_type": [
+                    "str"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "headers": [
+                    "dict[str, str]"
+                ],
+                "file": [
+                    "UploadFile"
+                ],
+                "size": [
+                    "int"
+                ]
+            },
+            "_validate": {
+                "return": [
+                    "UploadFile"
+                ],
+                "_": [
+                    "ValidationContext"
+                ],
+                "__input_value": [
+                    "typing.Union[StarletteUploadFile, typing.Any]"
+                ]
+            },
+            "validate": {
+                "return": [
+                    "StarletteUploadFile"
+                ],
+                "cls": [
+                    "typing.Type"
+                ],
+                "v": [
+                    "UploadFile"
+                ]
+            },
+            "__get_pydantic_core_schema__": {
+                "return": [
+                    "Schema"
+                ],
+                "handler": [
+                    "HandlerFunction"
+                ],
+                "source": [
+                    "str"
+                ]
+            },
+            "__get_pydantic_json_schema__": {
+                "return": [
+                    "dict[str, str]"
+                ],
+                "core_schema": [
+                    "dict[str, typing.Any]"
+                ],
+                "handler": [
+                    "Handler"
+                ]
+            },
+            "__modify_schema__": {
+                "return": [
+                    "None"
+                ],
+                "field_schema": [
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "seek": {
+                "return": [
+                    "None"
+                ],
+                "offset": [
+                    "int"
+                ]
+            },
+            "read": {
+                "return": [
+                    "bytes"
+                ],
+                "size": [
+                    "int"
+                ]
+            },
+            "write": {
+                "return": [
+                    "None"
+                ],
+                "data": [
+                    "bytes"
+                ]
+            },
+            "__get_validators__": {
+                "return": [
+                    "typing.Iterator"
+                ],
+                "cls": [
+                    "typing.Type"
+                ]
+            },
+            "close": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "DefaultPlaceholder": {
+            "__eq__": {
+                "return": [
+                    "bool"
+                ],
+                "o": [
+                    "Placeholder"
+                ]
+            },
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__init__": {
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "global": {
+            "Default": {
+                "return": [
+                    "Placeholder"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.param_functions": {
+        "global": {
+            "Body": {
+                "return": [
+                    "Body"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "embed": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[float]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Form": {
+                "return": [
+                    "Form"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[float]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Header": {
+                "return": [
+                    "Header"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "convert_underscores": [
+                    "bool"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[str]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "File": {
+                "return": [
+                    "File"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "media_type": [
+                    "str"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Cookie": {
+                "return": [
+                    "Cookie"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[str]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "str"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[str]"
+                ],
+                "lt": [
+                    "typing.Optional[str]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Query": {
+                "return": [
+                    "Query"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[str]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[str]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Path": {
+                "return": [
+                    "Path"
+                ],
+                "alias": [
+                    "typing.Optional[str]"
+                ],
+                "alias_priority": [
+                    "typing.Optional[int]"
+                ],
+                "allow_inf_nan": [
+                    "typing.Optional[bool]"
+                ],
+                "decimal_places": [
+                    "typing.Optional[int]"
+                ],
+                "default": [
+                    "typing.Optional[str]"
+                ],
+                "default_factory": [
+                    "typing.Callable"
+                ],
+                "deprecated": [
+                    "typing.Optional[bool]"
+                ],
+                "description": [
+                    "typing.Optional[str]"
+                ],
+                "discriminator": [
+                    "typing.Optional[str]"
+                ],
+                "example": [
+                    "typing.Optional[str]"
+                ],
+                "examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "extra": [
+                    "dict[str, typing.Any]"
+                ],
+                "ge": [
+                    "typing.Optional[float]"
+                ],
+                "gt": [
+                    "typing.Optional[str]"
+                ],
+                "include_in_schema": [
+                    "bool"
+                ],
+                "json_schema_extra": [
+                    "typing.Optional[dict[str, typing.Any]]"
+                ],
+                "le": [
+                    "typing.Optional[int]"
+                ],
+                "lt": [
+                    "typing.Optional[float]"
+                ],
+                "max_digits": [
+                    "typing.Optional[int]"
+                ],
+                "max_length": [
+                    "typing.Optional[int]"
+                ],
+                "min_length": [
+                    "typing.Optional[int]"
+                ],
+                "multiple_of": [
+                    "typing.Optional[str]"
+                ],
+                "openapi_examples": [
+                    "typing.Optional[list[str]]"
+                ],
+                "pattern": [
+                    "typing.Optional[str]"
+                ],
+                "regex": [
+                    "typing.Optional[str]"
+                ],
+                "serialization_alias": [
+                    "typing.Optional[str]"
+                ],
+                "strict": [
+                    "typing.Optional[bool]"
+                ],
+                "title": [
+                    "typing.Optional[str]"
+                ],
+                "validation_alias": [
+                    "typing.Optional[str]"
+                ]
+            },
+            "Security": {
+                "return": [
+                    "Security"
+                ],
+                "dependency": [
+                    "str"
+                ],
+                "scopes": [
+                    "list[str]"
+                ],
+                "use_cache": [
+                    "bool"
+                ]
+            },
+            "Depends": {
+                "return": [
+                    "Depends"
+                ],
+                "dependency": [
+                    "str"
+                ],
+                "use_cache": [
+                    "bool"
+                ]
+            },
+            "global": {
+                "_Unset": [
+                    "typing.Type"
+                ]
+            }
+        }
+    },
+    "fastapi.security.http": {
+        "HTTPBasic": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[http.HTTPBasicCredentials]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "realm": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "HTTPBearer": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[HTTPAuthorizationCredentials]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "bearerFormat": [
+                    "typing.Optional[str]"
+                ],
+                "description": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            }
+        },
+        "HTTPDigest": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[HTTPAuthorizationCredentials]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            }
+        },
+        "HTTPBase": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[HTTPAuthorizationCredentials]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "scheme": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "HTTPAuthorizationCredentials": {
+            "global": {
+                "credentials": [
+                    "HTTPAuthorizationCredentials"
+                ],
+                "scheme": [
+                    "str"
+                ]
+            }
+        },
+        "HTTPBasicCredentials": {
+            "global": {
+                "password": [
+                    "str"
+                ],
+                "username": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.dependencies.models": {
+        "Dependant": {
+            "global": {
+                "background_tasks_param_name": [
+                    "str"
+                ],
+                "http_connection_param_name": [
+                    "str"
+                ],
+                "security_scopes_param_name": [
+                    "str"
+                ],
+                "security_requirements": [
+                    "list[typing.Any]"
+                ],
+                "websocket_param_name": [
+                    "str"
+                ],
+                "response_param_name": [
+                    "str"
+                ],
+                "request_param_name": [
+                    "str"
+                ],
+                "security_scopes": [
+                    "None"
+                ],
+                "cookie_params": [
+                    "field"
+                ],
+                "header_params": [
+                    "field"
+                ],
+                "dependencies": [
+                    "Field"
+                ],
+                "query_params": [
+                    "Field"
+                ],
+                "body_params": [
+                    "Field"
+                ],
+                "path_params": [
+                    "Field"
+                ],
+                "cache_key": [
+                    "tuple[typing.Union[typing.Any,tuple[typing.Union[typing.Any,...]]]]"
+                ],
+                "use_cache": [
+                    "bool"
+                ],
+                "call": [
+                    "str"
+                ],
+                "name": [
+                    "None"
+                ],
+                "path": [
+                    "None"
+                ]
+            },
+            "__post_init__": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "SecurityRequirement": {
+            "global": {
+                "security_scheme": [
+                    "str"
+                ],
+                "scopes": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "fastapi.concurrency": {
+        "global": {
+            "contextmanager_in_threadpool": {
+                "return": [
+                    "typing.Generator"
+                ],
+                "cm": [
+                    "ContextManager"
+                ]
+            }
+        }
+    },
+    "fastapi.security.oauth2": {
+        "OAuth2AuthorizationCodeBearer": {
+            "__init__": {
+                "authorizationUrl": [
+                    "str"
+                ],
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "refreshUrl": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "typing.Optional[str]"
+                ],
+                "scopes": [
+                    "dict[str, str]"
+                ],
+                "tokenUrl": [
+                    "str"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            }
+        },
+        "OAuth2PasswordBearer": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "refreshUrl": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "typing.Optional[str]"
+                ],
+                "scopes": [
+                    "dict[str, str]"
+                ],
+                "tokenUrl": [
+                    "str"
+                ]
+            }
+        },
+        "OAuth2": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "flows": [
+                    "typing.Iterable[OAuthFlow]"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            }
+        },
+        "OAuth2PasswordRequestForm": {
+            "__init__": {
+                "client_id": [
+                    "typing.Optional[str]"
+                ],
+                "client_secret": [
+                    "typing.Optional[str]"
+                ],
+                "grant_type": [
+                    "typing.Optional[str]"
+                ],
+                "password": [
+                    "str"
+                ],
+                "scope": [
+                    "str"
+                ],
+                "username": [
+                    "str"
+                ]
+            }
+        },
+        "OAuth2PasswordRequestFormStrict": {
+            "__init__": {
+                "client_id": [
+                    "typing.Optional[str]"
+                ],
+                "client_secret": [
+                    "typing.Optional[str]"
+                ],
+                "grant_type": [
+                    "str"
+                ],
+                "password": [
+                    "str"
+                ],
+                "scope": [
+                    "str"
+                ],
+                "username": [
+                    "str"
+                ]
+            }
+        },
+        "SecurityScopes": {
+            "__init__": {
+                "scopes": [
+                    "list[str]"
+                ]
+            }
+        }
+    },
+    "fastapi.exception_handlers": {
+        "global": {
+            "http_exception_handler": {
+                "return": [
+                    "Response"
+                ],
+                "exc": [
+                    "HTTPException"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "request_validation_exception_handler": {
+                "return": [
+                    "JSONResponse"
+                ],
+                "exc": [
+                    "RequestValidationError"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "websocket_request_validation_exception_handler": {
+                "return": [
+                    "None"
+                ],
+                "exc": [
+                    "RequestValidationError"
+                ],
+                "websocket": [
+                    "WebSocketResponse"
+                ]
+            }
+        }
+    },
+    "fastapi.security.open_id_connect_url": {
+        "OpenIdConnect": {
+            "__call__": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "request": [
+                    "Request"
+                ]
+            },
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "openIdConnectUrl": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "typing.Optional[str]"
+                ]
+            }
+        }
+    },
+    "fastapi.security.api_key": {
+        "APIKeyCookie": {
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "dict"
+                ],
+                "request": [
+                    "aiohttp.web.Request"
+                ]
+            }
+        },
+        "APIKeyHeader": {
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "Response"
+                ],
+                "request": [
+                    "Request"
+                ]
+            }
+        },
+        "APIKeyQuery": {
+            "__init__": {
+                "auto_error": [
+                    "bool"
+                ],
+                "description": [
+                    "str"
+                ],
+                "name": [
+                    "str"
+                ],
+                "scheme_name": [
+                    "str"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "dict"
+                ],
+                "request": [
+                    "Request"
+                ]
+            }
+        },
+        "APIKeyBase": {
+            "check_api_key": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "api_key": [
+                    "typing.Optional[str]"
+                ],
+                "auto_error": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "fastapi.cli": {
+        "global": {
+            "main": {
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "fastapi.security.utils": {
+        "global": {
+            "get_authorization_scheme_param": {
+                "return": [
+                    "tuple[typing.Union[str,str]]"
+                ],
+                "authorization_header_value": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "fastapi.responses": {
+        "ORJSONResponse": {
+            "render": {
+                "return": [
+                    "str"
+                ],
+                "content": [
+                    "dict"
+                ]
+            }
+        },
+        "UJSONResponse": {
+            "render": {
+                "return": [
+                    "bytes"
+                ],
+                "content": [
+                    "dict"
+                ]
+            }
+        }
+    },
+    "fastapi.exceptions": {
+        "ResponseValidationError": {
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "body": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "errors": [
+                    "list[Error]"
+                ]
+            }
+        },
+        "HTTPException": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "detail": [
+                    "typing.Optional[str]"
+                ],
+                "headers": [
+                    "typing.Optional[dict[str, str]]"
+                ],
+                "status_code": [
+                    "int"
+                ]
+            }
+        },
+        "global": {
+            "global": {
+                "WebSocketErrorModel": [
+                    "typing.Type"
+                ],
+                "RequestErrorModel": [
+                    "typing.Type"
+                ]
+            }
+        },
+        "RequestValidationError": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "body": [
+                    "typing.Optional[typing.Any]"
+                ],
+                "errors": [
+                    "list[Error]"
+                ]
+            }
+        },
+        "WebSocketException": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "code": [
+                    "int"
+                ],
+                "reason": [
+                    "typing.Optional[str]"
+                ]
+            }
+        },
+        "ValidationException": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "errors": [
+                    "list[Error]"
+                ]
+            },
+            "errors": {
+                "return": [
+                    "list[Error]"
+                ]
+            }
+        }
+    },
+    "fastapi.background": {
+        "BackgroundTasks": {
+            "add_task": {
+                "return": [
+                    "Task"
+                ],
+                "args": [
+                    "list[typing.Any]"
+                ],
+                "func": [
+                    "typing.Callable"
+                ],
+                "kwargs": [
+                    "dict"
+                ]
+            }
+        }
+    },
+    "fastapi.security.base": {
+        "SecurityBase": {
+            "global": {
+                "scheme_name": [
+                    "str"
+                ],
+                "model": [
+                    "SecurityModel"
+                ]
+            }
+        }
+    }
+}

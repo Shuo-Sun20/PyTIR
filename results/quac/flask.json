@@ -1,0 +1,3674 @@
+{
+    "flask.app": {
+        "global": {
+            "_make_timedelta": {
+                "value": [
+                    "datetime.timedelta"
+                ],
+                "return": [
+                    "datetime.timedelta"
+                ]
+            }
+        },
+        "Flask": {
+            "__init__": {
+                "import_name": [],
+                "static_url_path": [],
+                "static_folder": [
+                    "builtins.str"
+                ],
+                "static_host": [
+                    "builtins.object"
+                ],
+                "host_matching": [
+                    "builtins.int"
+                ],
+                "subdomain_matching": [
+                    "builtins.bool"
+                ],
+                "template_folder": [
+                    "builtins.str"
+                ],
+                "instance_path": [],
+                "instance_relative_config": [
+                    "builtins.bool"
+                ],
+                "root_path": [],
+                "return": []
+            },
+            "get_send_file_max_age": {
+                "filename": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "send_static_file": {
+                "filename": [],
+                "return": []
+            },
+            "open_resource": {
+                "resource": [],
+                "mode": [
+                    "builtins.str"
+                ],
+                "encoding": [],
+                "return": [
+                    "typing.IO"
+                ]
+            },
+            "open_instance_resource": {
+                "resource": [],
+                "mode": [
+                    "builtins.str"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.IO"
+                ]
+            },
+            "create_jinja_environment": {
+                "return": [
+                    "jinja2.environment.Environment"
+                ]
+            },
+            "create_url_adapter": {
+                "request": [
+                    "werkzeug.sansio.request.Request"
+                ],
+                "return": []
+            },
+            "raise_routing_exception": {
+                "request": [
+                    "werkzeug.routing.exceptions.BuildError"
+                ],
+                "return": []
+            },
+            "update_template_context": {
+                "context": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "make_shell_context": {
+                "return": [
+                    "builtins.dict[builtins.str, flask.app.Flask]"
+                ]
+            },
+            "run": {
+                "host": [
+                    "builtins.str"
+                ],
+                "port": [
+                    "builtins.int"
+                ],
+                "debug": [
+                    "builtins.object"
+                ],
+                "load_dotenv": [
+                    "builtins.bool"
+                ],
+                "options": [],
+                "return": []
+            },
+            "test_client": {
+                "use_cookies": [
+                    "builtins.bool"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "test_cli_runner": {
+                "kwargs": [],
+                "return": []
+            },
+            "handle_http_exception": {
+                "e": [
+                    "pytz.exceptions.Error"
+                ],
+                "return": [
+                    "pytz.exceptions.Error"
+                ]
+            },
+            "handle_user_exception": {
+                "e": [
+                    "werkzeug.exceptions.BadRequestKeyError"
+                ],
+                "return": [
+                    "pytz.exceptions.Error"
+                ]
+            },
+            "handle_exception": {
+                "e": [],
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            },
+            "log_exception": {
+                "exc_info": [],
+                "return": []
+            },
+            "dispatch_request": {
+                "return": [
+                    "werkzeug.sansio.response.Response"
+                ]
+            },
+            "full_dispatch_request": {
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            },
+            "finalize_request": {
+                "rv": [
+                    "werkzeug.wrappers.response.Response"
+                ],
+                "from_error_handler": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            },
+            "make_default_options_response": {
+                "return": [
+                    "werkzeug.sansio.response.Response"
+                ]
+            },
+            "ensure_sync": {
+                "func": [],
+                "return": []
+            },
+            "async_to_sync": {
+                "func": [],
+                "return": []
+            },
+            "url_for": {
+                "endpoint": [
+                    "builtins.str"
+                ],
+                "_anchor": [
+                    "builtins.str"
+                ],
+                "_method": [],
+                "_scheme": [],
+                "_external": [
+                    "builtins.bool"
+                ],
+                "values": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "make_response": {
+                "rv": [
+                    "werkzeug.wrappers.response.Response"
+                ],
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            },
+            "preprocess_request": {
+                "return": []
+            },
+            "process_response": {
+                "response": [],
+                "return": []
+            },
+            "do_teardown_request": {
+                "exc": [],
+                "return": []
+            },
+            "do_teardown_appcontext": {
+                "exc": [],
+                "return": []
+            },
+            "app_context": {
+                "return": [
+                    "flask.ctx.AppContext"
+                ]
+            },
+            "request_context": {
+                "environ": [],
+                "return": [
+                    "flask.ctx.RequestContext"
+                ]
+            },
+            "test_request_context": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "flask.ctx.RequestContext"
+                ]
+            },
+            "wsgi_app": {
+                "environ": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "start_response": [],
+                "return": []
+            },
+            "__call__": {
+                "environ": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "start_response": [],
+                "return": []
+            }
+        }
+    },
+    "flask.blueprints": {
+        "Blueprint": {
+            "__init__": {
+                "name": [],
+                "import_name": [],
+                "static_folder": [],
+                "static_url_path": [],
+                "template_folder": [],
+                "url_prefix": [],
+                "subdomain": [],
+                "url_defaults": [],
+                "root_path": [],
+                "cli_group": [],
+                "return": []
+            },
+            "get_send_file_max_age": {
+                "filename": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "send_static_file": {
+                "filename": [],
+                "return": []
+            },
+            "open_resource": {
+                "resource": [],
+                "mode": [
+                    "builtins.str"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.IO"
+                ]
+            }
+        }
+    },
+    "flask.cli": {
+        "global": {
+            "find_best_app": {
+                "module": [],
+                "return": []
+            },
+            "_called_with_wrong_args": {
+                "f": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "find_app_by_string": {
+                "module": [],
+                "app_name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Any]]]]"
+                ]
+            },
+            "prepare_import": {
+                "path": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "locate_app": {
+                "module_name": [],
+                "app_name": [
+                    "builtins.str"
+                ],
+                "raise_if_not_found": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Any]]]]"
+                ]
+            },
+            "get_version": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "with_appcontext": {
+                "f": [
+                    "typing.Callable"
+                ],
+                "return": []
+            },
+            "_set_app": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "_set_debug": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "param": [
+                    "dataclasses._FIELD_BASE"
+                ],
+                "value": [],
+                "return": []
+            },
+            "_env_file_callback": {
+                "ctx": [
+                    "dataclasses.FrozenInstanceError"
+                ],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "_path_is_ancestor": {
+                "path": [
+                    "typing.Sized"
+                ],
+                "other": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": []
+            },
+            "load_dotenv": {
+                "path": [],
+                "load_defaults": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "show_server_banner": {
+                "debug": [],
+                "app_import_path": [],
+                "return": []
+            },
+            "_validate_key": {
+                "ctx": [
+                    "click.core.Command"
+                ],
+                "param": [],
+                "value": [],
+                "return": []
+            },
+            "run_command": {
+                "info": [
+                    "flask.cli.ScriptInfo"
+                ],
+                "host": [],
+                "port": [],
+                "reload": [
+                    "builtins.bool"
+                ],
+                "debugger": [
+                    "builtins.bool"
+                ],
+                "with_threads": [],
+                "cert": [],
+                "extra_files": [],
+                "exclude_patterns": [],
+                "return": []
+            },
+            "shell_command": {
+                "return": []
+            },
+            "routes_command": {
+                "sort": [],
+                "all_methods": [],
+                "return": []
+            },
+            "main": {
+                "return": []
+            }
+        },
+        "ScriptInfo": {
+            "__init__": {
+                "app_import_path": [],
+                "create_app": [],
+                "set_debug_flag": [
+                    "builtins.bool"
+                ],
+                "load_dotenv_defaults": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "load_app": {
+                "return": [
+                    "logging.LoggerAdapter"
+                ]
+            }
+        },
+        "AppGroup": {
+            "command": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Callable[[typing.Callable], typing.Any]"
+                ]
+            },
+            "group": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "FlaskGroup": {
+            "__init__": {
+                "add_default_commands": [
+                    "builtins.bool"
+                ],
+                "create_app": [],
+                "add_version_option": [
+                    "builtins.bool"
+                ],
+                "load_dotenv": [
+                    "builtins.bool"
+                ],
+                "set_debug_flag": [
+                    "builtins.bool"
+                ],
+                "extra": [],
+                "return": []
+            },
+            "_load_plugin_commands": {
+                "return": []
+            },
+            "get_command": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "name": [],
+                "return": []
+            },
+            "list_commands": {
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "make_context": {
+                "info_name": [],
+                "args": [],
+                "parent": [],
+                "extra": [],
+                "return": []
+            },
+            "parse_args": {
+                "ctx": [],
+                "args": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": []
+            }
+        },
+        "CertParamType": {
+            "__init__": {
+                "return": []
+            },
+            "convert": {
+                "value": [
+                    "builtins.str"
+                ],
+                "param": [],
+                "ctx": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "SeparatedPathType": {
+            "convert": {
+                "value": [],
+                "param": [],
+                "ctx": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "flask.config": {
+        "ConfigAttribute": {
+            "__init__": {
+                "name": [],
+                "get_converter": [],
+                "return": []
+            },
+            "__get__": {
+                "obj": [
+                    "flask.sansio.app.App"
+                ],
+                "owner": [],
+                "return": [
+                    "flask.config.ConfigAttribute"
+                ]
+            },
+            "__set__": {
+                "obj": [
+                    "flask.sansio.app.App"
+                ],
+                "value": [],
+                "return": []
+            }
+        },
+        "Config": {
+            "__init__": {
+                "root_path": [],
+                "defaults": [],
+                "return": []
+            },
+            "from_envvar": {
+                "variable_name": [],
+                "silent": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "from_prefixed_env": {
+                "prefix": [
+                    "builtins.str"
+                ],
+                "loads": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "from_pyfile": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "silent": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "from_object": {
+                "obj": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "from_file": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "load": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "silent": [
+                    "builtins.bool"
+                ],
+                "text": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "from_mapping": {
+                "mapping": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_namespace": {
+                "namespace": [
+                    "typing.Sized"
+                ],
+                "lowercase": [
+                    "builtins.bool"
+                ],
+                "trim_namespace": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.dict[typing.Sequence[typing.Any], typing.Any]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "flask.ctx": {
+        "global": {
+            "after_this_request": {
+                "f": [],
+                "return": []
+            },
+            "copy_current_request_context": {
+                "f": [
+                    "typing.Callable"
+                ],
+                "return": []
+            },
+            "has_request_context": {
+                "return": []
+            },
+            "has_app_context": {
+                "return": []
+            }
+        },
+        "_AppCtxGlobals": {
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__setattr__": {
+                "name": [],
+                "value": [],
+                "return": []
+            },
+            "__delattr__": {
+                "name": [],
+                "return": []
+            },
+            "get": {
+                "name": [],
+                "default": [],
+                "return": []
+            },
+            "pop": {
+                "name": [],
+                "default": [
+                    "builtins.object"
+                ],
+                "return": []
+            },
+            "setdefault": {
+                "name": [],
+                "default": [],
+                "return": []
+            },
+            "__contains__": {
+                "item": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "AppContext": {
+            "__init__": {
+                "app": [
+                    "flask.app.Flask"
+                ],
+                "return": []
+            },
+            "push": {
+                "return": []
+            },
+            "pop": {
+                "exc": [
+                    "builtins.object"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "flask.ctx.AppContext"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [
+                    "builtins.object"
+                ],
+                "tb": [],
+                "return": []
+            }
+        },
+        "RequestContext": {
+            "__init__": {
+                "app": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "environ": [],
+                "request": [
+                    "werkzeug.wrappers.response.Response"
+                ],
+                "session": [],
+                "return": []
+            },
+            "copy": {
+                "return": []
+            },
+            "match_request": {
+                "return": []
+            },
+            "push": {
+                "return": []
+            },
+            "pop": {
+                "exc": [
+                    "builtins.object"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "flask.ctx.RequestContext"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [
+                    "builtins.object"
+                ],
+                "tb": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "flask.debughelpers": {
+        "global": {
+            "attach_enctype_error_multidict": {
+                "request": [
+                    "werkzeug.test.EnvironBuilder"
+                ],
+                "return": []
+            },
+            "_dump_loader_info": {
+                "loader": [],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "explain_template_loading_attempts": {
+                "app": [
+                    "logging.LoggerAdapter"
+                ],
+                "template": [],
+                "attempts": [],
+                "return": []
+            }
+        },
+        "DebugFilesKeyError": {
+            "__init__": {
+                "request": [
+                    "werkzeug.test.EnvironBuilder"
+                ],
+                "key": [],
+                "return": []
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "FormDataRoutingRedirect": {
+            "__init__": {
+                "request": [
+                    "flask.wrappers.Request"
+                ],
+                "return": []
+            }
+        }
+    },
+    "flask.helpers": {
+        "global": {
+            "get_debug_flag": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_load_dotenv": {
+                "default": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "stream_with_context": {
+                "generator_or_function": [
+                    "typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Callable[..., typing.Any]]]]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "make_response": {
+                "args": [],
+                "return": []
+            },
+            "url_for": {
+                "endpoint": [],
+                "_anchor": [],
+                "_method": [],
+                "_scheme": [],
+                "_external": [],
+                "values": [],
+                "return": []
+            },
+            "redirect": {
+                "location": [],
+                "code": [
+                    "builtins.int"
+                ],
+                "Response": [],
+                "return": []
+            },
+            "abort": {
+                "code": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "get_template_attribute": {
+                "template_name": [],
+                "attribute": [],
+                "return": []
+            },
+            "flash": {
+                "message": [],
+                "category": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_flashed_messages": {
+                "with_categories": [
+                    "builtins.bool"
+                ],
+                "category_filter": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.list[_typeshed.SupportsGetItem[builtins.int, typing.Any]]"
+                ]
+            },
+            "_prepare_send_file_kwargs": {
+                "kwargs": [],
+                "return": [
+                    "typing.MutableMapping[builtins.str, typing.Any]"
+                ]
+            },
+            "send_file": {
+                "path_or_file": [],
+                "mimetype": [],
+                "as_attachment": [
+                    "builtins.bool"
+                ],
+                "download_name": [],
+                "conditional": [
+                    "builtins.bool"
+                ],
+                "etag": [
+                    "builtins.bool"
+                ],
+                "last_modified": [],
+                "max_age": [],
+                "return": []
+            },
+            "send_from_directory": {
+                "directory": [],
+                "path": [],
+                "kwargs": [],
+                "return": []
+            },
+            "get_root_path": {
+                "import_name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_split_blueprint_path": {
+                "name": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.list[typing.Collection[builtins.str]]"
+                ]
+            }
+        }
+    },
+    "flask.logging": {
+        "global": {
+            "wsgi_errors_stream": {
+                "return": [
+                    "io.TextIOWrapper"
+                ]
+            },
+            "has_level_handler": {
+                "logger": [
+                    "logging.Logger"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "create_logger": {
+                "app": [
+                    "logging.LoggerAdapter"
+                ],
+                "return": [
+                    "logging.Logger"
+                ]
+            }
+        }
+    },
+    "flask.sessions": {
+        "global": {
+            "_lazy_sha1": {
+                "string": [
+                    "builtins.bytes"
+                ],
+                "return": []
+            }
+        },
+        "SessionMixin": {
+            "permanent": {
+                "value": [
+                    "builtins.object"
+                ],
+                "return": []
+            }
+        },
+        "SecureCookieSession": {
+            "__init__": {
+                "initial": [],
+                "return": []
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "get": {
+                "key": [],
+                "default": [],
+                "return": []
+            },
+            "setdefault": {
+                "key": [],
+                "default": [],
+                "return": []
+            }
+        },
+        "NullSession": {
+            "_fail": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "SessionInterface": {
+            "make_null_session": {
+                "app": [],
+                "return": []
+            },
+            "is_null_session": {
+                "obj": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_cookie_name": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_domain": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_path": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_httponly": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_secure": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_samesite": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_cookie_partitioned": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "get_expiration_time": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "session": [
+                    "flask.sessions.SessionMixin"
+                ],
+                "return": [
+                    "datetime.datetime"
+                ]
+            },
+            "should_set_cookie": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "session": [
+                    "flask.sessions.SessionMixin"
+                ],
+                "return": []
+            },
+            "open_session": {
+                "app": [],
+                "request": [],
+                "return": []
+            },
+            "save_session": {
+                "app": [],
+                "session": [],
+                "response": [],
+                "return": []
+            }
+        },
+        "SecureCookieSessionInterface": {
+            "get_signing_serializer": {
+                "app": [
+                    "itsdangerous.serializer.Serializer"
+                ],
+                "return": [
+                    "itsdangerous.url_safe.URLSafeTimedSerializer"
+                ]
+            },
+            "open_session": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "request": [
+                    "werkzeug.sansio.request.Request"
+                ],
+                "return": []
+            },
+            "save_session": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "session": [
+                    "flask.sessions.SessionMixin"
+                ],
+                "response": [
+                    "werkzeug.sansio.response.Response"
+                ],
+                "return": []
+            }
+        }
+    },
+    "flask.templating": {
+        "global": {
+            "_default_template_ctx_processor": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "_render": {
+                "app": [
+                    "flask.app.Flask"
+                ],
+                "template": [
+                    "jinja2.environment.Template"
+                ],
+                "context": [],
+                "return": []
+            },
+            "render_template": {
+                "template_name_or_list": [],
+                "context": [],
+                "return": []
+            },
+            "render_template_string": {
+                "source": [],
+                "context": [],
+                "return": []
+            },
+            "_stream": {
+                "app": [
+                    "flask.app.Flask"
+                ],
+                "template": [
+                    "jinja2.environment.Template"
+                ],
+                "context": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "stream_template": {
+                "template_name_or_list": [],
+                "context": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "stream_template_string": {
+                "source": [],
+                "context": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Environment": {
+            "__init__": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "options": [],
+                "return": []
+            }
+        },
+        "DispatchingJinjaLoader": {
+            "__init__": {
+                "app": [],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [],
+                "return": []
+            },
+            "_get_source_explained": {
+                "environment": [],
+                "template": [],
+                "return": []
+            },
+            "_get_source_fast": {
+                "environment": [],
+                "template": [],
+                "return": []
+            },
+            "_iter_loaders": {
+                "template": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[flask.sansio.scaffold.Scaffold, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "flask.testing": {
+        "global": {
+            "_get_werkzeug_version": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "EnvironBuilder": {
+            "__init__": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "path": [
+                    "builtins.str"
+                ],
+                "base_url": [
+                    "builtins.str"
+                ],
+                "subdomain": [],
+                "url_scheme": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "json_dumps": {
+                "obj": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "FlaskClient": {
+            "__init__": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "session_transaction": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_copy_environ": {
+                "other": [],
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "_request_from_builder_args": {
+                "args": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "kwargs": [
+                    "typing.MutableMapping[builtins.str, builtins.dict[builtins.str, typing.Any]]"
+                ],
+                "return": []
+            },
+            "open": {
+                "args": [],
+                "buffered": [
+                    "builtins.bool"
+                ],
+                "follow_redirects": [
+                    "builtins.bool"
+                ],
+                "kwargs": [],
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "flask.testing.FlaskClient"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [],
+                "tb": [],
+                "return": []
+            }
+        },
+        "FlaskCliRunner": {
+            "__init__": {
+                "app": [],
+                "kwargs": [],
+                "return": []
+            },
+            "invoke": {
+                "cli": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "flask.views": {
+        "View": {
+            "dispatch_request": {
+                "return": []
+            },
+            "as_view": {
+                "name": [],
+                "class_args": [],
+                "class_kwargs": [],
+                "return": [
+                    "flask.views.View"
+                ]
+            }
+        },
+        "MethodView": {
+            "__init_subclass__": {
+                "kwargs": [],
+                "return": []
+            },
+            "dispatch_request": {
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "flask.wrappers": {
+        "Request": {
+            "max_content_length": {
+                "value": [],
+                "return": []
+            },
+            "max_form_memory_size": {
+                "value": [],
+                "return": []
+            },
+            "max_form_parts": {
+                "value": [],
+                "return": []
+            },
+            "endpoint": {
+                "return": []
+            },
+            "blueprint": {
+                "return": []
+            },
+            "blueprints": {
+                "return": [
+                    "builtins.list[typing.Collection[builtins.str]]"
+                ]
+            },
+            "_load_form_data": {
+                "return": []
+            },
+            "on_json_loading_failed": {
+                "e": [],
+                "return": []
+            }
+        },
+        "Response": {
+            "max_cookie_size": {
+                "return": []
+            }
+        }
+    },
+    "flask.json": {
+        "global": {
+            "dumps": {
+                "obj": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "dump": {
+                "obj": [],
+                "fp": [
+                    "_typeshed.SupportsWrite"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "loads": {
+                "s": [],
+                "kwargs": [],
+                "return": []
+            },
+            "load": {
+                "fp": [
+                    "_typeshed.SupportsRead"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "jsonify": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "flask.json.provider": {
+        "global": {
+            "_default": {
+                "o": [
+                    "decimal.Decimal"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "JSONProvider": {
+            "__init__": {
+                "app": [],
+                "return": []
+            },
+            "dumps": {
+                "obj": [],
+                "kwargs": [],
+                "return": []
+            },
+            "dump": {
+                "obj": [],
+                "fp": [
+                    "_typeshed.SupportsWrite"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "loads": {
+                "s": [],
+                "kwargs": [],
+                "return": []
+            },
+            "load": {
+                "fp": [
+                    "_typeshed.SupportsRead"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "_prepare_response_obj": {
+                "args": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "response": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "DefaultJSONProvider": {
+            "dumps": {
+                "obj": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "loads": {
+                "s": [],
+                "kwargs": [],
+                "return": []
+            },
+            "response": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "flask.json.tag": {
+        "JSONTag": {
+            "__init__": {
+                "serializer": [],
+                "return": []
+            },
+            "check": {
+                "value": [],
+                "return": []
+            },
+            "to_json": {
+                "value": [],
+                "return": []
+            },
+            "to_python": {
+                "value": [],
+                "return": []
+            },
+            "tag": {
+                "value": [],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "TagDict": {
+            "check": {
+                "value": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "to_json": {
+                "value": [
+                    "_typeshed.SupportsGetItem[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "to_python": {
+                "value": [
+                    "_typeshed.SupportsGetItem[typing.Sequence[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "builtins.dict[typing.Sequence[typing.Any], typing.Any]"
+                ]
+            }
+        },
+        "PassDict": {
+            "check": {
+                "value": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "TagTuple": {
+            "check": {
+                "value": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "to_python": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            }
+        },
+        "PassList": {
+            "check": {
+                "value": [
+                    "builtins.list[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "TagBytes": {
+            "check": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "to_python": {
+                "value": [],
+                "return": [
+                    "builtins.bytes"
+                ]
+            }
+        },
+        "TagMarkup": {
+            "check": {
+                "value": [
+                    "markupsafe.Markup"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "markupsafe.Markup"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "to_python": {
+                "value": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        },
+        "TagUUID": {
+            "check": {
+                "value": [
+                    "uuid.UUID"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [
+                    "uuid.UUID"
+                ],
+                "return": []
+            },
+            "to_python": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "uuid.UUID"
+                ]
+            }
+        },
+        "TagDateTime": {
+            "check": {
+                "value": [
+                    "datetime.datetime"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "to_json": {
+                "value": [],
+                "return": []
+            },
+            "to_python": {
+                "value": [],
+                "return": []
+            }
+        },
+        "TaggedJSONSerializer": {
+            "__init__": {
+                "return": []
+            },
+            "register": {
+                "tag_class": [
+                    "typing.Callable[[flask.json.tag.TaggedJSONSerializer], weakref.KeyedRef]"
+                ],
+                "force": [
+                    "builtins.bool"
+                ],
+                "index": [],
+                "return": []
+            },
+            "tag": {
+                "value": [],
+                "return": []
+            },
+            "untag": {
+                "value": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "return": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ]
+            },
+            "_untag_scan": {
+                "value": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ],
+                "return": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ]
+            },
+            "dumps": {
+                "value": [],
+                "return": []
+            },
+            "loads": {
+                "value": [
+                    "flask.json.tag.TaggedJSONSerializer"
+                ],
+                "return": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ]
+            }
+        }
+    },
+    "flask.sansio.app": {
+        "global": {
+            "_make_timedelta": {
+                "value": [
+                    "datetime.timedelta"
+                ],
+                "return": [
+                    "datetime.timedelta"
+                ]
+            }
+        },
+        "App": {
+            "__init__": {
+                "import_name": [],
+                "static_url_path": [],
+                "static_folder": [
+                    "builtins.str"
+                ],
+                "static_host": [],
+                "host_matching": [
+                    "builtins.bool"
+                ],
+                "subdomain_matching": [
+                    "builtins.bool"
+                ],
+                "template_folder": [
+                    "builtins.str"
+                ],
+                "instance_path": [],
+                "instance_relative_config": [
+                    "builtins.bool"
+                ],
+                "root_path": [],
+                "return": []
+            },
+            "_check_setup_finished": {
+                "f_name": [],
+                "return": []
+            },
+            "name": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "logger": {
+                "return": [
+                    "logging.Logger"
+                ]
+            },
+            "jinja_env": {
+                "return": []
+            },
+            "create_jinja_environment": {
+                "return": []
+            },
+            "make_config": {
+                "instance_relative": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "make_aborter": {
+                "return": []
+            },
+            "auto_find_instance_path": {
+                "return": []
+            },
+            "create_global_jinja_loader": {
+                "return": [
+                    "flask.templating.DispatchingJinjaLoader"
+                ]
+            },
+            "select_jinja_autoescape": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "debug": {
+                "value": [],
+                "return": []
+            },
+            "register_blueprint": {
+                "blueprint": [
+                    "flask.json.tag.TaggedJSONSerializer"
+                ],
+                "options": [],
+                "return": []
+            },
+            "iter_blueprints": {
+                "return": []
+            },
+            "add_url_rule": {
+                "rule": [],
+                "endpoint": [],
+                "view_func": [
+                    "flask.views.View"
+                ],
+                "provide_automatic_options": [
+                    "builtins.bool"
+                ],
+                "options": [],
+                "return": []
+            },
+            "template_filter": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_template_filter": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "template_test": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_template_test": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "template_global": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_template_global": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "teardown_appcontext": {
+                "f": [],
+                "return": []
+            },
+            "shell_context_processor": {
+                "f": [],
+                "return": []
+            },
+            "_find_error_handler": {
+                "e": [],
+                "blueprints": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "trap_http_exception": {
+                "e": [
+                    "werkzeug.exceptions.BadRequestKeyError"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "should_ignore_error": {
+                "error": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "redirect": {
+                "location": [],
+                "code": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "inject_url_defaults": {
+                "endpoint": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "values": [],
+                "return": []
+            },
+            "handle_url_build_error": {
+                "error": [],
+                "endpoint": [],
+                "values": [],
+                "return": []
+            }
+        }
+    },
+    "flask.sansio.blueprints": {
+        "BlueprintSetupState": {
+            "__init__": {
+                "blueprint": [
+                    "dataclasses._FIELD_BASE"
+                ],
+                "app": [],
+                "options": [],
+                "first_registration": [],
+                "return": []
+            },
+            "add_url_rule": {
+                "rule": [
+                    "builtins.str"
+                ],
+                "endpoint": [],
+                "view_func": [],
+                "options": [],
+                "return": []
+            }
+        },
+        "Blueprint": {
+            "__init__": {
+                "name": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "import_name": [],
+                "static_folder": [],
+                "static_url_path": [],
+                "template_folder": [],
+                "url_prefix": [],
+                "subdomain": [],
+                "url_defaults": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "root_path": [],
+                "cli_group": [],
+                "return": []
+            },
+            "_check_setup_finished": {
+                "f_name": [],
+                "return": []
+            },
+            "record": {
+                "func": [],
+                "return": []
+            },
+            "record_once": {
+                "func": [
+                    "typing.Callable[[flask.sansio.blueprints.BlueprintSetupState], typing.Any]"
+                ],
+                "return": []
+            },
+            "make_setup_state": {
+                "app": [],
+                "options": [],
+                "first_registration": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "flask.sansio.blueprints.BlueprintSetupState"
+                ]
+            },
+            "register_blueprint": {
+                "blueprint": [],
+                "options": [],
+                "return": []
+            },
+            "register": {
+                "app": [
+                    "flask.sansio.scaffold.Scaffold"
+                ],
+                "options": [
+                    "platform._Processor"
+                ],
+                "return": []
+            },
+            "_merge_blueprint_funcs": {
+                "app": [
+                    "flask.sansio.scaffold.Scaffold"
+                ],
+                "name": [],
+                "return": []
+            },
+            "add_url_rule": {
+                "rule": [],
+                "endpoint": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "view_func": [],
+                "provide_automatic_options": [],
+                "options": [],
+                "return": []
+            },
+            "app_template_filter": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_app_template_filter": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "app_template_test": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_app_template_test": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "app_template_global": {
+                "name": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_app_template_global": {
+                "f": [],
+                "name": [],
+                "return": []
+            },
+            "before_app_request": {
+                "f": [],
+                "return": []
+            },
+            "after_app_request": {
+                "f": [],
+                "return": []
+            },
+            "teardown_app_request": {
+                "f": [],
+                "return": []
+            },
+            "app_context_processor": {
+                "f": [],
+                "return": []
+            },
+            "app_errorhandler": {
+                "code": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "app_url_value_preprocessor": {
+                "f": [],
+                "return": []
+            },
+            "app_url_defaults": {
+                "f": [],
+                "return": []
+            }
+        }
+    },
+    "flask.sansio.scaffold": {
+        "global": {
+            "setupmethod": {
+                "f": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "return": []
+            },
+            "_endpoint_from_view_func": {
+                "view_func": [],
+                "return": []
+            },
+            "_find_package_path": {
+                "import_name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "find_package": {
+                "import_name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.str]"
+                ]
+            }
+        },
+        "Scaffold": {
+            "__init__": {
+                "import_name": [],
+                "static_folder": [],
+                "static_url_path": [],
+                "template_folder": [],
+                "root_path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_check_setup_finished": {
+                "f_name": [],
+                "return": []
+            },
+            "static_folder": {
+                "value": [],
+                "return": []
+            },
+            "has_static_folder": {
+                "return": []
+            },
+            "static_url_path": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "jinja_loader": {
+                "return": [
+                    "jinja2.loaders.FileSystemLoader"
+                ]
+            },
+            "_method_route": {
+                "method": [],
+                "rule": [],
+                "options": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "get": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "post": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "put": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "delete": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "patch": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "route": {
+                "rule": [],
+                "options": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "add_url_rule": {
+                "rule": [],
+                "endpoint": [],
+                "view_func": [],
+                "provide_automatic_options": [],
+                "options": [],
+                "return": []
+            },
+            "endpoint": {
+                "endpoint": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "before_request": {
+                "f": [],
+                "return": []
+            },
+            "after_request": {
+                "f": [],
+                "return": []
+            },
+            "teardown_request": {
+                "f": [],
+                "return": []
+            },
+            "context_processor": {
+                "f": [],
+                "return": []
+            },
+            "url_value_preprocessor": {
+                "f": [],
+                "return": []
+            },
+            "url_defaults": {
+                "f": [],
+                "return": []
+            },
+            "errorhandler": {
+                "code_or_exception": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "register_error_handler": {
+                "code_or_exception": [
+                    "builtins.int"
+                ],
+                "f": [],
+                "return": []
+            },
+            "_get_exc_class_and_code": {
+                "exc_class_or_code": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, typing.Any]"
+                ]
+            }
+        }
+    },
+    "flask_restful": {
+        "global": {
+            "abort": {
+                "http_status_code": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_get_propagate_exceptions_bool": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "return": []
+            },
+            "_handle_flask_propagate_exceptions_config": {
+                "app": [
+                    "flask.sansio.app.App"
+                ],
+                "e": [
+                    "werkzeug.exceptions.HTTPException"
+                ],
+                "return": []
+            },
+            "marshal": {
+                "data": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ],
+                "fields": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "envelope": [],
+                "return": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ]
+            }
+        },
+        "Api": {
+            "__init__": {
+                "app": [
+                    "flask.sansio.blueprints.Blueprint"
+                ],
+                "prefix": [
+                    "builtins.str"
+                ],
+                "default_mediatype": [
+                    "builtins.str"
+                ],
+                "decorators": [],
+                "catch_all_404s": [
+                    "builtins.bool"
+                ],
+                "serve_challenge_on_401": [
+                    "builtins.bool"
+                ],
+                "url_part_order": [
+                    "builtins.str"
+                ],
+                "errors": [],
+                "return": []
+            },
+            "init_app": {
+                "app": [
+                    "flask.sansio.blueprints.Blueprint"
+                ],
+                "return": []
+            },
+            "_complete_url": {
+                "url_part": [],
+                "registration_prefix": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_blueprint_setup_add_url_rule_patch": {
+                "blueprint_setup": [
+                    "flask.sansio.blueprints.BlueprintSetupState"
+                ],
+                "rule": [
+                    "typing.Callable[[typing.Any], typing.Callable[[typing.Any], typing.Callable[[typing.Any], typing.Callable[[typing.Any], typing.Any]]]]"
+                ],
+                "endpoint": [],
+                "view_func": [],
+                "options": [],
+                "return": []
+            },
+            "_deferred_blueprint_init": {
+                "setup_state": [
+                    "flask.sansio.blueprints.BlueprintSetupState"
+                ],
+                "return": []
+            },
+            "_init_app": {
+                "app": [
+                    "flask.sansio.scaffold.Scaffold"
+                ],
+                "return": []
+            },
+            "owns_endpoint": {
+                "endpoint": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_should_use_fr_error_handler": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_has_fr_route": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "error_router": {
+                "original_handler": [
+                    "typing.Callable[[werkzeug.exceptions.HTTPException], typing.Any]"
+                ],
+                "e": [
+                    "werkzeug.exceptions.HTTPException"
+                ],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            },
+            "handle_error": {
+                "e": [
+                    "werkzeug.exceptions.HTTPException"
+                ],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            },
+            "mediatypes_method": {
+                "return": [
+                    "typing.Callable[[typing.Any], builtins.list[typing.Any]]"
+                ]
+            },
+            "add_resource": {
+                "resource": [
+                    "flask.views.View"
+                ],
+                "urls": [],
+                "kwargs": [],
+                "return": []
+            },
+            "resource": {
+                "urls": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Callable[[flask.views.View], flask.views.View]"
+                ]
+            },
+            "_register_view": {
+                "app": [
+                    "flask.sansio.scaffold.Scaffold"
+                ],
+                "resource": [
+                    "flask.views.View"
+                ],
+                "urls": [],
+                "kwargs": [],
+                "return": []
+            },
+            "output": {
+                "resource": [
+                    "typing.Callable[..., werkzeug.wrappers.response.Response]"
+                ],
+                "return": [
+                    "typing.Callable[..., werkzeug.wrappers.response.Response]"
+                ]
+            },
+            "url_for": {
+                "resource": [
+                    "flask_restful.fields.Url"
+                ],
+                "values": [],
+                "return": []
+            },
+            "make_response": {
+                "data": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            },
+            "mediatypes": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "representation": {
+                "mediatype": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "unauthorized": {
+                "response": [
+                    "werkzeug.sansio.multipart.Field"
+                ],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            }
+        },
+        "Resource": {
+            "dispatch_request": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "werkzeug.wrappers.response.Response"
+                ]
+            }
+        },
+        "marshal_with": {
+            "__init__": {
+                "fields": [],
+                "envelope": [],
+                "return": []
+            },
+            "__call__": {
+                "f": [
+                    "typing.Callable[..., builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]]"
+                ],
+                "return": [
+                    "typing.Callable[..., builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]]"
+                ]
+            }
+        },
+        "marshal_with_field": {
+            "__init__": {
+                "field": [
+                    "builtins.type"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "f": [
+                    "typing.Callable[..., builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "typing.Callable[..., builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ]
+            }
+        }
+    },
+    "flask_restful.fields": {
+        "global": {
+            "is_indexable_but_not_string": {
+                "obj": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_value": {
+                "key": [
+                    "builtins.int"
+                ],
+                "obj": [],
+                "default": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_get_value_for_keys": {
+                "keys": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "obj": [],
+                "default": [],
+                "return": []
+            },
+            "_get_value_for_key": {
+                "key": [],
+                "obj": [
+                    "importlib.metadata._meta.PackageMetadata"
+                ],
+                "default": [],
+                "return": []
+            },
+            "to_marshallable_type": {
+                "obj": [
+                    "_typeshed.SupportsGetItem[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "_rfc822": {
+                "dt": [
+                    "datetime.datetime"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_iso8601": {
+                "dt": [
+                    "datetime.time"
+                ],
+                "return": []
+            }
+        },
+        "MarshallingException": {
+            "__init__": {
+                "underlying_exception": [],
+                "return": []
+            }
+        },
+        "Raw": {
+            "__init__": {
+                "default": [],
+                "attribute": [],
+                "return": []
+            },
+            "format": {
+                "value": [],
+                "return": []
+            },
+            "output": {
+                "key": [],
+                "obj": [],
+                "return": []
+            }
+        },
+        "Nested": {
+            "__init__": {
+                "nested": [],
+                "allow_null": [
+                    "builtins.bool"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "output": {
+                "key": [],
+                "obj": [],
+                "return": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]"
+                ]
+            }
+        },
+        "List": {
+            "__init__": {
+                "cls_or_instance": [
+                    "builtins.type"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "format": {
+                "value": [
+                    "builtins.set[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "output": {
+                "key": [],
+                "data": [],
+                "return": [
+                    "builtins.list[builtins.list[builtins.list[builtins.list[builtins.list[typing.Any]]]]]"
+                ]
+            }
+        },
+        "String": {
+            "format": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Integer": {
+            "__init__": {
+                "default": [
+                    "builtins.int"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "format": {
+                "value": [],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        },
+        "Boolean": {
+            "format": {
+                "value": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "FormattedString": {
+            "__init__": {
+                "src_str": [],
+                "return": []
+            },
+            "output": {
+                "key": [],
+                "obj": [
+                    "_typeshed.SupportsGetItem[typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "Url": {
+            "__init__": {
+                "endpoint": [],
+                "absolute": [
+                    "builtins.bool"
+                ],
+                "scheme": [],
+                "kwargs": [],
+                "return": []
+            },
+            "output": {
+                "key": [],
+                "obj": [
+                    "_typeshed.SupportsGetItem[typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "Float": {
+            "format": {
+                "value": [],
+                "return": [
+                    "builtins.float"
+                ]
+            }
+        },
+        "Arbitrary": {
+            "format": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "DateTime": {
+            "__init__": {
+                "dt_format": [
+                    "builtins.str"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "format": {
+                "value": [],
+                "return": []
+            }
+        },
+        "Fixed": {
+            "__init__": {
+                "decimals": [
+                    "builtins.int"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "format": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "flask_restful.inputs": {
+        "global": {
+            "url": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_normalize_interval": {
+                "start": [
+                    "datetime.datetime"
+                ],
+                "end": [
+                    "datetime.datetime"
+                ],
+                "value": [],
+                "return": [
+                    "builtins.tuple[datetime.datetime, datetime.datetime]"
+                ]
+            },
+            "_expand_datetime": {
+                "start": [
+                    "datetime.datetime"
+                ],
+                "value": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "datetime.datetime"
+                ]
+            },
+            "_parse_interval": {
+                "value": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "iso8601interval": {
+                "value": [
+                    "re.Pattern"
+                ],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[datetime.datetime, datetime.datetime]"
+                ]
+            },
+            "date": {
+                "value": [],
+                "return": [
+                    "datetime.datetime"
+                ]
+            },
+            "_get_integer": {
+                "value": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "natural": {
+                "value": [
+                    "builtins.int"
+                ],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "positive": {
+                "value": [
+                    "builtins.int"
+                ],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "boolean": {
+                "value": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "datetime_from_rfc822": {
+                "datetime_str": [],
+                "return": [
+                    "datetime.datetime"
+                ]
+            },
+            "datetime_from_iso8601": {
+                "datetime_str": [],
+                "return": []
+            }
+        },
+        "regex": {
+            "__init__": {
+                "pattern": [],
+                "flags": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "value": [],
+                "return": []
+            },
+            "__deepcopy__": {
+                "memo": [],
+                "return": [
+                    "flask_restful.inputs.regex"
+                ]
+            }
+        },
+        "int_range": {
+            "__init__": {
+                "low": [],
+                "high": [],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "value": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "flask_restful.reqparse": {
+        "Namespace": {
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "__setattr__": {
+                "name": [],
+                "value": [],
+                "return": []
+            }
+        },
+        "Argument": {
+            "__init__": {
+                "name": [],
+                "default": [],
+                "dest": [],
+                "required": [
+                    "builtins.bool"
+                ],
+                "ignore": [
+                    "builtins.bool"
+                ],
+                "type": [
+                    "typing.Callable[[typing.Any], builtins.str]"
+                ],
+                "location": [
+                    "builtins.tuple[builtins.str, builtins.str]"
+                ],
+                "choices": [
+                    "builtins.tuple"
+                ],
+                "action": [
+                    "builtins.str"
+                ],
+                "help": [],
+                "operators": [
+                    "builtins.tuple[builtins.str]"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "store_missing": [
+                    "builtins.bool"
+                ],
+                "trim": [
+                    "builtins.bool"
+                ],
+                "nullable": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "source": {
+                "request": [],
+                "return": [
+                    "werkzeug.datastructures.structures.MultiDict"
+                ]
+            },
+            "convert": {
+                "value": [
+                    "werkzeug.datastructures.file_storage.FileStorage"
+                ],
+                "op": [],
+                "return": [
+                    "werkzeug.datastructures.file_storage.FileStorage"
+                ]
+            },
+            "handle_validation_error": {
+                "error": [],
+                "bundle_errors": [],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.dict[typing.Any, builtins.str]]"
+                ]
+            },
+            "parse": {
+                "request": [],
+                "bundle_errors": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.list[typing.Any], builtins.int]"
+                ]
+            }
+        },
+        "RequestParser": {
+            "__init__": {
+                "argument_class": [
+                    "builtins.type"
+                ],
+                "namespace_class": [
+                    "builtins.type"
+                ],
+                "trim": [
+                    "builtins.bool"
+                ],
+                "bundle_errors": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "add_argument": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "flask_restful.reqparse.RequestParser"
+                ]
+            },
+            "parse_args": {
+                "req": [],
+                "strict": [
+                    "builtins.bool"
+                ],
+                "http_error_code": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "_typeshed.SupportsItemAccess[typing.Any, werkzeug.routing.exceptions.RoutingException]"
+                ]
+            },
+            "copy": {
+                "return": [
+                    "flask_restful.reqparse.RequestParser"
+                ]
+            },
+            "replace_argument": {
+                "name": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "flask_restful.reqparse.RequestParser"
+                ]
+            },
+            "remove_argument": {
+                "name": [],
+                "return": [
+                    "flask_restful.reqparse.RequestParser"
+                ]
+            }
+        }
+    },
+    "flask_restful.representations.json": {
+        "global": {
+            "output_json": {
+                "data": [],
+                "code": [],
+                "headers": [],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            }
+        }
+    },
+    "flask_restful.utils": {
+        "global": {
+            "http_status_message": {
+                "code": [],
+                "return": []
+            },
+            "unpack": {
+                "value": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.tuple[typing.Any, typing.Any, typing.Any], builtins.int, builtins.dict[typing.Any, typing.Any]]"
+                ]
+            }
+        }
+    },
+    "flask_restful.utils.cors": {
+        "global": {
+            "crossdomain": {
+                "origin": [
+                    "builtins.str"
+                ],
+                "methods": [
+                    "builtins.str"
+                ],
+                "headers": [
+                    "builtins.str"
+                ],
+                "expose_headers": [
+                    "builtins.str"
+                ],
+                "max_age": [
+                    "builtins.int"
+                ],
+                "attach_to_all": [
+                    "builtins.bool"
+                ],
+                "automatic_options": [
+                    "builtins.bool"
+                ],
+                "credentials": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Callable[[flask.views.View], typing.Any]"
+                ]
+            }
+        }
+    },
+    "flask_restful.utils.crypto": {
+        "global": {
+            "pad": {
+                "data": [],
+                "return": []
+            },
+            "strip": {
+                "data": [],
+                "return": []
+            },
+            "create_cipher": {
+                "key": [],
+                "seed": [],
+                "return": []
+            },
+            "encrypt": {
+                "plaintext_data": [],
+                "key": [],
+                "seed": [],
+                "return": []
+            },
+            "decrypt": {
+                "encrypted_data": [],
+                "key": [],
+                "seed": [],
+                "return": []
+            }
+        }
+    },
+    "flask_cors.core": {
+        "global": {
+            "parse_resources": {
+                "resources": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[builtins.tuple[typing.Any, builtins.dict[typing.Any, typing.Any]]]"
+                ]
+            },
+            "get_regexp_pattern": {
+                "regexp": [
+                    "flask_restful.inputs.regex"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_cors_origins": {
+                "options": [
+                    "platform._Processor"
+                ],
+                "request_origin": [],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "get_allow_headers": {
+                "options": [
+                    "platform._Processor"
+                ],
+                "acl_request_headers": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_cors_headers": {
+                "options": [
+                    "platform._Processor"
+                ],
+                "request_headers": [
+                    "flask.ctx._AppCtxGlobals"
+                ],
+                "request_method": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "werkzeug.datastructures.structures.MultiDict"
+                ]
+            },
+            "set_cors_headers": {
+                "resp": [
+                    "werkzeug.sansio.multipart.Field"
+                ],
+                "options": [
+                    "platform._Processor"
+                ],
+                "return": [
+                    "werkzeug.sansio.multipart.Field"
+                ]
+            },
+            "probably_regex": {
+                "maybe_regex": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "re_fix": {
+                "reg": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "try_match_any": {
+                "inst": [],
+                "patterns": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "try_match": {
+                "request_origin": [
+                    "ast.Slice"
+                ],
+                "maybe_regex": [
+                    "ast.Slice"
+                ],
+                "return": [
+                    "re.Match"
+                ]
+            },
+            "get_cors_options": {
+                "appInstance": [],
+                "dicts": [],
+                "return": []
+            },
+            "get_app_kwarg_dict": {
+                "appInstance": [],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "flexible_str": {
+                "obj": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "serialize_option": {
+                "options_dict": [
+                    "_typeshed.SupportsItemAccess[typing.Any, builtins.str]"
+                ],
+                "key": [],
+                "upper": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "ensure_iterable": {
+                "inst": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "sanitize_regex_param": {
+                "param": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "serialize_options": {
+                "opts": [
+                    "importlib.metadata.Deprecated"
+                ],
+                "return": [
+                    "importlib.metadata.Deprecated"
+                ]
+            }
+        }
+    },
+    "flask_cors.decorator": {
+        "global": {
+            "cross_origin": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Callable[[flask.views.View], typing.Any]"
+                ]
+            }
+        }
+    },
+    "flask_cors.extension": {
+        "global": {
+            "make_after_request_function": {
+                "resources": [
+                    "typing.Iterable[builtins.tuple[flask_restful.inputs.regex, platform._Processor]]"
+                ],
+                "return": [
+                    "typing.Callable[[werkzeug.sansio.multipart.Field], werkzeug.sansio.multipart.Field]"
+                ]
+            }
+        },
+        "CORS": {
+            "__init__": {
+                "app": [
+                    "flask.app.Flask"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "init_app": {
+                "app": [
+                    "flask.app.Flask"
+                ],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "flask_socketio": {
+        "global": {
+            "emit": {
+                "event": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "call": {
+                "event": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "send": {
+                "message": [],
+                "kwargs": [],
+                "return": []
+            },
+            "join_room": {
+                "room": [],
+                "sid": [],
+                "namespace": [],
+                "return": []
+            },
+            "leave_room": {
+                "room": [],
+                "sid": [],
+                "namespace": [],
+                "return": []
+            },
+            "close_room": {
+                "room": [],
+                "namespace": [],
+                "return": []
+            },
+            "rooms": {
+                "sid": [],
+                "namespace": [],
+                "return": []
+            },
+            "disconnect": {
+                "sid": [],
+                "namespace": [],
+                "silent": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        },
+        "_SocketIOMiddleware": {
+            "__init__": {
+                "socketio_app": [],
+                "flask_app": [
+                    "engineio.middleware.WSGIApp"
+                ],
+                "socketio_path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "environ": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ],
+                "start_response": [],
+                "return": []
+            }
+        },
+        "SocketIO": {
+            "__init__": {
+                "app": [
+                    "engineio.middleware.WSGIApp"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "init_app": {
+                "app": [
+                    "engineio.middleware.WSGIApp"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "on": {
+                "message": [
+                    "builtins.str"
+                ],
+                "namespace": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Callable[..., typing.Any]], typing.Callable[..., typing.Any]]"
+                ]
+            },
+            "on_error": {
+                "namespace": [],
+                "return": [
+                    "typing.Callable[[builtins.object], builtins.object]"
+                ]
+            },
+            "on_error_default": {
+                "exception_handler": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "builtins.object"
+                ]
+            },
+            "on_event": {
+                "message": [
+                    "builtins.str"
+                ],
+                "handler": [],
+                "namespace": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "event": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "on_namespace": {
+                "namespace_handler": [
+                    "flask_socketio.namespace.Namespace"
+                ],
+                "return": []
+            },
+            "emit": {
+                "event": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "call": {
+                "event": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "send": {
+                "data": [],
+                "json": [
+                    "builtins.bool"
+                ],
+                "namespace": [],
+                "to": [],
+                "callback": [],
+                "include_self": [
+                    "builtins.bool"
+                ],
+                "skip_sid": [],
+                "kwargs": [],
+                "return": []
+            },
+            "close_room": {
+                "room": [],
+                "namespace": [],
+                "return": []
+            },
+            "run": {
+                "app": [
+                    "logging.LoggerAdapter"
+                ],
+                "host": [
+                    "builtins.str"
+                ],
+                "port": [
+                    "builtins.int"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "stop": {
+                "return": []
+            },
+            "start_background_task": {
+                "target": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "sleep": {
+                "seconds": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "test_client": {
+                "app": [],
+                "namespace": [],
+                "query_string": [
+                    "builtins.str"
+                ],
+                "headers": [],
+                "auth": [],
+                "flask_test_client": [],
+                "return": [
+                    "flask_socketio.test_client.SocketIOTestClient"
+                ]
+            },
+            "_handle_event": {
+                "handler": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "message": [
+                    "builtins.str"
+                ],
+                "namespace": [],
+                "sid": [],
+                "args": [],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.int]"
+                ]
+            }
+        }
+    },
+    "flask_socketio.namespace": {
+        "Namespace": {
+            "__init__": {
+                "namespace": [],
+                "return": []
+            },
+            "_set_socketio": {
+                "socketio": [],
+                "return": []
+            },
+            "trigger_event": {
+                "event": [],
+                "args": [],
+                "return": []
+            },
+            "emit": {
+                "event": [],
+                "data": [],
+                "room": [],
+                "include_self": [
+                    "builtins.bool"
+                ],
+                "namespace": [],
+                "callback": [],
+                "return": []
+            },
+            "send": {
+                "data": [],
+                "room": [],
+                "include_self": [
+                    "builtins.bool"
+                ],
+                "namespace": [],
+                "callback": [],
+                "return": []
+            },
+            "close_room": {
+                "room": [],
+                "namespace": [],
+                "return": []
+            }
+        }
+    },
+    "flask_socketio.test_client": {
+        "SocketIOTestClient": {
+            "__init__": {
+                "app": [],
+                "socketio": [
+                    "socketio.base_namespace.BaseServerNamespace"
+                ],
+                "namespace": [],
+                "query_string": [
+                    "builtins.str"
+                ],
+                "headers": [],
+                "auth": [],
+                "flask_test_client": [],
+                "return": []
+            },
+            "is_connected": {
+                "namespace": [],
+                "return": []
+            },
+            "connect": {
+                "namespace": [],
+                "query_string": [
+                    "builtins.str"
+                ],
+                "headers": [],
+                "auth": [],
+                "return": []
+            },
+            "disconnect": {
+                "namespace": [],
+                "return": []
+            },
+            "emit": {
+                "event": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "send": {
+                "data": [],
+                "json": [
+                    "builtins.bool"
+                ],
+                "callback": [
+                    "builtins.bool"
+                ],
+                "namespace": [],
+                "return": []
+            },
+            "get_received": {
+                "namespace": [],
+                "return": [
+                    "builtins.list[_typeshed.SupportsGetItem[builtins.str, typing.Any]]"
+                ]
+            }
+        }
+    }
+}

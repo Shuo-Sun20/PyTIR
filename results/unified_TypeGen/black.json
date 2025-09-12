@@ -1,0 +1,4365 @@
+{
+    "black": {
+        "global": {
+            "_format_str_once": {
+                "src_contents": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ],
+                "mode": [
+                    "FileMode"
+                ],
+                "lines": []
+            },
+            "_contains_asexpr": {
+                "node": [
+                    "node",
+                    "children",
+                    "ast",
+                    "Completion",
+                    "token.RPAR",
+                    "type",
+                    "token.LPAR",
+                    "token",
+                    "atom",
+                    "node.children",
+                    "syms"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "_black_info": {
+                "return": [
+                    "str"
+                ]
+            },
+            "assert_stable": {
+                "mode": [
+                    "object",
+                    "mode",
+                    "black.FileMode",
+                    "Mode",
+                    "FileMode"
+                ],
+                "src": [
+                    "str"
+                ],
+                "return": [
+                    "None"
+                ],
+                "dst": [],
+                "lines": []
+            },
+            "assert_equivalent": {
+                "return": [
+                    "None"
+                ],
+                "src": [
+                    "str"
+                ],
+                "dst": []
+            },
+            "check_stability_and_equivalence": {
+                "dst_contents": [
+                    "str"
+                ],
+                "lines": [
+                    "tuple"
+                ],
+                "src_contents": [],
+                "mode": [],
+                "return": []
+            },
+            "detect_target_versions": {
+                "return": [
+                    "set[TargetVersion]"
+                ],
+                "future_imports": [
+                    "typing.Optional[typing.Set[str]]",
+                    "typing.Optional[set[str]]",
+                    "typing.Optional[typing.Any]",
+                    "None"
+                ],
+                "node": []
+            },
+            "enable_unstable_feature_callback": {
+                "c": [
+                    "typing.Any",
+                    "c"
+                ],
+                "p": [
+                    "p",
+                    "typing.Any",
+                    "pass",
+                    "object",
+                    "str"
+                ],
+                "v": [
+                    "typing.Iterable[typing.Any]",
+                    "v",
+                    "Preview",
+                    "val",
+                    "typing.Any",
+                    "set"
+                ],
+                "return": []
+            },
+            "decode_bytes": {
+                "return": [
+                    "typing.Tuple[str, str, str]"
+                ],
+                "src": []
+            },
+            "format_cell": {
+                "fast": [
+                    "bool"
+                ],
+                "mode": [],
+                "src": [
+                    "str"
+                ],
+                "return": [
+                    "typing.Any",
+                    "str",
+                    "int"
+                ]
+            },
+            "format_file_contents": {
+                "fast": [
+                    "bool"
+                ],
+                "return": [
+                    "str"
+                ],
+                "lines": [
+                    "Sequence[int]",
+                    "tuple"
+                ],
+                "mode": [
+                    "FileMode"
+                ],
+                "src_contents": []
+            },
+            "format_file_in_place": {
+                "fast": [
+                    "bool"
+                ],
+                "lock": [
+                    "typing.Any",
+                    "Optional[typing.ContextManager]",
+                    "Optional[Any]",
+                    "Optional[ContextManager]",
+                    "Optional[typing.Any]",
+                    "Optional[contextlib.AbstractContextManager]"
+                ],
+                "return": [],
+                "lines": [],
+                "src": [],
+                "write_back": [],
+                "mode": [
+                    "FileMode"
+                ]
+            },
+            "format_ipynb_string": {
+                "fast": [
+                    "bool"
+                ],
+                "src_contents": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ],
+                "mode": []
+            },
+            "format_stdin_to_stdout": {
+                "return": [
+                    "bool"
+                ],
+                "fast": [
+                    "bool"
+                ],
+                "lines": [],
+                "write_back": [],
+                "mode": [],
+                "content": []
+            },
+            "format_str": {
+                "mode": [
+                    "FileMode"
+                ],
+                "lines": [
+                    "tuple",
+                    "typing.Sequence[int]",
+                    "tuple[int, ...]",
+                    "Sequence[int]",
+                    "typing.Iterable[int]"
+                ],
+                "src_contents": [
+                    "str"
+                ],
+                "return": []
+            },
+            "get_future_imports": {
+                "node": [
+                    "Node"
+                ],
+                "return": []
+            },
+            "get_sources": {
+                "exclude": [
+                    "typing.Optional[typing.Union[str, typing.Pattern]]"
+                ],
+                "extend_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "force_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "include": [
+                    "typing.Optional[list[str]]"
+                ],
+                "report": [
+                    "Any",
+                    "object",
+                    "typing.Any"
+                ],
+                "src": [
+                    "typing.List[str]",
+                    "typing.Iterable[str]"
+                ],
+                "root": [
+                    "root",
+                    "PathLike",
+                    "Path",
+                    "str",
+                    "PathLike[str]",
+                    "path",
+                    "pathlib.Path"
+                ],
+                "return": [],
+                "quiet": [],
+                "stdin_filename": [],
+                "verbose": []
+            },
+            "main": {
+                "color": [
+                    "bool"
+                ],
+                "config": [
+                    "str",
+                    "typing.Optional[str]",
+                    "click.Path"
+                ],
+                "ctx": [
+                    "click.core.Context"
+                ],
+                "diff": [
+                    "bool"
+                ],
+                "exclude": [
+                    "str",
+                    "exclude",
+                    "typing.Optional[str]",
+                    "Optional[str]",
+                    "None"
+                ],
+                "extend_exclude": [
+                    "str"
+                ],
+                "fast": [
+                    "bool"
+                ],
+                "force_exclude": [
+                    "str"
+                ],
+                "include": [
+                    "str"
+                ],
+                "enable_unstable_feature": [
+                    "typing.Set[str]",
+                    "List[str]",
+                    "Tuple[str, ...]",
+                    "typing.Iterable[str]",
+                    "typing.List[str]",
+                    "typing.Tuple[str, ...]"
+                ],
+                "ipynb": [
+                    "bool",
+                    "ipynb"
+                ],
+                "line_ranges": [
+                    "Tuple[str, ...]",
+                    "..."
+                ],
+                "pyi": [
+                    "bool"
+                ],
+                "preview": [
+                    "bool"
+                ],
+                "python_cell_magics": [
+                    "typing.List[str]",
+                    "Tuple[str, ...]",
+                    "List[str]",
+                    "typing.Iterable[str]",
+                    "typing.Tuple[str, ...]"
+                ],
+                "skip_magic_trailing_comma": [
+                    "bool"
+                ],
+                "skip_source_first_line": [
+                    "bool"
+                ],
+                "src": [
+                    "Tuple[str, ...]",
+                    "src"
+                ],
+                "stdin_filename": [
+                    "typing.Optional[str]",
+                    "str"
+                ],
+                "target_version": [
+                    "Tuple[str, ...]",
+                    "click.Choice"
+                ],
+                "verbose": [
+                    "bool"
+                ],
+                "workers": [
+                    "typing.Optional[int]"
+                ],
+                "line_length": [],
+                "code": [],
+                "required_version": [],
+                "return": [],
+                "skip_string_normalization": [],
+                "quiet": [],
+                "check": [],
+                "unstable": []
+            },
+            "get_features_used": {
+                "future_imports": [],
+                "node": [],
+                "return": []
+            },
+            "patched_main": {
+                "return": [
+                    "None"
+                ]
+            },
+            "path_empty": {
+                "ctx": [
+                    "click.Context"
+                ],
+                "msg": [
+                    "str"
+                ],
+                "return": [],
+                "verbose": [
+                    "bool"
+                ],
+                "src": [
+                    "str",
+                    "Any",
+                    "object",
+                    "src",
+                    "bool",
+                    "PathLike",
+                    "pathlib.Path",
+                    "None"
+                ],
+                "quiet": []
+            },
+            "re_compile_maybe_verbose": {
+                "return": [
+                    "typing.Pattern"
+                ],
+                "regex": []
+            },
+            "read_pyproject_toml": {
+                "param": [
+                    "ParamType"
+                ],
+                "return": [
+                    "typing.Optional[typing.Any]",
+                    "typing.Any",
+                    "value",
+                    "typing.Optional[Any]"
+                ],
+                "value": [],
+                "ctx": []
+            },
+            "nullcontext": {
+                "return": []
+            },
+            "reformat_code": {
+                "mode": [
+                    "str"
+                ],
+                "return": [
+                    "None"
+                ],
+                "report": [
+                    "failed",
+                    "ErrorReporter",
+                    "verbose",
+                    "report",
+                    "ErrorReport",
+                    "Reporter",
+                    "Report",
+                    "ResultSummaryBuilder"
+                ],
+                "write_back": [
+                    "bool"
+                ],
+                "fast": [],
+                "lines": [],
+                "content": []
+            },
+            "reformat_one": {
+                "fast": [
+                    "bool"
+                ],
+                "lines": [
+                    "tuple"
+                ],
+                "mode": [
+                    "Mode",
+                    "FileMode"
+                ],
+                "src": [
+                    "typing.Union[str, pathlib.Path]",
+                    "typing.Union[str, Path]",
+                    "Path",
+                    "Union[str, Path]",
+                    "pathlib.Path"
+                ],
+                "report": [
+                    "Report",
+                    "failed",
+                    "Any",
+                    "ErrorReporter",
+                    "typing.Any"
+                ],
+                "write_back": [
+                    "WriteBack"
+                ],
+                "return": []
+            },
+            "spellcheck_pyproject_toml_keys": {
+                "config_keys": [
+                    "Iterable[typing.Any]",
+                    "Iterable[str]",
+                    "set[str]"
+                ],
+                "ctx": [
+                    "dict[str, typing.Any]",
+                    "ctx",
+                    "typing.Any",
+                    "ContextMeta",
+                    "ConfigContext",
+                    "RuntimeConfigObject",
+                    "Context",
+                    "ManifestContext"
+                ],
+                "return": [
+                    "None"
+                ],
+                "config_file_path": []
+            },
+            "target_version_option_callback": {
+                "p": [
+                    "Any",
+                    "argparse.ArgumentParser",
+                    "typing.Any",
+                    "optparse.OptionParser",
+                    "optparse.Option",
+                    "argparse",
+                    "object",
+                    "p"
+                ],
+                "v": [
+                    "typing.Iterable[str]"
+                ],
+                "return": [],
+                "c": []
+            },
+            "validate_metadata": {
+                "return": [],
+                "nb": []
+            },
+            "validate_regex": {
+                "ctx": [],
+                "return": [
+                    "typing.Optional[typing.Pattern]"
+                ],
+                "value": [],
+                "param": [
+                    "ParamType"
+                ]
+            }
+        },
+        "WriteBack": {
+            "from_configuration": {
+                "return": [
+                    "typing.Any",
+                    "Enum"
+                ],
+                "diff": [],
+                "check": [],
+                "color": []
+            }
+        }
+    },
+    "black._width_table": {
+        "global": {
+            "global": {
+                "WIDTH_TABLE": [
+                    "list[tuple[int, int, int]]"
+                ]
+            }
+        }
+    },
+    "black.brackets": {
+        "BracketTracker": {
+            "any_open_brackets": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "any_open_for_or_lambda": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "delimiter_count_with_priority": {
+                "return": [
+                    "int"
+                ],
+                "priority": [
+                    "int"
+                ]
+            },
+            "get_open_lsqb": {
+                "return": [
+                    "Optional[Any]",
+                    "Optional[Token]",
+                    "Any",
+                    "typing.Optional[typing.Any]",
+                    "typing.Any"
+                ]
+            },
+            "global": {
+                "_for_loop_depths": [
+                    "list[int]",
+                    "self.depth"
+                ],
+                "_lambda_argument_depths": [
+                    "list[int]"
+                ],
+                "delimiters": [
+                    "dict[int, int]",
+                    "dict[LeafID, Priority]",
+                    "int",
+                    "delimiters",
+                    "Priority",
+                    "dict"
+                ],
+                "previous": [
+                    "Optional[Leaf]",
+                    "previous",
+                    "None",
+                    "Union[Leaf, None]",
+                    "BracketTracker"
+                ],
+                "depth": [],
+                "bracket_match": [],
+                "invisible": []
+            },
+            "mark": {
+                "return": [
+                    "None"
+                ],
+                "leaf": []
+            },
+            "max_delimiter_priority": {
+                "exclude": [
+                    "typing.Container[typing.Any]",
+                    "typing.Container[str]",
+                    "typing.Iterable[typing.Any]",
+                    "typing.Collection[str]",
+                    "typing.Iterable[str]",
+                    "typing.Container[typing.Hashable]"
+                ],
+                "return": [
+                    "int",
+                    "typing.Any",
+                    "typing.Union[int, float]"
+                ]
+            },
+            "maybe_decrement_after_for_loop_variable": {
+                "leaf": [
+                    "typing.Any",
+                    "value",
+                    "Any",
+                    "leaf.value",
+                    "LeafNode"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "maybe_decrement_after_lambda_arguments": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": []
+            },
+            "maybe_increment_for_loop_variable": {
+                "leaf": [
+                    "token",
+                    "value",
+                    "token.Token"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "maybe_increment_lambda_arguments": {
+                "return": [],
+                "leaf": []
+            }
+        },
+        "global": {
+            "get_leaves_inside_matching_brackets": {
+                "return": [],
+                "leaves": [
+                    "list[Leaf]",
+                    "list[Node]",
+                    "Leaf",
+                    "list[Token]"
+                ]
+            },
+            "global": {
+                "COMPARATOR_PRIORITY": [
+                    "int"
+                ],
+                "LOGIC_PRIORITY": [
+                    "int"
+                ],
+                "STRING_PRIORITY": [
+                    "int"
+                ],
+                "TERNARY_PRIORITY": [
+                    "int"
+                ],
+                "COMMA_PRIORITY": [],
+                "COMPREHENSION_PRIORITY": [],
+                "DOT_PRIORITY": [],
+                "MATH_PRIORITIES": [
+                    "dict"
+                ]
+            },
+            "is_split_before_delimiter": {
+                "return": [
+                    "int"
+                ],
+                "previous": [
+                    "typing.Optional[typing.Any]",
+                    "None"
+                ],
+                "leaf": []
+            },
+            "is_split_after_delimiter": {
+                "leaf": [
+                    "token",
+                    "object",
+                    "Token",
+                    "Leaf",
+                    "token.Token"
+                ],
+                "return": []
+            },
+            "max_delimiter_priority_in_atom": {
+                "return": [
+                    "int"
+                ],
+                "node": []
+            }
+        }
+    },
+    "black.cache": {
+        "Cache": {
+            "filtered_cached": {
+                "return": [
+                    "tuple",
+                    "done"
+                ],
+                "sources": [
+                    "typing.Iterable[typing.Any]"
+                ]
+            },
+            "get_file_data": {
+                "return": [
+                    "FileData"
+                ],
+                "path": [
+                    "Path"
+                ]
+            },
+            "global": {
+                "file_data": [
+                    "dict[str, FileData]"
+                ],
+                "cache_file": [],
+                "mode": [
+                    "Mode"
+                ]
+            },
+            "write": {
+                "return": [
+                    "None"
+                ],
+                "sources": [
+                    "Iterable[Path]",
+                    "list[Path]",
+                    "list[typing.Any]",
+                    "Iterable[PathLike]"
+                ]
+            },
+            "is_changed": {
+                "return": [],
+                "source": []
+            },
+            "read": {
+                "mode": [],
+                "return": []
+            },
+            "hash_digest": {
+                "path": [],
+                "return": []
+            }
+        },
+        "global": {
+            "get_cache_dir": {
+                "return": [
+                    "pathlib.Path"
+                ]
+            },
+            "get_cache_file": {
+                "mode": [
+                    "Any",
+                    "mode"
+                ],
+                "return": []
+            }
+        },
+        "FileData": {
+            "global": {
+                "hash": [
+                    "str"
+                ],
+                "st_mtime": [
+                    "float"
+                ],
+                "st_size": []
+            }
+        }
+    },
+    "black.comments": {
+        "global": {
+            "_contains_fmt_skip_comment": {
+                "return": [
+                    "bool"
+                ],
+                "comment_line": [
+                    "str"
+                ],
+                "mode": []
+            },
+            "_generate_ignored_nodes_from_fmt_skip": {
+                "return": [
+                    "typing.Generator[typing.Any, None, None]",
+                    "typing.Iterator[typing.Any]"
+                ],
+                "comment": [
+                    "value",
+                    "comments",
+                    "typing.Any",
+                    "comment",
+                    "Comment",
+                    "ast.Comment",
+                    "comment.value",
+                    "dict"
+                ],
+                "leaf": []
+            },
+            "children_contains_fmt_on": {
+                "container": [
+                    "typing.Any",
+                    "Any",
+                    "Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "convert_one_fmt_off_pair": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "node",
+                    "TreeNode",
+                    "Any",
+                    "Node",
+                    "typing.Any",
+                    "typing.Union[BinaryTreeNode, Any]"
+                ],
+                "lines": [],
+                "mode": []
+            },
+            "contains_pragma_comment": {
+                "comment_list": [],
+                "return": []
+            },
+            "generate_ignored_nodes": {
+                "comment": [
+                    "object",
+                    "typing.Any"
+                ],
+                "return": [
+                    "container",
+                    "Leaf",
+                    "Generator[Leaf, None, None]"
+                ],
+                "leaf": [
+                    "typing.Any",
+                    "TokenInfo",
+                    "Leaf",
+                    "Union[Node, Leaf]",
+                    "leaf",
+                    "Any"
+                ],
+                "mode": []
+            },
+            "global": {
+                "FMT_ON": [
+                    "set[str]"
+                ],
+                "FMT_SKIP": [],
+                "FMT_OFF": []
+            },
+            "is_fmt_on": {
+                "container": [
+                    "prefix",
+                    "typing.Any",
+                    "str",
+                    "Container",
+                    "Any",
+                    "ast.AST"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "generate_comments": {
+                "return": [],
+                "leaf": []
+            },
+            "list_comments": {
+                "prefix": [
+                    "str"
+                ],
+                "return": [],
+                "is_endmarker": []
+            },
+            "normalize_fmt_off": {
+                "lines": [
+                    "list[str]",
+                    "typing.Any",
+                    "str"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "node": [],
+                "return": []
+            },
+            "make_comment": {
+                "content": [],
+                "return": []
+            },
+            "normalize_trailing_prefix": {
+                "leaf": [
+                    "prefix",
+                    "leaf",
+                    "PrefixPart",
+                    "leaf.prefix"
+                ],
+                "return": [
+                    "None"
+                ],
+                "total_consumed": [
+                    "int"
+                ]
+            }
+        },
+        "ProtoComment": {
+            "global": {
+                "consumed": [
+                    "int",
+                    "consumed",
+                    "ProtoComment"
+                ],
+                "form_feed": [
+                    "bool",
+                    "ProtoComment",
+                    "True"
+                ],
+                "leading_whitespace": [
+                    "str",
+                    "whitespace",
+                    "ProtoComment"
+                ],
+                "newlines": [
+                    "int",
+                    "newlines",
+                    "ProtoComment"
+                ],
+                "type": [
+                    "int",
+                    "token.COMMENT",
+                    "ProtoComment",
+                    "type",
+                    "leaf.type",
+                    "ProtoComment.type",
+                    "parent.type",
+                    "LN"
+                ],
+                "value": [
+                    "str",
+                    "current",
+                    "value",
+                    "line",
+                    "content",
+                    "join",
+                    "list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "black.concurrency": {
+        "global": {
+            "cancel": {
+                "return": [
+                    "None"
+                ],
+                "tasks": [
+                    "typing.Iterable[typing.Any]"
+                ]
+            },
+            "maybe_install_uvloop": {
+                "return": [
+                    "None"
+                ]
+            },
+            "reformat_many": {
+                "fast": [],
+                "return": [
+                    "None"
+                ],
+                "report": [
+                    "report"
+                ],
+                "workers": [
+                    "typing.Optional[int]"
+                ],
+                "sources": [],
+                "write_back": [],
+                "mode": []
+            },
+            "schedule_formatting": {
+                "report": [
+                    "Report",
+                    "report",
+                    "Any",
+                    "executor",
+                    "FormatReport"
+                ],
+                "fast": [
+                    "bool"
+                ],
+                "sources": [
+                    "list[str]",
+                    "typing.Iterable[str]",
+                    "typing.List[str]",
+                    "typing.Any",
+                    "list[typing.Any]",
+                    "typing.Set[str]",
+                    "typing.Union[typing.List[str], typing.Set[str]]",
+                    "typing.Iterable[typing.Any]"
+                ],
+                "write_back": [
+                    "bool",
+                    "typing.Any"
+                ],
+                "executor": [],
+                "return": [],
+                "mode": [],
+                "loop": [
+                    "asyncio.events.AbstractEventLoop"
+                ]
+            },
+            "shutdown": {
+                "loop": [
+                    "AbstractEventLoop"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.debug": {
+        "DebugVisitor": {
+            "global": {
+                "tree_depth": [
+                    "int"
+                ],
+                "list_output": [],
+                "print_output": []
+            },
+            "out": {
+                "args": [
+                    "tuple[typing.Any, ...]",
+                    "tuple[typing.Any]"
+                ],
+                "kwargs": [
+                    "dict[str, typing.Any]"
+                ],
+                "message": [
+                    "typing.Any",
+                    "str"
+                ],
+                "return": []
+            },
+            "show": {
+                "return": [
+                    "None"
+                ],
+                "code": []
+            },
+            "visit_default": {
+                "node": [
+                    "Union[Node, typing.Any]",
+                    "value",
+                    "Union[Node, tokenize.TokenInfo]",
+                    "Node",
+                    "ty"
+                ],
+                "return": []
+            }
+        }
+    },
+    "black.files": {
+        "global": {
+            "_cached_resolve": {
+                "path": [
+                    "Path"
+                ],
+                "return": []
+            },
+            "_load_toml": {
+                "path": [
+                    "str",
+                    "typing.Union[str,pathlib.Path]",
+                    "typing.Union[str, bytes, os.PathLike]"
+                ],
+                "return": []
+            },
+            "_path_is_ignored": {
+                "return": [
+                    "bool"
+                ],
+                "gitignore_dict": [
+                    "dict"
+                ],
+                "root": [],
+                "root_relative_path": []
+            },
+            "best_effort_relative_path": {
+                "return": [
+                    "str",
+                    "NodePath"
+                ],
+                "path": [
+                    "pathlib.Path",
+                    "NodePath",
+                    "Path"
+                ],
+                "root": []
+            },
+            "find_project_root": {
+                "stdin_filename": [
+                    "str",
+                    "Optional[str]"
+                ],
+                "return": [],
+                "srcs": []
+            },
+            "find_pyproject_toml": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "path_search_start": [
+                    "str"
+                ],
+                "stdin_filename": [
+                    "Optional[str]"
+                ]
+            },
+            "gen_python_files": {
+                "force_exclude": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Union[pathlib.Path,None,None]]",
+                    "typing.Generator[pathlib.Path, None, None]",
+                    "typing.Generator[typing.Union[str,None,None]]"
+                ],
+                "gitignore_dict": [
+                    "Dict",
+                    "dict",
+                    "Dict[Path, Any]",
+                    "Mapping"
+                ],
+                "quiet": [
+                    "bool"
+                ],
+                "root": [
+                    "pathlib.Path",
+                    "os.PathLike"
+                ],
+                "extend_exclude": [],
+                "exclude": [],
+                "include": [],
+                "verbose": [],
+                "report": [],
+                "paths": []
+            },
+            "get_gitignore": {
+                "return": [
+                    "PathSpec"
+                ],
+                "root": [
+                    "Path",
+                    "PathLike"
+                ]
+            },
+            "infer_target_version": {
+                "return": [
+                    "typing.Optional[PythonVersion]"
+                ],
+                "pyproject_toml": [
+                    "dict",
+                    "TOMLDocument",
+                    "typing.Dict[str, Any]",
+                    "tomlkit.TOMLDocument",
+                    "PyprojectToml"
+                ]
+            },
+            "parse_pyproject_toml": {
+                "path_config": [
+                    "str",
+                    "os.PathLike[str]",
+                    "typing.Union[str, os.PathLike]"
+                ],
+                "return": []
+            },
+            "parse_req_python_specifier": {
+                "return": [
+                    "typing.Optional[list[typing.Any]]"
+                ],
+                "requires_python": [
+                    "str"
+                ]
+            },
+            "path_is_excluded": {
+                "return": [
+                    "bool"
+                ],
+                "normalized_path": [],
+                "pattern": []
+            },
+            "resolves_outside_root_or_cannot_stat": {
+                "path": [
+                    "str",
+                    "PathLike"
+                ],
+                "report": [
+                    "Report",
+                    "FindErrorsMetadata",
+                    "Optional[Report]",
+                    "Optional[Any]"
+                ],
+                "return": [],
+                "root": []
+            },
+            "find_user_pyproject_toml": {
+                "return": []
+            },
+            "parse_req_python_version": {
+                "requires_python": [],
+                "return": []
+            },
+            "strip_specifier_set": {
+                "return": [
+                    "SpecifierSet"
+                ],
+                "specifier_set": []
+            },
+            "wrap_stream_for_windows": {
+                "f": [
+                    "typing.IO[typing.Any]",
+                    "typing.Any"
+                ],
+                "return": [
+                    "typing.Any",
+                    "typing.IO[typing.Any]",
+                    "f",
+                    "typing.IO"
+                ]
+            }
+        }
+    },
+    "black.handle_ipynb_magics": {
+        "CellMagicFinder": {
+            "__init__": {
+                "cell_magic": [
+                    "typing.Optional[str]",
+                    "typing.Optional[typing.Any]",
+                    "typing.Any"
+                ],
+                "return": []
+            },
+            "visit_Expr": {
+                "node": [
+                    "ast.Expr"
+                ],
+                "return": []
+            }
+        },
+        "global": {
+            "_get_code_start": {
+                "src": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "_get_str_args": {
+                "args": [
+                    "typing.Iterable[typing.Any]",
+                    "list[typing.Any]"
+                ],
+                "return": []
+            },
+            "_is_ipython_magic": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "ast.Attribute",
+                    "ast.AST"
+                ]
+            },
+            "create_token": {
+                "return": [
+                    "str"
+                ],
+                "n_chars": [
+                    "int"
+                ]
+            },
+            "get_token": {
+                "src": [
+                    "typing.Iterable",
+                    "typing.Container"
+                ],
+                "return": [
+                    "typing.Any"
+                ],
+                "magic": []
+            },
+            "jupyter_dependencies_are_installed": {
+                "return": [
+                    "bool"
+                ],
+                "warn": []
+            },
+            "put_trailing_semicolon_back": {
+                "has_trailing_semicolon": [
+                    "bool"
+                ],
+                "return": [
+                    "str",
+                    "None",
+                    "src"
+                ],
+                "src": [
+                    "str"
+                ]
+            },
+            "remove_trailing_semicolon": {
+                "src": [
+                    "str"
+                ],
+                "return": []
+            },
+            "replace_cell_magics": {
+                "src": [
+                    "str"
+                ],
+                "return": []
+            },
+            "replace_magics": {
+                "return": [
+                    "tuple[str, typing.Any]",
+                    "tuple[str, typing.Union[dict, list]]"
+                ],
+                "src": [
+                    "str"
+                ]
+            },
+            "mask_cell": {
+                "return": [],
+                "src": []
+            },
+            "unmask_cell": {
+                "return": [
+                    "Any",
+                    "typing.Any"
+                ],
+                "replacements": [],
+                "src": []
+            },
+            "validate_cell": {
+                "src": [
+                    "str",
+                    "any"
+                ],
+                "mode": [
+                    "typing.Any",
+                    "Any"
+                ],
+                "return": []
+            }
+        },
+        "CellMagic": {
+            "global": {
+                "params": [
+                    "Optional[str]",
+                    "str",
+                    "None",
+                    "Union[str, None]",
+                    "CellMagicFinder"
+                ],
+                "body": [],
+                "name": []
+            }
+        },
+        "Replacement": {
+            "global": {
+                "mask": [
+                    "str"
+                ],
+                "src": [
+                    "str",
+                    "ast.parse"
+                ]
+            }
+        },
+        "MagicFinder": {
+            "__init__": {
+                "return": []
+            },
+            "visit_Assign": {
+                "return": [
+                    "None"
+                ],
+                "node": [
+                    "ast.Assign"
+                ]
+            },
+            "visit_Expr": {
+                "node": [
+                    "ast.Expr"
+                ],
+                "return": []
+            }
+        },
+        "OffsetAndMagic": {
+            "global": {
+                "col_offset": [],
+                "magic": []
+            }
+        }
+    },
+    "black.linegen": {
+        "LineGenerator": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "features": [
+                    "typing.Any",
+                    "list[typing.Any]",
+                    "dict[str, typing.Any]"
+                ]
+            },
+            "__post_init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "line": {
+                "return": [
+                    "Iterator[None]",
+                    "Generator[None, None, None]",
+                    "Generator[Any, None, None]",
+                    "Iterator[Any]",
+                    "Any"
+                ],
+                "indent": []
+            },
+            "visit_DEDENT": {
+                "return": [
+                    "typing.Generator[typing.Union[None,None,None]]"
+                ],
+                "node": []
+            },
+            "visit_ENDMARKER": {
+                "leaf": [
+                    "typing.Any",
+                    "Leaf",
+                    "LeafNode"
+                ],
+                "return": []
+            },
+            "visit_INDENT": {
+                "node": [
+                    "AST",
+                    "Node",
+                    "Symbols",
+                    "self"
+                ],
+                "return": []
+            },
+            "visit_NUMBER": {
+                "return": [
+                    "Symbols"
+                ],
+                "leaf": []
+            },
+            "visit_STANDALONE_COMMENT": {
+                "return": [
+                    "Iterator[Any]",
+                    "Iterator[None]"
+                ],
+                "leaf": [
+                    "typing.Any"
+                ]
+            },
+            "visit_STRING": {
+                "leaf": [
+                    "Leaf",
+                    "type",
+                    "LeafNode",
+                    "typing.Any",
+                    "value",
+                    "ast.Leaf",
+                    "ASTLeaf",
+                    "tokenize.Leaf",
+                    "Token"
+                ],
+                "return": []
+            },
+            "visit_async_stmt": {
+                "node": [
+                    "Node"
+                ],
+                "return": [
+                    "Iterator[Any]",
+                    "Iterator[None]",
+                    "self.visit",
+                    "Iterator",
+                    "Iterator[Symbols]",
+                    "Generator[Any, None, None]",
+                    "Generator[None, None, None]"
+                ]
+            },
+            "visit_decorators": {
+                "node": [
+                    "Node",
+                    "typing.Any"
+                ],
+                "return": [
+                    "typing.Iterator",
+                    "Symbols"
+                ]
+            },
+            "visit_default": {
+                "node": [
+                    "ast.Node",
+                    "Node",
+                    "Leaf",
+                    "ASTNode",
+                    "NodeType"
+                ],
+                "return": [
+                    "typing.Generator[None, None, None]",
+                    "typing.Generator[typing.Union[None, str]]",
+                    "typing.Generator[typing.Any, None, None]",
+                    "typing.Generator",
+                    "typing.Generator[typing.Union[None,None]]"
+                ]
+            },
+            "visit_dictsetmaker": {
+                "node": [
+                    "ast.AST"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            },
+            "visit_factor": {
+                "node": [
+                    "children",
+                    "ast.Node",
+                    "ASTNode",
+                    "Node",
+                    "ParseTreeNode",
+                    "typing.Any"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            },
+            "visit_fstring": {
+                "node": [
+                    "Node",
+                    "ast.AST",
+                    "node",
+                    "children",
+                    "node.children",
+                    "node.type",
+                    "child.type",
+                    "value",
+                    "ast.FString",
+                    "ast.Node",
+                    "type",
+                    "typing.Any"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            },
+            "visit_funcdef": {
+                "return": [
+                    "Symbols",
+                    "typing.Iterator"
+                ],
+                "node": []
+            },
+            "visit_match_case": {
+                "node": [
+                    "children",
+                    "typing.Any",
+                    "ast.AST",
+                    "ASTNode",
+                    "node"
+                ],
+                "return": [
+                    "Symbols",
+                    "typing.Iterator"
+                ]
+            },
+            "visit_paramspec": {
+                "return": [
+                    "Symbols"
+                ],
+                "node": []
+            },
+            "visit_power": {
+                "node": [
+                    "node",
+                    "children",
+                    "leaf.type",
+                    "token.DOT",
+                    "ast.AST",
+                    "type",
+                    "syms.trailer",
+                    "parso",
+                    "ast",
+                    "node.children",
+                    "ASTNode",
+                    "InternalNode"
+                ],
+                "return": [
+                    "Symbols"
+                ]
+            },
+            "visit_simple_stmt": {
+                "node": [
+                    "AST",
+                    "AST.Node",
+                    "Node",
+                    "ast.AST",
+                    "STATEMENT",
+                    "ast.Node"
+                ],
+                "return": [
+                    "typing.Generator[typing.Union[None,None,None]]",
+                    "typing.Generator[typing.Union[None,None]]",
+                    "typing.Generator[None, None, None]"
+                ]
+            },
+            "visit_SEMI": {
+                "leaf": [],
+                "return": []
+            },
+            "visit_stmt": {
+                "parens": [
+                    "typing.Union[bool, list]",
+                    "typing.Union[list, tuple]",
+                    "tuple",
+                    "list",
+                    "set",
+                    "typing.Union[list[str], set[str]]"
+                ],
+                "keywords": [],
+                "node": [],
+                "return": []
+            },
+            "visit_suite": {
+                "return": [
+                    "Symbols"
+                ],
+                "node": []
+            },
+            "visit_test": {
+                "node": [
+                    "typing.Any",
+                    "ASTNode",
+                    "Node",
+                    "ast.AST"
+                ],
+                "return": []
+            },
+            "visit_atom": {
+                "node": [],
+                "return": []
+            },
+            "visit_tname": {
+                "node": [
+                    "ParseTreeNode",
+                    "TreeNode",
+                    "ASTNode",
+                    "object"
+                ],
+                "return": []
+            },
+            "visit_typeparams": {
+                "return": [
+                    "Symbols"
+                ],
+                "node": []
+            },
+            "visit_typevartuple": {
+                "node": [],
+                "return": [
+                    "Symbols"
+                ]
+            }
+        },
+        "global": {
+            "_can_add_trailing_comma": {
+                "features": [
+                    "set[Feature]",
+                    "Feature",
+                    "typing.Set[Feature]"
+                ],
+                "leaf": [
+                    "Leaf",
+                    "parso.python.tree.Leaf"
+                ],
+                "return": []
+            },
+            "_ensure_trailing_comma": {
+                "leaves": [
+                    "list[Leaf]"
+                ],
+                "opening_bracket": [
+                    "value",
+                    "parso",
+                    "Leaf",
+                    "Any",
+                    "tokenize",
+                    "parso.python.tree",
+                    "tokenize.Token",
+                    "str",
+                    "parso.python.tree.Leaf",
+                    "Token",
+                    "ast",
+                    "Bracket",
+                    "OpeningBracket"
+                ],
+                "original": [],
+                "return": []
+            },
+            "_first_right_hand_split": {
+                "return": [
+                    "RHSResult"
+                ],
+                "line": [],
+                "omit": []
+            },
+            "_get_last_non_comment_leaf": {
+                "return": [
+                    "typing.Optional[int]"
+                ],
+                "line": [
+                    "typing.Any",
+                    "line",
+                    "leaves",
+                    "TokenInfo",
+                    "Parser",
+                    "list[typing.Any]",
+                    "list",
+                    "object",
+                    "CustomClassWithLeaves",
+                    "parso"
+                ]
+            },
+            "_hugging_power_ops_line_to_string": {
+                "return": [
+                    "typing.Optional[str]"
+                ],
+                "mode": [
+                    "str"
+                ],
+                "line": [],
+                "features": []
+            },
+            "_maybe_split_omitting_optional_parens": {
+                "return": [
+                    "typing.Generator",
+                    "typing.Generator[typing.Any, None, None]",
+                    "typing.Generator[typing.Union[rhs.head, rhs.body, rhs.tail], None, None]",
+                    "rhs.body"
+                ],
+                "mode": [
+                    "mode"
+                ],
+                "line": [
+                    "line",
+                    "Any"
+                ],
+                "rhs": [
+                    "rhs"
+                ],
+                "features": [],
+                "omit": []
+            },
+            "_maybe_wrap_cms_in_parens": {
+                "return": [
+                    "None"
+                ],
+                "features": [
+                    "set[Feature]",
+                    "typing.Set[Feature]"
+                ],
+                "mode": [
+                    "typing.Any",
+                    "tf.estimator.ModeKeys",
+                    "str"
+                ],
+                "node": [
+                    "Node",
+                    "typing.Any"
+                ]
+            },
+            "_normalize_import_from": {
+                "index": [
+                    "int"
+                ],
+                "parent": [
+                    "Node",
+                    "children",
+                    "value",
+                    "TreeNode",
+                    "ast.AST",
+                    "Leaf",
+                    "parent",
+                    "Parent"
+                ],
+                "return": [],
+                "child": []
+            },
+            "_prefer_split_rhs_oop_over_rhs": {
+                "return": [
+                    "bool"
+                ],
+                "rhs": [],
+                "rhs_oop": [
+                    "Any"
+                ],
+                "mode": []
+            },
+            "_safe_add_trailing_comma": {
+                "delimiter_priority": [
+                    "int"
+                ],
+                "line": [
+                    "line",
+                    "list[typing.Any]",
+                    "append",
+                    "leaves",
+                    "type",
+                    "list"
+                ],
+                "safe": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "bracket_split_build_line": {
+                "component": [
+                    "is"
+                ],
+                "opening_bracket": [
+                    "tokenize",
+                    "Leaf",
+                    "original",
+                    "result",
+                    "parso.python.tree.Leaf",
+                    "is",
+                    "ast"
+                ],
+                "return": [],
+                "original": [],
+                "leaves": []
+            },
+            "bracket_split_succeeded_or_raise": {
+                "return": [
+                    "None"
+                ],
+                "body": [
+                    "typing.Any",
+                    "list",
+                    "dict"
+                ],
+                "head": [],
+                "tail": []
+            },
+            "delimiter_split": {
+                "return": [
+                    "typing.Generator",
+                    "yield"
+                ],
+                "features": [
+                    "typing.Any"
+                ],
+                "line": [
+                    "Line",
+                    "line",
+                    "leaves",
+                    "line.depth",
+                    "typing.Any"
+                ],
+                "mode": [
+                    "typing.Any",
+                    "int"
+                ]
+            },
+            "dont_increase_indentation": {
+                "return": [
+                    "typing.Callable"
+                ],
+                "split_func": [
+                    "typing.Callable"
+                ]
+            },
+            "generate_trailers_to_omit": {
+                "return": [
+                    "typing.Generator[typing.Any, None, None]",
+                    "Generator[typing.Any, None, None]",
+                    "Generator[omit, None, None]",
+                    "omit",
+                    "generator"
+                ],
+                "line": [
+                    "line",
+                    "Line",
+                    "Parser",
+                    "TokenInfo",
+                    "leaves",
+                    "line.leaves",
+                    "FormatLine",
+                    "black"
+                ],
+                "line_length": []
+            },
+            "left_hand_split": {
+                "_features": [
+                    "list[str]",
+                    "dict[str, typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Union[head, body, tail], None, None]",
+                    "typing.Generator[typing.Union[typing.Any,None,None]]"
+                ],
+                "line": [
+                    "typing.Any",
+                    "leaves",
+                    "BracketSplitLine",
+                    "BracketLine",
+                    "token.LPAR",
+                    "Any"
+                ],
+                "mode": [
+                    "str"
+                ]
+            },
+            "maybe_make_parens_invisible_in_atom": {
+                "node": [
+                    "Node"
+                ],
+                "remove_brackets_around_comma": [
+                    "bool"
+                ],
+                "return": [],
+                "parent": []
+            },
+            "normalize_invisible_parens": {
+                "mode": [
+                    "typing.Any",
+                    "mode"
+                ],
+                "node": [
+                    "Node",
+                    "node",
+                    "node.children",
+                    "ast",
+                    "children"
+                ],
+                "parens_after": [
+                    "typing.Container[str]",
+                    "typing.Iterable[str]",
+                    "typing.Container[typing.Any]",
+                    "typing.Iterable[typing.Any]",
+                    "set",
+                    "typing.Collection[str]",
+                    "typing.Collection[typing.Any]",
+                    "child.value"
+                ],
+                "return": [],
+                "features": [
+                    "typing.Any",
+                    "features",
+                    "typing.Set[typing.Any]",
+                    "set"
+                ]
+            },
+            "remove_await_parens": {
+                "node": [
+                    "Any",
+                    "ast.Node",
+                    "Tree",
+                    "children",
+                    "ast.AST"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "remove_with_parens": {
+                "node": [
+                    "Node",
+                    "children"
+                ],
+                "return": [],
+                "parent": []
+            },
+            "right_hand_split": {
+                "features": [
+                    "tuple",
+                    "tuple[typing.Any]",
+                    "tuple[typing.Hashable, ...]",
+                    "tuple[typing.Any, ...]"
+                ],
+                "mode": [
+                    "typing.Any"
+                ],
+                "line": [
+                    "str"
+                ],
+                "omit": [
+                    "tuple[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator",
+                    "typing.Generator[typing.Any, None, None]"
+                ]
+            },
+            "run_transformer": {
+                "features": [
+                    "dict[typing.Any, typing.Any]",
+                    "typing.Iterable[typing.Any]",
+                    "dict[str, typing.Any]",
+                    "list[typing.Any]"
+                ],
+                "line": [
+                    "typing.Any",
+                    "line",
+                    "leaves",
+                    "CodeLine",
+                    "line.leaves",
+                    "Any"
+                ],
+                "line_str": [
+                    "str"
+                ],
+                "mode": [
+                    "transform",
+                    "Mode"
+                ],
+                "transform": [
+                    "transform",
+                    "Callable"
+                ],
+                "return": []
+            },
+            "should_split_funcdef_with_rhs": {
+                "return": [
+                    "bool"
+                ],
+                "line": [],
+                "mode": [
+                    "typing.Any",
+                    "bool",
+                    "mode",
+                    "int",
+                    "str"
+                ]
+            },
+            "should_split_line": {
+                "line": [
+                    "line",
+                    "leaves",
+                    "TokenInfo",
+                    "Parser"
+                ],
+                "return": [
+                    "bool"
+                ],
+                "opening_bracket": []
+            },
+            "standalone_comment_split": {
+                "features": [
+                    "list[str]",
+                    "Any"
+                ],
+                "line": [
+                    "Line"
+                ],
+                "return": [
+                    "typing.Iterator",
+                    "typing.Iterator[typing.Any]",
+                    "typing.Generator"
+                ],
+                "mode": []
+            },
+            "transform_line": {
+                "features": [
+                    "tuple",
+                    "tuple[typing.Any, ...]",
+                    "tuple[int]"
+                ],
+                "mode": [
+                    "typing.Any"
+                ],
+                "line": [
+                    "line",
+                    "Any",
+                    "str",
+                    "bytes"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "black.lines": {
+        "Line": {
+            "__bool__": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "append": {
+                "leaf": [
+                    "Leaf",
+                    "typing.Any"
+                ],
+                "preformatted": [
+                    "bool"
+                ],
+                "track_bracket": [
+                    "bool",
+                    "False"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "append_comment": {
+                "return": [
+                    "bool"
+                ],
+                "comment": [
+                    "typing.Any",
+                    "Comment",
+                    "type",
+                    "comment",
+                    "CommentType",
+                    "Token",
+                    "append"
+                ]
+            },
+            "append_safe": {
+                "return": [
+                    "None"
+                ],
+                "leaf": [
+                    "Leaf",
+                    "typing.Any",
+                    "type"
+                ],
+                "preformatted": []
+            },
+            "clone": {
+                "return": [
+                    "Line"
+                ]
+            },
+            "comments_after": {
+                "return": [
+                    "list[typing.Any]"
+                ],
+                "leaf": [
+                    "object",
+                    "Leaf",
+                    "Tree"
+                ]
+            },
+            "contains_uncollapsable_type_comments": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "contains_unsplittable_type_ignore": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "enumerate_with_length": {
+                "return": [
+                    "yield"
+                ],
+                "is_reversed": [
+                    "bool"
+                ]
+            },
+            "contains_standalone_comments": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "global": {
+                "comments": [
+                    "comments",
+                    "int",
+                    "Leaf",
+                    "Line"
+                ],
+                "bracket_tracker": [
+                    "BracketTracker",
+                    "black.brackets",
+                    "Line"
+                ],
+                "should_split_rhs": [
+                    "bool",
+                    "False",
+                    "Line"
+                ],
+                "depth": [],
+                "magic_trailing_comma": [],
+                "mode": [],
+                "leaves": [],
+                "inside_brackets": [
+                    "bool",
+                    "False",
+                    "Line",
+                    "append"
+                ]
+            },
+            "contains_multiline_strings": {
+                "return": []
+            },
+            "contains_implicit_multiline_string_with_comments": {
+                "return": []
+            },
+            "has_magic_trailing_comma": {
+                "return": [
+                    "bool"
+                ],
+                "closing": [
+                    "tokenize.TokenInfo",
+                    "typing.Any",
+                    "Token",
+                    "Leaf",
+                    "token.Token",
+                    "None",
+                    "syms.trailer",
+                    "closing"
+                ]
+            },
+            "is_fmt_pass_converted": {
+                "first_leaf_matches": [
+                    "Optional[Callable]",
+                    "Callable",
+                    "None",
+                    "typing"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_complex_subscript": {
+                "leaf": [],
+                "return": []
+            },
+            "remove_trailing_comma": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_can_omit_closing_paren": {
+                "return": [
+                    "bool"
+                ],
+                "last": [
+                    "last",
+                    "bool",
+                    "Any"
+                ],
+                "line": [],
+                "line_length": []
+            },
+            "_can_omit_opening_paren": {
+                "return": [
+                    "None",
+                    "bool"
+                ],
+                "line": [
+                    "typing.Any",
+                    "str"
+                ],
+                "first": [],
+                "line_length": []
+            },
+            "append_leaves": {
+                "return": [
+                    "None"
+                ],
+                "leaves": [
+                    "Iterable[Leaf]",
+                    "list[Leaf]",
+                    "Iterable[typing.Any]"
+                ],
+                "new_line": [
+                    "list[typing.Any]",
+                    "typing.Any",
+                    "Line",
+                    "preformatted",
+                    "append",
+                    "LeafContainer",
+                    "CustomLineClass",
+                    "AttachmentHandler",
+                    "typing.MutableSequence[typing.Any]",
+                    "Any"
+                ],
+                "preformatted": [
+                    "bool"
+                ],
+                "old_line": [
+                    "typing.Any"
+                ]
+            },
+            "can_be_split": {
+                "return": [
+                    "bool"
+                ],
+                "line": [
+                    "typing.Any",
+                    "TreeNode",
+                    "leaves",
+                    "Any",
+                    "line"
+                ]
+            },
+            "can_omit_invisible_parens": {
+                "rhs": [
+                    "Any",
+                    "object"
+                ],
+                "return": [],
+                "line_length": []
+            },
+            "enumerate_reversed": {
+                "return": [
+                    "Iterator[Tuple[int, Any]]"
+                ],
+                "sequence": [
+                    "list",
+                    "Sequence[Any]",
+                    "Iterable",
+                    "Iterable[Any]"
+                ]
+            },
+            "is_line_short_enough": {
+                "return": [],
+                "line": [],
+                "line_str": [],
+                "mode": []
+            },
+            "line_to_string": {
+                "return": [
+                    "str"
+                ],
+                "line": [
+                    "Any",
+                    "str"
+                ]
+            }
+        },
+        "EmptyLineTracker": {
+            "_maybe_empty_lines": {
+                "current_line": [
+                    "leaves",
+                    "typing.Any",
+                    "OffsetRange",
+                    "CodeLine",
+                    "object",
+                    "Line"
+                ],
+                "return": []
+            },
+            "_maybe_empty_lines_for_class_or_def": {
+                "before": [
+                    "int"
+                ],
+                "current_line": [
+                    "Line",
+                    "depth",
+                    "CodeLine",
+                    "LineInfo"
+                ],
+                "user_had_newline": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "global": {
+                "mode": [
+                    "Mode",
+                    "mode",
+                    "Line",
+                    "black.mode"
+                ],
+                "previous_defs": [
+                    "list[Line]",
+                    "EmptyLineTracker",
+                    "Line"
+                ],
+                "semantic_leading_comment": [
+                    "LinesBlock",
+                    "Optional[LinesBlock]",
+                    "EmptyLineTracker",
+                    "Optional[T]"
+                ],
+                "previous_block": [],
+                "previous_line": []
+            },
+            "maybe_empty_lines": {
+                "return": [
+                    "block"
+                ],
+                "current_line": [
+                    "Line",
+                    "LinesBlock",
+                    "leaves",
+                    "CodeLine",
+                    "typing.Any"
+                ]
+            }
+        },
+        "LinesBlock": {
+            "all_lines": {
+                "return": [
+                    "list[typing.Any]"
+                ]
+            },
+            "global": {
+                "after": [
+                    "int",
+                    "after",
+                    "LinesBlock",
+                    "EmptyLineTracker"
+                ],
+                "before": [
+                    "int",
+                    "before",
+                    "EmptyLineTracker"
+                ],
+                "content_lines": [
+                    "list[str]",
+                    "LinesBlock"
+                ],
+                "mode": [
+                    "Mode",
+                    "mode",
+                    "Line",
+                    "black.mode"
+                ],
+                "previous_block": [
+                    "Optional[LinesBlock]",
+                    "EmptyLineTracker",
+                    "LinesBlock",
+                    "None",
+                    "Line"
+                ],
+                "original_line": [
+                    "Line",
+                    "LinesBlock",
+                    "EmptyLineTracker"
+                ],
+                "form_feed": []
+            }
+        },
+        "RHSResult": {
+            "global": {
+                "body": [
+                    "Line",
+                    "body",
+                    "RHSResult"
+                ],
+                "closing_bracket": [
+                    "Optional[Leaf]",
+                    "Leaf",
+                    "None",
+                    "leaf"
+                ],
+                "head": [
+                    "Line"
+                ],
+                "opening_bracket": [],
+                "tail": []
+            }
+        }
+    },
+    "black.mode": {
+        "Mode": {
+            "global": {
+                "enabled_features": [
+                    "set[Preview]"
+                ],
+                "is_ipynb": [
+                    "bool"
+                ],
+                "is_pyi": [
+                    "bool"
+                ],
+                "line_length": [
+                    "int"
+                ],
+                "magic_trailing_comma": [
+                    "bool"
+                ],
+                "python_cell_magics": [
+                    "set[str]"
+                ],
+                "preview": [
+                    "bool",
+                    "Type[Preview]"
+                ],
+                "string_normalization": [
+                    "bool"
+                ],
+                "target_versions": [
+                    "set[TargetVersion]"
+                ],
+                "unstable": [
+                    "bool"
+                ],
+                "skip_source_first_line": []
+            },
+            "__contains__": {
+                "return": [
+                    "bool"
+                ],
+                "feature": [
+                    "typing.Any",
+                    "str",
+                    "typing.Hashable"
+                ]
+            },
+            "get_cache_key": {
+                "return": []
+            }
+        },
+        "global": {
+            "global": {
+                "FUTURE_FLAG_TO_FEATURE": [
+                    "dict[str, Feature]"
+                ],
+                "UNSTABLE_FEATURES": [
+                    "set[typing.Any]"
+                ],
+                "VERSION_TO_FEATURES": [],
+                "_MAX_CACHE_KEY_PART_LENGTH": []
+            },
+            "supports_feature": {
+                "return": [
+                    "bool"
+                ],
+                "target_versions": [
+                    "Iterable[str]",
+                    "typing.Iterable[str]"
+                ],
+                "feature": []
+            }
+        },
+        "TargetVersion": {
+            "pretty": {
+                "return": []
+            }
+        }
+    },
+    "black.nodes": {
+        "global": {
+            "child_towards": {
+                "ancestor": [
+                    "Any",
+                    "Node",
+                    "TreeNode",
+                    "node.parent"
+                ],
+                "return": [
+                    "node",
+                    "Node",
+                    "typing.Any"
+                ],
+                "descendant": []
+            },
+            "container_of": {
+                "return": [
+                    "Container"
+                ],
+                "leaf": []
+            },
+            "ensure_visible": {
+                "return": [
+                    "None"
+                ],
+                "leaf": [
+                    "token"
+                ]
+            },
+            "first_leaf": {
+                "return": [
+                    "typing.Optional[Leaf]",
+                    "typing.Optional[Node]"
+                ],
+                "node": [
+                    "typing.Union[Leaf, Node]"
+                ]
+            },
+            "first_leaf_of": {
+                "node": [
+                    "typing.Union[Leaf, typing.Any]",
+                    "typing.Union[Leaf, Node]"
+                ],
+                "return": []
+            },
+            "fstring_to_string": {
+                "return": [
+                    "Leaf"
+                ],
+                "node": []
+            },
+            "furthest_ancestor_with_last_leaf": {
+                "return": [
+                    "Node"
+                ],
+                "leaf": []
+            },
+            "get_annotation_type": {
+                "leaf": [
+                    "parent"
+                ],
+                "return": []
+            },
+            "global": {
+                "ASSIGNMENTS": [
+                    "set[str]"
+                ],
+                "BRACKET": [
+                    "dict[token.TokenType, token.TokenType]"
+                ],
+                "COMPARATORS": [
+                    "set"
+                ],
+                "BRACKETS": [
+                    "int"
+                ],
+                "IMPLICIT_TUPLE": [
+                    "set[typing.Any]",
+                    "set[Any]"
+                ],
+                "STANDALONE_COMMENT": [
+                    "int"
+                ],
+                "MATH_OPERATORS": [
+                    "set"
+                ],
+                "OPENING_BRACKETS": [
+                    "set[str]"
+                ],
+                "LOGIC_OPERATORS": [
+                    "set[str]"
+                ],
+                "TYPED_NAMES": [
+                    "set[typing.Any]"
+                ],
+                "UNPACKING_PARENTS": [
+                    "set[typing.Any]"
+                ],
+                "VARARGS_SPECIALS": [
+                    "set",
+                    "set[typing.Any]",
+                    "typing.Set[typing.Any]",
+                    "frozenset[typing.Any]"
+                ],
+                "syms": [
+                    "typing.Any",
+                    "syms",
+                    "pygram.pythonSymbols",
+                    "pygram",
+                    "object"
+                ],
+                "ALWAYS_NO_SPACE": [],
+                "STATEMENT": [],
+                "CLOSING_BRACKETS": [],
+                "STARS": [],
+                "TEST_DESCENDANTS": [],
+                "WHITESPACE": [
+                    "set[int]"
+                ],
+                "VARARGS_PARENTS": [
+                    "set[typing.Any]"
+                ]
+            },
+            "is_arith_like": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "Node"
+                ]
+            },
+            "is_async_stmt_or_funcdef": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": []
+            },
+            "is_atom_with_invisible_parens": {
+                "node": [
+                    "Node",
+                    "Any",
+                    "Tree",
+                    "children",
+                    "Leaf",
+                    "ast.Node",
+                    "typing.Union[Leaf, Node]",
+                    "TreeNode"
+                ],
+                "return": []
+            },
+            "is_docstring": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "is_empty_lpar": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": [
+                    "value",
+                    "object"
+                ]
+            },
+            "is_empty_par": {
+                "leaf": [
+                    "Leaf",
+                    "str",
+                    "token",
+                    "LeafNode"
+                ],
+                "return": []
+            },
+            "is_empty_tuple": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "is_function_or_class": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "ContextualizedNode",
+                    "type",
+                    "ast.Node",
+                    "node",
+                    "TreeNameDefinition",
+                    "syms",
+                    "ast.AST"
+                ]
+            },
+            "is_generator": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "is_fstring": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "is_import": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": []
+            },
+            "is_lpar_token": {
+                "return": [
+                    "bool"
+                ],
+                "nl": [
+                    "Token",
+                    "typing.Any",
+                    "type"
+                ]
+            },
+            "is_multiline_string": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "typing.Union[Node, Leaf]"
+                ]
+            },
+            "is_name_token": {
+                "nl": [
+                    "Token",
+                    "typing.Any"
+                ],
+                "return": []
+            },
+            "is_number_token": {
+                "nl": [
+                    "Token",
+                    "typing.Any"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_one_sequence_between": {
+                "brackets": [
+                    "tuple",
+                    "tuple[token.LPAR, token.RPAR]",
+                    "tuple[Any, Any]"
+                ],
+                "closing": [
+                    "str",
+                    "closing",
+                    "int",
+                    "typing.Any",
+                    "brackets",
+                    "token.RPAR",
+                    "token"
+                ],
+                "return": [
+                    "bool",
+                    "None"
+                ],
+                "leaves": [
+                    "list[typing.Any]",
+                    "typing.Any",
+                    "list[tokenize.TokenInfo]",
+                    "List[Token]"
+                ],
+                "opening": []
+            },
+            "is_one_tuple": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "ast.AST"
+                ]
+            },
+            "is_empty_rpar": {
+                "return": [],
+                "leaf": []
+            },
+            "is_parent_function_or_class": {
+                "return": [
+                    "bool",
+                    "False"
+                ],
+                "node": [
+                    "ast.ClassDef",
+                    "Class",
+                    "Node",
+                    "ast",
+                    "ast.AST"
+                ]
+            },
+            "is_part_of_annotation": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": [
+                    "Leaf",
+                    "ast",
+                    "LeafNode",
+                    "Node",
+                    "ast.Leaf",
+                    "object",
+                    "Any"
+                ]
+            },
+            "is_rpar_token": {
+                "return": [
+                    "bool"
+                ],
+                "nl": []
+            },
+            "is_simple_decorator_trailer": {
+                "node": [
+                    "Any",
+                    "children",
+                    "Node",
+                    "token",
+                    "node",
+                    "ast.Node",
+                    "ast.AST",
+                    "UnparsedContents",
+                    "PTNode"
+                ],
+                "last": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "is_stub_suite": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "Node",
+                    "Any"
+                ]
+            },
+            "is_tuple_containing_star": {
+                "node": [
+                    "Node",
+                    "typing.Any"
+                ],
+                "return": []
+            },
+            "is_tuple_containing_walrus": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "is_type_comment": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": [
+                    "value",
+                    "object"
+                ]
+            },
+            "is_type_ignore_comment": {
+                "return": [
+                    "bool"
+                ],
+                "leaf": [
+                    "value",
+                    "Leaf",
+                    "leaf",
+                    "parso"
+                ]
+            },
+            "is_type_ignore_comment_string": {
+                "value": [
+                    "str"
+                ],
+                "return": []
+            },
+            "is_simple_decorator_expression": {
+                "return": [],
+                "node": []
+            },
+            "is_walrus_assignment": {
+                "node": [
+                    "ast.AST"
+                ],
+                "return": []
+            },
+            "is_stub_body": {
+                "return": [],
+                "node": []
+            },
+            "is_yield": {
+                "return": [
+                    "bool"
+                ],
+                "node": []
+            },
+            "last_leaf": {
+                "return": [
+                    "None",
+                    "Leaf",
+                    "node",
+                    "typing.Optional[typing.Any]",
+                    "typing.Optional[Leaf]",
+                    "typing.Any",
+                    "node.children"
+                ],
+                "node": []
+            },
+            "is_vararg": {
+                "return": [],
+                "leaf": [],
+                "within": []
+            },
+            "make_simple_prefix": {
+                "nl_count": [
+                    "int"
+                ],
+                "empty_line": [],
+                "form_feed": [],
+                "return": []
+            },
+            "parent_type": {
+                "node": [
+                    "typing.Any",
+                    "typing.Optional[Any]",
+                    "typing.Optional[Node]",
+                    "typing.Optional[CustomNodeType]",
+                    "typing.Optional[CustomType]",
+                    "typing.Optional[TreeNode]"
+                ],
+                "return": [
+                    "Optional[str]",
+                    "str",
+                    "node.parent.type",
+                    "node.parent",
+                    "typing.Optional[str]"
+                ]
+            },
+            "preceding_leaf": {
+                "return": [
+                    "typing.Optional[Leaf]"
+                ],
+                "node": []
+            },
+            "prev_siblings_are": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "Node",
+                    "Any",
+                    "type",
+                    "node",
+                    "node.type",
+                    "object"
+                ],
+                "tokens": [
+                    "list"
+                ]
+            },
+            "replace_child": {
+                "return": [
+                    "None"
+                ],
+                "old_child": [
+                    "TreeNode",
+                    "Node",
+                    "None",
+                    "object"
+                ],
+                "new_child": []
+            },
+            "unwrap_singleton_parenthesis": {
+                "node": [
+                    "Node"
+                ],
+                "return": [
+                    "Optional[Any]",
+                    "TypeOfWrapped"
+                ]
+            },
+            "whitespace": {
+                "complex_subscript": [
+                    "bool"
+                ],
+                "return": [],
+                "leaf": [],
+                "mode": []
+            },
+            "wrap_in_parentheses": {
+                "child": [
+                    "Node"
+                ],
+                "parent": [],
+                "visible": [
+                    "bool"
+                ],
+                "return": []
+            },
+            "is_with_or_async_with_stmt": {
+                "leaf": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "Visitor": {
+            "visit_default": {
+                "node": [
+                    "Node"
+                ],
+                "return": []
+            },
+            "visit": {
+                "return": [],
+                "node": []
+            }
+        }
+    },
+    "black.numerics": {
+        "global": {
+            "format_complex_number": {
+                "text": [
+                    "str"
+                ],
+                "return": []
+            },
+            "format_float_or_int_string": {
+                "text": [
+                    "str"
+                ],
+                "return": []
+            },
+            "format_hex": {
+                "return": [
+                    "str"
+                ],
+                "text": [
+                    "str"
+                ]
+            },
+            "format_scientific_notation": {
+                "text": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "normalize_numeric_literal": {
+                "return": [
+                    "None"
+                ],
+                "leaf": [
+                    "typing.Any",
+                    "leaf",
+                    "float"
+                ]
+            }
+        }
+    },
+    "black.output": {
+        "global": {
+            "_err": {
+                "return": [],
+                "message": [
+                    "Optional[str]"
+                ],
+                "nl": [
+                    "bool"
+                ],
+                "styles": [
+                    "dict[str, str]",
+                    "typing.Dict[str, str]",
+                    "dict[str, typing.Any]",
+                    "typing.Dict[str, typing.Any]"
+                ]
+            },
+            "_out": {
+                "return": [
+                    "None"
+                ],
+                "nl": [
+                    "bool"
+                ],
+                "message": [],
+                "styles": []
+            },
+            "_splitlines_no_ff": {
+                "return": [
+                    "typing.Any"
+                ],
+                "source": [
+                    "str",
+                    "typing.Union[str, bytes]"
+                ]
+            },
+            "color_diff": {
+                "return": [
+                    "str"
+                ],
+                "contents": [
+                    "str"
+                ]
+            },
+            "diff": {
+                "a_name": [
+                    "str"
+                ],
+                "b": [],
+                "b_name": [],
+                "return": [],
+                "a": []
+            },
+            "dump_to_file": {
+                "ensure_final_newline": [
+                    "bool"
+                ],
+                "output": [
+                    "typing.Iterable[str]",
+                    "typing.Iterable[typing.Any]",
+                    "Iterable[str]",
+                    "tuple[typing.Iterable[str]]"
+                ],
+                "return": []
+            },
+            "err": {
+                "return": [
+                    "None"
+                ],
+                "message": [],
+                "styles": [],
+                "nl": []
+            },
+            "ipynb_diff": {
+                "a": [
+                    "str"
+                ],
+                "a_name": [
+                    "str"
+                ],
+                "b": [
+                    "str"
+                ],
+                "b_name": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ]
+            },
+            "out": {
+                "message": [
+                    "Optional[str]"
+                ],
+                "return": [
+                    "None"
+                ],
+                "styles": [],
+                "nl": []
+            }
+        }
+    },
+    "black.parsing": {
+        "global": {
+            "_normalize": {
+                "return": [
+                    "str"
+                ],
+                "lineend": [
+                    "str"
+                ],
+                "value": []
+            },
+            "_parse_single_version": {
+                "return": [
+                    "ast.AST"
+                ],
+                "src": [],
+                "type_comments": [
+                    "bool",
+                    "typing.Any"
+                ],
+                "version": [
+                    "int"
+                ]
+            },
+            "_stringify_ast": {
+                "return": [
+                    "typing.Generator[str, None, None]"
+                ],
+                "node": [],
+                "parent_stack": []
+            },
+            "_stringify_ast_with_new_parent": {
+                "return": [
+                    "generator",
+                    "Generator[str, None, None]"
+                ],
+                "new_parent": [
+                    "Node",
+                    "typing.Any",
+                    "object",
+                    "Any"
+                ],
+                "node": [
+                    "ast.AST",
+                    "typing.Any"
+                ],
+                "parent_stack": [
+                    "list[typing.Any]"
+                ]
+            },
+            "get_grammars": {
+                "target_versions": [
+                    "list[typing.Any]",
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "lib2to3_parse": {
+                "return": [
+                    "None"
+                ],
+                "src_txt": [
+                    "str"
+                ],
+                "target_versions": [
+                    "tuple[typing.Any, ...]",
+                    "tuple"
+                ]
+            },
+            "lib2to3_unparse": {
+                "return": [],
+                "node": []
+            },
+            "matches_grammar": {
+                "grammar": [],
+                "return": [],
+                "src_txt": [
+                    "str"
+                ]
+            },
+            "parse_ast": {
+                "src": [
+                    "str"
+                ],
+                "return": [
+                    "typing.Any",
+                    "ast.AST",
+                    "ast"
+                ]
+            },
+            "stringify_ast": {
+                "node": [
+                    "ast.AST",
+                    "typing.Any"
+                ],
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "black.ranges": {
+        "global": {
+            "_calculate_lines_mappings": {
+                "return": [
+                    "typing.Any"
+                ],
+                "modified_source": [
+                    "str"
+                ],
+                "original_source": [
+                    "str"
+                ]
+            },
+            "_contains_standalone_comment": {
+                "return": [],
+                "node": [
+                    "typing.Union[Leaf, Node]"
+                ]
+            },
+            "_convert_node_to_standalone_comment": {
+                "return": [],
+                "node": [
+                    "Node",
+                    "typing.Any",
+                    "ast.AST"
+                ]
+            },
+            "_convert_nodes_to_standalone_comment": {
+                "return": [],
+                "nodes": [
+                    "list[typing.Any]"
+                ],
+                "newline": []
+            },
+            "_convert_unchanged_line_by_line": {
+                "return": [],
+                "lines_set": [],
+                "node": [
+                    "typing.Any",
+                    "Node"
+                ]
+            },
+            "_find_lines_mapping_index": {
+                "return": [
+                    "int"
+                ],
+                "lines_mappings": [],
+                "original_line": [],
+                "start_index": [
+                    "int"
+                ]
+            },
+            "_get_line_range": {
+                "return": [],
+                "node_or_nodes": []
+            },
+            "_leaf_line_end": {
+                "return": [
+                    "int",
+                    "leaf.lineno"
+                ],
+                "leaf": [
+                    "object",
+                    "lineno",
+                    "Leaf"
+                ]
+            },
+            "adjusted_lines": {
+                "return": [
+                    "typing.Any"
+                ],
+                "lines": [
+                    "list[tuple[typing.Any, typing.Any]]"
+                ],
+                "modified_source": [
+                    "str",
+                    "list[str]"
+                ],
+                "original_source": []
+            },
+            "convert_unchanged_lines": {
+                "return": [
+                    "None"
+                ],
+                "lines": [
+                    "list[tuple[typing.Any, typing.Any]]",
+                    "list[tuple[int, int]]"
+                ],
+                "src_node": [
+                    "Node"
+                ]
+            },
+            "is_valid_line_range": {
+                "lines": [
+                    "list[typing.Comparable]",
+                    "list[typing.Any]",
+                    "typing.Sequence[typing.Any]",
+                    "list[typing.Union[int, float]]"
+                ],
+                "return": []
+            },
+            "parse_line_ranges": {
+                "line_ranges": [
+                    "typing.Iterable[str]",
+                    "typing.Iterable[typing.Any]",
+                    "typing.Iterable",
+                    "typing.Iterable[Any]"
+                ],
+                "return": [
+                    "lines"
+                ]
+            },
+            "sanitized_lines": {
+                "lines": [
+                    "list[tuple[typing.Any, typing.Any]]",
+                    "typing.Iterable[tuple[typing.Any, typing.Any]]",
+                    "Iterable[Tuple[typing.Any, typing.Any]]"
+                ],
+                "src_contents": [
+                    "str"
+                ],
+                "return": [
+                    "list[typing.Any]",
+                    "list"
+                ]
+            }
+        },
+        "_TopLevelStatementsVisitor": {
+            "__init__": {
+                "lines_set": []
+            },
+            "visit_simple_stmt": {
+                "return": [],
+                "node": [
+                    "node",
+                    "ast.AST"
+                ]
+            },
+            "visit_suite": {
+                "return": [
+                    "None"
+                ],
+                "node": [
+                    "NodeNG"
+                ]
+            }
+        },
+        "_LinesMapping": {
+            "global": {
+                "modified_start": [
+                    "int",
+                    "block.b"
+                ],
+                "is_changed_block": [],
+                "modified_end": [],
+                "original_start": [
+                    "int",
+                    "block.a",
+                    "size",
+                    "a"
+                ],
+                "original_end": []
+            }
+        }
+    },
+    "black.report": {
+        "Report": {
+            "__str__": {
+                "return": [
+                    "str"
+                ]
+            },
+            "done": {
+                "changed": [],
+                "return": [
+                    "None"
+                ],
+                "src": []
+            },
+            "failed": {
+                "src": [
+                    "str",
+                    "typing.Any"
+                ],
+                "return": [],
+                "message": []
+            },
+            "global": {
+                "change_count": [
+                    "int"
+                ],
+                "check": [],
+                "diff": [],
+                "failure_count": [
+                    "int"
+                ],
+                "quiet": [
+                    "bool"
+                ],
+                "same_count": [],
+                "verbose": [
+                    "bool"
+                ]
+            },
+            "path_ignored": {
+                "message": [
+                    "str"
+                ],
+                "path": [],
+                "return": []
+            }
+        }
+    },
+    "black.rusty": {
+        "Err": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "e": [
+                    "int"
+                ]
+            },
+            "err": {
+                "return": [
+                    "typing.Any",
+                    "Exception",
+                    "Any"
+                ]
+            }
+        },
+        "Ok": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "value": []
+            },
+            "ok": {
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "black.schema": {
+        "global": {
+            "get_schema": {
+                "return": [],
+                "tool_name": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "black.strings": {
+        "global": {
+            "_cached_compile": {
+                "return": [],
+                "pattern": [
+                    "str",
+                    "re.compile",
+                    "pattern"
+                ]
+            },
+            "assert_is_leaf_string": {
+                "return": [
+                    "None"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "char_width": {
+                "char": [
+                    "str"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "count_chars_in_width": {
+                "max_width": [
+                    "int"
+                ],
+                "line_str": [
+                    "str"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "get_string_prefix": {
+                "string": [
+                    "str"
+                ],
+                "return": []
+            },
+            "global": {
+                "STRING_PREFIX_CHARS": [
+                    "str"
+                ],
+                "UNICODE_ESCAPE_RE": [
+                    "typing.Pattern"
+                ],
+                "STRING_PREFIX_RE": [
+                    "typing.Pattern"
+                ]
+            },
+            "fix_multiline_docstring": {
+                "return": [
+                    "str"
+                ],
+                "docstring": [
+                    "str"
+                ],
+                "prefix": []
+            },
+            "has_triple_quotes": {
+                "return": [
+                    "bool"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "lines_with_leading_tabs_expanded": {
+                "return": [
+                    "typing.Any"
+                ],
+                "s": []
+            },
+            "normalize_fstring_quotes": {
+                "is_raw_fstring": [
+                    "bool"
+                ],
+                "middles": [
+                    "List[Any]",
+                    "value",
+                    "List[MiddleType]",
+                    "List[str]",
+                    "List[Token]",
+                    "List",
+                    "Middle",
+                    "Tuple",
+                    "middles",
+                    "List[Middle]",
+                    "List[SomeObjectWithValueAttribute]"
+                ],
+                "quote": [
+                    "str",
+                    "quote"
+                ],
+                "return": []
+            },
+            "normalize_string_prefix": {
+                "s": [
+                    "str"
+                ],
+                "return": []
+            },
+            "normalize_string_quotes": {
+                "return": [
+                    "str"
+                ],
+                "s": [
+                    "str"
+                ]
+            },
+            "normalize_unicode_escape_sequences": {
+                "leaf": [],
+                "return": []
+            },
+            "str_width": {
+                "return": [],
+                "line_str": []
+            },
+            "sub_twice": {
+                "original": [
+                    "str"
+                ],
+                "regex": [],
+                "replacement": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "black.trans": {
+        "global": {
+            "TErr": {
+                "return": [
+                    "Err"
+                ],
+                "err_msg": []
+            },
+            "_toggle_fexpr_quotes": {
+                "return": [
+                    "str"
+                ],
+                "fstring": [],
+                "old_quote": [
+                    "str"
+                ]
+            },
+            "fstring_contains_expr": {
+                "return": [
+                    "bool"
+                ],
+                "s": []
+            },
+            "handle_is_simple_look_up_prev": {
+                "disallowed": [
+                    "typing.Container[typing.Any]",
+                    "typing.Any",
+                    "list",
+                    "typing.Set[typing.Any]",
+                    "typing.Iterable[typing.Any]",
+                    "list[typing.Any]",
+                    "set[typing.Any]",
+                    "typing.Collection[typing.Any]",
+                    "set",
+                    "typing.Container[str]"
+                ],
+                "index": [
+                    "int"
+                ],
+                "return": [],
+                "line": [
+                    "line",
+                    "leaves",
+                    "TokenInfo",
+                    "line.leaves"
+                ]
+            },
+            "handle_is_simple_lookup_forward": {
+                "return": [],
+                "disallowed": [
+                    "typing.Any",
+                    "typing.Container[typing.Any]",
+                    "typing.Collection[typing.Any]",
+                    "set[typing.Any]",
+                    "typing.Set[typing.Any]",
+                    "typing.Container[str]"
+                ],
+                "index": [
+                    "int"
+                ],
+                "line": [
+                    "leaves",
+                    "line",
+                    "List"
+                ]
+            },
+            "hug_power_op": {
+                "features": [],
+                "line": [
+                    "line"
+                ],
+                "return": [],
+                "mode": []
+            },
+            "insert_str_child_factory": {
+                "return": [
+                    "function",
+                    "typing.Callable",
+                    "child",
+                    "None"
+                ],
+                "string_leaf": [
+                    "TreeNode",
+                    "parent",
+                    "BinaryTreeNode"
+                ]
+            },
+            "iter_fexpr_spans": {
+                "return": [],
+                "s": [
+                    "str"
+                ]
+            },
+            "is_expression_chained": {
+                "chained_leaves": [
+                    "list",
+                    "list[Leaf]"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_valid_index_factory": {
+                "seq": [],
+                "return": []
+            }
+        },
+        "StringTransformer": {
+            "__call__": {
+                "return": [
+                    "typing.Generator[str, None, None]"
+                ],
+                "_mode": [
+                    "typing.Any",
+                    "str",
+                    "mode"
+                ],
+                "line": [],
+                "_features": []
+            },
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "line_length": [
+                    "int"
+                ],
+                "normalize_strings": [
+                    "bool"
+                ]
+            },
+            "do_match": {
+                "line": [
+                    "str",
+                    "typing.Any",
+                    "line"
+                ],
+                "return": []
+            },
+            "do_transform": {
+                "line": [
+                    "str"
+                ],
+                "return": [],
+                "string_indices": []
+            },
+            "global": {
+                "__name__": []
+            }
+        },
+        "StringParser": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "_next_state": {
+                "leaf": [
+                    "typing.Any",
+                    "type",
+                    "leaf"
+                ],
+                "return": [
+                    "bool",
+                    "typing.Optional[bool]"
+                ]
+            },
+            "global": {
+                "DEFAULT_TOKEN": [],
+                "DONE": [],
+                "LPAR": [
+                    "int",
+                    "target",
+                    "StringParser",
+                    "pip",
+                    "Final",
+                    "token",
+                    "LPAR"
+                ],
+                "NAME": [
+                    "int",
+                    "NAME",
+                    "StringParser",
+                    "token"
+                ],
+                "RPAR": [
+                    "int",
+                    "Final",
+                    "RPAR",
+                    "Final[int]",
+                    "token.RPAR"
+                ],
+                "DOT": [],
+                "SINGLE_FMT_ARG": [
+                    "int",
+                    "Final",
+                    "typing.Final[int]"
+                ],
+                "PERCENT": [
+                    "int",
+                    "token.PERCENT",
+                    "token"
+                ],
+                "START": [],
+                "_goto": [
+                    "ParserState",
+                    "Final",
+                    "NodeType",
+                    "dict[tuple[ParserState, NodeType], ParserState]",
+                    "StringParser",
+                    "int",
+                    "Final[dict[tuple[ParserState, NodeType], ParserState]]",
+                    "token.PERCENT"
+                ]
+            },
+            "parse": {
+                "leaves": [
+                    "list[Leaf]",
+                    "typing.Sequence[Leaf]"
+                ],
+                "string_idx": [
+                    "int"
+                ],
+                "return": []
+            }
+        },
+        "StringParenWrapper": {
+            "_assert_match": {
+                "return": [
+                    "Optional[int]",
+                    "typing.Optional[typing.Any]",
+                    "Optional[typing.Any]",
+                    "None",
+                    "typing.Optional[int]",
+                    "Optional"
+                ],
+                "LL": [
+                    "list"
+                ]
+            },
+            "_assign_match": {
+                "return": [
+                    "Optional[int]",
+                    "Optional[typing.Any]",
+                    "typing.Optional[typing.Any]",
+                    "None",
+                    "typing.Any",
+                    "idx",
+                    "typing.Optional[int]"
+                ],
+                "LL": [
+                    "List",
+                    "Array",
+                    "type",
+                    "leaf.type"
+                ]
+            },
+            "_dict_or_lambda_match": {
+                "return": [
+                    "None",
+                    "int",
+                    "Optional[int]"
+                ],
+                "LL": [
+                    "list",
+                    "List[Token]"
+                ]
+            },
+            "_else_match": {
+                "LL": [
+                    "List",
+                    "List[object]",
+                    "List[Any]",
+                    "value"
+                ],
+                "return": [
+                    "Optional[int]",
+                    "None"
+                ]
+            },
+            "_return_match": {
+                "return": [
+                    "typing.Optional[int]"
+                ],
+                "LL": [
+                    "List",
+                    "List[Any]",
+                    "List[object]",
+                    "List[Node]"
+                ]
+            },
+            "do_splitter_match": {
+                "return": [
+                    "Union[TErr, Ok[list]]",
+                    "Union[TErr, Ok[List[Any]]]",
+                    "Union[TErr, Ok]",
+                    "Union[TErr, Ok[list[typing.Any]]]",
+                    "Union[TErr, Ok[List[typing.Any]]]",
+                    "Union[TErr[str], Ok[List[Any]]]"
+                ],
+                "line": [
+                    "depth"
+                ]
+            },
+            "do_transform": {
+                "return": [],
+                "string_indices": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "line": []
+            }
+        },
+        "StringSplitter": {
+            "_get_break_idx": {
+                "max_break_idx": [
+                    "int"
+                ],
+                "return": [],
+                "string": []
+            },
+            "_get_illegal_split_indices": {
+                "string": [
+                    "str"
+                ],
+                "return": []
+            },
+            "_get_string_operator_leaves": {
+                "return": [
+                    "typing.Any"
+                ],
+                "leaves": [
+                    "typing.Iterable[typing.Any]",
+                    "typing.Iterable[str]",
+                    "typing.Iterable[bytes]"
+                ]
+            },
+            "_iter_nameescape_slices": {
+                "return": [
+                    "typing.Iterator",
+                    "typing.Iterator[Slice]",
+                    "typing.Iterator[typing.Any]"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "_maybe_normalize_string_quotes": {
+                "return": [],
+                "leaf": []
+            },
+            "_iter_fexpr_slices": {
+                "return": [
+                    "typing.Generator",
+                    "typing.Generator[None, None, None]",
+                    "typing.Iterator",
+                    "typing.Iterator[None]",
+                    "typing.Iterator[typing.Any]",
+                    "ty"
+                ],
+                "string": [
+                    "str"
+                ]
+            },
+            "_normalize_f_string": {
+                "return": [],
+                "prefix": [],
+                "string": [
+                    "str"
+                ]
+            },
+            "do_splitter_match": {
+                "return": [
+                    "typing.Union[TErr[str], Ok[list]]",
+                    "typing.Union[TErr, Ok[list[typing.Any]]]",
+                    "typing.Union[TErr, Ok]",
+                    "typing.Union[TErr, Ok[list]]"
+                ],
+                "line": [
+                    "typing.Any",
+                    "leaves",
+                    "line",
+                    "TaggingDatasetReader",
+                    "Any"
+                ]
+            },
+            "do_transform": {
+                "return": [],
+                "string_indices": [],
+                "line": [
+                    "line",
+                    "leaves",
+                    "depth",
+                    "typing.Any",
+                    "Line",
+                    "Any"
+                ]
+            },
+            "global": {
+                "MIN_SUBSTR_SIZE": [
+                    "int",
+                    "Final",
+                    "Final[int]",
+                    "StringSplitter",
+                    "typing.Final[int]"
+                ]
+            }
+        },
+        "BaseStringSplitter": {
+            "_get_max_string_length": {
+                "return": [],
+                "line": [
+                    "typing.Any",
+                    "line",
+                    "depth",
+                    "Line"
+                ],
+                "string_idx": [
+                    "int"
+                ]
+            },
+            "_prefer_paren_wrap_match": {
+                "LL": [
+                    "list[typing.Any]"
+                ],
+                "return": [
+                    "Optional[int]",
+                    "typing.Optional[int]"
+                ]
+            },
+            "_validate": {
+                "return": [],
+                "line": [
+                    "typing.Any",
+                    "line",
+                    "Line",
+                    "Any",
+                    "line.comments",
+                    "comments",
+                    "line.leaves",
+                    "LineInfo"
+                ],
+                "string_idx": [
+                    "int"
+                ]
+            },
+            "do_match": {
+                "line": [],
+                "return": []
+            },
+            "do_splitter_match": {
+                "line": [],
+                "return": []
+            },
+            "global": {
+                "STRING_OPERATORS": [
+                    "token",
+                    "Final",
+                    "list[int]",
+                    "list[token]",
+                    "list[token.TokenType]",
+                    "BaseStringSplitter",
+                    "typing.Final"
+                ]
+            }
+        },
+        "CustomSplitMapMixin": {
+            "_get_key": {
+                "string": [
+                    "str"
+                ],
+                "return": []
+            },
+            "add_custom_splits": {
+                "return": [],
+                "custom_splits": [
+                    "typing.Iterable[typing.Any]",
+                    "typing.Iterable"
+                ],
+                "string": []
+            },
+            "global": {
+                "_CUSTOM_SPLIT_MAP": [],
+                "_Key": [
+                    "tuple[StringID, str]",
+                    "str",
+                    "tuple[int, str]",
+                    "int",
+                    "typing",
+                    "StringID"
+                ]
+            },
+            "has_custom_splits": {
+                "return": [],
+                "string": [
+                    "str"
+                ]
+            },
+            "pop_custom_splits": {
+                "return": [],
+                "string": []
+            }
+        },
+        "StringMerger": {
+            "_merge_one_string_group": {
+                "is_valid_index": [
+                    "bool"
+                ],
+                "return": [],
+                "LL": [],
+                "string_idx": [
+                    "int"
+                ]
+            },
+            "_merge_string_group": {
+                "return": [
+                    "Union[TErr, Ok]",
+                    "Union[TErr[str], Ok[Any]]",
+                    "Union[Ok, TErr]",
+                    "Ok"
+                ],
+                "line": [
+                    "typing.Any",
+                    "line",
+                    "Line",
+                    "TextField"
+                ],
+                "string_indices": [
+                    "list[typing.Any]",
+                    "typing.Iterable[typing.Any]"
+                ]
+            },
+            "_remove_backslash_line_continuation_chars": {
+                "return": [],
+                "string_indices": [
+                    "list[typing.Any]",
+                    "typing.Iterable[typing.Any]",
+                    "list[int]",
+                    "Iterable[typing.Any]"
+                ],
+                "line": [
+                    "typing.Any",
+                    "Any",
+                    "Line",
+                    "line",
+                    "leaves",
+                    "CustomLineType"
+                ]
+            },
+            "_validate_msg": {
+                "string_idx": [
+                    "int"
+                ],
+                "return": [
+                    "None",
+                    "Ok",
+                    "typing",
+                    "Ok[None]",
+                    "TErr",
+                    "error"
+                ],
+                "line": []
+            },
+            "do_match": {
+                "line": [],
+                "return": []
+            },
+            "do_transform": {
+                "line": [
+                    "typing.Any",
+                    "str"
+                ],
+                "return": [],
+                "string_indices": []
+            }
+        },
+        "StringParenStripper": {
+            "_transform_to_new_line": {
+                "return": [],
+                "line": [
+                    "line",
+                    "leaves",
+                    "clone",
+                    "object",
+                    "typing.Any"
+                ],
+                "string_and_rpar_indices": [
+                    "typing.Iterable[typing.Any]"
+                ]
+            },
+            "do_match": {
+                "line": [
+                    "leaves",
+                    "SyntaxTree",
+                    "Node",
+                    "Any"
+                ],
+                "return": []
+            },
+            "do_transform": {
+                "return": [
+                    "Err",
+                    "CannotTransform",
+                    "yield",
+                    "Ok",
+                    "Result",
+                    "Union[Ok, Err]"
+                ],
+                "string_indices": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "line": [
+                    "line",
+                    "typing.Any",
+                    "leaves"
+                ]
+            }
+        },
+        "CustomSplit": {
+            "global": {
+                "has_prefix": [
+                    "bool",
+                    "False",
+                    "list[typing.Any]",
+                    "StringMerger"
+                ],
+                "break_idx": []
+            }
+        }
+    }
+}

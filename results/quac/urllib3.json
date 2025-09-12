@@ -1,0 +1,3191 @@
+{
+    "urllib3": {
+        "global": {
+            "add_stderr_logger": {
+                "level": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "logging.StreamHandler"
+                ]
+            },
+            "disable_warnings": {
+                "category": [
+                    "builtins.type"
+                ],
+                "return": []
+            },
+            "request": {
+                "method": [
+                    "builtins.str"
+                ],
+                "url": [
+                    "builtins.str"
+                ],
+                "body": [
+                    "builtins.bytes"
+                ],
+                "fields": [
+                    "typing.Mapping[urllib3.fields.RequestField, typing.Any]"
+                ],
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "preload_content": [
+                    "builtins.bool"
+                ],
+                "decode_content": [
+                    "builtins.bool"
+                ],
+                "redirect": [
+                    "builtins.bool"
+                ],
+                "retries": [],
+                "timeout": [
+                    "builtins.int"
+                ],
+                "json": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3._collections": {
+        "global": {
+            "ensure_can_construct_http_header_dict": {
+                "potential": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "RecentlyUsedContainer": {
+            "__init__": {
+                "maxsize": [
+                    "builtins.int"
+                ],
+                "dispose_func": [],
+                "return": []
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "__setitem__": {
+                "key": [],
+                "value": [],
+                "return": []
+            },
+            "__delitem__": {
+                "key": [],
+                "return": []
+            },
+            "__len__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "clear": {
+                "return": []
+            },
+            "keys": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            }
+        },
+        "HTTPHeaderDictItemView": {
+            "__init__": {
+                "headers": [],
+                "return": []
+            },
+            "__len__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__iter__": {
+                "return": []
+            },
+            "__contains__": {
+                "item": [
+                    "builtins.tuple[builtins.str, builtins.str]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "HTTPHeaderDict": {
+            "__init__": {
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "__setitem__": {
+                "key": [
+                    "builtins.str"
+                ],
+                "val": [],
+                "return": []
+            },
+            "__getitem__": {
+                "key": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__delitem__": {
+                "key": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__contains__": {
+                "key": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "setdefault": {
+                "key": [],
+                "default": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__eq__": {
+                "other": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__ne__": {
+                "other": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__len__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "discard": {
+                "key": [],
+                "return": []
+            },
+            "add": {
+                "key": [
+                    "builtins.str"
+                ],
+                "val": [
+                    "builtins.str"
+                ],
+                "combine": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "extend": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "getlist": {
+                "key": [
+                    "builtins.str"
+                ],
+                "default": [
+                    "urllib3._collections._Sentinel"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "_prepare_for_method_change": {
+                "return": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_copy_from": {
+                "other": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "return": []
+            },
+            "copy": {
+                "return": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ]
+            },
+            "iteritems": {
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "itermerged": {
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, builtins.str], typing.Any, typing.Any]"
+                ]
+            },
+            "items": {
+                "return": [
+                    "urllib3._collections.HTTPHeaderDictItemView"
+                ]
+            },
+            "_has_value_for_header": {
+                "header_name": [
+                    "builtins.str"
+                ],
+                "potential_value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__ior__": {
+                "other": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ]
+            },
+            "__or__": {
+                "other": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ]
+            },
+            "__ror__": {
+                "other": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "typing.MutableSequence[typing.Any]"
+                ]
+            }
+        }
+    },
+    "urllib3._request_methods": {
+        "RequestMethods": {
+            "__init__": {
+                "headers": [],
+                "return": []
+            },
+            "urlopen": {
+                "method": [],
+                "url": [],
+                "body": [],
+                "headers": [],
+                "encode_multipart": [
+                    "builtins.bool"
+                ],
+                "multipart_boundary": [],
+                "kw": [],
+                "return": []
+            },
+            "request": {
+                "method": [
+                    "builtins.str"
+                ],
+                "url": [
+                    "builtins.str"
+                ],
+                "body": [
+                    "builtins.bytes"
+                ],
+                "fields": [
+                    "typing.Mapping[urllib3.fields.RequestField, typing.Any]"
+                ],
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "json": [],
+                "urlopen_kw": [],
+                "return": []
+            },
+            "request_encode_url": {
+                "method": [],
+                "url": [
+                    "builtins.str"
+                ],
+                "fields": [],
+                "headers": [],
+                "urlopen_kw": [],
+                "return": []
+            },
+            "request_encode_body": {
+                "method": [],
+                "url": [],
+                "fields": [
+                    "typing.Mapping[urllib3.fields.RequestField, typing.Any]"
+                ],
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "encode_multipart": [
+                    "builtins.bool"
+                ],
+                "multipart_boundary": [
+                    "builtins.str"
+                ],
+                "urlopen_kw": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.connection": {
+        "global": {
+            "_ssl_wrap_socket_and_match_hostname": {
+                "sock": [],
+                "cert_reqs": [
+                    "builtins.str"
+                ],
+                "ssl_version": [
+                    "builtins.str"
+                ],
+                "ssl_minimum_version": [],
+                "ssl_maximum_version": [],
+                "cert_file": [],
+                "key_file": [],
+                "key_password": [],
+                "ca_certs": [],
+                "ca_cert_dir": [],
+                "ca_cert_data": [],
+                "assert_hostname": [],
+                "assert_fingerprint": [
+                    "codecs.Codec"
+                ],
+                "server_hostname": [
+                    "builtins.str"
+                ],
+                "ssl_context": [
+                    "ssl.SSLContext"
+                ],
+                "tls_in_tls": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "urllib3.connection._WrappedAndVerifiedSocket"
+                ]
+            },
+            "_match_hostname": {
+                "cert": [
+                    "urllib3.response.BytesQueueBuffer"
+                ],
+                "asserted_hostname": [
+                    "builtins.str"
+                ],
+                "hostname_checks_common_name": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_wrap_proxy_error": {
+                "err": [],
+                "proxy_scheme": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "urllib3.exceptions.ProxyError"
+                ]
+            },
+            "_get_default_user_agent": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_url_from_connection": {
+                "conn": [
+                    "urllib3.connection.HTTPSConnection"
+                ],
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        },
+        "HTTPConnection": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "timeout": [],
+                "source_address": [],
+                "blocksize": [
+                    "builtins.int"
+                ],
+                "socket_options": [
+                    "builtins.list[builtins.tuple[builtins.int, builtins.int, builtins.int]]"
+                ],
+                "proxy": [],
+                "proxy_config": [],
+                "return": []
+            },
+            "host": {
+                "value": [],
+                "return": []
+            },
+            "_new_conn": {
+                "return": [
+                    "socket.socket"
+                ]
+            },
+            "set_tunnel": {
+                "host": [],
+                "port": [],
+                "headers": [],
+                "scheme": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "connect": {
+                "return": []
+            },
+            "is_closed": {
+                "return": []
+            },
+            "is_connected": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "has_connected_to_proxy": {
+                "return": []
+            },
+            "proxy_is_forwarding": {
+                "return": []
+            },
+            "proxy_is_tunneling": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "putrequest": {
+                "method": [],
+                "url": [],
+                "skip_host": [
+                    "builtins.bool"
+                ],
+                "skip_accept_encoding": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "putheader": {
+                "header": [
+                    "builtins.str"
+                ],
+                "values": [],
+                "return": []
+            },
+            "request": {
+                "method": [
+                    "builtins.str"
+                ],
+                "url": [],
+                "body": [
+                    "builtins.str"
+                ],
+                "headers": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ],
+                "chunked": [
+                    "builtins.bool"
+                ],
+                "preload_content": [
+                    "builtins.bool"
+                ],
+                "decode_content": [
+                    "builtins.bool"
+                ],
+                "enforce_content_length": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "request_chunked": {
+                "method": [
+                    "builtins.str"
+                ],
+                "url": [],
+                "body": [
+                    "builtins.str"
+                ],
+                "headers": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ],
+                "return": []
+            },
+            "getresponse": {
+                "return": []
+            }
+        },
+        "HTTPSConnection": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "timeout": [],
+                "source_address": [],
+                "blocksize": [
+                    "builtins.int"
+                ],
+                "socket_options": [
+                    "builtins.list[typing.Any]"
+                ],
+                "proxy": [],
+                "proxy_config": [],
+                "cert_reqs": [
+                    "builtins.str"
+                ],
+                "assert_hostname": [],
+                "assert_fingerprint": [],
+                "server_hostname": [],
+                "ssl_context": [],
+                "ca_certs": [],
+                "ca_cert_dir": [],
+                "ca_cert_data": [],
+                "ssl_minimum_version": [],
+                "ssl_maximum_version": [],
+                "ssl_version": [],
+                "cert_file": [],
+                "key_file": [],
+                "key_password": [],
+                "return": []
+            },
+            "set_cert": {
+                "key_file": [],
+                "cert_file": [],
+                "cert_reqs": [
+                    "builtins.str"
+                ],
+                "key_password": [],
+                "ca_certs": [],
+                "assert_hostname": [],
+                "assert_fingerprint": [],
+                "ca_cert_dir": [],
+                "ca_cert_data": [],
+                "return": []
+            },
+            "connect": {
+                "return": []
+            },
+            "_connect_tls_proxy": {
+                "hostname": [],
+                "sock": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.connectionpool": {
+        "global": {
+            "connection_from_url": {
+                "url": [
+                    "builtins.str"
+                ],
+                "kw": [],
+                "return": [
+                    "urllib3.connectionpool.HTTPSConnectionPool"
+                ]
+            },
+            "_normalize_host": {
+                "host": [
+                    "builtins.str"
+                ],
+                "scheme": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_url_from_pool": {
+                "pool": [
+                    "urllib3.connectionpool.ConnectionPool"
+                ],
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_close_pool_connections": {
+                "pool": [
+                    "urllib3.response.BytesQueueBuffer"
+                ],
+                "return": []
+            }
+        },
+        "ConnectionPool": {
+            "__init__": {
+                "host": [
+                    "builtins.str"
+                ],
+                "port": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "urllib3.connectionpool.ConnectionPool"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "close": {
+                "return": []
+            }
+        },
+        "HTTPConnectionPool": {
+            "__init__": {
+                "host": [
+                    "builtins.str"
+                ],
+                "port": [],
+                "timeout": [
+                    "urllib3.util.timeout.Timeout"
+                ],
+                "maxsize": [
+                    "builtins.int"
+                ],
+                "block": [
+                    "builtins.bool"
+                ],
+                "headers": [],
+                "retries": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "_proxy": [],
+                "_proxy_headers": [],
+                "_proxy_config": [],
+                "conn_kw": [],
+                "return": []
+            },
+            "_new_conn": {
+                "return": []
+            },
+            "_get_conn": {
+                "timeout": [],
+                "return": []
+            },
+            "_put_conn": {
+                "conn": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "_validate_conn": {
+                "conn": [],
+                "return": []
+            },
+            "_prepare_proxy": {
+                "conn": [],
+                "return": []
+            },
+            "_get_timeout": {
+                "timeout": [
+                    "urllib3.util.timeout.Timeout"
+                ],
+                "return": [
+                    "urllib3.util.timeout.Timeout"
+                ]
+            },
+            "_raise_timeout": {
+                "err": [
+                    "socket.herror"
+                ],
+                "url": [],
+                "timeout_value": [],
+                "return": []
+            },
+            "_make_request": {
+                "conn": [
+                    "urllib3.connection.HTTPConnection"
+                ],
+                "method": [],
+                "url": [],
+                "body": [],
+                "headers": [],
+                "retries": [],
+                "timeout": [
+                    "urllib3.util.timeout.Timeout"
+                ],
+                "chunked": [
+                    "builtins.bool"
+                ],
+                "response_conn": [],
+                "preload_content": [
+                    "builtins.bool"
+                ],
+                "decode_content": [
+                    "builtins.bool"
+                ],
+                "enforce_content_length": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "urllib3.response.HTTPResponse"
+                ]
+            },
+            "close": {
+                "return": []
+            },
+            "is_same_host": {
+                "url": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "urlopen": {
+                "method": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "url": [
+                    "builtins.str"
+                ],
+                "body": [
+                    "typing.IO"
+                ],
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "retries": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "redirect": [
+                    "builtins.bool"
+                ],
+                "assert_same_host": [
+                    "builtins.bool"
+                ],
+                "timeout": [
+                    "urllib3.util.timeout.Timeout"
+                ],
+                "pool_timeout": [],
+                "release_conn": [
+                    "builtins.bool"
+                ],
+                "chunked": [
+                    "builtins.bool"
+                ],
+                "body_pos": [
+                    "urllib3.util.request._TYPE_FAILEDTELL"
+                ],
+                "preload_content": [
+                    "builtins.bool"
+                ],
+                "decode_content": [
+                    "builtins.bool"
+                ],
+                "response_kw": [],
+                "return": [
+                    "urllib3.util.retry.Retry"
+                ]
+            }
+        },
+        "HTTPSConnectionPool": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "timeout": [],
+                "maxsize": [
+                    "builtins.int"
+                ],
+                "block": [
+                    "builtins.bool"
+                ],
+                "headers": [],
+                "retries": [],
+                "_proxy": [],
+                "_proxy_headers": [],
+                "key_file": [],
+                "cert_file": [],
+                "cert_reqs": [],
+                "key_password": [],
+                "ca_certs": [],
+                "ssl_version": [],
+                "ssl_minimum_version": [],
+                "ssl_maximum_version": [],
+                "assert_hostname": [],
+                "assert_fingerprint": [],
+                "ca_cert_dir": [],
+                "conn_kw": [],
+                "return": []
+            },
+            "_prepare_proxy": {
+                "conn": [
+                    "http.client.HTTPConnection"
+                ],
+                "return": []
+            },
+            "_new_conn": {
+                "return": []
+            },
+            "_validate_conn": {
+                "conn": [
+                    "urllib3.connection.HTTPConnection"
+                ],
+                "return": []
+            }
+        }
+    },
+    "urllib3.exceptions": {
+        "PoolError": {
+            "__init__": {
+                "pool": [],
+                "message": [],
+                "return": []
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any]]"
+                ]
+            }
+        },
+        "RequestError": {
+            "__init__": {
+                "pool": [],
+                "url": [],
+                "message": [],
+                "return": []
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ]
+            }
+        },
+        "ProxyError": {
+            "__init__": {
+                "message": [],
+                "error": [],
+                "return": []
+            }
+        },
+        "MaxRetryError": {
+            "__init__": {
+                "pool": [],
+                "url": [],
+                "reason": [],
+                "return": []
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ]
+            }
+        },
+        "HostChangedError": {
+            "__init__": {
+                "pool": [],
+                "url": [],
+                "retries": [
+                    "builtins.int"
+                ],
+                "return": []
+            }
+        },
+        "NewConnectionError": {
+            "__init__": {
+                "conn": [],
+                "message": [],
+                "return": []
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any]]"
+                ]
+            },
+            "pool": {
+                "return": []
+            }
+        },
+        "NameResolutionError": {
+            "__init__": {
+                "host": [],
+                "conn": [],
+                "reason": [],
+                "return": []
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ]
+            }
+        },
+        "LocationParseError": {
+            "__init__": {
+                "location": [],
+                "return": []
+            }
+        },
+        "URLSchemeUnknown": {
+            "__init__": {
+                "scheme": [],
+                "return": []
+            }
+        },
+        "IncompleteRead": {
+            "__init__": {
+                "partial": [],
+                "expected": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "InvalidChunkLength": {
+            "__init__": {
+                "response": [
+                    "typing.IO"
+                ],
+                "length": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "ProxySchemeUnknown": {
+            "__init__": {
+                "scheme": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        },
+        "HeaderParsingError": {
+            "__init__": {
+                "defects": [],
+                "unparsed_data": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.fields": {
+        "global": {
+            "guess_content_type": {
+                "filename": [],
+                "default": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_header_param_rfc2231": {
+                "name": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_multipart_header_param": {
+                "name": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_header_param_html5": {
+                "name": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "format_header_param": {
+                "name": [],
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "RequestField": {
+            "__init__": {
+                "name": [],
+                "data": [],
+                "filename": [],
+                "headers": [],
+                "header_formatter": [],
+                "return": []
+            },
+            "from_tuples": {
+                "fieldname": [],
+                "value": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any, typing.Any], typing.Any], typing.Any], typing.Any]"
+                ],
+                "header_formatter": [],
+                "return": [
+                    "urllib3.fields.RequestField"
+                ]
+            },
+            "_render_part": {
+                "name": [],
+                "value": [],
+                "return": []
+            },
+            "_render_parts": {
+                "header_parts": [
+                    "builtins.dict[builtins.tuple[typing.Any, typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "render_headers": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "make_multipart": {
+                "content_disposition": [
+                    "builtins.str"
+                ],
+                "content_type": [],
+                "content_location": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.filepost": {
+        "global": {
+            "choose_boundary": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "iter_field_objects": {
+                "fields": [
+                    "typing.Mapping[urllib3.fields.RequestField, typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[urllib3.fields.RequestField, typing.Any, typing.Any]"
+                ]
+            },
+            "encode_multipart_formdata": {
+                "fields": [
+                    "typing.Mapping[urllib3.fields.RequestField, typing.Any]"
+                ],
+                "boundary": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.bytes, builtins.str]"
+                ]
+            }
+        }
+    },
+    "urllib3.poolmanager": {
+        "global": {
+            "_default_key_normalizer": {
+                "key_class": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "request_context": [
+                    "hmac.HMAC"
+                ],
+                "return": []
+            },
+            "proxy_from_url": {
+                "url": [
+                    "builtins.str"
+                ],
+                "kw": [],
+                "return": [
+                    "urllib3.poolmanager.ProxyManager"
+                ]
+            }
+        },
+        "PoolManager": {
+            "__init__": {
+                "num_pools": [
+                    "builtins.int"
+                ],
+                "headers": [],
+                "connection_pool_kw": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "urllib3.poolmanager.PoolManager"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_new_pool": {
+                "scheme": [
+                    "builtins.str"
+                ],
+                "host": [],
+                "port": [],
+                "request_context": [
+                    "typing.MutableMapping[builtins.str, builtins.int]"
+                ],
+                "return": []
+            },
+            "clear": {
+                "return": []
+            },
+            "connection_from_host": {
+                "host": [],
+                "port": [],
+                "scheme": [
+                    "builtins.str"
+                ],
+                "pool_kwargs": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "connection_from_context": {
+                "request_context": [
+                    "typing.MutableMapping[builtins.str, builtins.str]"
+                ],
+                "return": []
+            },
+            "connection_from_pool_key": {
+                "pool_key": [],
+                "request_context": [
+                    "typing.MutableMapping[builtins.str, builtins.str]"
+                ],
+                "return": []
+            },
+            "connection_from_url": {
+                "url": [
+                    "builtins.str"
+                ],
+                "pool_kwargs": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "_merge_pool_kwargs": {
+                "override": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "_typeshed.SupportsItemAccess[typing.Any, typing.Any]"
+                ]
+            },
+            "_proxy_requires_url_absolute_form": {
+                "parsed_url": [
+                    "urllib3.exceptions.ProxySchemeUnknown"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "urlopen": {
+                "method": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "url": [
+                    "builtins.str"
+                ],
+                "redirect": [
+                    "builtins.bool"
+                ],
+                "kw": [],
+                "return": [
+                    "urllib3.response.BaseHTTPResponse"
+                ]
+            }
+        },
+        "ProxyManager": {
+            "__init__": {
+                "proxy_url": [
+                    "builtins.str"
+                ],
+                "num_pools": [
+                    "builtins.int"
+                ],
+                "headers": [],
+                "proxy_headers": [],
+                "proxy_ssl_context": [],
+                "use_forwarding_for_https": [
+                    "builtins.bool"
+                ],
+                "proxy_assert_hostname": [],
+                "proxy_assert_fingerprint": [],
+                "connection_pool_kw": [],
+                "return": []
+            },
+            "connection_from_host": {
+                "host": [],
+                "port": [],
+                "scheme": [
+                    "builtins.str"
+                ],
+                "pool_kwargs": [],
+                "return": []
+            },
+            "_set_proxy_headers": {
+                "url": [
+                    "builtins.str"
+                ],
+                "headers": [],
+                "return": [
+                    "builtins.dict[builtins.str, builtins.str]"
+                ]
+            },
+            "urlopen": {
+                "method": [],
+                "url": [
+                    "builtins.str"
+                ],
+                "redirect": [
+                    "builtins.bool"
+                ],
+                "kw": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.response": {
+        "global": {
+            "_get_decoder": {
+                "mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "urllib3.response.DeflateDecoder"
+                ]
+            }
+        },
+        "ContentDecoder": {
+            "decompress": {
+                "data": [],
+                "return": []
+            },
+            "flush": {
+                "return": []
+            }
+        },
+        "DeflateDecoder": {
+            "__init__": {
+                "return": []
+            },
+            "decompress": {
+                "data": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "_typeshed.SupportsAdd"
+                ]
+            },
+            "flush": {
+                "return": []
+            }
+        },
+        "GzipDecoder": {
+            "__init__": {
+                "return": []
+            },
+            "decompress": {
+                "data": [],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "flush": {
+                "return": []
+            }
+        },
+        "MultiDecoder": {
+            "__init__": {
+                "modes": [
+                    "re.Pattern"
+                ],
+                "return": []
+            },
+            "flush": {
+                "return": []
+            },
+            "decompress": {
+                "data": [],
+                "return": []
+            }
+        },
+        "BytesQueueBuffer": {
+            "__init__": {
+                "return": []
+            },
+            "__len__": {
+                "return": []
+            },
+            "put": {
+                "data": [
+                    "typing.Sized"
+                ],
+                "return": []
+            },
+            "get": {
+                "n": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "get_all": {
+                "return": [
+                    "builtins.bytes"
+                ]
+            }
+        },
+        "BaseHTTPResponse": {
+            "__init__": {
+                "headers": [
+                    "urllib3._collections.HTTPHeaderDict"
+                ],
+                "status": [],
+                "version": [],
+                "version_string": [],
+                "reason": [],
+                "decode_content": [],
+                "request_url": [],
+                "retries": [],
+                "return": []
+            },
+            "get_redirect_location": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "data": {
+                "return": []
+            },
+            "json": {
+                "return": []
+            },
+            "url": {
+                "url": [],
+                "return": []
+            },
+            "connection": {
+                "return": []
+            },
+            "retries": {
+                "retries": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "return": []
+            },
+            "stream": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "decode_content": [],
+                "return": []
+            },
+            "read": {
+                "amt": [],
+                "decode_content": [],
+                "cache_content": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "read1": {
+                "amt": [],
+                "decode_content": [],
+                "return": []
+            },
+            "read_chunked": {
+                "amt": [],
+                "decode_content": [],
+                "return": []
+            },
+            "release_conn": {
+                "return": []
+            },
+            "drain_conn": {
+                "return": []
+            },
+            "shutdown": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "_init_decoder": {
+                "return": []
+            },
+            "_decode": {
+                "data": [
+                    "builtins.bytes"
+                ],
+                "decode_content": [],
+                "flush_decoder": [],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "_flush_decoder": {
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "readinto": {
+                "b": [
+                    "typing.MutableSequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "getheaders": {
+                "return": []
+            },
+            "getheader": {
+                "name": [],
+                "default": [],
+                "return": []
+            },
+            "info": {
+                "return": []
+            },
+            "geturl": {
+                "return": []
+            }
+        },
+        "HTTPResponse": {
+            "__init__": {
+                "body": [
+                    "builtins.str"
+                ],
+                "headers": [],
+                "status": [
+                    "builtins.int"
+                ],
+                "version": [
+                    "builtins.int"
+                ],
+                "version_string": [
+                    "builtins.str"
+                ],
+                "reason": [],
+                "preload_content": [
+                    "builtins.bool"
+                ],
+                "decode_content": [
+                    "builtins.bool"
+                ],
+                "original_response": [],
+                "pool": [],
+                "connection": [],
+                "msg": [],
+                "retries": [],
+                "enforce_content_length": [
+                    "builtins.bool"
+                ],
+                "request_method": [
+                    "builtins.str"
+                ],
+                "request_url": [],
+                "auto_close": [
+                    "builtins.bool"
+                ],
+                "sock_shutdown": [],
+                "return": []
+            },
+            "release_conn": {
+                "return": []
+            },
+            "drain_conn": {
+                "return": []
+            },
+            "data": {
+                "return": []
+            },
+            "connection": {
+                "return": []
+            },
+            "isclosed": {
+                "return": []
+            },
+            "tell": {
+                "return": []
+            },
+            "_init_length": {
+                "request_method": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_error_catcher": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_fp_read": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "read1": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bytes"
+                ]
+            },
+            "_raw_read": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "read1": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "read": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "decode_content": [],
+                "cache_content": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "read1": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "decode_content": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "stream": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "decode_content": [],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "shutdown": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "closed": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "fileno": {
+                "return": []
+            },
+            "flush": {
+                "return": []
+            },
+            "supports_chunked_reads": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_update_chunk_length": {
+                "return": []
+            },
+            "_handle_chunk": {
+                "amt": [
+                    "_typeshed.SupportsSub"
+                ],
+                "return": []
+            },
+            "read_chunked": {
+                "amt": [
+                    "builtins.int"
+                ],
+                "decode_content": [],
+                "return": [
+                    "typing.Generator[builtins.bytes, typing.Any, typing.Any]"
+                ]
+            },
+            "url": {
+                "url": [],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Generator[builtins.bytes, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "urllib3.contrib.pyopenssl": {
+        "global": {
+            "inject_into_urllib3": {
+                "return": []
+            },
+            "extract_from_urllib3": {
+                "return": []
+            },
+            "_validate_dependencies_met": {
+                "return": []
+            },
+            "_dnsname_to_stdlib": {
+                "name": [],
+                "return": []
+            },
+            "get_subj_alt_name": {
+                "peer_cert": [],
+                "return": []
+            },
+            "_verify_callback": {
+                "cnx": [],
+                "x509": [],
+                "err_no": [],
+                "err_depth": [],
+                "return_code": [],
+                "return": []
+            }
+        },
+        "WrappedSocket": {
+            "__init__": {
+                "connection": [],
+                "socket": [],
+                "suppress_ragged_eofs": [],
+                "return": []
+            },
+            "fileno": {
+                "return": []
+            },
+            "_decref_socketios": {
+                "return": []
+            },
+            "recv": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "recv_into": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "settimeout": {
+                "timeout": [],
+                "return": []
+            },
+            "_send_until_done": {
+                "data": [],
+                "return": []
+            },
+            "sendall": {
+                "data": [],
+                "return": []
+            },
+            "shutdown": {
+                "how": [],
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "_real_close": {
+                "return": []
+            },
+            "getpeercert": {
+                "binary_form": [],
+                "return": []
+            },
+            "version": {
+                "return": []
+            },
+            "selected_alpn_protocol": {
+                "return": []
+            }
+        },
+        "PyOpenSSLContext": {
+            "__init__": {
+                "protocol": [],
+                "return": []
+            },
+            "options": {
+                "value": [],
+                "return": []
+            },
+            "verify_flags": {
+                "value": [],
+                "return": []
+            },
+            "verify_mode": {
+                "value": [],
+                "return": []
+            },
+            "set_default_verify_paths": {
+                "return": []
+            },
+            "set_ciphers": {
+                "ciphers": [],
+                "return": []
+            },
+            "load_verify_locations": {
+                "cafile": [],
+                "capath": [],
+                "cadata": [],
+                "return": []
+            },
+            "load_cert_chain": {
+                "certfile": [],
+                "keyfile": [],
+                "password": [],
+                "return": []
+            },
+            "set_alpn_protocols": {
+                "protocols": [],
+                "return": []
+            },
+            "wrap_socket": {
+                "sock": [],
+                "server_side": [],
+                "do_handshake_on_connect": [],
+                "suppress_ragged_eofs": [],
+                "server_hostname": [],
+                "return": []
+            },
+            "_set_ctx_options": {
+                "return": []
+            },
+            "minimum_version": {
+                "minimum_version": [],
+                "return": []
+            },
+            "maximum_version": {
+                "maximum_version": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.socks": {
+        "SOCKSConnection": {
+            "__init__": {
+                "_socks_options": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_new_conn": {
+                "return": []
+            }
+        },
+        "SOCKSProxyManager": {
+            "__init__": {
+                "proxy_url": [],
+                "username": [],
+                "password": [],
+                "num_pools": [],
+                "headers": [],
+                "connection_pool_kw": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.emscripten": {
+        "global": {
+            "inject_into_urllib3": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.emscripten.connection": {
+        "EmscriptenHTTPConnection": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "timeout": [],
+                "source_address": [],
+                "blocksize": [],
+                "socket_options": [],
+                "proxy": [],
+                "proxy_config": [],
+                "return": []
+            },
+            "set_tunnel": {
+                "host": [],
+                "port": [],
+                "headers": [],
+                "scheme": [],
+                "return": []
+            },
+            "connect": {
+                "return": []
+            },
+            "request": {
+                "method": [],
+                "url": [],
+                "body": [],
+                "headers": [],
+                "chunked": [],
+                "preload_content": [],
+                "decode_content": [],
+                "enforce_content_length": [],
+                "return": []
+            },
+            "getresponse": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "is_closed": {
+                "return": []
+            },
+            "is_connected": {
+                "return": []
+            },
+            "has_connected_to_proxy": {
+                "return": []
+            }
+        },
+        "EmscriptenHTTPSConnection": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "timeout": [],
+                "source_address": [],
+                "blocksize": [],
+                "socket_options": [],
+                "proxy": [],
+                "proxy_config": [],
+                "cert_reqs": [],
+                "assert_hostname": [],
+                "assert_fingerprint": [],
+                "server_hostname": [],
+                "ssl_context": [],
+                "ca_certs": [],
+                "ca_cert_dir": [],
+                "ca_cert_data": [],
+                "ssl_minimum_version": [],
+                "ssl_maximum_version": [],
+                "ssl_version": [],
+                "cert_file": [],
+                "key_file": [],
+                "key_password": [],
+                "return": []
+            },
+            "set_cert": {
+                "key_file": [],
+                "cert_file": [],
+                "cert_reqs": [],
+                "key_password": [],
+                "ca_certs": [],
+                "assert_hostname": [],
+                "assert_fingerprint": [],
+                "ca_cert_dir": [],
+                "ca_cert_data": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.emscripten.fetch": {
+        "global": {
+            "_obj_from_dict": {
+                "dict_val": [],
+                "return": []
+            },
+            "is_in_browser_main_thread": {
+                "return": []
+            },
+            "is_cross_origin_isolated": {
+                "return": []
+            },
+            "is_in_node": {
+                "return": []
+            },
+            "is_worker_available": {
+                "return": []
+            },
+            "send_streaming_request": {
+                "request": [],
+                "return": []
+            },
+            "_show_timeout_warning": {
+                "return": []
+            },
+            "_show_streaming_warning": {
+                "return": []
+            },
+            "send_request": {
+                "request": [],
+                "return": []
+            },
+            "send_jspi_request": {
+                "request": [],
+                "streaming": [],
+                "return": []
+            },
+            "_run_sync_with_timeout": {
+                "promise": [],
+                "timeout": [],
+                "js_abort_controller": [],
+                "request": [],
+                "response": [],
+                "return": []
+            },
+            "has_jspi": {
+                "return": []
+            },
+            "_is_node_js": {
+                "return": []
+            },
+            "streaming_ready": {
+                "return": []
+            },
+            "wait_for_streaming_ready": {
+                "return": []
+            }
+        },
+        "_RequestError": {
+            "__init__": {
+                "message": [],
+                "request": [],
+                "response": [],
+                "return": []
+            }
+        },
+        "_ReadStream": {
+            "__init__": {
+                "int_buffer": [],
+                "byte_buffer": [],
+                "timeout": [],
+                "worker": [],
+                "connection_id": [],
+                "request": [],
+                "return": []
+            },
+            "__del__": {
+                "return": []
+            },
+            "is_closed": {
+                "return": []
+            },
+            "closed": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "readable": {
+                "return": []
+            },
+            "writable": {
+                "return": []
+            },
+            "seekable": {
+                "return": []
+            },
+            "readinto": {
+                "byte_obj": [],
+                "return": []
+            }
+        },
+        "_StreamingFetcher": {
+            "__init__": {
+                "return": []
+            },
+            "send": {
+                "request": [],
+                "return": []
+            }
+        },
+        "_JSPIReadStream": {
+            "__init__": {
+                "js_read_stream": [],
+                "timeout": [],
+                "request": [],
+                "response": [],
+                "js_abort_controller": [],
+                "return": []
+            },
+            "__del__": {
+                "return": []
+            },
+            "is_closed": {
+                "return": []
+            },
+            "closed": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "readable": {
+                "return": []
+            },
+            "writable": {
+                "return": []
+            },
+            "seekable": {
+                "return": []
+            },
+            "_get_next_buffer": {
+                "return": []
+            },
+            "readinto": {
+                "byte_obj": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.emscripten.request": {
+        "EmscriptenRequest": {
+            "set_header": {
+                "name": [],
+                "value": [],
+                "return": []
+            },
+            "set_body": {
+                "body": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.contrib.emscripten.response": {
+        "EmscriptenHttpResponseWrapper": {
+            "__init__": {
+                "internal_response": [],
+                "url": [],
+                "connection": [],
+                "return": []
+            },
+            "url": {
+                "url": [],
+                "return": []
+            },
+            "connection": {
+                "return": []
+            },
+            "retries": {
+                "retries": [],
+                "return": []
+            },
+            "stream": {
+                "amt": [],
+                "decode_content": [],
+                "return": []
+            },
+            "_init_length": {
+                "request_method": [],
+                "return": []
+            },
+            "read": {
+                "amt": [],
+                "decode_content": [],
+                "cache_content": [],
+                "return": []
+            },
+            "read_chunked": {
+                "amt": [],
+                "decode_content": [],
+                "return": []
+            },
+            "release_conn": {
+                "return": []
+            },
+            "drain_conn": {
+                "return": []
+            },
+            "data": {
+                "return": []
+            },
+            "json": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "_error_catcher": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.http2": {
+        "global": {
+            "inject_into_urllib3": {
+                "return": []
+            },
+            "extract_from_urllib3": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.http2.connection": {
+        "global": {
+            "_is_legal_header_name": {
+                "name": [],
+                "return": []
+            },
+            "_is_illegal_header_value": {
+                "value": [],
+                "return": []
+            }
+        },
+        "_LockedObject": {
+            "__init__": {
+                "obj": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": []
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "HTTP2Connection": {
+            "__init__": {
+                "host": [],
+                "port": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_new_h2_conn": {
+                "return": []
+            },
+            "connect": {
+                "return": []
+            },
+            "putrequest": {
+                "method": [],
+                "url": [],
+                "kwargs": [],
+                "return": []
+            },
+            "putheader": {
+                "header": [],
+                "values": [],
+                "return": []
+            },
+            "endheaders": {
+                "message_body": [],
+                "return": []
+            },
+            "send": {
+                "data": [],
+                "return": []
+            },
+            "set_tunnel": {
+                "host": [],
+                "port": [],
+                "headers": [],
+                "scheme": [],
+                "return": []
+            },
+            "getresponse": {
+                "return": []
+            },
+            "request": {
+                "method": [],
+                "url": [],
+                "body": [],
+                "headers": [],
+                "preload_content": [],
+                "decode_content": [],
+                "enforce_content_length": [],
+                "kwargs": [],
+                "return": []
+            },
+            "close": {
+                "return": []
+            }
+        },
+        "HTTP2Response": {
+            "__init__": {
+                "status": [],
+                "headers": [],
+                "request_url": [],
+                "data": [],
+                "decode_content": [],
+                "return": []
+            },
+            "data": {
+                "return": []
+            },
+            "get_redirect_location": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.http2.probe": {
+        "_HTTP2ProbeCache": {
+            "__init__": {
+                "return": []
+            },
+            "acquire_and_get": {
+                "host": [],
+                "port": [],
+                "return": []
+            },
+            "set_and_release": {
+                "host": [],
+                "port": [],
+                "supports_http2": [],
+                "return": []
+            },
+            "_values": {
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "_reset": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.connection": {
+        "global": {
+            "is_connection_dropped": {
+                "conn": [
+                    "urllib3.connection.HTTPConnection"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "create_connection": {
+                "address": [
+                    "builtins.tuple[builtins.str, typing.Any]"
+                ],
+                "timeout": [
+                    "builtins.float"
+                ],
+                "source_address": [],
+                "socket_options": [],
+                "return": [
+                    "socket.socket"
+                ]
+            },
+            "_set_socket_options": {
+                "sock": [
+                    "socket.socket"
+                ],
+                "options": [
+                    "typing.Iterable[typing.Iterable[typing.Any]]"
+                ],
+                "return": []
+            },
+            "allowed_gai_family": {
+                "return": [
+                    "socket.AddressFamily"
+                ]
+            },
+            "_has_ipv6": {
+                "host": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    },
+    "urllib3.util.proxy": {
+        "global": {
+            "connection_requires_http_tunnel": {
+                "proxy_url": [
+                    "urllib3.exceptions.ProxySchemeUnknown"
+                ],
+                "proxy_config": [
+                    "urllib3._base_connection.ProxyConfig"
+                ],
+                "destination_scheme": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    },
+    "urllib3.util.request": {
+        "global": {
+            "make_headers": {
+                "keep_alive": [],
+                "accept_encoding": [
+                    "builtins.str"
+                ],
+                "user_agent": [],
+                "basic_auth": [
+                    "codecs.Codec"
+                ],
+                "proxy_basic_auth": [
+                    "codecs.Codec"
+                ],
+                "disable_cache": [],
+                "return": [
+                    "builtins.dict[builtins.str, builtins.str]"
+                ]
+            },
+            "set_file_position": {
+                "body": [
+                    "typing.IO"
+                ],
+                "pos": [
+                    "urllib3.util.request._TYPE_FAILEDTELL"
+                ],
+                "return": [
+                    "urllib3.util.request._TYPE_FAILEDTELL"
+                ]
+            },
+            "rewind_body": {
+                "body": [
+                    "codecs.StreamWriter"
+                ],
+                "body_pos": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "body_to_chunks": {
+                "body": [
+                    "builtins.str"
+                ],
+                "method": [
+                    "builtins.str"
+                ],
+                "blocksize": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "urllib3.util.request.ChunksAndContentLength"
+                ]
+            }
+        }
+    },
+    "urllib3.util.response": {
+        "global": {
+            "is_fp_closed": {
+                "obj": [
+                    "http.client.HTTPResponse"
+                ],
+                "return": []
+            },
+            "assert_header_parsing": {
+                "headers": [
+                    "http.client.HTTPMessage"
+                ],
+                "return": []
+            },
+            "is_response_to_head": {
+                "response": [
+                    "http.client.HTTPConnection"
+                ],
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.retry": {
+        "Retry": {
+            "__init__": {
+                "total": [
+                    "builtins.int"
+                ],
+                "connect": [],
+                "read": [],
+                "redirect": [
+                    "builtins.int"
+                ],
+                "status": [],
+                "other": [],
+                "allowed_methods": [
+                    "builtins.frozenset[typing.Any]"
+                ],
+                "status_forcelist": [],
+                "backoff_factor": [
+                    "builtins.int"
+                ],
+                "backoff_max": [
+                    "builtins.int"
+                ],
+                "raise_on_redirect": [
+                    "builtins.bool"
+                ],
+                "raise_on_status": [
+                    "builtins.bool"
+                ],
+                "history": [],
+                "respect_retry_after_header": [
+                    "builtins.bool"
+                ],
+                "remove_headers_on_redirect": [
+                    "builtins.frozenset[builtins.str]"
+                ],
+                "backoff_jitter": [
+                    "builtins.float"
+                ],
+                "return": []
+            },
+            "new": {
+                "kw": [],
+                "return": []
+            },
+            "from_int": {
+                "retries": [
+                    "urllib3.util.retry.Retry"
+                ],
+                "redirect": [
+                    "builtins.int"
+                ],
+                "default": [],
+                "return": [
+                    "urllib3.util.retry.Retry"
+                ]
+            },
+            "get_backoff_time": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "parse_retry_after": {
+                "retry_after": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "get_retry_after": {
+                "response": [
+                    "urllib3._request_methods.RequestMethods"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "sleep_for_retry": {
+                "response": [
+                    "urllib3._request_methods.RequestMethods"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_sleep_backoff": {
+                "return": []
+            },
+            "sleep": {
+                "response": [
+                    "urllib3._request_methods.RequestMethods"
+                ],
+                "return": []
+            },
+            "_is_connection_error": {
+                "err": [
+                    "urllib3.exceptions.ProxyError"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_is_read_error": {
+                "err": [
+                    "urllib3.exceptions.RequestError"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_is_method_retryable": {
+                "method": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_retry": {
+                "method": [
+                    "builtins.str"
+                ],
+                "status_code": [],
+                "has_retry_after": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_exhausted": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "increment": {
+                "method": [
+                    "builtins.str"
+                ],
+                "url": [],
+                "response": [
+                    "urllib3.response.BaseHTTPResponse"
+                ],
+                "error": [
+                    "urllib3.exceptions.RequestError"
+                ],
+                "_pool": [],
+                "_stacktrace": [],
+                "return": [
+                    "urllib3.util.retry.Retry"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "urllib3.util.ssl_": {
+        "global": {
+            "_is_bpo_43522_fixed": {
+                "implementation_name": [
+                    "builtins.str"
+                ],
+                "version_info": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "pypy_version_info": [
+                    "builtins.tuple[builtins.int, builtins.int, builtins.int]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_is_has_never_check_common_name_reliable": {
+                "openssl_version": [
+                    "builtins.str"
+                ],
+                "openssl_version_number": [
+                    "builtins.int"
+                ],
+                "implementation_name": [
+                    "builtins.str"
+                ],
+                "version_info": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "pypy_version_info": [
+                    "builtins.tuple[builtins.int, builtins.int, builtins.int]"
+                ],
+                "return": []
+            },
+            "assert_fingerprint": {
+                "cert": [],
+                "fingerprint": [
+                    "codecs.Codec"
+                ],
+                "return": []
+            },
+            "resolve_cert_reqs": {
+                "candidate": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "resolve_ssl_version": {
+                "candidate": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "create_urllib3_context": {
+                "ssl_version": [],
+                "cert_reqs": [],
+                "options": [
+                    "builtins.int"
+                ],
+                "ciphers": [
+                    "builtins.str"
+                ],
+                "ssl_minimum_version": [],
+                "ssl_maximum_version": [],
+                "verify_flags": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "ssl.SSLContext"
+                ]
+            },
+            "ssl_wrap_socket": {
+                "sock": [],
+                "keyfile": [],
+                "certfile": [],
+                "cert_reqs": [],
+                "ca_certs": [],
+                "server_hostname": [],
+                "ssl_version": [],
+                "ciphers": [
+                    "builtins.str"
+                ],
+                "ssl_context": [
+                    "ssl.SSLContext"
+                ],
+                "ca_cert_dir": [],
+                "key_password": [],
+                "ca_cert_data": [],
+                "tls_in_tls": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "is_ipaddress": {
+                "hostname": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_is_key_file_encrypted": {
+                "key_file": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_ssl_wrap_socket_impl": {
+                "sock": [],
+                "ssl_context": [
+                    "ssl.SSLContext"
+                ],
+                "tls_in_tls": [],
+                "server_hostname": [],
+                "return": [
+                    "urllib3.util.ssltransport.SSLTransport"
+                ]
+            }
+        }
+    },
+    "urllib3.util.ssl_match_hostname": {
+        "global": {
+            "_dnsname_match": {
+                "dn": [
+                    "re.Pattern"
+                ],
+                "hostname": [
+                    "builtins.str"
+                ],
+                "max_wildcards": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_ipaddress_match": {
+                "ipname": [
+                    "builtins.str"
+                ],
+                "host_ip": [
+                    "ipaddress.IPv4Address"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "match_hostname": {
+                "cert": [
+                    "urllib3.response.BytesQueueBuffer"
+                ],
+                "hostname": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "hostname_checks_common_name": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.ssltransport": {
+        "SSLTransport": {
+            "_validate_ssl_context_for_tls_in_tls": {
+                "ssl_context": [
+                    "ssl.SSLContext"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "socket": [],
+                "ssl_context": [
+                    "ssl.SSLContext"
+                ],
+                "server_hostname": [],
+                "suppress_ragged_eofs": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "urllib3.util.ssltransport.SSLTransport"
+                ]
+            },
+            "__exit__": {
+                "_": [],
+                "return": []
+            },
+            "fileno": {
+                "return": []
+            },
+            "read": {
+                "len": [
+                    "builtins.int"
+                ],
+                "buffer": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "recv": {
+                "buflen": [
+                    "builtins.int"
+                ],
+                "flags": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "recv_into": {
+                "buffer": [
+                    "typing.Sized"
+                ],
+                "nbytes": [
+                    "builtins.int"
+                ],
+                "flags": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "sendall": {
+                "data": [],
+                "flags": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "send": {
+                "data": [],
+                "flags": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "makefile": {
+                "mode": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "buffering": [
+                    "builtins.int"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "errors": [
+                    "builtins.str"
+                ],
+                "newline": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "socket.SocketIO"
+                ]
+            },
+            "unwrap": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "getpeercert": {
+                "binary_form": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "version": {
+                "return": []
+            },
+            "cipher": {
+                "return": []
+            },
+            "selected_alpn_protocol": {
+                "return": []
+            },
+            "shared_ciphers": {
+                "return": []
+            },
+            "compression": {
+                "return": []
+            },
+            "settimeout": {
+                "value": [],
+                "return": []
+            },
+            "gettimeout": {
+                "return": []
+            },
+            "_decref_socketios": {
+                "return": []
+            },
+            "_wrap_ssl_read": {
+                "len": [],
+                "buffer": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_ssl_io_loop": {
+                "func": [
+                    "typing.Callable[[typing.Any, typing.Any], typing.Any]"
+                ],
+                "arg1": [],
+                "arg2": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.timeout": {
+        "Timeout": {
+            "__init__": {
+                "total": [],
+                "connect": [
+                    "urllib3.util.timeout._TYPE_DEFAULT"
+                ],
+                "read": [
+                    "urllib3.util.timeout._TYPE_DEFAULT"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "resolve_default_timeout": {
+                "timeout": [],
+                "return": [
+                    "builtins.float"
+                ]
+            },
+            "_validate_timeout": {
+                "value": [
+                    "builtins.int"
+                ],
+                "name": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "from_float": {
+                "timeout": [
+                    "urllib3.util.timeout._TYPE_DEFAULT"
+                ],
+                "return": [
+                    "urllib3.util.timeout.Timeout"
+                ]
+            },
+            "clone": {
+                "return": [
+                    "urllib3.util.timeout.Timeout"
+                ]
+            },
+            "start_connect": {
+                "return": []
+            },
+            "get_connect_duration": {
+                "return": [
+                    "builtins.float"
+                ]
+            },
+            "connect_timeout": {
+                "return": []
+            },
+            "read_timeout": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.url": {
+        "global": {
+            "_encode_invalid_chars": {
+                "component": [
+                    "builtins.str"
+                ],
+                "allowed_chars": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_remove_path_dot_segments": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_normalize_host": {
+                "host": [
+                    "builtins.str"
+                ],
+                "scheme": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_idna_encode": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_encode_target": {
+                "target": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "parse_url": {
+                "url": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "urllib3.util.url.Url"
+                ]
+            }
+        },
+        "Url": {
+            "__new__": {
+                "scheme": [
+                    "builtins.str"
+                ],
+                "auth": [],
+                "host": [],
+                "port": [],
+                "path": [
+                    "builtins.str"
+                ],
+                "query": [],
+                "fragment": [],
+                "return": []
+            },
+            "hostname": {
+                "return": []
+            },
+            "request_uri": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "authority": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "netloc": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "url": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.util": {
+        "global": {
+            "to_bytes": {
+                "x": [
+                    "builtins.str"
+                ],
+                "encoding": [],
+                "errors": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "to_str": {
+                "x": [
+                    "builtins.str"
+                ],
+                "encoding": [],
+                "errors": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "reraise": {
+                "tp": [],
+                "value": [
+                    "http.client.HTTPException"
+                ],
+                "tb": [],
+                "return": []
+            }
+        }
+    },
+    "urllib3.util.wait": {
+        "global": {
+            "select_wait_for_socket": {
+                "sock": [],
+                "read": [
+                    "builtins.bool"
+                ],
+                "write": [
+                    "builtins.bool"
+                ],
+                "timeout": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "poll_wait_for_socket": {
+                "sock": [],
+                "read": [
+                    "builtins.bool"
+                ],
+                "write": [
+                    "builtins.bool"
+                ],
+                "timeout": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_have_working_poll": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "wait_for_socket": {
+                "sock": [],
+                "read": [
+                    "builtins.bool"
+                ],
+                "write": [
+                    "builtins.bool"
+                ],
+                "timeout": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "wait_for_read": {
+                "sock": [],
+                "timeout": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "wait_for_write": {
+                "sock": [],
+                "timeout": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    }
+}

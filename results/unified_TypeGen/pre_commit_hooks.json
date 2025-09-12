@@ -1,0 +1,1150 @@
+{
+    "pre_commit_hooks.check_added_large_files": {
+        "global": {
+            "filter_lfs_files": {
+                "filenames": [
+                    "list[str]"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "find_large_added_files": {
+                "enforce_all": [
+                    "bool"
+                ],
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Any"
+                ],
+                "maxkb": [
+                    "int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "list[str]"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_ast": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "typing.Any"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_builtin_literals": {
+        "Visitor": {
+            "__init__": {
+                "return": [
+                    "None"
+                ],
+                "allow_dict_kwargs": [
+                    "bool"
+                ],
+                "ignore": [
+                    "typing.Optional[typing.Iterable[typing.Any]]"
+                ]
+            },
+            "_check_dict_call": {
+                "return": [
+                    "bool"
+                ],
+                "node": [
+                    "ast.Call"
+                ]
+            },
+            "visit_Call": {
+                "node": [
+                    "ast.Call"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "check_file": {
+                "allow_dict_kwargs": [
+                    "bool"
+                ],
+                "return": [
+                    "typing.Set[str]"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "ignore": [
+                    "typing.Optional[Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            },
+            "parse_ignore": {
+                "return": [
+                    "set[str]"
+                ],
+                "value": [
+                    "str"
+                ]
+            }
+        },
+        "Call": {
+            "global": {
+                "column": [
+                    "int"
+                ],
+                "line": [
+                    "int"
+                ],
+                "name": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_byte_order_marker": {
+        "global": {
+            "main": {
+                "argv": [
+                    "Optional[List[str]]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_case_conflict": {
+        "global": {
+            "directories_for": {
+                "return": [
+                    "Set"
+                ],
+                "files": [
+                    "Iterable"
+                ]
+            },
+            "find_conflicting_filenames": {
+                "filenames": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Any"
+                ]
+            },
+            "lower_set": {
+                "iterable": [
+                    "typing.Iterable[str]"
+                ],
+                "return": [
+                    "set[str]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "main"
+                ]
+            },
+            "parents": {
+                "file": [
+                    "str"
+                ],
+                "return": [
+                    "typing.Generator[str, None, None]"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_docstring_first": {
+        "global": {
+            "check_docstring_first": {
+                "return": [
+                    "int"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "src": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "Optional[Sequence[str]]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_executables_have_shebangs": {
+        "global": {
+            "_check_git_filemode": {
+                "return": [
+                    "int"
+                ],
+                "paths": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "_message": {
+                "return": [
+                    "None"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "check_executables": {
+                "return": [
+                    "typing.Any"
+                ],
+                "paths": [
+                    "typing.Iterable[typing.Any]"
+                ]
+            },
+            "git_ls_files": {
+                "return": [
+                    "Generator[GitLsFile, None, None]"
+                ],
+                "paths": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "has_shebang": {
+                "return": [
+                    "bool"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "GitLsFile": {
+            "global": {
+                "filename": [
+                    "str"
+                ],
+                "mode": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_json": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "typing.Any"
+                ]
+            },
+            "raise_duplicate_keys": {
+                "ordered_pairs": [
+                    "list[tuple]"
+                ],
+                "return": [
+                    "d"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_merge_conflict": {
+        "global": {
+            "is_in_merge": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_shebang_scripts_are_executable": {
+        "global": {
+            "_check_git_filemode": {
+                "return": [
+                    "int"
+                ],
+                "paths": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "_message": {
+                "return": [
+                    "None"
+                ],
+                "path": [
+                    "str"
+                ]
+            },
+            "check_shebangs": {
+                "return": [
+                    "typing.Any"
+                ],
+                "paths": [
+                    "typing.Any"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_symlinks": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_toml": {
+        "global": {
+            "main": {
+                "argv": [
+                    "Optional[list[str]]"
+                ],
+                "return": [
+                    "retval"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_vcs_permalinks": {
+        "global": {
+            "_check_filename": {
+                "return": [
+                    "patterns"
+                ],
+                "filename": [
+                    "typing.Union[str, os.PathLike]"
+                ],
+                "patterns": [
+                    "list"
+                ]
+            },
+            "_get_pattern": {
+                "return": [
+                    "typing.Pattern"
+                ],
+                "domain": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.check_xml": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.check_yaml": {
+        "global": {
+            "_exhaust": {
+                "return": [
+                    "None"
+                ],
+                "gen": [
+                    "iterable"
+                ]
+            },
+            "_load_all": {
+                "return": [
+                    "None"
+                ],
+                "args": [
+                    "typing.Tuple[typing.Any, ...]"
+                ],
+                "kwargs": [
+                    "dict[str, Any]"
+                ]
+            },
+            "_parse_unsafe": {
+                "return": [
+                    "None"
+                ],
+                "args": [],
+                "kwargs": [
+                    "dict[str, Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "argv"
+                ],
+                "return": [
+                    "typing.Any"
+                ]
+            }
+        },
+        "Key": {
+            "global": {
+                "multi": [
+                    "bool"
+                ],
+                "unsafe": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.debug_statement_hook": {
+        "DebugStatementParser": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Call": {
+                "node": [
+                    "ast.Call"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_Import": {
+                "node": [
+                    "ast.Import"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "visit_ImportFrom": {
+                "node": [
+                    "ast.ImportFrom"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "check_file": {
+                "return": [
+                    "int"
+                ],
+                "filename": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            }
+        },
+        "Debug": {
+            "global": {
+                "col": [
+                    "int"
+                ],
+                "line": [
+                    "int"
+                ],
+                "name": [
+                    "ast.alias"
+                ],
+                "reason": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.destroyed_symlinks": {
+        "global": {
+            "find_destroyed_symlinks": {
+                "files": [
+                    "list[str]"
+                ],
+                "return": [
+                    "list[Any]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_aws_credentials": {
+        "global": {
+            "check_file_for_aws_keys": {
+                "return": [
+                    "list[str]"
+                ],
+                "filenames": [
+                    "list[str]"
+                ],
+                "keys": [
+                    "Iterable[str]"
+                ]
+            },
+            "get_aws_cred_files_from_env": {
+                "return": [
+                    "set[str]"
+                ]
+            },
+            "get_aws_secrets_from_env": {
+                "return": [
+                    "Any"
+                ]
+            },
+            "get_aws_secrets_from_file": {
+                "credentials_file": [
+                    "str"
+                ],
+                "return": [
+                    "set"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "BadFile": {
+            "global": {
+                "filename": [
+                    "str"
+                ],
+                "key": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.detect_private_key": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.end_of_file_fixer": {
+        "global": {
+            "fix_file": {
+                "file_obj": [
+                    "io.IOBase"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.file_contents_sorter": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            },
+            "sort_file_contents": {
+                "f": [
+                    "typing.TextIO"
+                ],
+                "key": [
+                    "typing.Callable[[Any], Any]"
+                ],
+                "return": [
+                    "typing.Any"
+                ],
+                "unique": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_byte_order_marker": {
+        "global": {
+            "main": {
+                "argv": [
+                    "Optional[list[str]]"
+                ],
+                "return": [
+                    "retv"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.fix_encoding_pragma": {
+        "global": {
+            "_get_expected_contents": {
+                "return": [
+                    "ExpectedContents"
+                ],
+                "expected_pragma": [
+                    "bytes"
+                ],
+                "first_line": [
+                    "bytes"
+                ],
+                "rest": [
+                    "str"
+                ],
+                "second_line": [
+                    "str"
+                ]
+            },
+            "_normalize_pragma": {
+                "return": [
+                    "bytes"
+                ],
+                "pragma": [
+                    "str"
+                ]
+            },
+            "fix_encoding_pragma": {
+                "expected_pragma": [
+                    "str"
+                ],
+                "f": [
+                    "BinaryIO"
+                ],
+                "return": [
+                    "int"
+                ],
+                "remove": [
+                    "bool"
+                ]
+            },
+            "has_coding": {
+                "return": [
+                    "bool"
+                ],
+                "line": [
+                    "bytes"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        },
+        "ExpectedContents": {
+            "global": {
+                "ending": [
+                    "bytes"
+                ],
+                "pragma_status": [
+                    "ExpectedContents"
+                ],
+                "rest": [
+                    "bytes"
+                ],
+                "shebang": [
+                    "bytes"
+                ]
+            },
+            "is_expected_pragma": {
+                "return": [
+                    "bool"
+                ],
+                "remove": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.forbid_new_submodules": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.mixed_line_ending": {
+        "global": {
+            "_fix": {
+                "return": [
+                    "None"
+                ],
+                "contents": [
+                    "bytes"
+                ],
+                "ending": [
+                    "bytes"
+                ],
+                "filename": [
+                    "str"
+                ]
+            },
+            "fix_filename": {
+                "filename": [
+                    "str"
+                ],
+                "fix": [
+                    "str"
+                ],
+                "return": [
+                    "Any"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "pre_commit_hooks.no_commit_to_branch": {
+        "global": {
+            "is_on_branch": {
+                "return": [
+                    "bool"
+                ],
+                "patterns": [
+                    "frozenset[str]"
+                ],
+                "protected": [
+                    "protected"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.pretty_format_json": {
+        "global": {
+            "_autofix": {
+                "return": [
+                    "None"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "new_contents": [
+                    "str"
+                ]
+            },
+            "_get_pretty_format": {
+                "return": [
+                    "str"
+                ],
+                "contents": [
+                    "str"
+                ],
+                "ensure_ascii": [
+                    "bool"
+                ],
+                "indent": [
+                    "typing.Union[int,str,None]"
+                ],
+                "sort_keys": [
+                    "bool"
+                ],
+                "top_keys": [
+                    "typing.Iterable[str]"
+                ]
+            },
+            "get_diff": {
+                "file": [
+                    "str"
+                ],
+                "return": [
+                    "str"
+                ],
+                "source": [
+                    "str"
+                ],
+                "target": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": []
+            },
+            "parse_num_to_int": {
+                "return": [
+                    "typing.Union[int, str]"
+                ],
+                "s": [
+                    "Union[str, int]",
+                    "Union[str, Any]",
+                    "str",
+                    "Union[str, int, float]"
+                ]
+            },
+            "parse_topkeys": {
+                "return": [
+                    "List[str]",
+                    "typing.List[str]"
+                ],
+                "s": [
+                    "str"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.removed": {
+        "global": {
+            "main": {
+                "argv": [
+                    "list[str]",
+                    "Optional[list[str]]"
+                ],
+                "return": [
+                    "None"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.requirements_txt_fixer": {
+        "Requirement": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "__lt__": {
+                "return": [
+                    "bool"
+                ],
+                "requirement": [
+                    "typing.Any",
+                    "Requirement",
+                    "comments",
+                    "name",
+                    "Self"
+                ]
+            },
+            "append_value": {
+                "return": [
+                    "None"
+                ],
+                "value": [
+                    "typing.Any",
+                    "typing.Union[int, float, str]",
+                    "str"
+                ]
+            },
+            "is_complete": {
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {
+            "fix_requirements": {
+                "f": [
+                    "typing.IO[typing.Any]"
+                ],
+                "return": [
+                    "typing.Any",
+                    "str",
+                    "int",
+                    "Union[str, int]",
+                    "bool"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.sort_simple_yaml": {
+        "global": {
+            "first_key": {
+                "return": [
+                    "str",
+                    "None",
+                    "typing.Any",
+                    "typing.Optional[str]",
+                    "int"
+                ],
+                "lines": [
+                    "typing.Any",
+                    "typing.Iterable[typing.Any]",
+                    "list[str]",
+                    "typing.Iterable",
+                    "typing.Sequence[typing.Any]",
+                    "lines",
+                    "typing.Iterable[str]"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "typing.Any",
+                    "retval"
+                ]
+            },
+            "parse_block": {
+                "header": [
+                    "bool"
+                ],
+                "lines": [
+                    "list[str]",
+                    "list[typing.Any]"
+                ],
+                "return": [
+                    "list[str]",
+                    "header"
+                ]
+            },
+            "parse_blocks": {
+                "lines": [
+                    "list[typing.Any]"
+                ],
+                "return": [
+                    "typing.Any",
+                    "blocks"
+                ]
+            },
+            "sort": {
+                "lines": [
+                    "typing.Iterable",
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "sort",
+                    "typing.Any",
+                    "list[typing.Any]",
+                    "lines",
+                    "NameError"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.string_fixer": {
+        "global": {
+            "fix_strings": {
+                "filename": [
+                    "str"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "get_line_offsets_by_line_no": {
+                "return": [
+                    "dict[int, int]",
+                    "list[int]",
+                    "Any"
+                ],
+                "src": [
+                    "str"
+                ]
+            },
+            "handle_match": {
+                "return": [
+                    "str"
+                ],
+                "token_text": [
+                    "str"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int",
+                    "retv"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.tests_should_end_in_test": {
+        "global": {
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "retcode",
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.trailing_whitespace_fixer": {
+        "global": {
+            "_fix_file": {
+                "return": [
+                    "bool"
+                ],
+                "chars": [
+                    "str",
+                    "typing.Any",
+                    "typing.Union[list[str], set[str]]",
+                    "list[str]",
+                    "Union[List[str], str]",
+                    "typing.Union[list[str], str]"
+                ],
+                "filename": [
+                    "str"
+                ],
+                "is_markdown": [
+                    "bool"
+                ]
+            },
+            "_process_line": {
+                "return": [
+                    "bytes"
+                ],
+                "chars": [
+                    "bytes",
+                    "Union[str, bytes]",
+                    "str",
+                    "eol",
+                    "typing.Union[str, bytes]"
+                ],
+                "is_markdown": [
+                    "bool"
+                ],
+                "line": [
+                    "bytes"
+                ]
+            },
+            "main": {
+                "argv": [
+                    "typing.Optional[list[str]]"
+                ],
+                "return": [
+                    "int"
+                ]
+            }
+        }
+    },
+    "pre_commit_hooks.util": {
+        "global": {
+            "added_files": {
+                "return": [
+                    "set[str]"
+                ]
+            },
+            "cmd_output": {
+                "cmd": [
+                    "typing.Sequence[str]",
+                    "typing.Union[typing.Sequence[str], str]",
+                    "typing.Iterable[str]",
+                    "typing.Sequence[typing.Union[str, bytes]]"
+                ],
+                "return": [
+                    "str",
+                    "typing.Union[str, bytes]"
+                ],
+                "kwargs": [
+                    "dict[str, typing.Any]"
+                ],
+                "retcode": [
+                    "typing.Optional[int]"
+                ]
+            },
+            "zsplit": {
+                "s": [
+                    "str"
+                ],
+                "return": [
+                    "List[str]"
+                ]
+            }
+        }
+    }
+}

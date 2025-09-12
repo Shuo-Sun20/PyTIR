@@ -1,0 +1,5339 @@
+{
+    "jinja2.async_utils": {
+        "global": {
+            "async_variant": {
+                "normal_func": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Callable[..., typing.Any]], typing.Callable[..., typing.Any]]"
+                ]
+            },
+            "auto_await": {
+                "value": [
+                    "builtins.object"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.object]"
+                ]
+            },
+            "auto_aiter": {
+                "iterable": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "return": [
+                    "jinja2.async_utils._IteratorToAsyncIterator"
+                ]
+            },
+            "auto_to_list": {
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.list[typing.Any]]"
+                ]
+            }
+        },
+        "_IteratorToAsyncIterator": {
+            "__init__": {
+                "iterator": [],
+                "return": []
+            },
+            "__aiter__": {
+                "return": [
+                    "jinja2.async_utils._IteratorToAsyncIterator"
+                ]
+            },
+            "__anext__": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.bccache": {
+        "Bucket": {
+            "__init__": {
+                "environment": [],
+                "key": [],
+                "checksum": [],
+                "return": []
+            },
+            "reset": {
+                "return": []
+            },
+            "load_bytecode": {
+                "f": [
+                    "_typeshed.SupportsRead"
+                ],
+                "return": []
+            },
+            "write_bytecode": {
+                "f": [
+                    "_typeshed.SupportsWrite"
+                ],
+                "return": []
+            },
+            "bytecode_from_string": {
+                "string": [],
+                "return": []
+            },
+            "bytecode_to_string": {
+                "return": [
+                    "builtins.bytes"
+                ]
+            }
+        },
+        "BytecodeCache": {
+            "load_bytecode": {
+                "bucket": [],
+                "return": []
+            },
+            "dump_bytecode": {
+                "bucket": [],
+                "return": []
+            },
+            "clear": {
+                "return": []
+            },
+            "get_cache_key": {
+                "name": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "filename": [],
+                "return": []
+            },
+            "get_source_checksum": {
+                "source": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": []
+            },
+            "get_bucket": {
+                "environment": [],
+                "name": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "filename": [],
+                "source": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": [
+                    "jinja2.bccache.Bucket"
+                ]
+            },
+            "set_bucket": {
+                "bucket": [],
+                "return": []
+            }
+        },
+        "FileSystemBytecodeCache": {
+            "__init__": {
+                "directory": [
+                    "builtins.str"
+                ],
+                "pattern": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_get_default_cache_dir": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_get_cache_filename": {
+                "bucket": [
+                    "weakref.KeyedRef"
+                ],
+                "return": []
+            },
+            "load_bytecode": {
+                "bucket": [
+                    "jinja2.bccache.Bucket"
+                ],
+                "return": []
+            },
+            "dump_bytecode": {
+                "bucket": [
+                    "jinja2.bccache.Bucket"
+                ],
+                "return": []
+            },
+            "clear": {
+                "return": []
+            }
+        },
+        "MemcachedBytecodeCache": {
+            "__init__": {
+                "client": [],
+                "prefix": [
+                    "builtins.str"
+                ],
+                "timeout": [],
+                "ignore_memcache_errors": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "load_bytecode": {
+                "bucket": [
+                    "jinja2.bccache.Bucket"
+                ],
+                "return": []
+            },
+            "dump_bytecode": {
+                "bucket": [
+                    "jinja2.bccache.Bucket"
+                ],
+                "return": []
+            }
+        }
+    },
+    "jinja2.compiler": {
+        "global": {
+            "optimizeconst": {
+                "f": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "return": []
+            },
+            "_make_binop": {
+                "op": [],
+                "return": [
+                    "typing.Callable[[jinja2.optimizer.Optimizer, typing.Any, typing.Any], typing.Any]"
+                ]
+            },
+            "_make_unop": {
+                "op": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Callable[[jinja2.optimizer.Optimizer, jinja2.compiler.MacroRef, typing.Any], typing.Any]"
+                ]
+            },
+            "generate": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "name": [],
+                "filename": [],
+                "stream": [],
+                "defer_init": [
+                    "builtins.bool"
+                ],
+                "optimized": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "has_safe_repr": {
+                "value": [
+                    "typing.Mapping[typing.Mapping[typing.Mapping[typing.Mapping[typing.Any, typing.Any], typing.Any], typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "find_undeclared": {
+                "nodes": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "names": [],
+                "return": []
+            }
+        },
+        "MacroRef": {
+            "__init__": {
+                "node": [],
+                "return": []
+            }
+        },
+        "Frame": {
+            "__init__": {
+                "eval_ctx": [],
+                "parent": [
+                    "jinja2.compiler.Frame"
+                ],
+                "level": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "copy": {
+                "return": [
+                    "jinja2.compiler.Frame"
+                ]
+            },
+            "inner": {
+                "isolated": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.compiler.Frame"
+                ]
+            },
+            "soft": {
+                "return": [
+                    "jinja2.compiler.Frame"
+                ]
+            }
+        },
+        "DependencyFinderVisitor": {
+            "__init__": {
+                "return": []
+            },
+            "visit_Filter": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "return": []
+            },
+            "visit_Test": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "return": []
+            },
+            "visit_Block": {
+                "node": [],
+                "return": []
+            }
+        },
+        "UndeclaredNameVisitor": {
+            "__init__": {
+                "names": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "visit_Name": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "return": []
+            },
+            "visit_Block": {
+                "node": [],
+                "return": []
+            }
+        },
+        "CodeGenerator": {
+            "__init__": {
+                "environment": [],
+                "name": [],
+                "filename": [],
+                "stream": [
+                    "io.StringIO"
+                ],
+                "defer_init": [
+                    "builtins.bool"
+                ],
+                "optimized": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "optimized": {
+                "return": []
+            },
+            "fail": {
+                "msg": [],
+                "lineno": [],
+                "return": []
+            },
+            "temporary_identifier": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "buffer": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "return_buffer_contents": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "force_unescaped": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "indent": {
+                "return": []
+            },
+            "outdent": {
+                "step": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "start_write": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "return": []
+            },
+            "end_write": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "simple_write": {
+                "s": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "return": []
+            },
+            "blockvisit": {
+                "nodes": [
+                    "typing.Iterable[jinja2.nodes.Node]"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "write": {
+                "x": [],
+                "return": []
+            },
+            "writeline": {
+                "x": [],
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "extra": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "newline": {
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "extra": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "signature": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "frame": [],
+                "extra_kwargs": [
+                    "jinja2.utils.Cycler"
+                ],
+                "return": []
+            },
+            "pull_dependencies": {
+                "nodes": [
+                    "typing.Iterable[jinja2.nodes.Node]"
+                ],
+                "return": []
+            },
+            "enter_frame": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "leave_frame": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "with_python_scope": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "choose_async": {
+                "async_value": [
+                    "builtins.str"
+                ],
+                "sync_value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "func": {
+                "name": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "macro_body": {
+                "node": [
+                    "re.error"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": [
+                    "builtins.tuple[jinja2.compiler.Frame, jinja2.compiler.MacroRef]"
+                ]
+            },
+            "macro_def": {
+                "macro_ref": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "position": {
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "dump_local_context": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "write_commons": {
+                "return": []
+            },
+            "push_parameter_definitions": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "pop_parameter_definitions": {
+                "return": []
+            },
+            "mark_parameter_stored": {
+                "target": [],
+                "return": []
+            },
+            "push_context_reference": {
+                "target": [],
+                "return": []
+            },
+            "pop_context_reference": {
+                "return": []
+            },
+            "get_context_ref": {
+                "return": []
+            },
+            "get_resolve_func": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "derive_context": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "parameter_is_undeclared": {
+                "target": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "push_assign_tracking": {
+                "return": []
+            },
+            "pop_assign_tracking": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Template": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Block": {
+                "node": [
+                    "jinja2.exceptions.TemplateSyntaxError"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Extends": {
+                "node": [
+                    "string.Template"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Include": {
+                "node": [
+                    "string.Template"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "_import_common": {
+                "node": [
+                    "string.Template"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Import": {
+                "node": [
+                    "string.Template"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_FromImport": {
+                "node": [
+                    "jinja2.compiler.UndeclaredNameVisitor"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_For": {
+                "node": [
+                    "jinja2.lexer.Token"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_If": {
+                "node": [
+                    "jinja2.lexer.Token"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Macro": {
+                "node": [
+                    "jinja2.exceptions.TemplateSyntaxError"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_CallBlock": {
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_FilterBlock": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_With": {
+                "node": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_ExprStmt": {
+                "node": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "_default_finalize": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_make_finalize": {
+                "return": []
+            },
+            "_output_const_repr": {
+                "group": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_output_child_to_const": {
+                "node": [
+                    "jinja2.nodes.Expr"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "finalize": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_output_child_pre": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "finalize": [],
+                "return": []
+            },
+            "_output_child_post": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": []
+            },
+            "visit_Output": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Assign": {
+                "node": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_AssignBlock": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Name": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_NSRef": {
+                "node": [
+                    "jinja2.ext.Extension"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Const": {
+                "node": [
+                    "jinja2.nodes.Pair"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_TemplateData": {
+                "node": [
+                    "weakref.WeakValueDictionary"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Tuple": {
+                "node": [
+                    "jinja2.utils.Cycler"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_List": {
+                "node": [
+                    "jinja2.utils.Cycler"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Dict": {
+                "node": [
+                    "jinja2.utils.Cycler"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Concat": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Compare": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_Operand": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_Getattr": {
+                "node": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Getitem": {
+                "node": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Slice": {
+                "node": [
+                    "builtins.slice"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "_filter_test_common": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "is_filter": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "visit_Filter": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Test": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_CondExpr": {
+                "node": [
+                    "jinja2.lexer.Token"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Call": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "forward_caller": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "visit_Keyword": {
+                "node": [
+                    "enum.auto"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_MarkSafe": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_MarkSafeIfAutoescape": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_EnvironmentAttribute": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_ExtensionAttribute": {
+                "node": [
+                    "jinja2.ext.ExprStmtExtension"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_ImportedName": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_InternalName": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_ContextReference": {
+                "node": [],
+                "frame": [],
+                "return": []
+            },
+            "visit_DerivedContextReference": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_Continue": {
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Break": {
+                "node": [
+                    "json.decoder.JSONDecodeError"
+                ],
+                "frame": [],
+                "return": []
+            },
+            "visit_Scope": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_OverlayScope": {
+                "node": [
+                    "jinja2.utils._PassArg"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_EvalContextModifier": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            },
+            "visit_ScopedEvalContextModifier": {
+                "node": [],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            }
+        }
+    },
+    "jinja2.debug": {
+        "global": {
+            "rewrite_traceback_stack": {
+                "source": [],
+                "return": []
+            },
+            "fake_traceback": {
+                "exc_value": [],
+                "tb": [
+                    "types.TracebackType"
+                ],
+                "filename": [],
+                "lineno": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "get_template_locals": {
+                "real_locals": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.dict[re.Pattern, typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.environment": {
+        "global": {
+            "get_spontaneous_environment": {
+                "cls": [
+                    "typing.Callable[..., jinja2.environment.Environment]"
+                ],
+                "args": [],
+                "return": [
+                    "jinja2.environment.Environment"
+                ]
+            },
+            "create_cache": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "jinja2.utils.LRUCache"
+                ]
+            },
+            "copy_cache": {
+                "cache": [
+                    "jinja2.utils.LRUCache"
+                ],
+                "return": [
+                    "jinja2.utils.LRUCache"
+                ]
+            },
+            "load_extensions": {
+                "environment": [],
+                "extensions": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, builtins.str]"
+                ]
+            },
+            "_environment_config_check": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "return": [
+                    "jinja2.environment.Environment"
+                ]
+            }
+        },
+        "Environment": {
+            "__init__": {
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [
+                    "builtins.tuple"
+                ],
+                "optimized": [
+                    "builtins.bool"
+                ],
+                "undefined": [],
+                "finalize": [],
+                "autoescape": [
+                    "builtins.bool"
+                ],
+                "loader": [],
+                "cache_size": [
+                    "builtins.int"
+                ],
+                "auto_reload": [
+                    "builtins.bool"
+                ],
+                "bytecode_cache": [],
+                "enable_async": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "add_extension": {
+                "extension": [],
+                "return": []
+            },
+            "extend": {
+                "attributes": [],
+                "return": []
+            },
+            "overlay": {
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "optimized": [],
+                "undefined": [],
+                "finalize": [],
+                "autoescape": [],
+                "loader": [],
+                "cache_size": [
+                    "builtins.int"
+                ],
+                "auto_reload": [],
+                "bytecode_cache": [],
+                "enable_async": [],
+                "return": [
+                    "jinja2.environment.Environment"
+                ]
+            },
+            "lexer": {
+                "return": []
+            },
+            "iter_extensions": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "getitem": {
+                "obj": [
+                    "jinja2.runtime.TemplateReference"
+                ],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "getattr": {
+                "obj": [
+                    "jinja2.environment.Environment"
+                ],
+                "attribute": [
+                    "jinja2.environment.Environment"
+                ],
+                "return": []
+            },
+            "_filter_test_common": {
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "value": [],
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "kwargs": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "context": [
+                    "jinja2.compiler.Frame"
+                ],
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "is_filter": [],
+                "return": []
+            },
+            "call_filter": {
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "value": [],
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "kwargs": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "context": [
+                    "jinja2.compiler.Frame"
+                ],
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            },
+            "call_test": {
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "value": [],
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "kwargs": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "context": [
+                    "jinja2.compiler.Frame"
+                ],
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            },
+            "parse": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "return": [
+                    "jinja2.nodes.Template"
+                ]
+            },
+            "_parse": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "return": [
+                    "jinja2.nodes.Template"
+                ]
+            },
+            "lex": {
+                "source": [
+                    "builtins.str"
+                ],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "preprocess": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "_tokenize": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "state": [],
+                "return": [
+                    "jinja2.lexer.TokenStream"
+                ]
+            },
+            "_generate": {
+                "source": [
+                    "jinja2.nodes.Node"
+                ],
+                "name": [],
+                "filename": [],
+                "defer_init": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_compile": {
+                "source": [],
+                "filename": [],
+                "return": []
+            },
+            "compile": {
+                "source": [
+                    "builtins.str"
+                ],
+                "name": [],
+                "filename": [
+                    "builtins.str"
+                ],
+                "raw": [
+                    "builtins.bool"
+                ],
+                "defer_init": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "compile_expression": {
+                "source": [],
+                "undefined_to_none": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "compile_templates": {
+                "target": [],
+                "extensions": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "filter_func": [
+                    "typing.Callable[[typing.Collection[builtins.str]], typing.Any]"
+                ],
+                "zip": [
+                    "builtins.str"
+                ],
+                "log_function": [
+                    "typing.Callable[[builtins.str], typing.Any]"
+                ],
+                "ignore_errors": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "list_templates": {
+                "extensions": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "filter_func": [
+                    "typing.Callable[[typing.Collection[builtins.str]], typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Collection[builtins.str]]"
+                ]
+            },
+            "handle_exception": {
+                "source": [],
+                "return": []
+            },
+            "join_path": {
+                "template": [],
+                "parent": [],
+                "return": []
+            },
+            "_load_template": {
+                "name": [],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "jinja2.environment.Template"
+                ]
+            },
+            "get_template": {
+                "name": [],
+                "parent": [],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "jinja2.environment.Template"
+                ]
+            },
+            "select_template": {
+                "names": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "parent": [],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "jinja2.environment.Template"
+                ]
+            },
+            "get_or_select_template": {
+                "template_name_or_list": [
+                    "builtins.str"
+                ],
+                "parent": [],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "from_string": {
+                "source": [
+                    "builtins.str"
+                ],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "template_class": [],
+                "return": []
+            },
+            "make_globals": {
+                "d": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "collections.ChainMap[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Template": {
+            "__new__": {
+                "source": [],
+                "block_start_string": [],
+                "block_end_string": [],
+                "variable_start_string": [],
+                "variable_end_string": [],
+                "comment_start_string": [],
+                "comment_end_string": [],
+                "line_statement_prefix": [],
+                "line_comment_prefix": [],
+                "trim_blocks": [],
+                "lstrip_blocks": [],
+                "newline_sequence": [],
+                "keep_trailing_newline": [],
+                "extensions": [
+                    "builtins.tuple"
+                ],
+                "optimized": [
+                    "builtins.bool"
+                ],
+                "undefined": [],
+                "finalize": [],
+                "autoescape": [
+                    "builtins.bool"
+                ],
+                "enable_async": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "from_code": {
+                "environment": [],
+                "code": [
+                    "types.CodeType"
+                ],
+                "globals": [],
+                "uptodate": [],
+                "return": []
+            },
+            "from_module_dict": {
+                "environment": [],
+                "module_dict": [],
+                "globals": [],
+                "return": []
+            },
+            "_from_namespace": {
+                "environment": [],
+                "namespace": [
+                    "_typeshed.SupportsItemAccess[builtins.str, jinja2.runtime.Context]"
+                ],
+                "globals": [],
+                "return": [
+                    "jinja2.runtime.Context"
+                ]
+            },
+            "render": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "render_async": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "stream": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "generate": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "generate_async": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.AsyncGenerator[typing.Any, typing.Any]"
+                ]
+            },
+            "new_context": {
+                "vars": [],
+                "shared": [
+                    "builtins.bool"
+                ],
+                "locals": [],
+                "return": []
+            },
+            "make_module": {
+                "vars": [],
+                "shared": [
+                    "builtins.bool"
+                ],
+                "locals": [],
+                "return": []
+            },
+            "make_module_async": {
+                "vars": [],
+                "shared": [
+                    "builtins.bool"
+                ],
+                "locals": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_default_module": {
+                "ctx": [
+                    "jinja2.runtime.Context"
+                ],
+                "return": []
+            },
+            "_get_default_module_async": {
+                "ctx": [
+                    "jinja2.runtime.Context"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "module": {
+                "return": []
+            },
+            "get_corresponding_lineno": {
+                "lineno": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "is_up_to_date": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "debug_info": {
+                "return": [
+                    "builtins.list[builtins.tuple]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "TemplateModule": {
+            "__init__": {
+                "template": [
+                    "logging.Filter"
+                ],
+                "context": [
+                    "jinja2.runtime.Context"
+                ],
+                "body_stream": [
+                    "builtins.list[typing.Any]"
+                ],
+                "return": []
+            },
+            "__html__": {
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "TemplateExpression": {
+            "__init__": {
+                "template": [],
+                "undefined_to_none": [],
+                "return": []
+            },
+            "__call__": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "jinja2.runtime.Undefined"
+                ]
+            }
+        },
+        "TemplateStream": {
+            "__init__": {
+                "gen": [],
+                "return": []
+            },
+            "dump": {
+                "fp": [
+                    "builtins.str"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "errors": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "disable_buffering": {
+                "return": []
+            },
+            "_buffered_generator": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "enable_buffering": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "jinja2.environment.TemplateStream"
+                ]
+            },
+            "__next__": {
+                "return": []
+            }
+        }
+    },
+    "jinja2.exceptions": {
+        "TemplateError": {
+            "__init__": {
+                "message": [],
+                "return": []
+            },
+            "message": {
+                "return": []
+            }
+        },
+        "TemplateNotFound": {
+            "__init__": {
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "message": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "TemplatesNotFound": {
+            "__init__": {
+                "names": [
+                    "builtins.tuple"
+                ],
+                "message": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        },
+        "TemplateSyntaxError": {
+            "__init__": {
+                "message": [],
+                "lineno": [],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.tuple[typing.Any, typing.Any, typing.Any, typing.Any]]"
+                ]
+            }
+        }
+    },
+    "jinja2.ext": {
+        "global": {
+            "_gettext_alias": {
+                "__context": [
+                    "jinja2.runtime.Context"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_make_new_gettext": {
+                "func": [],
+                "return": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ]
+            },
+            "_make_new_ngettext": {
+                "func": [],
+                "return": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ]
+            },
+            "_make_new_pgettext": {
+                "func": [],
+                "return": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ]
+            },
+            "_make_new_npgettext": {
+                "func": [],
+                "return": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ]
+            },
+            "extract_from_ast": {
+                "ast": [
+                    "jinja2.nodes.Node"
+                ],
+                "gettext_functions": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str, builtins.str, builtins.str]"
+                ],
+                "babel_style": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, typing.Any, builtins.tuple], typing.Any, typing.Any]"
+                ]
+            },
+            "babel_extract": {
+                "fileobj": [
+                    "_typeshed.SupportsRead"
+                ],
+                "keywords": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str, builtins.str, builtins.str]"
+                ],
+                "comment_tags": [],
+                "options": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, typing.Any, typing.Any, builtins.list[typing.Any]], typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Extension": {
+            "__init_subclass__": {
+                "return": []
+            },
+            "__init__": {
+                "environment": [],
+                "return": []
+            },
+            "bind": {
+                "environment": [],
+                "return": [
+                    "jinja2.optimizer.Optimizer"
+                ]
+            },
+            "preprocess": {
+                "source": [],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "filter_stream": {
+                "stream": [],
+                "return": []
+            },
+            "parse": {
+                "parser": [],
+                "return": []
+            },
+            "attr": {
+                "name": [],
+                "lineno": [],
+                "return": [
+                    "jinja2.nodes.ExtensionAttribute"
+                ]
+            },
+            "call_method": {
+                "name": [],
+                "args": [
+                    "builtins.list[typing.Any]"
+                ],
+                "kwargs": [
+                    "builtins.list[typing.Any]"
+                ],
+                "dyn_args": [],
+                "dyn_kwargs": [],
+                "lineno": [],
+                "return": [
+                    "jinja2.nodes.Call"
+                ]
+            }
+        },
+        "InternationalizationExtension": {
+            "__init__": {
+                "environment": [
+                    "inspect.ClosureVars"
+                ],
+                "return": []
+            },
+            "_install": {
+                "translations": [
+                    "gettext.NullTranslations"
+                ],
+                "newstyle": [],
+                "return": []
+            },
+            "_install_null": {
+                "newstyle": [],
+                "return": []
+            },
+            "_install_callables": {
+                "gettext": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ],
+                "ngettext": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ],
+                "newstyle": [],
+                "pgettext": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ],
+                "npgettext": [
+                    "typing.Callable[..., markupsafe.Markup]"
+                ],
+                "return": []
+            },
+            "_uninstall": {
+                "translations": [],
+                "return": []
+            },
+            "_extract": {
+                "source": [
+                    "builtins.str"
+                ],
+                "gettext_functions": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str, builtins.str, builtins.str]"
+                ],
+                "return": []
+            },
+            "parse": {
+                "parser": [
+                    "jinja2.parser.Parser"
+                ],
+                "return": [
+                    "builtins.list[jinja2.nodes.Node]"
+                ]
+            },
+            "_trim_whitespace": {
+                "string": [
+                    "builtins.str"
+                ],
+                "_ws_re": [
+                    "re.Pattern"
+                ],
+                "return": []
+            },
+            "_parse_block": {
+                "parser": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ],
+                "allow_pluralize": [],
+                "return": [
+                    "builtins.tuple[builtins.list[typing.Any], builtins.str]"
+                ]
+            },
+            "_make_node": {
+                "singular": [
+                    "inspect.Signature"
+                ],
+                "plural": [
+                    "inspect.Signature"
+                ],
+                "context": [],
+                "variables": [
+                    "jinja2.utils.Cycler"
+                ],
+                "plural_expr": [],
+                "vars_referenced": [],
+                "num_called_num": [],
+                "return": [
+                    "jinja2.nodes.Output"
+                ]
+            }
+        },
+        "ExprStmtExtension": {
+            "parse": {
+                "parser": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            }
+        },
+        "LoopControlExtension": {
+            "parse": {
+                "parser": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            }
+        },
+        "DebugExtension": {
+            "parse": {
+                "parser": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ],
+                "return": [
+                    "jinja2.nodes.Output"
+                ]
+            },
+            "_render": {
+                "context": [
+                    "jinja2.runtime.Context"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "_CommentFinder": {
+            "__init__": {
+                "tokens": [],
+                "comment_tags": [],
+                "return": []
+            },
+            "find_backwards": {
+                "offset": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "find_comments": {
+                "lineno": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.filters": {
+        "global": {
+            "ignore_case": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "make_attrgetter": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "attribute": [],
+                "postprocess": [
+                    "typing.Callable[[jinja2.runtime.Undefined], jinja2.runtime.Undefined]"
+                ],
+                "default": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "typing.Callable[[jinja2.runtime.Undefined], jinja2.runtime.Undefined]"
+                ]
+            },
+            "make_multi_attrgetter": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "attribute": [
+                    "builtins.str"
+                ],
+                "postprocess": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Any], jinja2.utils.Namespace]"
+                ]
+            },
+            "_prepare_attribute_parts": {
+                "attr": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "do_forceescape": {
+                "value": [
+                    "markupsafe._HasHTML"
+                ],
+                "return": []
+            },
+            "do_urlencode": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_replace": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "s": [
+                    "markupsafe._HasHTML"
+                ],
+                "old": [
+                    "markupsafe._HasHTML"
+                ],
+                "new": [
+                    "markupsafe._HasHTML"
+                ],
+                "count": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_upper": {
+                "s": [],
+                "return": []
+            },
+            "do_lower": {
+                "s": [],
+                "return": []
+            },
+            "do_items": {
+                "value": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_xmlattr": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "d": [
+                    "jinja2.utils.Cycler"
+                ],
+                "autospace": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "do_capitalize": {
+                "s": [],
+                "return": []
+            },
+            "do_title": {
+                "s": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_dictsort": {
+                "value": [
+                    "jinja2.utils.Cycler"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "by": [
+                    "builtins.str"
+                ],
+                "reverse": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "do_sort": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "reverse": [
+                    "builtins.bool"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "attribute": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "sync_do_unique": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "attribute": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_unique": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "attribute": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Generator[typing.Any, typing.Any, typing.Any]]"
+                ]
+            },
+            "_min_or_max": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [],
+                "func": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "case_sensitive": [],
+                "attribute": [],
+                "return": []
+            },
+            "do_min": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "attribute": [],
+                "return": []
+            },
+            "do_max": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "attribute": [],
+                "return": []
+            },
+            "do_default": {
+                "value": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "default_value": [
+                    "builtins.str"
+                ],
+                "boolean": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "sync_do_join": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "value": [
+                    "builtins.list[builtins.str]"
+                ],
+                "d": [
+                    "builtins.str"
+                ],
+                "attribute": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_join": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "d": [
+                    "builtins.str"
+                ],
+                "attribute": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.str]"
+                ]
+            },
+            "do_center": {
+                "value": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "sync_do_first": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "seq": [],
+                "return": []
+            },
+            "do_first": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "seq": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_last": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "seq": [],
+                "return": []
+            },
+            "do_random": {
+                "context": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "seq": [],
+                "return": []
+            },
+            "do_filesizeformat": {
+                "value": [],
+                "binary": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_pprint": {
+                "value": [],
+                "return": []
+            },
+            "do_urlize": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "value": [],
+                "trim_url_limit": [
+                    "builtins.int"
+                ],
+                "nofollow": [
+                    "builtins.bool"
+                ],
+                "target": [],
+                "rel": [],
+                "extra_schemes": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "do_indent": {
+                "s": [
+                    "markupsafe.Markup"
+                ],
+                "width": [
+                    "markupsafe.Markup"
+                ],
+                "first": [
+                    "builtins.bool"
+                ],
+                "blank": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "do_truncate": {
+                "env": [
+                    "jinja2.environment.Environment"
+                ],
+                "s": [
+                    "builtins.str"
+                ],
+                "length": [
+                    "builtins.int"
+                ],
+                "killwords": [
+                    "builtins.bool"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "leeway": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_wordwrap": {
+                "environment": [
+                    "jinja2.lexer.Lexer"
+                ],
+                "s": [
+                    "builtins.str"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "break_long_words": [
+                    "builtins.bool"
+                ],
+                "wrapstring": [
+                    "asyncio.queues.Queue"
+                ],
+                "break_on_hyphens": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "do_wordcount": {
+                "s": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "do_int": {
+                "value": [
+                    "builtins.str"
+                ],
+                "default": [
+                    "builtins.int"
+                ],
+                "base": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "do_float": {
+                "value": [],
+                "default": [
+                    "builtins.float"
+                ],
+                "return": [
+                    "builtins.float"
+                ]
+            },
+            "do_format": {
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "numbers.Real"
+                ]
+            },
+            "do_trim": {
+                "value": [],
+                "chars": [],
+                "return": []
+            },
+            "do_striptags": {
+                "value": [
+                    "markupsafe._HasHTML"
+                ],
+                "return": []
+            },
+            "sync_do_slice": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "slices": [
+                    "builtins.int"
+                ],
+                "fill_with": [],
+                "return": [
+                    "typing.Generator[builtins.list[typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "do_slice": {
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "slices": [
+                    "builtins.int"
+                ],
+                "fill_with": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Generator[builtins.list[typing.Any], typing.Any, typing.Any]]"
+                ]
+            },
+            "do_batch": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "linecount": [
+                    "builtins.int"
+                ],
+                "fill_with": [],
+                "return": [
+                    "typing.Generator[builtins.list[typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "do_round": {
+                "value": [
+                    "builtins.tuple"
+                ],
+                "precision": [
+                    "builtins.int"
+                ],
+                "method": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "sync_do_groupby": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "attribute": [],
+                "default": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[jinja2.filters._GroupTuple]"
+                ]
+            },
+            "do_groupby": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "attribute": [],
+                "default": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.list[jinja2.filters._GroupTuple]]"
+                ]
+            },
+            "sync_do_sum": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "iterable": [
+                    "typing.Iterator[typing.Any]"
+                ],
+                "attribute": [],
+                "start": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "do_sum": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "iterable": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "attribute": [],
+                "start": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.int]"
+                ]
+            },
+            "sync_do_list": {
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "do_list": {
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_mark_safe": {
+                "value": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "do_mark_unsafe": {
+                "value": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_reverse": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "do_attr": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "obj": [
+                    "builtins.object"
+                ],
+                "name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "sync_do_map": {
+                "context": [],
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_map": {
+                "context": [],
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.AsyncGenerator[typing.Any, typing.Any]"
+                ]
+            },
+            "sync_do_select": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "do_select": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "sync_do_reject": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "do_reject": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "sync_do_selectattr": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "do_selectattr": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "sync_do_rejectattr": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "do_rejectattr": {
+                "context": [],
+                "value": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "do_tojson": {
+                "eval_ctx": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "value": [],
+                "indent": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "prepare_map": {
+                "context": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "args": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "kwargs": [
+                    "typing.MutableMapping[builtins.str, typing.Any]"
+                ],
+                "return": [
+                    "typing.Callable[[jinja2.runtime.Undefined], jinja2.runtime.Undefined]"
+                ]
+            },
+            "prepare_select_or_reject": {
+                "context": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "args": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "kwargs": [],
+                "modfunc": [
+                    "typing.Callable[[builtins.bool], typing.Any]"
+                ],
+                "lookup_attr": [],
+                "return": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ]
+            },
+            "select_or_reject": {
+                "context": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "value": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "args": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "kwargs": [],
+                "modfunc": [
+                    "typing.Callable[[builtins.bool], typing.Any]"
+                ],
+                "lookup_attr": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "async_select_or_reject": {
+                "context": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "value": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "args": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "kwargs": [],
+                "modfunc": [
+                    "typing.Callable[[builtins.bool], typing.Any]"
+                ],
+                "lookup_attr": [],
+                "return": [
+                    "typing.AsyncGenerator[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "_GroupTuple": {
+            "__repr__": {
+                "return": []
+            },
+            "__str__": {
+                "return": []
+            }
+        }
+    },
+    "jinja2.idtracking": {
+        "global": {
+            "find_symbols": {
+                "nodes": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "parent_symbols": [],
+                "return": []
+            },
+            "symbols_for_node": {
+                "node": [],
+                "parent_symbols": [],
+                "return": [
+                    "jinja2.idtracking.Symbols"
+                ]
+            }
+        },
+        "Symbols": {
+            "__init__": {
+                "parent": [
+                    "jinja2.idtracking.Symbols"
+                ],
+                "level": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "analyze_node": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "_define_ref": {
+                "name": [],
+                "load": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "find_load": {
+                "target": [],
+                "return": []
+            },
+            "find_ref": {
+                "name": [],
+                "return": []
+            },
+            "ref": {
+                "name": [],
+                "return": []
+            },
+            "copy": {
+                "return": [
+                    "jinja2.idtracking.Symbols"
+                ]
+            },
+            "store": {
+                "name": [],
+                "return": []
+            },
+            "declare_parameter": {
+                "name": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "load": {
+                "name": [],
+                "return": []
+            },
+            "branch_update": {
+                "branch_symbols": [
+                    "typing.Iterable[jinja2.idtracking.Symbols]"
+                ],
+                "return": []
+            },
+            "dump_stores": {
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "dump_param_targets": {
+                "return": [
+                    "builtins.set[typing.Any]"
+                ]
+            }
+        },
+        "RootVisitor": {
+            "__init__": {
+                "symbols": [],
+                "return": []
+            },
+            "_simple_visit": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_AssignBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_CallBlock": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_OverlayScope": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_For": {
+                "node": [
+                    "jinja2.lexer.Token"
+                ],
+                "for_branch": [
+                    "builtins.str"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_With": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "generic_visit": {
+                "node": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "FrameSymbolVisitor": {
+            "__init__": {
+                "symbols": [],
+                "return": []
+            },
+            "visit_Name": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "store_as_param": [
+                    "builtins.bool"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_NSRef": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_If": {
+                "node": [
+                    "jinja2.lexer.Token"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_Macro": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_Import": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_FromImport": {
+                "node": [
+                    "jinja2.compiler.UndeclaredNameVisitor"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_Assign": {
+                "node": [
+                    "jinja2.compiler.MacroRef"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_For": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_CallBlock": {
+                "node": [
+                    "jinja2.runtime.Context"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_FilterBlock": {
+                "node": [
+                    "logging.Filter"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_With": {
+                "node": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_AssignBlock": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_Scope": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_Block": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            },
+            "visit_OverlayScope": {
+                "node": [],
+                "kwargs": [],
+                "return": []
+            }
+        }
+    },
+    "jinja2.lexer": {
+        "global": {
+            "_describe_token_type": {
+                "token_type": [],
+                "return": []
+            },
+            "describe_token": {
+                "token": [
+                    "jinja2.lexer.Token"
+                ],
+                "return": []
+            },
+            "describe_token_expr": {
+                "expr": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "count_newlines": {
+                "value": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "compile_rules": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "return": [
+                    "builtins.list[typing.Sequence[typing.Any]]"
+                ]
+            },
+            "get_lexer": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "return": []
+            }
+        },
+        "Failure": {
+            "__init__": {
+                "message": [],
+                "cls": [],
+                "return": []
+            },
+            "__call__": {
+                "lineno": [],
+                "filename": [],
+                "return": []
+            }
+        },
+        "Token": {
+            "__str__": {
+                "return": []
+            },
+            "test": {
+                "expr": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_any": {
+                "iterable": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "TokenStreamIterator": {
+            "__init__": {
+                "stream": [],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ]
+            },
+            "__next__": {
+                "return": [
+                    "jinja2.lexer.Token"
+                ]
+            }
+        },
+        "TokenStream": {
+            "__init__": {
+                "generator": [],
+                "name": [],
+                "filename": [],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "jinja2.lexer.TokenStreamIterator"
+                ]
+            },
+            "__bool__": {
+                "return": []
+            },
+            "eos": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "push": {
+                "token": [],
+                "return": []
+            },
+            "look": {
+                "return": []
+            },
+            "skip": {
+                "n": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "next_if": {
+                "expr": [],
+                "return": []
+            },
+            "skip_if": {
+                "expr": [],
+                "return": []
+            },
+            "__next__": {
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "expect": {
+                "expr": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        },
+        "OptionalLStrip": {
+            "__new__": {
+                "members": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "Lexer": {
+            "__init__": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "return": []
+            },
+            "_normalize_newlines": {
+                "value": [],
+                "return": []
+            },
+            "tokenize": {
+                "source": [
+                    "builtins.str"
+                ],
+                "name": [],
+                "filename": [
+                    "typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Any], typing.Any]], typing.Any]], typing.Any]], typing.Any]"
+                ],
+                "state": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "jinja2.lexer.TokenStream"
+                ]
+            },
+            "wrap": {
+                "stream": [
+                    "typing.Iterable[builtins.tuple[typing.Any, builtins.str, builtins.str]]"
+                ],
+                "name": [],
+                "filename": [],
+                "return": [
+                    "typing.Generator[jinja2.lexer.Token, typing.Any, typing.Any]"
+                ]
+            },
+            "tokeniter": {
+                "source": [
+                    "builtins.str"
+                ],
+                "name": [],
+                "filename": [
+                    "typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Callable[[builtins.str, builtins.int, typing.Any, typing.Any], typing.Any]], typing.Any]], typing.Any]], typing.Any]"
+                ],
+                "state": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.int, builtins.str, builtins.str], typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.loaders": {
+        "global": {
+            "split_template_path": {
+                "template": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "BaseLoader": {
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": []
+            },
+            "list_templates": {
+                "return": []
+            },
+            "load": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        },
+        "FileSystemLoader": {
+            "__init__": {
+                "searchpath": [
+                    "builtins.str"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "followlinks": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Callable[[], builtins.bool]]"
+                ]
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "PackageLoader": {
+            "__init__": {
+                "package_name": [
+                    "builtins.str"
+                ],
+                "package_path": [
+                    "builtins.str"
+                ],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.str, typing.Callable[[], typing.Any]]"
+                ]
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "DictLoader": {
+            "__init__": {
+                "mapping": [],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Callable[[], typing.Any]]"
+                ]
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "FunctionLoader": {
+            "__init__": {
+                "load_func": [],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "PrefixLoader": {
+            "__init__": {
+                "mapping": [],
+                "delimiter": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_loader": {
+                "template": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "re.Pattern"
+                ],
+                "return": []
+            },
+            "load": {
+                "environment": [],
+                "name": [
+                    "re.Pattern"
+                ],
+                "globals": [],
+                "return": []
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "ChoiceLoader": {
+            "__init__": {
+                "loaders": [],
+                "return": []
+            },
+            "get_source": {
+                "environment": [],
+                "template": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": []
+            },
+            "load": {
+                "environment": [],
+                "name": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "globals": [],
+                "return": []
+            },
+            "list_templates": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "ModuleLoader": {
+            "__init__": {
+                "path": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_template_key": {
+                "name": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_module_filename": {
+                "name": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "load": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "name": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "globals": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "jinja2.meta": {
+        "global": {
+            "find_undeclared_variables": {
+                "ast": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "return": []
+            },
+            "find_referenced_templates": {
+                "ast": [
+                    "jinja2.nodes.Node"
+                ],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "TrackingCodeGenerator": {
+            "__init__": {
+                "environment": [],
+                "return": []
+            },
+            "write": {
+                "x": [],
+                "return": []
+            },
+            "enter_frame": {
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "return": []
+            }
+        }
+    },
+    "jinja2.nativetypes": {
+        "global": {
+            "native_concat": {
+                "values": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "NativeCodeGenerator": {
+            "_default_finalize": {
+                "value": [],
+                "return": []
+            },
+            "_output_const_repr": {
+                "group": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_output_child_to_const": {
+                "node": [
+                    "jinja2.nodes.Expr"
+                ],
+                "frame": [
+                    "jinja2.compiler.Frame"
+                ],
+                "finalize": [],
+                "return": [
+                    "typing.Mapping[typing.Mapping[typing.Mapping[typing.Mapping[typing.Any, typing.Any], typing.Any], typing.Any], typing.Any]"
+                ]
+            },
+            "_output_child_pre": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": []
+            },
+            "_output_child_post": {
+                "node": [],
+                "frame": [],
+                "finalize": [],
+                "return": []
+            }
+        },
+        "NativeTemplate": {
+            "render": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "render_async": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.nodes": {
+        "global": {
+            "get_eval_context": {
+                "node": [
+                    "jinja2.optimizer.Optimizer"
+                ],
+                "ctx": [],
+                "return": [
+                    "jinja2.nodes.EvalContext"
+                ]
+            },
+            "args_as_const": {
+                "node": [
+                    "inspect.BoundArguments"
+                ],
+                "eval_ctx": [],
+                "return": [
+                    "builtins.tuple[builtins.list[typing.Any], builtins.dict[typing.Any, typing.Any]]"
+                ]
+            },
+            "_failing_new": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "NodeType": {
+            "__new__": {
+                "mcs": [],
+                "name": [],
+                "bases": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "d": [
+                    "builtins.dict[typing.Any, builtins.tuple]"
+                ],
+                "return": []
+            }
+        },
+        "EvalContext": {
+            "__init__": {
+                "environment": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "template_name": [],
+                "return": []
+            },
+            "save": {
+                "return": []
+            },
+            "revert": {
+                "old": [],
+                "return": []
+            }
+        },
+        "Node": {
+            "__init__": {
+                "fields": [],
+                "attributes": [],
+                "return": []
+            },
+            "iter_fields": {
+                "exclude": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "only": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "iter_child_nodes": {
+                "exclude": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "only": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.list[jinja2.nodes.Node], typing.Any, typing.Any]"
+                ]
+            },
+            "find": {
+                "node_type": [],
+                "return": []
+            },
+            "find_all": {
+                "node_type": [],
+                "return": [
+                    "typing.Generator[jinja2.nodes.Node, typing.Any, typing.Any]"
+                ]
+            },
+            "set_ctx": {
+                "ctx": [],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "set_lineno": {
+                "lineno": [],
+                "override": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "set_environment": {
+                "environment": [],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "__eq__": {
+                "other": [
+                    "jinja2.nodes.Node"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "dump": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Expr": {
+            "as_const": {
+                "eval_ctx": [],
+                "return": []
+            },
+            "can_assign": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "BinExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "UnaryExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "Name": {
+            "can_assign": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "NSRef": {
+            "can_assign": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "Const": {
+            "as_const": {
+                "eval_ctx": [],
+                "return": []
+            },
+            "from_untrusted": {
+                "value": [],
+                "lineno": [],
+                "environment": [],
+                "return": []
+            }
+        },
+        "TemplateData": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        },
+        "Tuple": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "can_assign": {
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "List": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        },
+        "Dict": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Pair": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Keyword": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "CondExpr": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "_FilterTestCommon": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "Filter": {
+            "as_const": {
+                "eval_ctx": [],
+                "return": []
+            }
+        },
+        "Getitem": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "Getattr": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "Slice": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.slice"
+                ]
+            }
+        },
+        "Concat": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Compare": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "And": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "Or": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": []
+            }
+        },
+        "InternalName": {
+            "__init__": {
+                "return": []
+            }
+        },
+        "MarkSafe": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        },
+        "MarkSafeIfAutoescape": {
+            "as_const": {
+                "eval_ctx": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        }
+    },
+    "jinja2.optimizer": {
+        "global": {
+            "optimize": {
+                "node": [],
+                "environment": [],
+                "return": []
+            }
+        },
+        "Optimizer": {
+            "__init__": {
+                "environment": [],
+                "return": []
+            },
+            "generic_visit": {
+                "node": [
+                    "jinja2.nodes.Expr"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "jinja2.nodes.Expr"
+                ]
+            }
+        }
+    },
+    "jinja2.parser": {
+        "Parser": {
+            "__init__": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "source": [],
+                "name": [],
+                "filename": [],
+                "state": [],
+                "return": []
+            },
+            "fail": {
+                "msg": [],
+                "lineno": [],
+                "exc": [
+                    "typing.Callable[[typing.Any, typing.Any, typing.Any, typing.Any], typing.Any]"
+                ],
+                "return": []
+            },
+            "_fail_ut_eof": {
+                "name": [],
+                "end_token_stack": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "lineno": [],
+                "return": []
+            },
+            "fail_unknown_tag": {
+                "name": [],
+                "lineno": [],
+                "return": []
+            },
+            "fail_eof": {
+                "end_tokens": [],
+                "lineno": [],
+                "return": []
+            },
+            "is_tuple_end": {
+                "extra_end_rules": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "free_identifier": {
+                "lineno": [],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_statement": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_statements": {
+                "end_tokens": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "drop_needle": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "parse_set": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_for": {
+                "return": [
+                    "jinja2.nodes.For"
+                ]
+            },
+            "parse_if": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_with": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_autoescape": {
+                "return": [
+                    "jinja2.nodes.Scope"
+                ]
+            },
+            "parse_block": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_extends": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_import_context": {
+                "node": [],
+                "default": [],
+                "return": []
+            },
+            "parse_include": {
+                "return": []
+            },
+            "parse_import": {
+                "return": []
+            },
+            "parse_from": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_signature": {
+                "node": [
+                    "inspect.ArgSpec"
+                ],
+                "return": []
+            },
+            "parse_call_block": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_filter_block": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_macro": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_print": {
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "parse_assign_target": {
+                "with_tuple": [
+                    "builtins.bool"
+                ],
+                "name_only": [
+                    "builtins.bool"
+                ],
+                "extra_end_rules": [],
+                "with_namespace": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Const"
+                ]
+            },
+            "parse_expression": {
+                "with_condexpr": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_condexpr": {
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_or": {
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_and": {
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_not": {
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_compare": {
+                "return": [
+                    "jinja2.nodes.Expr"
+                ]
+            },
+            "parse_math1": {
+                "return": [
+                    "jinja2.nodes.Concat"
+                ]
+            },
+            "parse_concat": {
+                "return": [
+                    "jinja2.nodes.Concat"
+                ]
+            },
+            "parse_math2": {
+                "return": [
+                    "jinja2.nodes._FilterTestCommon"
+                ]
+            },
+            "parse_pow": {
+                "return": [
+                    "jinja2.nodes._FilterTestCommon"
+                ]
+            },
+            "parse_unary": {
+                "with_filter": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes._FilterTestCommon"
+                ]
+            },
+            "parse_primary": {
+                "with_namespace": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Const"
+                ]
+            },
+            "parse_tuple": {
+                "simplified": [
+                    "builtins.bool"
+                ],
+                "with_condexpr": [
+                    "builtins.bool"
+                ],
+                "extra_end_rules": [],
+                "explicit_parentheses": [
+                    "builtins.bool"
+                ],
+                "with_namespace": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Tuple"
+                ]
+            },
+            "parse_list": {
+                "return": [
+                    "jinja2.nodes.List"
+                ]
+            },
+            "parse_dict": {
+                "return": [
+                    "jinja2.nodes.Dict"
+                ]
+            },
+            "parse_postfix": {
+                "node": [
+                    "jinja2.nodes.Expr"
+                ],
+                "return": [
+                    "jinja2.nodes.Expr"
+                ]
+            },
+            "parse_filter_expr": {
+                "node": [
+                    "jinja2.nodes._FilterTestCommon"
+                ],
+                "return": [
+                    "jinja2.nodes._FilterTestCommon"
+                ]
+            },
+            "parse_subscript": {
+                "node": [],
+                "return": [
+                    "jinja2.nodes.Expr"
+                ]
+            },
+            "parse_subscribed": {
+                "return": [
+                    "jinja2.nodes.Mul"
+                ]
+            },
+            "parse_call_args": {
+                "return": [
+                    "builtins.tuple[builtins.list[typing.Any], builtins.list[typing.Any], jinja2.nodes.Mul, jinja2.nodes.Mul]"
+                ]
+            },
+            "parse_call": {
+                "node": [],
+                "return": [
+                    "jinja2.nodes.Call"
+                ]
+            },
+            "parse_filter": {
+                "node": [
+                    "jinja2.nodes.Filter"
+                ],
+                "start_inline": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "jinja2.nodes.Filter"
+                ]
+            },
+            "parse_test": {
+                "node": [
+                    "jinja2.nodes._FilterTestCommon"
+                ],
+                "return": [
+                    "jinja2.nodes._FilterTestCommon"
+                ]
+            },
+            "subparse": {
+                "end_tokens": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "parse": {
+                "return": [
+                    "jinja2.nodes.Template"
+                ]
+            }
+        }
+    },
+    "jinja2.runtime": {
+        "global": {
+            "identity": {
+                "x": [],
+                "return": []
+            },
+            "markup_join": {
+                "seq": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "str_join": {
+                "seq": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "new_context": {
+                "environment": [
+                    "jinja2.environment.Environment"
+                ],
+                "template_name": [],
+                "blocks": [],
+                "vars": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "shared": [
+                    "builtins.bool"
+                ],
+                "globals": [],
+                "locals": [
+                    "jinja2.utils.Cycler"
+                ],
+                "return": []
+            },
+            "_dict_method_all": {
+                "dict_method": [
+                    "typing.Callable[[typing.Any], typing.Any]"
+                ],
+                "return": []
+            },
+            "make_logging_undefined": {
+                "logger": [
+                    "logging.Logger"
+                ],
+                "base": [
+                    "builtins.type"
+                ],
+                "return": [
+                    "builtins.type"
+                ]
+            }
+        },
+        "TemplateReference": {
+            "__init__": {
+                "context": [],
+                "return": []
+            },
+            "__getitem__": {
+                "name": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Context": {
+            "__init__": {
+                "environment": [],
+                "parent": [],
+                "name": [],
+                "blocks": [
+                    "jinja2.utils.Cycler"
+                ],
+                "globals": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "super": {
+                "name": [],
+                "current": [],
+                "return": []
+            },
+            "get": {
+                "key": [],
+                "default": [],
+                "return": []
+            },
+            "resolve": {
+                "key": [],
+                "return": []
+            },
+            "resolve_or_missing": {
+                "key": [],
+                "return": []
+            },
+            "get_exported": {
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "get_all": {
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "call": {
+                "__self": [
+                    "jinja2.runtime.Context"
+                ],
+                "__obj": [
+                    "typing.Callable[..., typing.Any]"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "derived": {
+                "locals": [
+                    "jinja2.utils.Cycler"
+                ],
+                "return": [
+                    "jinja2.runtime.Context"
+                ]
+            },
+            "__contains__": {
+                "name": [],
+                "return": []
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "BlockReference": {
+            "__init__": {
+                "name": [],
+                "context": [],
+                "stack": [],
+                "depth": [],
+                "return": []
+            },
+            "super": {
+                "return": [
+                    "jinja2.runtime.BlockReference"
+                ]
+            },
+            "_async_call": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, markupsafe.Markup]"
+                ]
+            },
+            "__call__": {
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        },
+        "LoopContext": {
+            "__init__": {
+                "iterable": [],
+                "undefined": [],
+                "recurse": [],
+                "depth0": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "_to_iterator": {
+                "iterable": [],
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "length": {
+                "return": []
+            },
+            "__len__": {
+                "return": []
+            },
+            "depth": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "index": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "revindex0": {
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "revindex": {
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "first": {
+                "return": []
+            },
+            "_peek_next": {
+                "return": []
+            },
+            "last": {
+                "return": []
+            },
+            "previtem": {
+                "return": []
+            },
+            "nextitem": {
+                "return": []
+            },
+            "cycle": {
+                "args": [],
+                "return": []
+            },
+            "changed": {
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "jinja2.runtime.LoopContext"
+                ]
+            },
+            "__next__": {
+                "return": [
+                    "builtins.tuple[typing.Any, jinja2.runtime.LoopContext]"
+                ]
+            },
+            "__call__": {
+                "iterable": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "AsyncLoopContext": {
+            "_to_iterator": {
+                "iterable": [
+                    "typing.AsyncIterable[typing.Any]"
+                ],
+                "return": [
+                    "jinja2.async_utils._IteratorToAsyncIterator"
+                ]
+            },
+            "length": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "revindex0": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, _typeshed.SupportsSub]"
+                ]
+            },
+            "revindex": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, _typeshed.SupportsSub]"
+                ]
+            },
+            "_peek_next": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "last": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "nextitem": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__aiter__": {
+                "return": [
+                    "jinja2.runtime.AsyncLoopContext"
+                ]
+            },
+            "__anext__": {
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, builtins.tuple[typing.Any, jinja2.runtime.AsyncLoopContext]]"
+                ]
+            }
+        },
+        "Macro": {
+            "__init__": {
+                "environment": [
+                    "jinja2.nodes.EvalContext"
+                ],
+                "func": [],
+                "name": [],
+                "arguments": [
+                    "typing.Collection[builtins.str]"
+                ],
+                "catch_kwargs": [],
+                "catch_varargs": [],
+                "caller": [],
+                "default_autoescape": [],
+                "return": []
+            },
+            "__call__": {
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "_async_invoke": {
+                "arguments": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "autoescape": [],
+                "return": [
+                    "typing.Coroutine[typing.Any, typing.Any, markupsafe.Markup]"
+                ]
+            },
+            "_invoke": {
+                "arguments": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "autoescape": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Undefined": {
+            "__init__": {
+                "hint": [],
+                "obj": [],
+                "name": [],
+                "exc": [],
+                "return": []
+            },
+            "_undefined_message": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_fail_with_undefined_error": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "__getattr__": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__eq__": {
+                "other": [],
+                "return": []
+            },
+            "__ne__": {
+                "other": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__hash__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__len__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__aiter__": {
+                "return": [
+                    "typing.AsyncGenerator[typing.Any, typing.Any]"
+                ]
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "ChainableUndefined": {
+            "__html__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__getattr__": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "jinja2.runtime.ChainableUndefined"
+                ]
+            },
+            "__getitem__": {
+                "_name": [],
+                "return": [
+                    "jinja2.runtime.ChainableUndefined"
+                ]
+            }
+        },
+        "DebugUndefined": {
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "jinja2.sandbox": {
+        "global": {
+            "safe_range": {
+                "args": [],
+                "return": [
+                    "builtins.range"
+                ]
+            },
+            "unsafe": {
+                "f": [],
+                "return": []
+            },
+            "is_internal_attribute": {
+                "obj": [
+                    "types.CodeType"
+                ],
+                "attr": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "modifies_known_mutable": {
+                "obj": [],
+                "attr": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "SandboxedEnvironment": {
+            "__init__": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "is_safe_attribute": {
+                "obj": [
+                    "types.CodeType"
+                ],
+                "attr": [
+                    "builtins.str"
+                ],
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_safe_callable": {
+                "obj": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "call_binop": {
+                "context": [],
+                "operator": [],
+                "left": [],
+                "right": [],
+                "return": []
+            },
+            "call_unop": {
+                "context": [],
+                "operator": [],
+                "arg": [],
+                "return": []
+            },
+            "getitem": {
+                "obj": [
+                    "types.CodeType"
+                ],
+                "argument": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "functools._lru_cache_wrapper"
+                ]
+            },
+            "getattr": {
+                "obj": [
+                    "jinja2.sandbox.SandboxedEnvironment"
+                ],
+                "attribute": [
+                    "jinja2.sandbox.SandboxedEnvironment"
+                ],
+                "return": [
+                    "functools._lru_cache_wrapper"
+                ]
+            },
+            "unsafe_undefined": {
+                "obj": [],
+                "attribute": [],
+                "return": []
+            },
+            "wrap_str_format": {
+                "value": [
+                    "functools._lru_cache_wrapper"
+                ],
+                "return": []
+            },
+            "call": {
+                "__self": [
+                    "jinja2.sandbox.SandboxedEnvironment"
+                ],
+                "__context": [
+                    "jinja2.runtime.Context"
+                ],
+                "__obj": [],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "ImmutableSandboxedEnvironment": {
+            "is_safe_attribute": {
+                "obj": [],
+                "attr": [],
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "SandboxedFormatter": {
+            "__init__": {
+                "env": [],
+                "kwargs": [],
+                "return": []
+            },
+            "get_field": {
+                "field_name": [],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "jinja2.tests": {
+        "global": {
+            "test_odd": {
+                "value": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "test_even": {
+                "value": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "test_divisibleby": {
+                "value": [
+                    "builtins.int"
+                ],
+                "num": [],
+                "return": []
+            },
+            "test_defined": {
+                "value": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_undefined": {
+                "value": [
+                    "jinja2.runtime.Undefined"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_filter": {
+                "env": [
+                    "logging.Filterer"
+                ],
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_test": {
+                "env": [
+                    "jinja2.compiler.DependencyFinderVisitor"
+                ],
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_none": {
+                "value": [],
+                "return": []
+            },
+            "test_boolean": {
+                "value": [],
+                "return": []
+            },
+            "test_false": {
+                "value": [],
+                "return": []
+            },
+            "test_true": {
+                "value": [],
+                "return": []
+            },
+            "test_integer": {
+                "value": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "test_float": {
+                "value": [
+                    "builtins.float"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_lower": {
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_upper": {
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_string": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_mapping": {
+                "value": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_number": {
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_sequence": {
+                "value": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_sameas": {
+                "value": [],
+                "other": [],
+                "return": []
+            },
+            "test_iterable": {
+                "value": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_escaped": {
+                "value": [
+                    "markupsafe._HasHTML"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "test_in": {
+                "value": [],
+                "seq": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        }
+    },
+    "jinja2.utils": {
+        "global": {
+            "pass_context": {
+                "f": [],
+                "return": []
+            },
+            "pass_eval_context": {
+                "f": [],
+                "return": []
+            },
+            "pass_environment": {
+                "f": [],
+                "return": []
+            },
+            "internalcode": {
+                "f": [],
+                "return": []
+            },
+            "is_undefined": {
+                "obj": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "consume": {
+                "iterable": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "clear_caches": {
+                "return": []
+            },
+            "import_string": {
+                "import_name": [
+                    "builtins.str"
+                ],
+                "silent": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "open_if_exists": {
+                "filename": [
+                    "builtins.str"
+                ],
+                "mode": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.IO"
+                ]
+            },
+            "object_type_repr": {
+                "obj": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "pformat": {
+                "obj": [],
+                "return": []
+            },
+            "urlize": {
+                "text": [],
+                "trim_url_limit": [
+                    "builtins.int"
+                ],
+                "rel": [],
+                "target": [],
+                "extra_schemes": [
+                    "typing.Iterable[builtins.str]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "generate_lorem_ipsum": {
+                "n": [
+                    "builtins.int"
+                ],
+                "html": [
+                    "builtins.bool"
+                ],
+                "min": [
+                    "builtins.int"
+                ],
+                "max": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            },
+            "url_quote": {
+                "obj": [
+                    "builtins.str"
+                ],
+                "charset": [
+                    "builtins.str"
+                ],
+                "for_qs": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "select_autoescape": {
+                "enabled_extensions": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str]"
+                ],
+                "disabled_extensions": [
+                    "builtins.tuple"
+                ],
+                "default_for_string": [
+                    "builtins.bool"
+                ],
+                "default": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Callable[[builtins.str], builtins.bool]"
+                ]
+            },
+            "htmlsafe_json_dumps": {
+                "obj": [],
+                "dumps": [
+                    "typing.Callable[..., builtins.str]"
+                ],
+                "kwargs": [],
+                "return": [
+                    "markupsafe.Markup"
+                ]
+            }
+        },
+        "_MissingType": {
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__reduce__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "_PassArg": {
+            "from_obj": {
+                "obj": [],
+                "return": []
+            }
+        },
+        "LRUCache": {
+            "__init__": {
+                "capacity": [],
+                "return": []
+            },
+            "_postinit": {
+                "return": []
+            },
+            "__getstate__": {
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            },
+            "__setstate__": {
+                "d": [],
+                "return": []
+            },
+            "__getnewargs__": {
+                "return": [
+                    "builtins.tuple[typing.Any]"
+                ]
+            },
+            "copy": {
+                "return": [
+                    "jinja2.utils.LRUCache"
+                ]
+            },
+            "get": {
+                "key": [],
+                "default": [],
+                "return": []
+            },
+            "setdefault": {
+                "key": [],
+                "default": [],
+                "return": []
+            },
+            "clear": {
+                "return": []
+            },
+            "__contains__": {
+                "key": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__len__": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__getitem__": {
+                "key": [],
+                "return": []
+            },
+            "__setitem__": {
+                "key": [],
+                "value": [],
+                "return": []
+            },
+            "__delitem__": {
+                "key": [],
+                "return": []
+            },
+            "items": {
+                "return": [
+                    "builtins.list[builtins.tuple[typing.Any, typing.Any]]"
+                ]
+            },
+            "values": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "keys": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "builtins.reversed[typing.Any]"
+                ]
+            },
+            "__reversed__": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            }
+        },
+        "Cycler": {
+            "__init__": {
+                "items": [],
+                "return": []
+            },
+            "reset": {
+                "return": []
+            },
+            "current": {
+                "return": []
+            },
+            "next": {
+                "return": []
+            }
+        },
+        "Joiner": {
+            "__init__": {
+                "sep": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Namespace": {
+            "__init__": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "__getattribute__": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__setitem__": {
+                "name": [],
+                "value": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "jinja2.visitor": {
+        "NodeVisitor": {
+            "get_visitor": {
+                "node": [],
+                "return": []
+            },
+            "visit": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "generic_visit": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "NodeTransformer": {
+            "generic_visit": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "jinja2.nodes.Node"
+                ]
+            },
+            "visit_list": {
+                "node": [
+                    "jinja2.nodes.Node"
+                ],
+                "args": [],
+                "kwargs": [],
+                "return": [
+                    "builtins.list[builtins.list[typing.Any]]"
+                ]
+            }
+        }
+    }
+}

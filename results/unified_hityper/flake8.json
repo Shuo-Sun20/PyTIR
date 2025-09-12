@@ -1,0 +1,1148 @@
+{
+    "flake8": {
+        "global": {
+            "configure_logging": {
+                "verbosity": [],
+                "filename": [
+                    "None"
+                ],
+                "logformat": [
+                    "typing.Text"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "flake8.__main__": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8._compat": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.api": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.api.legacy": {
+        "Report": {
+            "__init__": {
+                "application": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "get_statistics": {
+                "violation": [],
+                "return": [
+                    "list[typing.Text]"
+                ]
+            },
+            "total_errors": {
+                "return": []
+            }
+        },
+        "StyleGuide": {
+            "__init__": {
+                "application": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "check_files": {
+                "paths": [
+                    "None"
+                ],
+                "return": [
+                    "Report"
+                ]
+            },
+            "excluded": {
+                "filename": [],
+                "parent": [
+                    "None"
+                ],
+                "return": [
+                    "bool"
+                ]
+            },
+            "init_report": {
+                "reporter": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "input_file": {
+                "filename": [],
+                "lines": [
+                    "None"
+                ],
+                "expected": [
+                    "None"
+                ],
+                "line_offset": [
+                    "int"
+                ],
+                "return": []
+            },
+            "options": {
+                "return": []
+            },
+            "paths": {
+                "return": []
+            }
+        },
+        "global": {
+            "get_style_guide": {
+                "kwargs": [],
+                "return": [
+                    "StyleGuide"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "flake8.defaults": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.discover_files": {
+        "global": {
+            "_filenames_from": {
+                "arg": [],
+                "predicate": [],
+                "return": [
+                    "None",
+                    "typing.Generator"
+                ]
+            },
+            "expand_paths": {
+                "paths": [],
+                "stdin_display_name": [],
+                "filename_patterns": [],
+                "exclude": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "global": {},
+            "is_excluded": {
+                "arg": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "flake8.exceptions": {
+        "FailedToLoadPlugin": {
+            "__init__": {
+                "plugin_name": [],
+                "exception": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "PluginExecutionFailed": {
+            "__init__": {
+                "filename": [],
+                "plugin_name": [],
+                "exception": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "PluginRequestedUnknownParameters": {
+            "__init__": {
+                "plugin_name": [],
+                "exception": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__str__": {
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.formatting": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.formatting._windows_color": {
+        "global": {
+            "_enable": {
+                "return": [
+                    "None"
+                ]
+            },
+            "bool_errcheck": {
+                "result": [],
+                "func": [],
+                "args": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "flake8.formatting.base": {
+        "BaseFormatter": {
+            "__init__": {
+                "options": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_write": {
+                "output": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "after_init": {
+                "return": [
+                    "None"
+                ]
+            },
+            "beginning": {
+                "filename": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "finished": {
+                "filename": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "format": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "handle": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "show_benchmarks": {
+                "benchmarks": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "show_source": {
+                "error": [],
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "show_statistics": {
+                "statistics": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "start": {
+                "return": [
+                    "None"
+                ]
+            },
+            "stop": {
+                "return": [
+                    "None"
+                ]
+            },
+            "write": {
+                "line": [],
+                "source": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.formatting.default": {
+        "Default": {
+            "after_init": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "FilenameOnly": {
+            "after_init": {
+                "return": [
+                    "None"
+                ]
+            },
+            "format": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "show_source": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Nothing": {
+            "format": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "show_source": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "SimpleFormatter": {
+            "format": {
+                "error": [],
+                "return": []
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.main": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.main.application": {
+        "Application": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "_run": {
+                "argv": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "exit_code": {
+                "return": [
+                    "int"
+                ]
+            },
+            "initialize": {
+                "argv": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "make_file_checker_manager": {
+                "argv": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "make_formatter": {
+                "return": [
+                    "None"
+                ]
+            },
+            "make_guide": {
+                "return": [
+                    "None"
+                ]
+            },
+            "report": {
+                "return": [
+                    "None"
+                ]
+            },
+            "report_benchmarks": {
+                "return": [
+                    "None"
+                ]
+            },
+            "report_errors": {
+                "return": [
+                    "None"
+                ]
+            },
+            "report_statistics": {
+                "return": [
+                    "None"
+                ]
+            },
+            "run": {
+                "argv": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "run_checks": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.main.cli": {
+        "global": {
+            "global": {},
+            "main": {
+                "argv": [
+                    "None"
+                ],
+                "return": []
+            }
+        }
+    },
+    "flake8.main.debug": {
+        "global": {
+            "global": {},
+            "information": {
+                "version": [],
+                "plugins": [],
+                "return": [
+                    "dict[typing.Text, typing.Union[list[dict[typing.Text, ]],dict[typing.Text, ]]]"
+                ]
+            }
+        }
+    },
+    "flake8.main.options": {
+        "JobsArgument": {
+            "__init__": {
+                "arg": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "typing.Text"
+                ]
+            }
+        },
+        "global": {
+            "global": {},
+            "register_default_options": {
+                "option_manager": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "stage1_arg_parser": {
+                "return": []
+            }
+        }
+    },
+    "flake8.options": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.options.aggregator": {
+        "global": {
+            "aggregate_options": {
+                "manager": [],
+                "cfg": [],
+                "cfg_dir": [],
+                "argv": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "flake8.options.config": {
+        "global": {
+            "_find_config_file": {
+                "path": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_stat_key": {
+                "s": [],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "global": {},
+            "load_config": {
+                "config": [],
+                "extra": [],
+                "isolated": [
+                    "bool"
+                ],
+                "return": [
+                    "tuple"
+                ]
+            },
+            "parse_config": {
+                "option_manager": [],
+                "cfg": [],
+                "cfg_dir": [],
+                "return": [
+                    "dict"
+                ]
+            }
+        }
+    },
+    "flake8.options.manager": {
+        "Option": {
+            "__init__": {
+                "short_option_name": [],
+                "long_option_name": [],
+                "action": [],
+                "default": [],
+                "type": [],
+                "dest": [],
+                "nargs": [],
+                "const": [],
+                "choices": [],
+                "help": [],
+                "metavar": [],
+                "required": [],
+                "parse_from_config": [
+                    "bool"
+                ],
+                "comma_separated_list": [
+                    "bool"
+                ],
+                "normalize_paths": [
+                    "bool"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "filtered_option_kwargs": {
+                "return": [
+                    "dict"
+                ]
+            },
+            "normalize": {
+                "value": [],
+                "normalize_args": [],
+                "return": []
+            },
+            "to_argparse": {
+                "return": [
+                    "tuple"
+                ]
+            }
+        },
+        "OptionManager": {
+            "__init__": {
+                "version": [],
+                "plugin_versions": [],
+                "parents": [],
+                "formatter_names": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "_set_group": {
+                "name": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "add_option": {
+                "kwargs": [],
+                "args": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "extend_default_ignore": {
+                "error_codes": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "extend_default_select": {
+                "error_codes": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_args": {
+                "args": [
+                    "None"
+                ],
+                "values": [
+                    "None"
+                ],
+                "return": []
+            },
+            "register_plugins": {
+                "plugins": [],
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "_flake8_normalize": {
+                "value": [],
+                "comma_separated_list": [
+                    "bool"
+                ],
+                "normalize_paths": [
+                    "bool"
+                ],
+                "args": [],
+                "return": []
+            },
+            "global": {}
+        }
+    },
+    "flake8.options.parse_args": {
+        "global": {
+            "global": {},
+            "parse_args": {
+                "argv": [],
+                "return": [
+                    "tuple"
+                ]
+            }
+        }
+    },
+    "flake8.plugins": {
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.plugins.pycodestyle": {
+        "global": {
+            "global": {},
+            "pycodestyle_logical": {
+                "blank_before": [],
+                "blank_lines": [],
+                "checker_state": [],
+                "hang_closing": [],
+                "indent_char": [],
+                "indent_level": [],
+                "indent_size": [],
+                "line_number": [],
+                "lines": [],
+                "logical_line": [],
+                "max_doc_length": [],
+                "noqa": [],
+                "previous_indent_level": [],
+                "previous_logical": [],
+                "previous_unindented_logical_line": [],
+                "tokens": [],
+                "verbose": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "pycodestyle_physical": {
+                "indent_char": [],
+                "line_number": [],
+                "lines": [],
+                "max_line_length": [],
+                "multiline": [],
+                "noqa": [],
+                "physical_line": [],
+                "total_lines": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        }
+    },
+    "flake8.plugins.pyflakes": {
+        "FlakesChecker": {
+            "__init__": {
+                "tree": [],
+                "filename": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "add_options": {
+                "cls": [],
+                "parser": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "parse_options": {
+                "cls": [],
+                "options": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "run": {
+                "return": [
+                    "typing.Generator[tuple[str]]"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.plugins.reporter": {
+        "global": {
+            "global": {},
+            "make": {
+                "reporters": [],
+                "options": [],
+                "return": []
+            }
+        }
+    },
+    "flake8.processor": {
+        "FileProcessor": {
+            "__init__": {
+                "filename": [],
+                "options": [],
+                "lines": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_noqa_line_mapping": {
+                "return": [
+                    "dict"
+                ]
+            },
+            "_noqa_line_range": {
+                "min_line": [],
+                "max_line": [],
+                "return": []
+            },
+            "build_ast": {
+                "return": []
+            },
+            "build_logical_line": {
+                "return": [
+                    "tuple[str]"
+                ]
+            },
+            "build_logical_line_tokens": {
+                "return": [
+                    "tuple[typing.Union[list[typing.Text],list[tuple[int]]]]"
+                ]
+            },
+            "delete_first_token": {
+                "return": [
+                    "None"
+                ]
+            },
+            "file_tokens": {
+                "return": [
+                    "list"
+                ]
+            },
+            "fstring_start": {
+                "lineno": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "generate_tokens": {
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "keyword_arguments_for": {
+                "parameters": [],
+                "arguments": [],
+                "return": [
+                    "dict"
+                ]
+            },
+            "multiline_string": {
+                "token": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "next_line": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "next_logical_line": {
+                "return": [
+                    "None"
+                ]
+            },
+            "noqa_line_for": {
+                "line_number": [],
+                "return": []
+            },
+            "read_lines": {
+                "return": []
+            },
+            "read_lines_from_filename": {
+                "return": []
+            },
+            "read_lines_from_stdin": {
+                "return": []
+            },
+            "reset_blank_before": {
+                "return": [
+                    "None"
+                ]
+            },
+            "should_ignore_file": {
+                "return": [
+                    "bool"
+                ]
+            },
+            "strip_utf_bom": {
+                "return": [
+                    "None"
+                ]
+            },
+            "tstring_start": {
+                "lineno": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "update_checker_state_for": {
+                "plugin": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "update_state": {
+                "mapping": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "visited_new_blank_line": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "global": {
+            "count_parentheses": {
+                "current_parentheses_count": [],
+                "token_text": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "expand_indent": {
+                "line": [],
+                "return": [
+                    "int"
+                ]
+            },
+            "global": {},
+            "is_eol_token": {
+                "token": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "is_multiline_string": {
+                "token": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "mutate_string": {
+                "text": [],
+                "return": []
+            },
+            "token_is_newline": {
+                "token": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    },
+    "flake8.statistics": {
+        "Statistic": {
+            "__init__": {
+                "error_code": [],
+                "filename": [],
+                "message": [],
+                "count": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "create_from": {
+                "cls": [],
+                "error": [],
+                "return": []
+            },
+            "increment": {
+                "return": [
+                    "None"
+                ]
+            }
+        },
+        "Statistics": {
+            "__init__": {
+                "return": [
+                    "None"
+                ]
+            },
+            "error_codes": {
+                "return": [
+                    "list"
+                ]
+            },
+            "record": {
+                "error": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "statistics_for": {
+                "prefix": [],
+                "filename": [
+                    "None"
+                ],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "Key": {
+            "create_from": {
+                "cls": [],
+                "error": [],
+                "return": []
+            },
+            "matches": {
+                "prefix": [],
+                "filename": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        },
+        "global": {
+            "global": {}
+        }
+    },
+    "flake8.style_guide": {
+        "DecisionEngine": {
+            "__init__": {
+                "options": [],
+                "return": [
+                    "None"
+                ]
+            },
+            "decision_for": {
+                "code": [],
+                "return": []
+            },
+            "make_decision": {
+                "code": [],
+                "return": []
+            },
+            "was_ignored": {
+                "code": [],
+                "return": []
+            },
+            "was_selected": {
+                "code": [],
+                "return": []
+            }
+        },
+        "StyleGuide": {
+            "__init__": {
+                "options": [],
+                "formatter": [],
+                "stats": [],
+                "filename": [
+                    "None"
+                ],
+                "decider": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "typing.Text"
+                ]
+            },
+            "applies_to": {
+                "filename": [],
+                "return": [
+                    "bool"
+                ]
+            },
+            "copy": {
+                "filename": [
+                    "None"
+                ],
+                "extend_ignore_with": [
+                    "None"
+                ],
+                "return": [
+                    "StyleGuide"
+                ]
+            },
+            "handle_error": {
+                "code": [],
+                "filename": [],
+                "line_number": [],
+                "column_number": [],
+                "text": [],
+                "physical_line": [
+                    "None"
+                ],
+                "return": [
+                    "int"
+                ]
+            },
+            "processing_file": {
+                "filename": [],
+                "return": [
+                    "typing.Generator[StyleGuide]"
+                ]
+            },
+            "should_report_error": {
+                "code": [],
+                "return": []
+            }
+        },
+        "StyleGuideManager": {
+            "__init__": {
+                "options": [],
+                "formatter": [],
+                "decider": [
+                    "None"
+                ],
+                "return": [
+                    "None"
+                ]
+            },
+            "_style_guide_for": {
+                "filename": [],
+                "return": [
+                    "typing.Generator",
+                    "int"
+                ]
+            },
+            "handle_error": {
+                "code": [],
+                "filename": [],
+                "line_number": [],
+                "column_number": [],
+                "text": [],
+                "physical_line": [
+                    "None"
+                ],
+                "return": []
+            },
+            "populate_style_guides_with": {
+                "options": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            },
+            "processing_file": {
+                "filename": [],
+                "return": [
+                    "typing.Generator"
+                ]
+            }
+        },
+        "global": {
+            "_explicitly_chosen": {
+                "option": [],
+                "extend": [],
+                "return": [
+                    "tuple[list]"
+                ]
+            },
+            "_select_ignore": {
+                "option": [],
+                "default": [],
+                "extended_default": [],
+                "extend": [],
+                "return": [
+                    "tuple[list]"
+                ]
+            },
+            "global": {}
+        }
+    },
+    "flake8.violation": {
+        "global": {
+            "_find_noqa": {
+                "physical_line": [],
+                "return": []
+            },
+            "global": {}
+        },
+        "Violation": {
+            "is_inline_ignored": {
+                "disable_noqa": [],
+                "return": [
+                    "bool"
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,6991 @@
+{
+    "rich": {
+        "global": {
+            "get_console": {
+                "return": []
+            },
+            "reconfigure": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            },
+            "print": {
+                "objects": [],
+                "sep": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "file": [],
+                "flush": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "print_json": {
+                "json": [],
+                "data": [],
+                "indent": [
+                    "builtins.int"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "skip_keys": [
+                    "builtins.bool"
+                ],
+                "ensure_ascii": [
+                    "builtins.bool"
+                ],
+                "check_circular": [
+                    "builtins.bool"
+                ],
+                "allow_nan": [
+                    "builtins.bool"
+                ],
+                "default": [],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "inspect": {
+                "obj": [],
+                "console": [],
+                "title": [],
+                "help": [
+                    "builtins.bool"
+                ],
+                "methods": [
+                    "builtins.bool"
+                ],
+                "docs": [
+                    "builtins.bool"
+                ],
+                "private": [
+                    "builtins.bool"
+                ],
+                "dunder": [
+                    "builtins.bool"
+                ],
+                "sort": [
+                    "builtins.bool"
+                ],
+                "all": [
+                    "builtins.bool"
+                ],
+                "value": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich._emoji_replace": {
+        "global": {
+            "_emoji_replace": {
+                "text": [],
+                "default_variant": [],
+                "_emoji_sub": [
+                    "typing.Callable[[typing.Callable[[re.Pattern], _typeshed.SupportsAdd], typing.Any], typing.Any]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich._extension": {
+        "global": {
+            "load_ipython_extension": {
+                "ip": [],
+                "return": []
+            }
+        }
+    },
+    "rich._fileno": {
+        "global": {
+            "get_fileno": {
+                "file_like": [
+                    "_typeshed.HasFileno"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich._inspect": {
+        "global": {
+            "_first_paragraph": {
+                "doc": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_object_types_mro": {
+                "obj": [
+                    "builtins.type"
+                ],
+                "return": [
+                    "builtins.tuple"
+                ]
+            },
+            "get_object_types_mro_as_strings": {
+                "obj": [
+                    "builtins.type"
+                ],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            },
+            "is_object_one_of_types": {
+                "obj": [
+                    "builtins.type"
+                ],
+                "fully_qualified_types_names": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "Inspect": {
+            "__init__": {
+                "obj": [
+                    "builtins.object"
+                ],
+                "title": [],
+                "help": [
+                    "builtins.bool"
+                ],
+                "methods": [
+                    "builtins.bool"
+                ],
+                "docs": [
+                    "builtins.bool"
+                ],
+                "private": [
+                    "builtins.bool"
+                ],
+                "dunder": [
+                    "builtins.bool"
+                ],
+                "sort": [
+                    "builtins.bool"
+                ],
+                "all": [
+                    "builtins.bool"
+                ],
+                "value": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_make_title": {
+                "obj": [
+                    "builtins.object"
+                ],
+                "return": []
+            },
+            "__rich__": {
+                "return": []
+            },
+            "_get_signature": {
+                "name": [
+                    "builtins.str"
+                ],
+                "obj": [
+                    "typing.Callable"
+                ],
+                "return": []
+            },
+            "_render": {
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_formatted_doc": {
+                "object_": [
+                    "builtins.object"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich._log_render": {
+        "LogRender": {
+            "__init__": {
+                "show_time": [
+                    "builtins.bool"
+                ],
+                "show_level": [
+                    "builtins.bool"
+                ],
+                "show_path": [
+                    "builtins.bool"
+                ],
+                "time_format": [
+                    "builtins.str"
+                ],
+                "omit_repeated_times": [
+                    "builtins.bool"
+                ],
+                "level_width": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__call__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "renderables": [],
+                "log_time": [
+                    "datetime.date"
+                ],
+                "time_format": [
+                    "typing.Callable[[datetime.date], rich.text.Text]"
+                ],
+                "level": [
+                    "builtins.str"
+                ],
+                "path": [
+                    "rich.text.Text"
+                ],
+                "line_no": [],
+                "link_path": [],
+                "return": [
+                    "rich.table.Table"
+                ]
+            }
+        }
+    },
+    "rich._loop": {
+        "global": {
+            "loop_first": {
+                "values": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.bool, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "loop_last": {
+                "values": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.bool, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "loop_first_last": {
+                "values": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.bool, builtins.bool, typing.Any], typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich._null_file": {
+        "NullFile": {
+            "close": {
+                "return": []
+            },
+            "isatty": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "read": {
+                "__n": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "readable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "readline": {
+                "__limit": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "readlines": {
+                "__hint": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "seek": {
+                "__offset": [],
+                "__whence": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "seekable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "tell": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "truncate": {
+                "__size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "writable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "writelines": {
+                "__lines": [],
+                "return": []
+            },
+            "__next__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "__enter__": {
+                "return": [
+                    "rich._null_file.NullFile"
+                ]
+            },
+            "__exit__": {
+                "__t": [],
+                "__value": [],
+                "__traceback": [],
+                "return": []
+            },
+            "write": {
+                "text": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "flush": {
+                "return": []
+            },
+            "fileno": {
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "rich._pick": {
+        "global": {
+            "pick_bool": {
+                "values": [],
+                "return": [
+                    "builtins.int"
+                ]
+            }
+        }
+    },
+    "rich._ratio": {
+        "global": {
+            "ratio_resolve": {
+                "total": [
+                    "builtins.int"
+                ],
+                "edges": [
+                    "typing.Iterable[rich._ratio.Edge]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "ratio_reduce": {
+                "total": [
+                    "_typeshed.SupportsSub"
+                ],
+                "ratios": [
+                    "builtins.list[builtins.int]"
+                ],
+                "maximums": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "values": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "ratio_distribute": {
+                "total": [
+                    "_typeshed.SupportsSub"
+                ],
+                "ratios": [
+                    "builtins.list[builtins.int]"
+                ],
+                "minimums": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich._stack": {
+        "Stack": {
+            "top": {
+                "return": []
+            },
+            "push": {
+                "item": [],
+                "return": []
+            }
+        }
+    },
+    "rich._timer": {
+        "global": {
+            "timer": {
+                "subject": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich._win32_console": {
+        "global": {
+            "GetStdHandle": {
+                "handle": [],
+                "return": []
+            },
+            "GetConsoleMode": {
+                "std_handle": [],
+                "return": []
+            },
+            "FillConsoleOutputCharacter": {
+                "std_handle": [],
+                "char": [],
+                "length": [],
+                "start": [],
+                "return": []
+            },
+            "FillConsoleOutputAttribute": {
+                "std_handle": [],
+                "attributes": [],
+                "length": [],
+                "start": [],
+                "return": []
+            },
+            "SetConsoleTextAttribute": {
+                "std_handle": [],
+                "attributes": [],
+                "return": []
+            },
+            "GetConsoleScreenBufferInfo": {
+                "std_handle": [],
+                "return": []
+            },
+            "SetConsoleCursorPosition": {
+                "std_handle": [],
+                "coords": [],
+                "return": []
+            },
+            "GetConsoleCursorInfo": {
+                "std_handle": [],
+                "cursor_info": [],
+                "return": []
+            },
+            "SetConsoleCursorInfo": {
+                "std_handle": [],
+                "cursor_info": [],
+                "return": []
+            },
+            "SetConsoleTitle": {
+                "title": [],
+                "return": []
+            }
+        },
+        "WindowsCoordinates": {
+            "from_param": {
+                "value": [],
+                "return": []
+            }
+        },
+        "LegacyWindowsTerm": {
+            "__init__": {
+                "file": [],
+                "return": []
+            },
+            "cursor_position": {
+                "return": []
+            },
+            "screen_size": {
+                "return": []
+            },
+            "write_text": {
+                "text": [],
+                "return": []
+            },
+            "write_styled": {
+                "text": [],
+                "style": [],
+                "return": []
+            },
+            "move_cursor_to": {
+                "new_position": [],
+                "return": []
+            },
+            "erase_line": {
+                "return": []
+            },
+            "erase_end_of_line": {
+                "return": []
+            },
+            "erase_start_of_line": {
+                "return": []
+            },
+            "move_cursor_up": {
+                "return": []
+            },
+            "move_cursor_down": {
+                "return": []
+            },
+            "move_cursor_forward": {
+                "return": []
+            },
+            "move_cursor_to_column": {
+                "column": [],
+                "return": []
+            },
+            "move_cursor_backward": {
+                "return": []
+            },
+            "hide_cursor": {
+                "return": []
+            },
+            "show_cursor": {
+                "return": []
+            },
+            "set_title": {
+                "title": [],
+                "return": []
+            },
+            "_get_cursor_size": {
+                "return": []
+            }
+        }
+    },
+    "rich._windows_renderer": {
+        "global": {
+            "legacy_windows_render": {
+                "buffer": [],
+                "term": [],
+                "return": []
+            }
+        }
+    },
+    "rich._wrap": {
+        "global": {
+            "words": {
+                "text": [],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, builtins.int, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "divide_line": {
+                "text": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "fold": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.abc": {
+        "RichRenderable": {
+            "__subclasshook__": {
+                "other": [
+                    "rich.console.RichCast"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.align": {
+        "Align": {
+            "__init__": {
+                "renderable": [],
+                "align": [
+                    "builtins.str"
+                ],
+                "style": [],
+                "vertical": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "width": [],
+                "height": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "left": {
+                "renderable": [],
+                "style": [],
+                "vertical": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "width": [],
+                "height": [],
+                "return": []
+            },
+            "center": {
+                "renderable": [],
+                "style": [],
+                "vertical": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "width": [],
+                "height": [],
+                "return": []
+            },
+            "right": {
+                "renderable": [],
+                "style": [],
+                "vertical": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "width": [],
+                "height": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": []
+            }
+        },
+        "VerticalCenter": {
+            "__init__": {
+                "renderable": [],
+                "style": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": []
+            }
+        }
+    },
+    "rich.ansi": {
+        "global": {
+            "_ansi_tokenize": {
+                "ansi_text": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[rich.ansi._AnsiToken, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "AnsiDecoder": {
+            "__init__": {
+                "return": []
+            },
+            "decode": {
+                "terminal_text": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "decode_line": {
+                "line": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        }
+    },
+    "rich.bar": {
+        "Bar": {
+            "__init__": {
+                "size": [],
+                "begin": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "end": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "width": [],
+                "color": [
+                    "builtins.str"
+                ],
+                "bgcolor": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.box": {
+        "Box": {
+            "__init__": {
+                "box": [
+                    "builtins.str"
+                ],
+                "ascii": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "substitute": {
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "safe": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.box.Box"
+                ]
+            },
+            "get_plain_headed_box": {
+                "return": []
+            },
+            "get_top": {
+                "widths": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_row": {
+                "widths": [],
+                "level": [
+                    "builtins.str"
+                ],
+                "edge": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "get_bottom": {
+                "widths": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "rich.cells": {
+        "global": {
+            "cached_cell_len": {
+                "text": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "cell_len": {
+                "text": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "_cell_len": [
+                    "typing.Callable[[typing.Collection[typing.Any]], builtins.int]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "get_character_cell_size": {
+                "character": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "set_cell_size": {
+                "text": [
+                    "builtins.str"
+                ],
+                "total": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "chop_cells": {
+                "text": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.list[builtins.str]"
+                ]
+            }
+        }
+    },
+    "rich.color": {
+        "global": {
+            "parse_rgb_hex": {
+                "hex_color": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "rich.color_triplet.ColorTriplet"
+                ]
+            },
+            "blend_rgb": {
+                "color1": [
+                    "builtins.tuple[builtins.complex, builtins.complex, builtins.complex]"
+                ],
+                "color2": [
+                    "builtins.tuple[builtins.complex, builtins.complex, builtins.complex]"
+                ],
+                "cross_fade": [
+                    "builtins.float"
+                ],
+                "return": [
+                    "rich.color_triplet.ColorTriplet"
+                ]
+            }
+        },
+        "ColorSystem": {
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "ColorType": {
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Color": {
+            "__rich__": {
+                "return": []
+            },
+            "__rich_repr__": {
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.str, typing.Any, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "system": {
+                "return": [
+                    "rich.color.ColorSystem"
+                ]
+            },
+            "is_system_defined": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_default": {
+                "return": []
+            },
+            "get_truecolor": {
+                "theme": [
+                    "rich.terminal_theme.TerminalTheme"
+                ],
+                "foreground": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "from_ansi": {
+                "number": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "from_triplet": {
+                "triplet": [
+                    "rich.color_triplet.ColorTriplet"
+                ],
+                "return": []
+            },
+            "from_rgb": {
+                "red": [],
+                "green": [],
+                "blue": [],
+                "return": []
+            },
+            "default": {
+                "return": []
+            },
+            "parse": {
+                "color": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_ansi_codes": {
+                "foreground": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str, builtins.str, builtins.str]"
+                ]
+            },
+            "downgrade": {
+                "system": [],
+                "return": [
+                    "rich.color.Color"
+                ]
+            }
+        }
+    },
+    "rich.color_triplet": {
+        "ColorTriplet": {
+            "hex": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "rgb": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "normalized": {
+                "return": [
+                    "builtins.tuple[builtins.float, builtins.float, builtins.float]"
+                ]
+            }
+        }
+    },
+    "rich.columns": {
+        "Columns": {
+            "__init__": {
+                "renderables": [],
+                "padding": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "width": [],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "equal": [
+                    "builtins.bool"
+                ],
+                "column_first": [
+                    "builtins.bool"
+                ],
+                "right_to_left": [
+                    "builtins.bool"
+                ],
+                "align": [],
+                "title": [],
+                "return": []
+            },
+            "add_renderable": {
+                "renderable": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "typing.Generator[rich.table.Table, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.console": {
+        "global": {
+            "group": {
+                "fit": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Callable[[typing.Callable[..., typing.Iterable[typing.Any]]], typing.Callable[..., rich.console.Group]]"
+                ]
+            },
+            "_is_jupyter": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "get_windows_console_features": {
+                "return": []
+            },
+            "detect_legacy_windows": {
+                "return": []
+            },
+            "_svg_hash": {
+                "svg_main_code": [
+                    "json.encoder.JSONEncoder"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "ConsoleOptions": {
+            "ascii_only": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "copy": {
+                "return": []
+            },
+            "update": {
+                "width": [
+                    "rich.console.NoChange"
+                ],
+                "min_width": [
+                    "rich.console.NoChange"
+                ],
+                "max_width": [
+                    "rich.console.NoChange"
+                ],
+                "justify": [
+                    "rich.console.NoChange"
+                ],
+                "overflow": [
+                    "rich.console.NoChange"
+                ],
+                "no_wrap": [
+                    "rich.console.NoChange"
+                ],
+                "highlight": [
+                    "rich.console.NoChange"
+                ],
+                "markup": [
+                    "rich.console.NoChange"
+                ],
+                "height": [
+                    "rich.console.NoChange"
+                ],
+                "return": [
+                    "rich.console.ConsoleOptions"
+                ]
+            },
+            "update_width": {
+                "width": [],
+                "return": [
+                    "rich.table.Column"
+                ]
+            },
+            "update_height": {
+                "height": [],
+                "return": [
+                    "rich.console.ConsoleOptions"
+                ]
+            },
+            "reset_height": {
+                "return": [
+                    "rich.align.Align"
+                ]
+            },
+            "update_dimensions": {
+                "width": [],
+                "height": [],
+                "return": [
+                    "rich.console.ConsoleOptions"
+                ]
+            }
+        },
+        "RichCast": {
+            "__rich__": {
+                "return": []
+            }
+        },
+        "ConsoleRenderable": {
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": []
+            }
+        },
+        "NewLine": {
+            "__init__": {
+                "count": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "ScreenUpdate": {
+            "__init__": {
+                "lines": [],
+                "x": [],
+                "y": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Capture": {
+            "__init__": {
+                "console": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.console.Capture"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            },
+            "get": {
+                "return": []
+            }
+        },
+        "ThemeContext": {
+            "__init__": {
+                "console": [],
+                "theme": [],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.console.ThemeContext"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "PagerContext": {
+            "__init__": {
+                "console": [],
+                "pager": [],
+                "styles": [
+                    "builtins.bool"
+                ],
+                "links": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.console.PagerContext"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "ScreenContext": {
+            "__init__": {
+                "console": [],
+                "hide_cursor": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "update": {
+                "renderables": [],
+                "style": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.console.ScreenContext"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "Group": {
+            "__init__": {
+                "renderables": [],
+                "fit": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "renderables": {
+                "return": []
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "RenderHook": {
+            "process_renderables": {
+                "renderables": [],
+                "return": []
+            }
+        },
+        "Console": {
+            "__init__": {
+                "color_system": [
+                    "builtins.str"
+                ],
+                "force_terminal": [],
+                "force_jupyter": [],
+                "force_interactive": [],
+                "soft_wrap": [
+                    "builtins.bool"
+                ],
+                "theme": [],
+                "stderr": [
+                    "builtins.bool"
+                ],
+                "file": [],
+                "quiet": [
+                    "builtins.bool"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "height": [
+                    "builtins.int"
+                ],
+                "style": [],
+                "no_color": [],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "record": [
+                    "builtins.bool"
+                ],
+                "markup": [
+                    "builtins.bool"
+                ],
+                "emoji": [
+                    "builtins.bool"
+                ],
+                "emoji_variant": [],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "log_time": [
+                    "builtins.bool"
+                ],
+                "log_path": [
+                    "builtins.bool"
+                ],
+                "log_time_format": [
+                    "builtins.str"
+                ],
+                "highlighter": [
+                    "rich.highlighter.ReprHighlighter"
+                ],
+                "legacy_windows": [],
+                "safe_box": [
+                    "builtins.bool"
+                ],
+                "get_datetime": [],
+                "get_time": [],
+                "_environ": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "file": {
+                "new_file": [],
+                "return": []
+            },
+            "_buffer": {
+                "return": []
+            },
+            "_buffer_index": {
+                "value": [],
+                "return": []
+            },
+            "_theme_stack": {
+                "return": []
+            },
+            "_detect_color_system": {
+                "return": [
+                    "rich.color.ColorSystem"
+                ]
+            },
+            "_enter_buffer": {
+                "return": []
+            },
+            "_exit_buffer": {
+                "return": []
+            },
+            "set_live": {
+                "live": [],
+                "return": []
+            },
+            "clear_live": {
+                "return": []
+            },
+            "push_render_hook": {
+                "hook": [],
+                "return": []
+            },
+            "pop_render_hook": {
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.console.Console"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_value": [],
+                "traceback": [],
+                "return": []
+            },
+            "begin_capture": {
+                "return": []
+            },
+            "end_capture": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "push_theme": {
+                "theme": [],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "pop_theme": {
+                "return": []
+            },
+            "use_theme": {
+                "theme": [],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.console.ThemeContext"
+                ]
+            },
+            "color_system": {
+                "return": []
+            },
+            "encoding": {
+                "return": []
+            },
+            "is_terminal": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_dumb_terminal": {
+                "return": []
+            },
+            "options": {
+                "return": [
+                    "rich.console.ConsoleOptions"
+                ]
+            },
+            "size": {
+                "new_size": [
+                    "builtins.tuple[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "width": {
+                "width": [],
+                "return": []
+            },
+            "height": {
+                "height": [],
+                "return": []
+            },
+            "bell": {
+                "return": []
+            },
+            "capture": {
+                "return": [
+                    "rich.console.Capture"
+                ]
+            },
+            "pager": {
+                "pager": [],
+                "styles": [
+                    "builtins.bool"
+                ],
+                "links": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.console.PagerContext"
+                ]
+            },
+            "line": {
+                "count": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "clear": {
+                "home": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "status": {
+                "status": [],
+                "spinner": [
+                    "builtins.str"
+                ],
+                "spinner_style": [
+                    "builtins.str"
+                ],
+                "speed": [
+                    "builtins.float"
+                ],
+                "refresh_per_second": [
+                    "builtins.float"
+                ],
+                "return": []
+            },
+            "show_cursor": {
+                "show": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "set_alt_screen": {
+                "enable": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_alt_screen": {
+                "return": []
+            },
+            "set_window_title": {
+                "title": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "screen": {
+                "hide_cursor": [
+                    "builtins.bool"
+                ],
+                "style": [],
+                "return": [
+                    "rich.console.ScreenContext"
+                ]
+            },
+            "measure": {
+                "renderable": [],
+                "options": [],
+                "return": []
+            },
+            "render": {
+                "renderable": [
+                    "builtins.str"
+                ],
+                "options": [],
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "render_lines": {
+                "renderable": [
+                    "builtins.str"
+                ],
+                "options": [],
+                "style": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "render_str": {
+                "text": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "overflow": [],
+                "emoji": [],
+                "markup": [],
+                "highlight": [],
+                "highlighter": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "get_style": {
+                "name": [
+                    "rich.style.Style"
+                ],
+                "default": [
+                    "rich.style.Style"
+                ],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "_collect_renderables": {
+                "objects": [
+                    "typing.Iterable[rich.text.Text]"
+                ],
+                "sep": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "emoji": [],
+                "markup": [],
+                "highlight": [],
+                "return": [
+                    "builtins.list[rich.styled.Styled]"
+                ]
+            },
+            "rule": {
+                "title": [
+                    "builtins.str"
+                ],
+                "characters": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "align": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "control": {
+                "control": [],
+                "return": []
+            },
+            "out": {
+                "objects": [],
+                "sep": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "rich.style.Style"
+                ],
+                "highlight": [],
+                "return": []
+            },
+            "print": {
+                "objects": [],
+                "sep": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "rich.style.Style"
+                ],
+                "justify": [],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "no_wrap": [
+                    "builtins.bool"
+                ],
+                "emoji": [],
+                "markup": [],
+                "highlight": [],
+                "width": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "height": [],
+                "crop": [
+                    "builtins.bool"
+                ],
+                "soft_wrap": [],
+                "new_line_start": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "print_json": {
+                "json": [
+                    "builtins.str"
+                ],
+                "data": [],
+                "indent": [
+                    "builtins.int"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "skip_keys": [
+                    "builtins.bool"
+                ],
+                "ensure_ascii": [
+                    "builtins.bool"
+                ],
+                "check_circular": [
+                    "builtins.bool"
+                ],
+                "allow_nan": [
+                    "builtins.bool"
+                ],
+                "default": [],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "update_screen": {
+                "renderable": [
+                    "builtins.str"
+                ],
+                "region": [
+                    "builtins.tuple[builtins.int, builtins.int, typing.Any, typing.Any]"
+                ],
+                "options": [],
+                "return": []
+            },
+            "update_screen_lines": {
+                "lines": [],
+                "x": [
+                    "builtins.int"
+                ],
+                "y": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "print_exception": {
+                "width": [
+                    "builtins.int"
+                ],
+                "extra_lines": [
+                    "builtins.int"
+                ],
+                "theme": [],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "show_locals": [
+                    "builtins.bool"
+                ],
+                "suppress": [
+                    "builtins.tuple"
+                ],
+                "max_frames": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "_caller_frame_info": {
+                "offset": [
+                    "builtins.int"
+                ],
+                "currentframe": [
+                    "typing.Callable[[], types.FrameType]"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "log": {
+                "objects": [],
+                "sep": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "style": [],
+                "justify": [],
+                "emoji": [],
+                "markup": [],
+                "highlight": [],
+                "log_locals": [
+                    "builtins.bool"
+                ],
+                "_stack_offset": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "on_broken_pipe": {
+                "return": []
+            },
+            "_check_buffer": {
+                "return": []
+            },
+            "_write_buffer": {
+                "return": []
+            },
+            "_render_buffer": {
+                "buffer": [
+                    "typing.Iterable[builtins.tuple[typing.Any, rich.progress.ProgressColumn, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "input": {
+                "prompt": [
+                    "builtins.str"
+                ],
+                "markup": [
+                    "builtins.bool"
+                ],
+                "emoji": [
+                    "builtins.bool"
+                ],
+                "password": [
+                    "builtins.bool"
+                ],
+                "stream": [
+                    "_typeshed.SupportsNoArgReadline"
+                ],
+                "return": []
+            },
+            "export_text": {
+                "clear": [
+                    "builtins.bool"
+                ],
+                "styles": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "save_text": {
+                "path": [
+                    "builtins.str"
+                ],
+                "clear": [
+                    "builtins.bool"
+                ],
+                "styles": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "export_html": {
+                "theme": [],
+                "clear": [
+                    "builtins.bool"
+                ],
+                "code_format": [],
+                "inline_styles": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "save_html": {
+                "path": [
+                    "builtins.str"
+                ],
+                "theme": [],
+                "clear": [
+                    "builtins.bool"
+                ],
+                "code_format": [],
+                "inline_styles": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "export_svg": {
+                "title": [
+                    "builtins.str"
+                ],
+                "theme": [],
+                "clear": [
+                    "builtins.bool"
+                ],
+                "code_format": [
+                    "logging.BufferingFormatter"
+                ],
+                "font_aspect_ratio": [
+                    "builtins.float"
+                ],
+                "unique_id": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "save_svg": {
+                "path": [
+                    "builtins.str"
+                ],
+                "title": [
+                    "builtins.str"
+                ],
+                "theme": [],
+                "clear": [
+                    "builtins.bool"
+                ],
+                "code_format": [
+                    "logging.BufferingFormatter"
+                ],
+                "font_aspect_ratio": [
+                    "builtins.float"
+                ],
+                "unique_id": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.constrain": {
+        "Constrain": {
+            "__init__": {
+                "renderable": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.containers": {
+        "Renderables": {
+            "__init__": {
+                "renderables": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "append": {
+                "renderable": [],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            }
+        },
+        "Lines": {
+            "__init__": {
+                "lines": [
+                    "builtins.tuple"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__iter__": {
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "__getitem__": {
+                "index": [],
+                "return": []
+            },
+            "__setitem__": {
+                "index": [],
+                "value": [],
+                "return": [
+                    "rich.containers.Lines"
+                ]
+            },
+            "__len__": {
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "append": {
+                "line": [],
+                "return": []
+            },
+            "extend": {
+                "lines": [],
+                "return": []
+            },
+            "pop": {
+                "index": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "justify": {
+                "console": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "justify": [
+                    "builtins.str"
+                ],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.control": {
+        "global": {
+            "strip_control_codes": {
+                "text": [
+                    "builtins.str"
+                ],
+                "_translate_table": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "return": []
+            },
+            "escape_control_codes": {
+                "text": [
+                    "builtins.str"
+                ],
+                "_translate_table": [
+                    "builtins.dict[builtins.int, builtins.str]"
+                ],
+                "return": []
+            }
+        },
+        "Control": {
+            "__init__": {
+                "codes": [],
+                "return": []
+            },
+            "bell": {
+                "return": []
+            },
+            "home": {
+                "return": []
+            },
+            "move": {
+                "x": [
+                    "builtins.int"
+                ],
+                "y": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "move_to_column": {
+                "x": [],
+                "y": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "move_to": {
+                "x": [],
+                "y": [],
+                "return": []
+            },
+            "clear": {
+                "return": []
+            },
+            "show_cursor": {
+                "show": [],
+                "return": []
+            },
+            "alt_screen": {
+                "enable": [],
+                "return": []
+            },
+            "title": {
+                "title": [],
+                "return": []
+            },
+            "__str__": {
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.diagnose": {
+        "global": {
+            "report": {
+                "return": []
+            }
+        }
+    },
+    "rich.emoji": {
+        "Emoji": {
+            "__init__": {
+                "name": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "variant": [],
+                "return": []
+            },
+            "replace": {
+                "text": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.file_proxy": {
+        "FileProxy": {
+            "__init__": {
+                "console": [],
+                "file": [],
+                "return": []
+            },
+            "rich_proxied_file": {
+                "return": []
+            },
+            "__getattr__": {
+                "name": [],
+                "return": []
+            },
+            "write": {
+                "text": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "flush": {
+                "return": []
+            },
+            "fileno": {
+                "return": []
+            }
+        }
+    },
+    "rich.filesize": {
+        "global": {
+            "_to_str": {
+                "size": [
+                    "builtins.int"
+                ],
+                "suffixes": [],
+                "base": [
+                    "builtins.int"
+                ],
+                "precision": [
+                    "builtins.int"
+                ],
+                "separator": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "pick_unit_and_suffix": {
+                "size": [],
+                "suffixes": [],
+                "base": [
+                    "numbers.Complex"
+                ],
+                "return": [
+                    "builtins.tuple[numbers.Complex, typing.Any]"
+                ]
+            },
+            "decimal": {
+                "size": [
+                    "builtins.int"
+                ],
+                "precision": [
+                    "builtins.int"
+                ],
+                "separator": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "rich.highlighter": {
+        "global": {
+            "_combine_regex": {
+                "regexes": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Highlighter": {
+            "__call__": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "highlight": {
+                "text": [],
+                "return": []
+            }
+        },
+        "NullHighlighter": {
+            "highlight": {
+                "text": [],
+                "return": []
+            }
+        },
+        "RegexHighlighter": {
+            "highlight": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            }
+        },
+        "JSONHighlighter": {
+            "highlight": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.json": {
+        "JSON": {
+            "__init__": {
+                "json": [
+                    "builtins.str"
+                ],
+                "indent": [
+                    "builtins.int"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "skip_keys": [
+                    "builtins.bool"
+                ],
+                "ensure_ascii": [
+                    "builtins.bool"
+                ],
+                "check_circular": [
+                    "builtins.bool"
+                ],
+                "allow_nan": [
+                    "builtins.bool"
+                ],
+                "default": [],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "from_data": {
+                "data": [],
+                "indent": [
+                    "builtins.int"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "skip_keys": [
+                    "builtins.bool"
+                ],
+                "ensure_ascii": [
+                    "builtins.bool"
+                ],
+                "check_circular": [
+                    "builtins.bool"
+                ],
+                "allow_nan": [
+                    "builtins.bool"
+                ],
+                "default": [],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.jupyter.JupyterRenderable"
+                ]
+            },
+            "__rich__": {
+                "return": []
+            }
+        }
+    },
+    "rich.jupyter": {
+        "global": {
+            "_render_segments": {
+                "segments": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "display": {
+                "segments": [],
+                "text": [],
+                "return": []
+            },
+            "print": {
+                "args": [],
+                "kwargs": [],
+                "return": []
+            }
+        },
+        "JupyterRenderable": {
+            "__init__": {
+                "html": [],
+                "text": [],
+                "return": []
+            },
+            "_repr_mimebundle_": {
+                "include": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "exclude": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "kwargs": [],
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            }
+        },
+        "JupyterMixin": {
+            "_repr_mimebundle_": {
+                "include": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "exclude": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "kwargs": [],
+                "return": [
+                    "builtins.dict[builtins.str, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.layout": {
+        "_Placeholder": {
+            "__init__": {
+                "layout": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.panel.Panel, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Splitter": {
+            "get_tree_icon": {
+                "return": []
+            },
+            "divide": {
+                "children": [],
+                "region": [],
+                "return": []
+            }
+        },
+        "RowSplitter": {
+            "get_tree_icon": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "divide": {
+                "children": [
+                    "typing.Iterable[rich._ratio.Edge]"
+                ],
+                "region": [
+                    "builtins.tuple[builtins.int, typing.Any, builtins.int, typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, rich.region.Region], typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "ColumnSplitter": {
+            "get_tree_icon": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "divide": {
+                "children": [
+                    "typing.Iterable[rich._ratio.Edge]"
+                ],
+                "region": [
+                    "builtins.tuple[typing.Any, builtins.int, typing.Any, builtins.int]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, rich.region.Region], typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Layout": {
+            "__init__": {
+                "renderable": [],
+                "name": [],
+                "size": [],
+                "minimum_size": [
+                    "builtins.int"
+                ],
+                "ratio": [
+                    "builtins.int"
+                ],
+                "visible": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__rich_repr__": {
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.str, typing.Any, builtins.int], typing.Any, typing.Any]"
+                ]
+            },
+            "renderable": {
+                "return": [
+                    "rich.layout.Layout"
+                ]
+            },
+            "children": {
+                "return": [
+                    "builtins.list[rich.progress.Task]"
+                ]
+            },
+            "map": {
+                "return": []
+            },
+            "get": {
+                "name": [],
+                "return": [
+                    "rich.layout.Layout"
+                ]
+            },
+            "__getitem__": {
+                "name": [],
+                "return": [
+                    "rich.layout.Layout"
+                ]
+            },
+            "tree": {
+                "return": [
+                    "rich.tree.Tree"
+                ]
+            },
+            "split": {
+                "layouts": [],
+                "splitter": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "add_split": {
+                "layouts": [],
+                "return": []
+            },
+            "split_row": {
+                "layouts": [],
+                "return": []
+            },
+            "split_column": {
+                "layouts": [],
+                "return": []
+            },
+            "unsplit": {
+                "return": []
+            },
+            "update": {
+                "renderable": [],
+                "return": []
+            },
+            "refresh_screen": {
+                "console": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "layout_name": [],
+                "return": []
+            },
+            "_make_region_map": {
+                "width": [],
+                "height": [],
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "render": {
+                "console": [
+                    "rich.align.Align"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "builtins.dict[rich.screen.Screen, rich.layout.LayoutRender]"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.align.Align"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.live": {
+        "_RefreshThread": {
+            "__init__": {
+                "live": [],
+                "refresh_per_second": [],
+                "return": []
+            },
+            "stop": {
+                "return": []
+            },
+            "run": {
+                "return": []
+            }
+        },
+        "Live": {
+            "__init__": {
+                "renderable": [],
+                "console": [],
+                "screen": [
+                    "builtins.bool"
+                ],
+                "auto_refresh": [
+                    "builtins.bool"
+                ],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "transient": [
+                    "builtins.bool"
+                ],
+                "redirect_stdout": [
+                    "builtins.bool"
+                ],
+                "redirect_stderr": [
+                    "builtins.bool"
+                ],
+                "vertical_overflow": [
+                    "builtins.str"
+                ],
+                "get_renderable": [],
+                "return": []
+            },
+            "is_started": {
+                "return": []
+            },
+            "get_renderable": {
+                "return": []
+            },
+            "start": {
+                "refresh": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "stop": {
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.live.Live"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            },
+            "_enable_redirect_io": {
+                "return": []
+            },
+            "_disable_redirect_io": {
+                "return": []
+            },
+            "renderable": {
+                "return": [
+                    "rich.screen.Screen"
+                ]
+            },
+            "update": {
+                "renderable": [
+                    "builtins.str"
+                ],
+                "refresh": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "refresh": {
+                "return": []
+            },
+            "process_renderables": {
+                "renderables": [
+                    "builtins.list[typing.Any]"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.live_render": {
+        "LiveRender": {
+            "__init__": {
+                "renderable": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "vertical_overflow": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "set_renderable": {
+                "renderable": [],
+                "return": []
+            },
+            "position_cursor": {
+                "return": [
+                    "rich.control.Control"
+                ]
+            },
+            "restore_cursor": {
+                "return": [
+                    "rich.control.Control"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich._ratio.Edge"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.logging": {
+        "RichHandler": {
+            "__init__": {
+                "level": [
+                    "builtins.int"
+                ],
+                "console": [],
+                "show_time": [
+                    "builtins.bool"
+                ],
+                "omit_repeated_times": [
+                    "builtins.bool"
+                ],
+                "show_level": [
+                    "builtins.bool"
+                ],
+                "show_path": [
+                    "builtins.bool"
+                ],
+                "enable_link_path": [
+                    "builtins.bool"
+                ],
+                "highlighter": [],
+                "markup": [
+                    "builtins.bool"
+                ],
+                "rich_tracebacks": [
+                    "builtins.bool"
+                ],
+                "tracebacks_width": [],
+                "tracebacks_code_width": [
+                    "builtins.int"
+                ],
+                "tracebacks_extra_lines": [
+                    "builtins.int"
+                ],
+                "tracebacks_theme": [],
+                "tracebacks_word_wrap": [
+                    "builtins.bool"
+                ],
+                "tracebacks_show_locals": [
+                    "builtins.bool"
+                ],
+                "tracebacks_suppress": [
+                    "builtins.tuple"
+                ],
+                "tracebacks_max_frames": [
+                    "builtins.int"
+                ],
+                "locals_max_length": [
+                    "builtins.int"
+                ],
+                "locals_max_string": [
+                    "builtins.int"
+                ],
+                "log_time_format": [
+                    "builtins.str"
+                ],
+                "keywords": [],
+                "return": []
+            },
+            "get_level_text": {
+                "record": [
+                    "logging.LogRecord"
+                ],
+                "return": []
+            },
+            "emit": {
+                "record": [
+                    "logging.LogRecord"
+                ],
+                "return": []
+            },
+            "render_message": {
+                "record": [
+                    "rich.progress.TextColumn"
+                ],
+                "message": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "render": {
+                "record": [
+                    "logging.LogRecord"
+                ],
+                "traceback": [],
+                "message_renderable": [],
+                "return": []
+            }
+        }
+    },
+    "rich.markdown": {
+        "MarkdownElement": {
+            "create": {
+                "markdown": [],
+                "token": [],
+                "return": []
+            },
+            "on_enter": {
+                "context": [],
+                "return": []
+            },
+            "on_text": {
+                "context": [],
+                "text": [],
+                "return": []
+            },
+            "on_leave": {
+                "context": [],
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "builtins.tuple"
+                ]
+            }
+        },
+        "TextElement": {
+            "on_enter": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "return": []
+            },
+            "on_text": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "text": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "on_leave": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "return": []
+            }
+        },
+        "Paragraph": {
+            "create": {
+                "markdown": [
+                    "rich.markdown.Paragraph"
+                ],
+                "token": [],
+                "return": []
+            },
+            "__init__": {
+                "justify": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Heading": {
+            "create": {
+                "markdown": [],
+                "token": [
+                    "rich.markdown.Heading"
+                ],
+                "return": []
+            },
+            "on_enter": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "tag": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "CodeBlock": {
+            "create": {
+                "markdown": [
+                    "rich.markdown.Markdown"
+                ],
+                "token": [
+                    "logging.LoggerAdapter"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "lexer_name": [],
+                "theme": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.syntax.Syntax, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "BlockQuote": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "HorizontalRule": {
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.rule.Rule, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "TableElement": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.table.Table, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "TableHeaderElement": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "TableBodyElement": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "TableRowElement": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            }
+        },
+        "TableDataElement": {
+            "create": {
+                "markdown": [],
+                "token": [
+                    "markdown_it.token.Token"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "justify": [],
+                "return": []
+            },
+            "on_text": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            }
+        },
+        "ListElement": {
+            "create": {
+                "markdown": [],
+                "token": [
+                    "markdown_it.token.Token"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "list_type": [],
+                "list_start": [],
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "ListItem": {
+            "__init__": {
+                "return": []
+            },
+            "on_child_close": {
+                "context": [],
+                "child": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "render_bullet": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "render_number": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "number": [],
+                "last_number": [],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Link": {
+            "create": {
+                "markdown": [],
+                "token": [
+                    "markdown_it.token.Token"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "text": [
+                    "builtins.str"
+                ],
+                "href": [],
+                "return": []
+            }
+        },
+        "ImageItem": {
+            "create": {
+                "markdown": [
+                    "rich.markdown.ImageItem"
+                ],
+                "token": [
+                    "markdown_it.token.Token"
+                ],
+                "return": []
+            },
+            "__init__": {
+                "destination": [],
+                "hyperlinks": [],
+                "return": []
+            },
+            "on_enter": {
+                "context": [
+                    "rich.markdown.MarkdownContext"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "MarkdownContext": {
+            "__init__": {
+                "console": [],
+                "options": [],
+                "style": [],
+                "inline_code_lexer": [],
+                "inline_code_theme": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "current_style": {
+                "return": []
+            },
+            "on_text": {
+                "text": [],
+                "node_type": [],
+                "return": []
+            },
+            "enter_style": {
+                "style_name": [],
+                "return": []
+            },
+            "leave_style": {
+                "return": []
+            }
+        },
+        "Markdown": {
+            "__init__": {
+                "markup": [],
+                "code_theme": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "hyperlinks": [
+                    "builtins.bool"
+                ],
+                "inline_code_lexer": [],
+                "inline_code_theme": [],
+                "return": []
+            },
+            "_flatten_tokens": {
+                "tokens": [
+                    "typing.Iterable[markdown_it.token.Token]"
+                ],
+                "return": [
+                    "typing.Generator[markdown_it.token.Token, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich.console.ScreenContext"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.markup": {
+        "global": {
+            "escape": {
+                "markup": [
+                    "builtins.str"
+                ],
+                "_escape": [
+                    "typing.Callable[[typing.Callable[[re.Pattern], builtins.str], builtins.str], builtins.str]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_parse": {
+                "markup": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.int, typing.Sequence[typing.Any], rich.markup.Tag], typing.Any, typing.Any]"
+                ]
+            },
+            "render": {
+                "markup": [
+                    "typing.Sequence[builtins.str]"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "emoji": [
+                    "builtins.bool"
+                ],
+                "emoji_variant": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "Tag": {
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "markup": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "rich.measure": {
+        "global": {
+            "measure_renderables": {
+                "console": [],
+                "options": [],
+                "renderables": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        },
+        "Measurement": {
+            "span": {
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "normalize": {
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "with_maximum": {
+                "width": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "with_minimum": {
+                "width": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "clamp": {
+                "min_width": [],
+                "max_width": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "get": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "renderable": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.padding": {
+        "Padding": {
+            "__init__": {
+                "renderable": [],
+                "pad": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "indent": {
+                "renderable": [],
+                "level": [],
+                "return": [
+                    "rich.padding.Padding"
+                ]
+            },
+            "unpack": {
+                "pad": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.int, builtins.int, builtins.int]"
+                ]
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.pager": {
+        "Pager": {
+            "show": {
+                "content": [],
+                "return": []
+            }
+        },
+        "SystemPager": {
+            "_pager": {
+                "content": [],
+                "return": []
+            },
+            "show": {
+                "content": [],
+                "return": []
+            }
+        }
+    },
+    "rich.palette": {
+        "Palette": {
+            "__init__": {
+                "colors": [],
+                "return": []
+            },
+            "__getitem__": {
+                "number": [],
+                "return": [
+                    "rich.color_triplet.ColorTriplet"
+                ]
+            },
+            "__rich__": {
+                "return": [
+                    "rich.table.Table"
+                ]
+            },
+            "match": {
+                "color": [
+                    "builtins.tuple[builtins.int, _typeshed.SupportsSub, _typeshed.SupportsSub]"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.panel": {
+        "Panel": {
+            "__init__": {
+                "renderable": [],
+                "box": [],
+                "title": [],
+                "title_align": [
+                    "builtins.str"
+                ],
+                "subtitle": [],
+                "subtitle_align": [
+                    "builtins.str"
+                ],
+                "safe_box": [],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "border_style": [
+                    "builtins.str"
+                ],
+                "width": [],
+                "height": [],
+                "padding": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "fit": {
+                "renderable": [],
+                "box": [],
+                "title": [],
+                "title_align": [
+                    "builtins.str"
+                ],
+                "subtitle": [],
+                "subtitle_align": [
+                    "builtins.str"
+                ],
+                "safe_box": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "border_style": [
+                    "builtins.str"
+                ],
+                "width": [],
+                "height": [],
+                "padding": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_title": {
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "_subtitle": {
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.pretty": {
+        "global": {
+            "_is_attr_object": {
+                "obj": [],
+                "return": []
+            },
+            "_get_attr_fields": {
+                "obj": [],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "_is_dataclass_repr": {
+                "obj": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_has_default_namedtuple_repr": {
+                "obj": [],
+                "return": []
+            },
+            "_ipy_display_hook": {
+                "value": [],
+                "console": [
+                    "warnings.WarningMessage"
+                ],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "crop": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "max_length": [],
+                "max_string": [],
+                "max_depth": [],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_safe_isinstance": {
+                "obj": [],
+                "class_or_tuple": [],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "install": {
+                "console": [
+                    "rich.progress.Progress"
+                ],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "crop": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "max_length": [],
+                "max_string": [],
+                "max_depth": [],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_get_braces_for_defaultdict": {
+                "_object": [
+                    "dataclasses.Field"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str]"
+                ]
+            },
+            "_get_braces_for_deque": {
+                "_object": [
+                    "collections.deque[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str]"
+                ]
+            },
+            "_get_braces_for_array": {
+                "_object": [
+                    "array.array[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.str, builtins.str, builtins.str]"
+                ]
+            },
+            "is_expandable": {
+                "obj": [
+                    "rich.layout.Layout"
+                ],
+                "return": []
+            },
+            "_is_namedtuple": {
+                "obj": [
+                    "builtins.tuple"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "traverse": {
+                "_object": [
+                    "rich.pretty._dummy_namedtuple"
+                ],
+                "max_length": [
+                    "builtins.int"
+                ],
+                "max_string": [
+                    "builtins.int"
+                ],
+                "max_depth": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "rich.pretty.Node"
+                ]
+            },
+            "pretty_repr": {
+                "_object": [
+                    "rich.pretty.Node"
+                ],
+                "max_width": [
+                    "builtins.int"
+                ],
+                "indent_size": [
+                    "builtins.int"
+                ],
+                "max_length": [
+                    "builtins.int"
+                ],
+                "max_string": [
+                    "builtins.int"
+                ],
+                "max_depth": [
+                    "builtins.int"
+                ],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "pprint": {
+                "_object": [],
+                "console": [],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "max_length": [],
+                "max_string": [],
+                "max_depth": [],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "return": []
+            }
+        },
+        "Pretty": {
+            "__init__": {
+                "_object": [],
+                "highlighter": [],
+                "indent_size": [
+                    "builtins.int"
+                ],
+                "justify": [],
+                "overflow": [],
+                "no_wrap": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "max_length": [],
+                "max_string": [],
+                "max_depth": [],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "margin": [
+                    "builtins.int"
+                ],
+                "insert_line": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        },
+        "Node": {
+            "iter_tokens": {
+                "return": [
+                    "typing.Generator[builtins.str, typing.Any, typing.Any]"
+                ]
+            },
+            "check_length": {
+                "start_length": [
+                    "builtins.int"
+                ],
+                "max_length": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "render": {
+                "max_width": [
+                    "builtins.int"
+                ],
+                "indent_size": [
+                    "builtins.int"
+                ],
+                "expand_all": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "_Line": {
+            "expandable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "check_length": {
+                "max_length": [],
+                "return": []
+            },
+            "expand": {
+                "indent_size": [],
+                "return": [
+                    "typing.Generator[rich.pretty._Line, typing.Any, typing.Any]"
+                ]
+            },
+            "__str__": {
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "rich.progress": {
+        "global": {
+            "track": {
+                "sequence": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "total": [],
+                "completed": [
+                    "builtins.int"
+                ],
+                "auto_refresh": [
+                    "builtins.bool"
+                ],
+                "console": [],
+                "transient": [
+                    "builtins.bool"
+                ],
+                "get_time": [],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "complete_style": [
+                    "builtins.str"
+                ],
+                "finished_style": [
+                    "builtins.str"
+                ],
+                "pulse_style": [
+                    "builtins.str"
+                ],
+                "update_period": [
+                    "builtins.float"
+                ],
+                "disable": [
+                    "builtins.bool"
+                ],
+                "show_speed": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "wrap_file": {
+                "file": [],
+                "total": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "auto_refresh": [
+                    "builtins.bool"
+                ],
+                "console": [],
+                "transient": [
+                    "builtins.bool"
+                ],
+                "get_time": [],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "complete_style": [
+                    "builtins.str"
+                ],
+                "finished_style": [
+                    "builtins.str"
+                ],
+                "pulse_style": [
+                    "builtins.str"
+                ],
+                "disable": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.progress._ReadContext"
+                ]
+            },
+            "open": {
+                "file": [],
+                "mode": [
+                    "builtins.str"
+                ],
+                "buffering": [
+                    "builtins.int"
+                ],
+                "encoding": [],
+                "errors": [],
+                "newline": [],
+                "total": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "auto_refresh": [
+                    "builtins.bool"
+                ],
+                "console": [],
+                "transient": [
+                    "builtins.bool"
+                ],
+                "get_time": [],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "complete_style": [
+                    "builtins.str"
+                ],
+                "finished_style": [
+                    "builtins.str"
+                ],
+                "pulse_style": [
+                    "builtins.str"
+                ],
+                "disable": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.progress._ReadContext"
+                ]
+            }
+        },
+        "_TrackThread": {
+            "__init__": {
+                "progress": [],
+                "task_id": [],
+                "update_period": [],
+                "return": []
+            },
+            "run": {
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.progress._TrackThread"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "_Reader": {
+            "__init__": {
+                "handle": [],
+                "progress": [],
+                "task": [],
+                "close_handle": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.progress._Reader"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            },
+            "__iter__": {
+                "return": [
+                    "rich.progress._Reader"
+                ]
+            },
+            "__next__": {
+                "return": [
+                    "typing.Sized"
+                ]
+            },
+            "closed": {
+                "return": []
+            },
+            "fileno": {
+                "return": []
+            },
+            "isatty": {
+                "return": []
+            },
+            "mode": {
+                "return": []
+            },
+            "name": {
+                "return": []
+            },
+            "readable": {
+                "return": []
+            },
+            "seekable": {
+                "return": []
+            },
+            "writable": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "read": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Sized"
+                ]
+            },
+            "readinto": {
+                "b": [],
+                "return": []
+            },
+            "readline": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "typing.Sized"
+                ]
+            },
+            "readlines": {
+                "hint": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "close": {
+                "return": []
+            },
+            "seek": {
+                "offset": [],
+                "whence": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "tell": {
+                "return": []
+            },
+            "write": {
+                "s": [],
+                "return": []
+            },
+            "writelines": {
+                "lines": [],
+                "return": []
+            }
+        },
+        "_ReadContext": {
+            "__init__": {
+                "progress": [],
+                "reader": [],
+                "return": []
+            },
+            "__enter__": {
+                "return": []
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        },
+        "ProgressColumn": {
+            "__init__": {
+                "table_column": [],
+                "return": []
+            },
+            "get_table_column": {
+                "return": []
+            },
+            "__call__": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": []
+            },
+            "render": {
+                "task": [],
+                "return": []
+            }
+        },
+        "RenderableColumn": {
+            "__init__": {
+                "renderable": [
+                    "builtins.str"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [],
+                "return": []
+            }
+        },
+        "SpinnerColumn": {
+            "__init__": {
+                "spinner_name": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "speed": [
+                    "builtins.float"
+                ],
+                "finished_text": [
+                    "builtins.str"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "set_spinner": {
+                "spinner_name": [],
+                "spinner_style": [
+                    "builtins.str"
+                ],
+                "speed": [
+                    "builtins.float"
+                ],
+                "return": []
+            },
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": []
+            }
+        },
+        "TextColumn": {
+            "__init__": {
+                "text_format": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [
+                    "builtins.str"
+                ],
+                "markup": [
+                    "builtins.bool"
+                ],
+                "highlighter": [],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "BarColumn": {
+            "__init__": {
+                "bar_width": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "complete_style": [
+                    "builtins.str"
+                ],
+                "finished_style": [
+                    "builtins.str"
+                ],
+                "pulse_style": [
+                    "builtins.str"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": [
+                    "rich.progress_bar.ProgressBar"
+                ]
+            }
+        },
+        "TimeElapsedColumn": {
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "TaskProgressColumn": {
+            "__init__": {
+                "text_format": [
+                    "builtins.str"
+                ],
+                "text_format_no_percentage": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [
+                    "builtins.str"
+                ],
+                "markup": [
+                    "builtins.bool"
+                ],
+                "highlighter": [],
+                "table_column": [],
+                "show_speed": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "render_speed": {
+                "speed": [
+                    "numbers.Complex"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "TimeRemainingColumn": {
+            "__init__": {
+                "compact": [
+                    "builtins.bool"
+                ],
+                "elapsed_when_finished": [
+                    "builtins.bool"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "FileSizeColumn": {
+            "render": {
+                "task": [
+                    "rich.progress_bar.ProgressBar"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "TotalFileSizeColumn": {
+            "render": {
+                "task": [
+                    "rich.progress_bar.ProgressBar"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "MofNCompleteColumn": {
+            "__init__": {
+                "separator": [
+                    "builtins.str"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [
+                    "rich.progress_bar.ProgressBar"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "DownloadColumn": {
+            "__init__": {
+                "binary_units": [
+                    "builtins.bool"
+                ],
+                "table_column": [],
+                "return": []
+            },
+            "render": {
+                "task": [
+                    "rich.progress_bar.ProgressBar"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "TransferSpeedColumn": {
+            "render": {
+                "task": [
+                    "rich.progress.Task"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            }
+        },
+        "Task": {
+            "get_time": {
+                "return": []
+            },
+            "started": {
+                "return": []
+            },
+            "remaining": {
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "elapsed": {
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "finished": {
+                "return": []
+            },
+            "percentage": {
+                "return": [
+                    "builtins.float"
+                ]
+            },
+            "speed": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "time_remaining": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_reset": {
+                "return": []
+            }
+        },
+        "Progress": {
+            "__init__": {
+                "columns": [],
+                "console": [],
+                "auto_refresh": [
+                    "builtins.bool"
+                ],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "speed_estimate_period": [
+                    "builtins.float"
+                ],
+                "transient": [
+                    "builtins.bool"
+                ],
+                "redirect_stdout": [
+                    "builtins.bool"
+                ],
+                "redirect_stderr": [
+                    "builtins.bool"
+                ],
+                "get_time": [],
+                "disable": [
+                    "builtins.bool"
+                ],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "get_default_columns": {
+                "return": [
+                    "builtins.tuple[rich.progress.TextColumn, rich.progress.BarColumn, rich.progress.TaskProgressColumn, rich.progress.TimeRemainingColumn]"
+                ]
+            },
+            "console": {
+                "return": []
+            },
+            "tasks": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "task_ids": {
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "finished": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "start": {
+                "return": []
+            },
+            "stop": {
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.progress.Progress"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            },
+            "track": {
+                "sequence": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "total": [
+                    "builtins.float"
+                ],
+                "completed": [
+                    "builtins.int"
+                ],
+                "task_id": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "update_period": [
+                    "builtins.float"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "wrap_file": {
+                "file": [],
+                "total": [
+                    "builtins.float"
+                ],
+                "task_id": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.progress._Reader"
+                ]
+            },
+            "open": {
+                "file": [
+                    "builtins.str"
+                ],
+                "mode": [
+                    "builtins.str"
+                ],
+                "buffering": [
+                    "builtins.int"
+                ],
+                "encoding": [],
+                "errors": [],
+                "newline": [],
+                "total": [
+                    "builtins.float"
+                ],
+                "task_id": [],
+                "description": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.progress._Reader"
+                ]
+            },
+            "start_task": {
+                "task_id": [],
+                "return": []
+            },
+            "stop_task": {
+                "task_id": [],
+                "return": []
+            },
+            "update": {
+                "task_id": [],
+                "total": [],
+                "completed": [],
+                "advance": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "description": [],
+                "visible": [],
+                "refresh": [
+                    "builtins.bool"
+                ],
+                "fields": [],
+                "return": []
+            },
+            "reset": {
+                "task_id": [],
+                "start": [
+                    "builtins.bool"
+                ],
+                "total": [],
+                "completed": [
+                    "builtins.int"
+                ],
+                "visible": [],
+                "description": [],
+                "fields": [],
+                "return": []
+            },
+            "advance": {
+                "task_id": [],
+                "advance": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "refresh": {
+                "return": []
+            },
+            "get_renderable": {
+                "return": [
+                    "rich.console.Group"
+                ]
+            },
+            "get_renderables": {
+                "return": [
+                    "typing.Generator[rich.table.Table, typing.Any, typing.Any]"
+                ]
+            },
+            "make_tasks_table": {
+                "tasks": [
+                    "typing.Iterable[rich.progress.Task]"
+                ],
+                "return": [
+                    "rich.table.Table"
+                ]
+            },
+            "__rich__": {
+                "return": [
+                    "rich.console.Group"
+                ]
+            },
+            "add_task": {
+                "description": [],
+                "start": [
+                    "builtins.bool"
+                ],
+                "total": [
+                    "builtins.float"
+                ],
+                "completed": [
+                    "builtins.int"
+                ],
+                "visible": [
+                    "builtins.bool"
+                ],
+                "fields": [],
+                "return": []
+            },
+            "remove_task": {
+                "task_id": [],
+                "return": []
+            }
+        }
+    },
+    "rich.progress_bar": {
+        "ProgressBar": {
+            "__init__": {
+                "total": [
+                    "builtins.float"
+                ],
+                "completed": [
+                    "builtins.int"
+                ],
+                "width": [],
+                "pulse": [
+                    "builtins.bool"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "complete_style": [
+                    "builtins.str"
+                ],
+                "finished_style": [
+                    "builtins.str"
+                ],
+                "pulse_style": [
+                    "builtins.str"
+                ],
+                "animation_time": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "percentage_completed": {
+                "return": []
+            },
+            "_get_pulse_segments": {
+                "fore_style": [
+                    "rich.style.Style"
+                ],
+                "back_style": [
+                    "rich.style.Style"
+                ],
+                "color_system": [],
+                "no_color": [],
+                "ascii": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "update": {
+                "completed": [],
+                "total": [],
+                "return": []
+            },
+            "_render_pulse": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "ascii": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.prompt": {
+        "InvalidResponse": {
+            "__init__": {
+                "message": [],
+                "return": []
+            },
+            "__rich__": {
+                "return": []
+            }
+        },
+        "PromptBase": {
+            "__init__": {
+                "prompt": [
+                    "builtins.str"
+                ],
+                "console": [],
+                "password": [
+                    "builtins.bool"
+                ],
+                "choices": [],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "ask": {
+                "prompt": [
+                    "builtins.str"
+                ],
+                "console": [],
+                "password": [
+                    "builtins.bool"
+                ],
+                "choices": [],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "show_default": [
+                    "builtins.bool"
+                ],
+                "show_choices": [
+                    "builtins.bool"
+                ],
+                "default": [],
+                "stream": [],
+                "return": []
+            },
+            "render_default": {
+                "default": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "make_prompt": {
+                "default": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "logging.PlaceHolder"
+                ]
+            },
+            "get_input": {
+                "console": [
+                    "pydoc.Helper"
+                ],
+                "prompt": [],
+                "password": [],
+                "stream": [],
+                "return": []
+            },
+            "check_choice": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "process_response": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "on_validate_error": {
+                "value": [],
+                "error": [],
+                "return": []
+            },
+            "pre_prompt": {
+                "return": []
+            },
+            "__call__": {
+                "default": [
+                    "builtins.str"
+                ],
+                "stream": [],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        },
+        "Confirm": {
+            "render_default": {
+                "default": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "process_response": {
+                "value": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.protocol": {
+        "global": {
+            "is_renderable": {
+                "check_object": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "rich_cast": {
+                "renderable": [
+                    "rich.console.RichCast"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            }
+        }
+    },
+    "rich.repr": {
+        "global": {
+            "auto": {
+                "cls": [
+                    "rich.layout.Layout"
+                ],
+                "angular": [],
+                "return": [
+                    "functools.partial"
+                ]
+            },
+            "rich_repr": {
+                "cls": [
+                    "rich.layout.Layout"
+                ],
+                "angular": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "functools.partial"
+                ]
+            }
+        }
+    },
+    "rich.rule": {
+        "Rule": {
+            "__init__": {
+                "title": [
+                    "builtins.str"
+                ],
+                "characters": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "align": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "_rule_line": {
+                "chars_len": [
+                    "builtins.int"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    },
+    "rich.scope": {
+        "global": {
+            "render_scope": {
+                "scope": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "title": [],
+                "sort_keys": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "max_length": [],
+                "max_string": [],
+                "return": []
+            }
+        }
+    },
+    "rich.screen": {
+        "Screen": {
+            "__init__": {
+                "renderables": [],
+                "style": [],
+                "application_mode": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich._ratio.Edge"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.segment": {
+        "Segment": {
+            "cell_length": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "__rich_repr__": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "is_control": {
+                "return": []
+            },
+            "_split_cells": {
+                "segment": [
+                    "builtins.tuple[builtins.str, typing.Any, typing.Any]"
+                ],
+                "cut": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.tuple[rich.segment.Segment, rich.segment.Segment]"
+                ]
+            },
+            "split_cells": {
+                "cut": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.tuple[rich.segment.Segment, rich.segment.Segment]"
+                ]
+            },
+            "line": {
+                "return": []
+            },
+            "apply_style": {
+                "segments": [
+                    "typing.Generator[builtins.tuple[typing.Any, _typeshed.SupportsAdd, typing.Any], typing.Any, typing.Any]"
+                ],
+                "style": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "post_style": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, _typeshed.SupportsAdd, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "filter_control": {
+                "segments": [],
+                "is_control": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Iterator[typing.Any]"
+                ]
+            },
+            "split_lines": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[builtins.str, typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.list[typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "split_and_crop_lines": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[builtins.str, typing.Any, typing.Any]]"
+                ],
+                "length": [],
+                "style": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "include_new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Generator[logging.PlaceHolder, typing.Any, typing.Any]"
+                ]
+            },
+            "adjust_line_length": {
+                "line": [
+                    "builtins.list[builtins.tuple[builtins.str, typing.Any, typing.Any]]"
+                ],
+                "length": [
+                    "builtins.int"
+                ],
+                "style": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[builtins.tuple[builtins.str, typing.Any, typing.Any]]"
+                ]
+            },
+            "get_line_length": {
+                "line": [
+                    "typing.Iterable[builtins.tuple[typing.Collection[typing.Any], typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "get_shape": {
+                "lines": [
+                    "typing.Collection[typing.Any]"
+                ],
+                "return": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ]
+            },
+            "set_shape": {
+                "lines": [
+                    "builtins.list[typing.Any]"
+                ],
+                "width": [],
+                "height": [],
+                "style": [],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "align_top": {
+                "lines": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "width": [],
+                "height": [
+                    "builtins.int"
+                ],
+                "style": [],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "align_bottom": {
+                "lines": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "width": [],
+                "height": [
+                    "builtins.int"
+                ],
+                "style": [],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "align_middle": {
+                "lines": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "width": [],
+                "height": [
+                    "builtins.int"
+                ],
+                "style": [],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "typing.Sequence[typing.Any]"
+                ]
+            },
+            "simplify": {
+                "segments": [],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "strip_links": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[typing.Any, rich.style.Style, typing.Any]]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[typing.Any, rich.style.Style, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "strip_styles": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[typing.Any, typing.Any, typing.Any]]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "remove_color": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[typing.Any, rich.style.Style, typing.Any]]"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "divide": {
+                "segments": [
+                    "typing.Iterable[builtins.tuple[typing.Collection[typing.Any], typing.Any, typing.Any]]"
+                ],
+                "cuts": [],
+                "return": [
+                    "typing.Generator[builtins.list[typing.Any], typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "Segments": {
+            "__init__": {
+                "segments": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        },
+        "SegmentLines": {
+            "__init__": {
+                "lines": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "new_lines": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.spinner": {
+        "Spinner": {
+            "__init__": {
+                "name": [],
+                "text": [
+                    "builtins.str"
+                ],
+                "style": [],
+                "speed": [
+                    "builtins.float"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.Task"
+                ],
+                "options": [],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": []
+            },
+            "render": {
+                "time": [
+                    "_typeshed.SupportsSub"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "update": {
+                "text": [
+                    "builtins.str"
+                ],
+                "style": [],
+                "speed": [],
+                "return": []
+            }
+        }
+    },
+    "rich.status": {
+        "Status": {
+            "__init__": {
+                "status": [
+                    "builtins.str"
+                ],
+                "console": [],
+                "spinner": [
+                    "builtins.str"
+                ],
+                "spinner_style": [
+                    "builtins.str"
+                ],
+                "speed": [
+                    "builtins.float"
+                ],
+                "refresh_per_second": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "renderable": {
+                "return": []
+            },
+            "console": {
+                "return": []
+            },
+            "update": {
+                "status": [],
+                "spinner": [],
+                "spinner_style": [],
+                "speed": [],
+                "return": []
+            },
+            "start": {
+                "return": []
+            },
+            "stop": {
+                "return": []
+            },
+            "__rich__": {
+                "return": []
+            },
+            "__enter__": {
+                "return": [
+                    "rich.status.Status"
+                ]
+            },
+            "__exit__": {
+                "exc_type": [],
+                "exc_val": [],
+                "exc_tb": [],
+                "return": []
+            }
+        }
+    },
+    "rich.style": {
+        "_Bit": {
+            "__init__": {
+                "bit_no": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__get__": {
+                "obj": [
+                    "rich.style.Style"
+                ],
+                "objtype": [],
+                "return": []
+            }
+        },
+        "Style": {
+            "__init__": {
+                "color": [
+                    "rich.color.Color"
+                ],
+                "bgcolor": [
+                    "rich.color.Color"
+                ],
+                "bold": [],
+                "dim": [],
+                "italic": [],
+                "underline": [],
+                "blink": [],
+                "blink2": [],
+                "reverse": [],
+                "conceal": [],
+                "strike": [],
+                "underline2": [],
+                "frame": [],
+                "encircle": [],
+                "overline": [],
+                "link": [],
+                "meta": [],
+                "return": []
+            },
+            "null": {
+                "return": []
+            },
+            "from_color": {
+                "color": [],
+                "bgcolor": [],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "from_meta": {
+                "meta": [],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "on": {
+                "meta": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "handlers": [],
+                "return": []
+            },
+            "link_id": {
+                "return": []
+            },
+            "__str__": {
+                "return": []
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "_make_ansi_codes": {
+                "color_system": [],
+                "return": []
+            },
+            "normalize": {
+                "style": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "pick_first": {
+                "values": [],
+                "return": []
+            },
+            "__rich_repr__": {
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.str, typing.Any, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "__eq__": {
+                "other": [
+                    "rich.style.Style"
+                ],
+                "return": []
+            },
+            "__ne__": {
+                "other": [
+                    "rich.style.Style"
+                ],
+                "return": []
+            },
+            "__hash__": {
+                "return": []
+            },
+            "color": {
+                "return": []
+            },
+            "bgcolor": {
+                "return": []
+            },
+            "link": {
+                "return": []
+            },
+            "transparent_background": {
+                "return": []
+            },
+            "background_style": {
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "meta": {
+                "return": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ]
+            },
+            "without_color": {
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "parse": {
+                "style_definition": [
+                    "re.Pattern"
+                ],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "get_html_style": {
+                "theme": [
+                    "rich.terminal_theme.TerminalTheme"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "combine": {
+                "styles": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "chain": {
+                "styles": [],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "copy": {
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "clear_meta_and_links": {
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "update_link": {
+                "link": [],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "render": {
+                "text": [
+                    "builtins.str"
+                ],
+                "color_system": [
+                    "rich.color.ColorSystem"
+                ],
+                "legacy_windows": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "test": {
+                "text": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "_add": {
+                "style": [
+                    "rich.style.Style"
+                ],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "__add__": {
+                "style": [
+                    "rich.style.Style"
+                ],
+                "return": [
+                    "rich.style.Style"
+                ]
+            }
+        },
+        "StyleStack": {
+            "__init__": {
+                "default_style": [],
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "current": {
+                "return": []
+            },
+            "push": {
+                "style": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": []
+            },
+            "pop": {
+                "return": []
+            }
+        }
+    },
+    "rich.styled": {
+        "Styled": {
+            "__init__": {
+                "renderable": [],
+                "style": [],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [],
+                "return": []
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": []
+            }
+        }
+    },
+    "rich.syntax": {
+        "global": {
+            "_get_code_index_for_syntax_position": {
+                "newlines_offsets": [
+                    "typing.Sequence[builtins.int]"
+                ],
+                "position": [
+                    "builtins.tuple[builtins.int, _typeshed.SupportsAdd]"
+                ],
+                "return": [
+                    "_typeshed.SupportsAdd"
+                ]
+            }
+        },
+        "SyntaxTheme": {
+            "get_style_for_token": {
+                "token_type": [],
+                "return": []
+            },
+            "get_background_style": {
+                "return": []
+            }
+        },
+        "PygmentsSyntaxTheme": {
+            "__init__": {
+                "theme": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "get_style_for_token": {
+                "token_type": [],
+                "return": [
+                    "rich.style.Style"
+                ]
+            },
+            "get_background_style": {
+                "return": []
+            }
+        },
+        "ANSISyntaxTheme": {
+            "__init__": {
+                "style_map": [],
+                "return": []
+            },
+            "get_style_for_token": {
+                "token_type": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": []
+            },
+            "get_background_style": {
+                "return": []
+            }
+        },
+        "Syntax": {
+            "get_theme": {
+                "name": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__init__": {
+                "code": [],
+                "lexer": [],
+                "theme": [
+                    "builtins.str"
+                ],
+                "dedent": [
+                    "builtins.bool"
+                ],
+                "line_numbers": [
+                    "builtins.bool"
+                ],
+                "start_line": [
+                    "builtins.int"
+                ],
+                "line_range": [],
+                "highlight_lines": [],
+                "code_width": [],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "background_color": [
+                    "rich.color.Color"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "padding": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "from_path": {
+                "path": [],
+                "encoding": [
+                    "builtins.str"
+                ],
+                "lexer": [],
+                "theme": [
+                    "builtins.str"
+                ],
+                "dedent": [
+                    "builtins.bool"
+                ],
+                "line_numbers": [
+                    "builtins.bool"
+                ],
+                "line_range": [],
+                "start_line": [
+                    "builtins.int"
+                ],
+                "highlight_lines": [],
+                "code_width": [],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "background_color": [],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "padding": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "guess_lexer": {
+                "path": [],
+                "code": [],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_get_base_style": {
+                "return": [
+                    "_typeshed.SupportsAdd"
+                ]
+            },
+            "_get_token_color": {
+                "token_type": [],
+                "return": []
+            },
+            "lexer": {
+                "return": []
+            },
+            "default_lexer": {
+                "return": []
+            },
+            "highlight": {
+                "code": [
+                    "rich.text.Text"
+                ],
+                "line_range": [
+                    "builtins.tuple[builtins.int, builtins.int]"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "stylize_range": {
+                "style": [],
+                "start": [],
+                "end": [],
+                "style_before": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_get_line_numbers_color": {
+                "blend": [
+                    "builtins.float"
+                ],
+                "return": []
+            },
+            "_numbers_column_width": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "_get_number_styles": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "return": [
+                    "builtins.tuple[rich.style.Style, rich.style.Style, rich.style.Style]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.padding.Padding, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_syntax": {
+                "console": [
+                    "rich.progress.ProgressColumn"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "_apply_stylized_ranges": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            },
+            "_process_code": {
+                "code": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.tuple[typing.Any, builtins.str]"
+                ]
+            }
+        }
+    },
+    "rich.table": {
+        "Column": {
+            "copy": {
+                "return": []
+            },
+            "cells": {
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "flexible": {
+                "return": []
+            }
+        },
+        "Table": {
+            "__init__": {
+                "headers": [],
+                "title": [],
+                "caption": [],
+                "width": [],
+                "min_width": [],
+                "box": [],
+                "safe_box": [],
+                "padding": [
+                    "builtins.int"
+                ],
+                "collapse_padding": [
+                    "builtins.bool"
+                ],
+                "pad_edge": [
+                    "builtins.bool"
+                ],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "show_header": [
+                    "builtins.bool"
+                ],
+                "show_footer": [
+                    "builtins.bool"
+                ],
+                "show_edge": [
+                    "builtins.bool"
+                ],
+                "show_lines": [
+                    "builtins.bool"
+                ],
+                "leading": [
+                    "builtins.int"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "row_styles": [],
+                "header_style": [
+                    "builtins.str"
+                ],
+                "footer_style": [
+                    "builtins.str"
+                ],
+                "border_style": [],
+                "title_style": [],
+                "caption_style": [],
+                "title_justify": [
+                    "builtins.str"
+                ],
+                "caption_justify": [
+                    "builtins.str"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "grid": {
+                "headers": [],
+                "padding": [
+                    "builtins.int"
+                ],
+                "collapse_padding": [
+                    "builtins.bool"
+                ],
+                "pad_edge": [
+                    "builtins.bool"
+                ],
+                "expand": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "expand": {
+                "expand": [],
+                "return": []
+            },
+            "_extra_width": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "row_count": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "get_row_style": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "index": [
+                    "datetime.timedelta"
+                ],
+                "return": [
+                    "_typeshed.SupportsAdd"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "padding": {
+                "padding": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "rich.table.Table"
+                ]
+            },
+            "add_column": {
+                "header": [
+                    "builtins.str"
+                ],
+                "footer": [
+                    "builtins.str"
+                ],
+                "header_style": [],
+                "highlight": [],
+                "footer_style": [],
+                "style": [],
+                "justify": [
+                    "builtins.str"
+                ],
+                "vertical": [
+                    "builtins.str"
+                ],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "width": [],
+                "min_width": [],
+                "max_width": [],
+                "ratio": [],
+                "no_wrap": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "add_row": {
+                "renderables": [],
+                "style": [],
+                "end_section": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "add_section": {
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "_calculate_column_widths": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "builtins.list[builtins.int]"
+                ]
+            },
+            "_collapse_widths": {
+                "widths": [
+                    "builtins.list[typing.Any]"
+                ],
+                "wrapable": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "max_width": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "builtins.list[typing.Any]"
+                ]
+            },
+            "_get_cells": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "column_index": [
+                    "builtins.int"
+                ],
+                "column": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "typing.Generator[rich.table._Cell, typing.Any, typing.Any]"
+                ]
+            },
+            "_get_padding_width": {
+                "column_index": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "_typeshed.SupportsSub"
+                ]
+            },
+            "_measure_column": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "column": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "_render": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ScreenContext"
+                ],
+                "widths": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.terminal_theme": {
+        "TerminalTheme": {
+            "__init__": {
+                "background": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "foreground": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "normal": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "bright": [],
+                "return": []
+            }
+        }
+    },
+    "rich.text": {
+        "Span": {
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__bool__": {
+                "return": []
+            },
+            "split": {
+                "offset": [],
+                "return": [
+                    "builtins.tuple[rich.text.Span, rich.text.Span]"
+                ]
+            },
+            "move": {
+                "offset": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "rich.text.Span"
+                ]
+            },
+            "right_crop": {
+                "offset": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "rich.text.Span"
+                ]
+            },
+            "extend": {
+                "cells": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "return": [
+                    "rich.text.Span"
+                ]
+            }
+        },
+        "Text": {
+            "__init__": {
+                "text": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "overflow": [],
+                "no_wrap": [],
+                "end": [
+                    "builtins.str"
+                ],
+                "tab_size": [],
+                "spans": [],
+                "return": []
+            },
+            "__len__": {
+                "return": []
+            },
+            "__bool__": {
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__str__": {
+                "return": []
+            },
+            "__repr__": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "__add__": {
+                "other": [
+                    "rich.text.Text"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "__eq__": {
+                "other": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            },
+            "__contains__": {
+                "other": [
+                    "rich.text.Text"
+                ],
+                "return": [
+                    "builtins.bool"
+                ]
+            },
+            "__getitem__": {
+                "slice": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "cell_len": {
+                "return": []
+            },
+            "markup": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "from_markup": {
+                "text": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "emoji": [
+                    "builtins.bool"
+                ],
+                "emoji_variant": [],
+                "justify": [],
+                "overflow": [],
+                "end": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.pretty.Pretty"
+                ]
+            },
+            "from_ansi": {
+                "text": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "overflow": [],
+                "no_wrap": [],
+                "end": [
+                    "builtins.str"
+                ],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "styled": {
+                "text": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "overflow": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "assemble": {
+                "parts": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "justify": [],
+                "overflow": [],
+                "no_wrap": [],
+                "end": [
+                    "builtins.str"
+                ],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "meta": [],
+                "return": [
+                    "logging.PlaceHolder"
+                ]
+            },
+            "plain": {
+                "new_text": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "spans": {
+                "spans": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": []
+            },
+            "blank_copy": {
+                "plain": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "copy": {
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "stylize": {
+                "style": [],
+                "start": [
+                    "builtins.int"
+                ],
+                "end": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "stylize_before": {
+                "style": [],
+                "start": [
+                    "builtins.int"
+                ],
+                "end": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "apply_meta": {
+                "meta": [],
+                "start": [
+                    "builtins.int"
+                ],
+                "end": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "on": {
+                "meta": [
+                    "builtins.dict[typing.Any, typing.Any]"
+                ],
+                "handlers": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "remove_suffix": {
+                "suffix": [
+                    "typing.Sized"
+                ],
+                "return": []
+            },
+            "get_style_at_offset": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "offset": [
+                    "builtins.int"
+                ],
+                "return": [
+                    "_typeshed.SupportsAdd"
+                ]
+            },
+            "extend_style": {
+                "spaces": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "highlight_regex": {
+                "re_highlight": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "typing.Callable[[typing.Sequence[typing.Any]], typing.Any]"
+                ],
+                "style_prefix": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "highlight_words": {
+                "words": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "style": [],
+                "case_sensitive": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "rstrip": {
+                "return": []
+            },
+            "rstrip_end": {
+                "size": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "set_length": {
+                "new_length": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.syntax.Syntax"
+                ],
+                "options": [
+                    "rich.table.Column"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            },
+            "render": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "end": [
+                    "builtins.str"
+                ],
+                "return": [
+                    "typing.Generator[rich.segment.Segment, typing.Any, typing.Any]"
+                ]
+            },
+            "join": {
+                "lines": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "expand_tabs": {
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "truncate": {
+                "max_width": [
+                    "builtins.int"
+                ],
+                "overflow": [],
+                "pad": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "_trim_spans": {
+                "return": []
+            },
+            "pad": {
+                "count": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "character": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "pad_left": {
+                "count": [
+                    "_typeshed.SupportsAdd"
+                ],
+                "character": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "pad_right": {
+                "count": [],
+                "character": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "align": {
+                "align": [
+                    "builtins.str"
+                ],
+                "width": [
+                    "builtins.int"
+                ],
+                "character": [
+                    "builtins.str"
+                ],
+                "return": []
+            },
+            "append": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "style": [],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "append_text": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "append_tokens": {
+                "tokens": [
+                    "typing.Iterable[builtins.tuple[builtins.str, typing.Any]]"
+                ],
+                "return": [
+                    "rich.text.Text"
+                ]
+            },
+            "copy_styles": {
+                "text": [
+                    "rich.text.Text"
+                ],
+                "return": []
+            },
+            "split": {
+                "separator": [
+                    "builtins.str"
+                ],
+                "include_separator": [
+                    "builtins.bool"
+                ],
+                "allow_blank": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.containers.Lines"
+                ]
+            },
+            "divide": {
+                "offsets": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "return": [
+                    "rich.containers.Lines"
+                ]
+            },
+            "right_crop": {
+                "amount": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "wrap": {
+                "console": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "justify": [],
+                "overflow": [
+                    "builtins.str"
+                ],
+                "tab_size": [
+                    "builtins.int"
+                ],
+                "no_wrap": [],
+                "return": [
+                    "rich.containers.Lines"
+                ]
+            },
+            "fit": {
+                "width": [],
+                "return": [
+                    "rich.containers.Lines"
+                ]
+            },
+            "detect_indentation": {
+                "return": [
+                    "builtins.int"
+                ]
+            },
+            "with_indent_guides": {
+                "indent_size": [],
+                "character": [
+                    "builtins.str"
+                ],
+                "style": [
+                    "builtins.str"
+                ],
+                "return": []
+            }
+        }
+    },
+    "rich.theme": {
+        "Theme": {
+            "__init__": {
+                "styles": [
+                    "typing.Mapping[typing.Any, typing.Any]"
+                ],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "config": {
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "from_file": {
+                "config_file": [
+                    "typing.Iterable[typing.Any]"
+                ],
+                "source": [],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.theme.Theme"
+                ]
+            },
+            "read": {
+                "path": [
+                    "builtins.str"
+                ],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "encoding": [],
+                "return": []
+            }
+        },
+        "ThemeStack": {
+            "__init__": {
+                "theme": [
+                    "rich.theme.Theme"
+                ],
+                "return": []
+            },
+            "push_theme": {
+                "theme": [
+                    "rich.theme.Theme"
+                ],
+                "inherit": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "pop_theme": {
+                "return": []
+            }
+        }
+    },
+    "rich.traceback": {
+        "global": {
+            "_iter_syntax_lines": {
+                "start": [
+                    "builtins.tuple[builtins.int, typing.Any]"
+                ],
+                "end": [
+                    "builtins.tuple[builtins.int, typing.Any]"
+                ],
+                "return": [
+                    "typing.Generator[builtins.tuple[builtins.int, builtins.int, builtins.int], typing.Any, typing.Any]"
+                ]
+            },
+            "install": {
+                "console": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "code_width": [
+                    "builtins.int"
+                ],
+                "extra_lines": [
+                    "builtins.int"
+                ],
+                "theme": [],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "show_locals": [
+                    "builtins.bool"
+                ],
+                "locals_max_length": [
+                    "builtins.int"
+                ],
+                "locals_max_string": [
+                    "builtins.int"
+                ],
+                "locals_hide_dunder": [
+                    "builtins.bool"
+                ],
+                "locals_hide_sunder": [
+                    "builtins.int"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "suppress": [
+                    "builtins.tuple"
+                ],
+                "max_frames": [
+                    "builtins.int"
+                ],
+                "return": []
+            }
+        },
+        "Traceback": {
+            "__init__": {
+                "trace": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "code_width": [
+                    "builtins.int"
+                ],
+                "extra_lines": [
+                    "builtins.int"
+                ],
+                "theme": [],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "show_locals": [
+                    "builtins.bool"
+                ],
+                "locals_max_length": [
+                    "builtins.int"
+                ],
+                "locals_max_string": [
+                    "builtins.int"
+                ],
+                "locals_hide_dunder": [
+                    "builtins.bool"
+                ],
+                "locals_hide_sunder": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "suppress": [
+                    "builtins.tuple"
+                ],
+                "max_frames": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "from_exception": {
+                "exc_type": [],
+                "exc_value": [],
+                "traceback": [],
+                "width": [
+                    "builtins.int"
+                ],
+                "code_width": [
+                    "builtins.int"
+                ],
+                "extra_lines": [
+                    "builtins.int"
+                ],
+                "theme": [],
+                "word_wrap": [
+                    "builtins.bool"
+                ],
+                "show_locals": [
+                    "builtins.bool"
+                ],
+                "locals_max_length": [
+                    "builtins.int"
+                ],
+                "locals_max_string": [
+                    "builtins.int"
+                ],
+                "locals_hide_dunder": [
+                    "builtins.bool"
+                ],
+                "locals_hide_sunder": [
+                    "builtins.bool"
+                ],
+                "indent_guides": [
+                    "builtins.bool"
+                ],
+                "suppress": [
+                    "builtins.tuple"
+                ],
+                "max_frames": [
+                    "builtins.int"
+                ],
+                "return": []
+            },
+            "extract": {
+                "exc_type": [],
+                "exc_value": [
+                    "re.error"
+                ],
+                "traceback": [
+                    "types.TracebackType"
+                ],
+                "show_locals": [
+                    "builtins.bool"
+                ],
+                "locals_max_length": [
+                    "builtins.int"
+                ],
+                "locals_max_string": [
+                    "builtins.int"
+                ],
+                "locals_hide_dunder": [
+                    "builtins.bool"
+                ],
+                "locals_hide_sunder": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.traceback.Trace"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [],
+                "return": [
+                    "typing.Generator[typing.Generator[builtins.str, typing.Any, typing.Any], typing.Any, typing.Any]"
+                ]
+            },
+            "_render_syntax_error": {
+                "syntax_error": [
+                    "rich.traceback._SyntaxError"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            },
+            "_guess_lexer": {
+                "filename": [],
+                "code": [
+                    "typing.Sequence[typing.Any]"
+                ],
+                "return": [
+                    "builtins.str"
+                ]
+            },
+            "_render_stack": {
+                "stack": [
+                    "rich.traceback.Stack"
+                ],
+                "return": [
+                    "typing.Generator[rich.text.Text, typing.Any, typing.Any]"
+                ]
+            }
+        }
+    },
+    "rich.tree": {
+        "Tree": {
+            "__init__": {
+                "label": [],
+                "style": [
+                    "builtins.str"
+                ],
+                "guide_style": [
+                    "builtins.str"
+                ],
+                "expanded": [
+                    "builtins.bool"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "hide_root": [
+                    "builtins.bool"
+                ],
+                "return": []
+            },
+            "add": {
+                "label": [],
+                "style": [],
+                "guide_style": [],
+                "expanded": [
+                    "builtins.bool"
+                ],
+                "highlight": [
+                    "builtins.bool"
+                ],
+                "return": [
+                    "rich.tree.Tree"
+                ]
+            },
+            "__rich_console__": {
+                "console": [
+                    "rich.console.Console"
+                ],
+                "options": [
+                    "rich.console.ConsoleOptions"
+                ],
+                "return": [
+                    "typing.Generator[typing.Any, typing.Any, typing.Any]"
+                ]
+            },
+            "__rich_measure__": {
+                "console": [],
+                "options": [],
+                "return": [
+                    "rich.measure.Measurement"
+                ]
+            }
+        }
+    }
+}
