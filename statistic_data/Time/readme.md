@@ -1,0 +1,1 @@
+In the `iteration.json` file, each key of the dictionary represents a project, and the value is a list of tuples. Each tuple represents an iteration, with its two values corresponding to (accumulated execution time, number of  current completed entity clusters), respectively.

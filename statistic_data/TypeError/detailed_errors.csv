@@ -1,0 +1,14 @@
+error_code,PyTIR,PyTIR_Base,PyTIR_R1,TypeGen,hityper,quac,tiger
+arg-type,0,893,0,975,646,1045,2833
+assignment,543,899,327,759,397,850,1104
+attr-defined,0,513,0,296,114,541,342
+func-returns-value,0,7,0,75,144,3,21
+list-item,0,12,0,14,3,7,356
+method-assign,3,3,3,3,2,3,3
+misc,0,317,0,92,174,106,335
+name-defined,0,283,0,1481,5,74,1205
+override,0,210,0,109,83,117,280
+return-value,0,152,0,183,302,383,591
+valid-type,0,276,0,239,28,3,22
+var-annotated,6,4,5,75,89,73,76
+others,2,616,0,251,132,463,462
