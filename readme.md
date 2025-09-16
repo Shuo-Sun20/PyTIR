@@ -99,4 +99,4 @@ python type_llm/evaluation/mypy_check.py
 
 ## Other Statistical Data
 
-Other relevant statistical data can be found in the `static_data` directory.
+Other relevant statistical data can be found in the `statistic_data` directory.
